@@ -1,0 +1,1 @@
+public abstract boolean fitsSearchType(jsettlers.algorithms.path.IPathCalculatable pathCalculateable, jsettlers.common.position.ShortPoint2D pos, jsettlers.common.material.ESearchType searchType);

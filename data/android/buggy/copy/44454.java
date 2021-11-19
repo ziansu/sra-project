@@ -1,0 +1,1 @@
+private static native long _imaqDetectExtremes(long pixels, int numPixels, int mode, long options, long numExtremes);

@@ -1,0 +1,1 @@
+void onNextCancelled(int pos);

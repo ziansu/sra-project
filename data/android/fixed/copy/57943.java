@@ -1,0 +1,1 @@
+void onSelectionDecreasePainted(int colEdgeIndex, int rowEdgeIndex);

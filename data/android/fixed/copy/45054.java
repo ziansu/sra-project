@@ -1,0 +1,1 @@
+boolean getOptimizedForBlobStoreClearOp(com.j_spaces.core.cache.CacheManager cacheManager);

@@ -1,0 +1,1 @@
+private static native int _imaqCopyContour(long destRoi, long sourceRoi, int id);

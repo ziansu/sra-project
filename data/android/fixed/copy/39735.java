@@ -1,0 +1,1 @@
+private native void nativeBetween(long nativeQueryPtr, long[] columnIndex, double value1, double value2);

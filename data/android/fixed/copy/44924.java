@@ -1,0 +1,2 @@
+@org.springframework.data.rest.core.annotation.RestResource(exported = false)
+java.util.List<uk.ac.ebi.spot.goci.model.Association> findByEfoTraitsIdAndStudyHousekeepingCatalogPublishDateIsNotNullAndStudyHousekeepingCatalogUnpublishDateIsNull(java.lang.Long efoTraitId);

@@ -1,0 +1,1 @@
+private static native void _imaqMulticoreOptions(int operation, long customNumCores);

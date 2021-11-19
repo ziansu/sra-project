@@ -1,0 +1,1 @@
+public java.util.List<com.bit.ss.model.Answer> getAnswerListByQuestionId(int questionId, int page, java.lang.Integer userId);

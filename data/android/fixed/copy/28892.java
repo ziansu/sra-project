@@ -1,0 +1,1 @@
+long count(org.springframework.data.domain.Example<E> example);

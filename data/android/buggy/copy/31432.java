@@ -1,0 +1,1 @@
+private static native void _imaqRemoveVisionInfo2(long image, int info);

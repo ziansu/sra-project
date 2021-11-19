@@ -1,0 +1,1 @@
+static native int __version();

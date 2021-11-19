@@ -1,0 +1,1 @@
+public native boolean eventGetAltKey(com.google.gwt.dom.client.NativeEvent evt);

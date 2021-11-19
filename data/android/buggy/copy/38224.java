@@ -1,0 +1,1 @@
+private static native void _imaqSetReferenceChar(long set, int index, int isReferenceChar);

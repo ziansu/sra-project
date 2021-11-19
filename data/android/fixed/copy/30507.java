@@ -1,0 +1,1 @@
+void findLatestWithCallback(com.epam.ta.reportportal.database.search.Queryable filter, org.springframework.data.domain.Sort sort, java.util.List<java.lang.String> contentFields, long limit, org.springframework.data.mongodb.core.DocumentCallbackHandler callbackHandler);

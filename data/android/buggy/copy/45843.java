@@ -1,0 +1,2 @@
+@com.emc.storageos.svcs.errorhandling.annotations.DeclareServiceCode(value = ServiceCode.API_BAD_REQUEST)
+public com.emc.storageos.svcs.errorhandling.resources.BadRequestException cannotCreateSnapshotCgPartOfApplication(final java.lang.String cgName, java.lang.String applicationName);

@@ -1,0 +1,2 @@
+java.lang.CharSequence getLabelForAccessibility(android.content.Context context) {
+}

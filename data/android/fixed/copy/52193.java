@@ -1,0 +1,1 @@
+void navigateToStepsActivity(dk.jbfp.staveapp.User user);

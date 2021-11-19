@@ -1,0 +1,1 @@
+public java.lang.String addNewCaseIssue(java.lang.Long caseId, java.lang.String departmentTo, java.lang.String issueProblem, java.util.List<ejb.customer.entity.FollowUp> followUps);

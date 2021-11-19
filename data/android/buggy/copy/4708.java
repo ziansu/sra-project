@@ -1,0 +1,1 @@
+int lsl_push_chunk_ftnp(com.sun.jna.Pointer obj, float[] data, long data_elements, double[] timestamps, int pushthrough);

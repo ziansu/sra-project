@@ -1,0 +1,1 @@
+org.domeos.basemodel.HttpResponseTemp<?> validation(long userId, java.lang.String imageName, java.lang.String imageTag);

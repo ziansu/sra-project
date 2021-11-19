@@ -1,0 +1,3 @@
+java.util.Map<us.kbase.workspace.database.mongo.ResolvedMongoWSID, java.util.Map<us.kbase.workspace.database.User, us.kbase.workspace.database.Permission>> queryPermissions(final java.util.Set<us.kbase.workspace.database.mongo.ResolvedMongoWSID> rwsis, final java.util.Set<us.kbase.workspace.database.User> users) throws us.kbase.workspace.database.exceptions.CorruptWorkspaceDBException, us.kbase.workspace.database.exceptions.WorkspaceCommunicationException {
+    return queryPermissions(rwsis, users, Permission.NONE);
+}

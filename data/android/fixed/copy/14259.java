@@ -1,0 +1,1 @@
+java.util.Set<com.coalesce.config.IEntry> getEntries();

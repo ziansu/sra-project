@@ -1,0 +1,1 @@
+private native void bindJavaScriptEvents(final com.google.gwt.dom.client.Element e);

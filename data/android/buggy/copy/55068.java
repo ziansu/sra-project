@@ -1,0 +1,1 @@
+protected abstract void handleNoFindableMessage(com.ubirouting.instantmsg.msgs.InstantMessage message);

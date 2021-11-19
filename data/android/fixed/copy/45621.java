@@ -1,0 +1,1 @@
+abstract COLOR createColor(int mediumApha, int mediumRed, int mediumGreen, int mediumBlue);

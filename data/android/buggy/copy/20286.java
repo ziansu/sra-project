@@ -1,0 +1,1 @@
+private static native long _imaqReadCustomData(long image, long key, long size);

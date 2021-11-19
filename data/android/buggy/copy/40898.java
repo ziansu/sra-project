@@ -1,0 +1,1 @@
+public <T extends se.de.hu_berlin.informatik.utils.processors.sockets.ProcessorSocket<A, B>> void setSocket(T socket);

@@ -1,0 +1,1 @@
+java.util.List<jtelecom.dto.OrdersRowDTO> getLimitedOrderRowsDTOByCustomerId(java.lang.Integer start, java.lang.Integer length, java.lang.String search, java.lang.String sort, java.lang.Integer customerId);

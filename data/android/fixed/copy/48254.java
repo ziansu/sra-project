@@ -1,0 +1,1 @@
+public native int indexOf(java.lang.String str, int startIndex);

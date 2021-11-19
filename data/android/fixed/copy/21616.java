@@ -1,0 +1,1 @@
+com.tk.foursquaresearch.model.util.SearchRequest searchRequestInstance(com.tk.foursquaresearch.model.util.SearchRequestListener listener);

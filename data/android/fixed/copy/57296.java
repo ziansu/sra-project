@@ -1,0 +1,1 @@
+public abstract boolean canPlaceRoadAtLocation(shared.locations.EdgeLocation edge);

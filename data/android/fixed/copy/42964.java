@@ -1,0 +1,1 @@
+public abstract void onCollide(xyz.luan.life.model.Entity entity, javafx.scene.Group group, java.util.List<xyz.luan.life.model.Entity> entities);

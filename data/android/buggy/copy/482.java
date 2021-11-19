@@ -1,0 +1,6 @@
+@javafx.fxml.FXML
+public void importVariables(Controllers.CourseListController courseList) {
+    this.courseList = courseList;
+    this.info = courseList.info;
+    fillDescription();
+}

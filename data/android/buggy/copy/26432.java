@@ -1,0 +1,1 @@
+com.kryptnostic.kodex.v1.indexing.metadata.MappedMetadata mapTokensToKeys(java.util.Set<com.kryptnostic.kodex.v1.indexing.metadata.Metadata> metadata, cern.colt.bitvector.BitVector documentNonce, com.kryptnostic.crypto.EncryptedSearchSharingKey sharingKey) throws com.kryptnostic.kodex.v1.exceptions.types.IrisException;

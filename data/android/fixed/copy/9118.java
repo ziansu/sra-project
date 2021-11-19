@@ -1,0 +1,1 @@
+long malloc(long size);

@@ -1,0 +1,1 @@
+public abstract com.kalix.framework.core.api.web.model.QueryDTO addDataAuthQueryDTO(com.kalix.framework.core.api.web.model.QueryDTO queryDTO);

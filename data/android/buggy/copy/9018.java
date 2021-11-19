@@ -1,0 +1,1 @@
+boolean contents(T item);

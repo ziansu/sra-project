@@ -1,0 +1,4 @@
+@java.lang.Override
+public java.lang.String toString() {
+    return ((java.lang.String.valueOf(this.getID())) + " ") + (java.lang.String.valueOf(this.getFigur()));
+}

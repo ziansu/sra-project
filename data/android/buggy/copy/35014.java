@@ -1,0 +1,1 @@
+public abstract void read(java.lang.String path, com.hazelcast.query.extractor.ValueCollector<T> collector) throws com.hazelcast.query.extractor.ValueReadingException;

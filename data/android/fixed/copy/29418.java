@@ -1,0 +1,1 @@
+private native int[] unwrapData(long sslep, byte[] srcbuf, byte[] dstbuf);

@@ -1,0 +1,1 @@
+java.util.List<tracker.entity.Issue> findByParentIsNullAndProjectAndTypeAndPosition(tracker.entity.Project project, tracker.entity.IssueType type, java.lang.Integer position);

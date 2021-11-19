@@ -1,0 +1,3 @@
+protected static java.lang.String[] getProjectionForAttendee() {
+    return new java.lang.String[]{ CalendarContract.Attendees.EVENT_ID , CalendarContract.Attendees.ATTENDEE_EMAIL , CalendarContract.Attendees.ATTENDEE_NAME , CalendarContract.Attendees.ATTENDEE_RELATIONSHIP , CalendarContract.Attendees.ATTENDEE_TYPE , CalendarContract.Attendees.ATTENDEE_STATUS , CalendarContract.Attendees.ATTENDEE_IDENTITY , CalendarContract.Attendees.ATTENDEE_ID_NAMESPACE };
+}

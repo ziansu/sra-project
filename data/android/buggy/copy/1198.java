@@ -1,0 +1,3 @@
+public static com.couchbase.lite.internal.database.sqlite.SQLiteDatabase openDatabase(java.lang.String path, com.couchbase.lite.internal.database.sqlite.SQLiteDatabase.CursorFactory factory, int flags, com.couchbase.lite.internal.database.DatabaseErrorHandler errorHandler) {
+    return com.couchbase.lite.internal.database.sqlite.SQLiteDatabase.openDatabase(path, factory, flags, errorHandler, null);
+}

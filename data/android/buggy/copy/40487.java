@@ -1,0 +1,4 @@
+@java.lang.Override
+public eu.europa.ec.markt.dss.signature.SignatureLevel[] getSignatureLevels() {
+    return new eu.europa.ec.markt.dss.signature.SignatureLevel[]{ eu.europa.ec.markt.dss.signature.SignatureLevel.CAdES_101733_A , eu.europa.ec.markt.dss.signature.SignatureLevel.CAdES_101733_XL , eu.europa.ec.markt.dss.signature.SignatureLevel.CAdES_101733_X , eu.europa.ec.markt.dss.signature.SignatureLevel.CAdES_101733_C , eu.europa.ec.markt.dss.signature.SignatureLevel.CMS_NOT_ETSI , eu.europa.ec.markt.dss.signature.SignatureLevel.CAdES_BASELINE_LTA , eu.europa.ec.markt.dss.signature.SignatureLevel.CAdES_BASELINE_LT , eu.europa.ec.markt.dss.signature.SignatureLevel.CAdES_BASELINE_T , eu.europa.ec.markt.dss.signature.SignatureLevel.CAdES_BASELINE_B };
+}

@@ -1,0 +1,1 @@
+protected native void nativeEqual(long nativeQueryPtr, long[] columnIndex, boolean value);

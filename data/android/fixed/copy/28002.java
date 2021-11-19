@@ -1,0 +1,1 @@
+protected abstract java.util.List<java.lang.String> getViews();

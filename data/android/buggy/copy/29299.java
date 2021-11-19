@@ -1,0 +1,1 @@
+protected native void nativeContains(long nativeQueryPtr, long[] columnIndices, java.lang.String value, boolean caseSensitive);

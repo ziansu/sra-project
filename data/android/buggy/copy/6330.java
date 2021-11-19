@@ -1,0 +1,1 @@
+private static native long _imaqSupervisedColorSegmentation(long session, long labelImage, long srcImage, long roi, long labelIn, int numLabelIn, int maxDistance, int minIdentificationScore, long segmentOptions);

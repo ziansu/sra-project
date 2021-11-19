@@ -1,0 +1,3 @@
+boolean isTransformSupported() {
+    return false;
+}

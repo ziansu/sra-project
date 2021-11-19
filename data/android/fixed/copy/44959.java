@@ -1,0 +1,4 @@
+void rankUp() {
+    ++(rank);
+    ++(totalVotes);
+}

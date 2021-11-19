@@ -1,0 +1,2 @@
+@org.springframework.data.jpa.repository.Query(value = "SELECT Object(t) FROM TableOfRestaurant t WHERE t.number = ?1 and t.restaurant.id=?2", nativeQuery = false)
+public com.example.domain.TableOfRestaurant getByNum(int num, java.lang.Long id);

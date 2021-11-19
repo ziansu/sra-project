@@ -1,0 +1,1 @@
+java.util.List<java.util.Map<java.lang.String, java.lang.Object>> getCollectionItem(java.lang.String gooruOid, java.lang.String sharing, java.lang.String type, java.lang.String collectionType, java.lang.Integer itemLimit, boolean fetchChildItem, java.lang.String orderBy, java.lang.String excludeType);

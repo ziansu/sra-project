@@ -1,0 +1,1 @@
+void delete(java.lang.String name);

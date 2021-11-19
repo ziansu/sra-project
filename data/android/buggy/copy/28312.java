@@ -1,0 +1,3 @@
+protected boolean hasError(com.github.scribejava.core.model.Response response) {
+    return response.isSuccessful();
+}

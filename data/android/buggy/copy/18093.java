@@ -1,0 +1,1 @@
+void onError(java.lang.String filename, java.lang.Throwable e);

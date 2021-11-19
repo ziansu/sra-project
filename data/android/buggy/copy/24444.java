@@ -1,0 +1,3 @@
+public java.util.Date getEndTime() {
+    return endTime;
+}

@@ -1,0 +1,1 @@
+java.lang.String submitEvent(java.lang.String title, java.lang.String desc, java.lang.String date, int parseInt, java.lang.String type);

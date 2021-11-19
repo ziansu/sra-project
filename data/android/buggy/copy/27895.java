@@ -1,0 +1,1 @@
+public abstract boolean shouldContinue(com.evolutionftc.autopilot.AutopilotSegment segment, double[] robotAttitude, double[] robotAcceleration, double[] robotVelocity, double[] robotPosition);

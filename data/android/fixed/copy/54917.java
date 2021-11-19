@@ -1,0 +1,1 @@
+public dw317.hotel.business.interfaces.Room getRoom();

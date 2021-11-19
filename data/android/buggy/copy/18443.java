@@ -1,0 +1,1 @@
+org.orcid.core.salesforce.model.MemberDetails retrieveDetails(java.lang.String memberId, java.lang.String consortiumLeadId);

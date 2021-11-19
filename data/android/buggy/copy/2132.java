@@ -1,0 +1,1 @@
+Abstract.Expression makeDefCall(com.jetbrains.jetpad.vclang.term.Abstract.Expression expr, com.jetbrains.jetpad.vclang.term.Abstract.ReferableSourceNode alias, com.jetbrains.jetpad.vclang.term.Abstract.Definition definition);

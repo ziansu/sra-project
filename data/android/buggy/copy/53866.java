@@ -1,0 +1,1 @@
+protected abstract void updateView(byte[] turnData);

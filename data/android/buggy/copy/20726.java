@@ -1,0 +1,2 @@
+public void validateContentlet(com.dotmarketing.portlets.contentlet.model.Contentlet contentlet, java.util.Map<com.dotmarketing.portlets.structure.model.Relationship, java.util.List<com.dotmarketing.portlets.contentlet.model.Contentlet>> contentRelationships, java.util.List<com.dotmarketing.portlets.categories.model.Category> cats) {
+}

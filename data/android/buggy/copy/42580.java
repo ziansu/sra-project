@@ -1,0 +1,1 @@
+private static native void _IMAQdxGrab(int id, long image, int waitForNextBuffer, long actualBufferNumber);

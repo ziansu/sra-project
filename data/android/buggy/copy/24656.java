@@ -1,0 +1,1 @@
+java.lang.String getDefaultCheckinDate(java.lang.String dateFormat);

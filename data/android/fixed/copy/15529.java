@@ -1,0 +1,1 @@
+java.util.Collection<V> remove(K key);

@@ -1,0 +1,1 @@
+private static native long _imaqGetMeterArc(int lightNeedle, int mode, long roi, long base, long start, long end);

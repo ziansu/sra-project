@@ -1,0 +1,3 @@
+boolean gameEnd() {
+    return deckEmpty;
+}

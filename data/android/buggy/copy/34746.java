@@ -1,0 +1,1 @@
+byte[] get(cachelibrary.model.Cachable cachable);

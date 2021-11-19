@@ -1,0 +1,1 @@
+boolean audioArrived(byte[] audioReceived);

@@ -1,0 +1,1 @@
+public java.util.Collection<eu.unitn.disi.db.grava.graphs.Edge> edgeSet();

@@ -1,0 +1,1 @@
+public java.util.List<E> findAll(java.lang.String orderBy, com.easylite.annotation.OrderByType orderByType, java.lang.String whereClause, java.lang.String... whereArgs) throws com.easylite.exception.EasyLiteSqlException;

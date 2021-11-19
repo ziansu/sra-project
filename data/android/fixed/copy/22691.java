@@ -1,0 +1,1 @@
+public java.io.OutputStream createOutputStream(java.lang.String path, boolean useCompression, java.lang.String codecName, boolean append) throws java.io.IOException;

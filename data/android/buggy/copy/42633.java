@@ -1,0 +1,2 @@
+public Location getLocation() {
+}

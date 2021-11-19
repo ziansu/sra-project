@@ -1,0 +1,1 @@
+void getBitmap(final java.lang.String path, final int width, final int height, final com.oneplus.camera.io.FileManager.PhotoCallback callback, final boolean isVertical, int position);

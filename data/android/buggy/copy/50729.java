@@ -1,0 +1,1 @@
+private static native int _imaqAddClosedContour(long roi, long points, int numPoints);

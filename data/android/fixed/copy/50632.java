@@ -1,0 +1,3 @@
+public static void main(java.lang.String[] args) throws java.lang.InterruptedException {
+    new org.springframework.boot.builder.SpringApplicationBuilder(org.springframework.cloud.netflix.feign.ribbon.FeignRibbonClientRetryTests.Application.class).properties("spring.application.name=feignclienttest", "localapp.ribbon.MaxAutoRetries=5", "localapp.ribbon.MaxAutoRetriesNextServer=5", "localapp.ribbon.OkToRetryOnAllOperations=true", "management.contextPath=/admin").run(args);
+}

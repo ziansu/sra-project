@@ -1,0 +1,4 @@
+@java.lang.Override
+public java.lang.String getCreateViewSQL() {
+    return "select wpid as _id, partnername, wpkenn, wpid, btag, sum(bestand) as bestand, " + (((((((("sum(bestandstfr) as bestandstfr, sum(einstand) as einstand, " + "sum(einstandstfr) as einstandstfr, btagkurs, lastkurs, ") + "sum(marktwert) as marktwert, sum(marktwertstfr) as marktwertstfr, ") + "sum(gewinn) as gewinn, sum(gewinn_stfr) as gewinn_stfr, ") + "(((sum(marktwert) - sum(einstand)) *10000 )/sum(einstand)) as gewinn_perc, ") + "(((sum(marktwertstfr) - sum(einstandstfr)) *10000 )/sum(einstandstfr)) ") + "as gewinn_perc_stfr from WPBestandView a ") + "where NOT ausgeblendet ") + "group by wpid");
+}

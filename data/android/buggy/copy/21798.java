@@ -1,0 +1,1 @@
+public abstract void remove(data.Karte karte);

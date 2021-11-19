@@ -1,0 +1,3 @@
+public static com.instructure.canvasapi.model.Attachment uploadUserFile(java.lang.String uploadUrl, java.util.LinkedHashMap<java.lang.String, java.lang.String> uploadParams, java.lang.String mimeType, java.io.File file) {
+    return buildUploadInterface(com.instructure.canvasapi.api.UserAPI.UsersInterface.class, uploadUrl).uploadUserFile(uploadParams, new retrofit.mime.TypedFile(mimeType, file));
+}

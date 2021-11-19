@@ -1,0 +1,1 @@
+public void removeColumn(java.lang.String columnFamily, java.lang.String rowKey, java.lang.String column) throws java.io.UnsupportedEncodingException, org.apache.cassandra.thrift.InvalidRequestException, org.apache.cassandra.thrift.TimedOutException, org.apache.cassandra.thrift.UnavailableException, org.apache.thrift.TException;

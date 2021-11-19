@@ -1,0 +1,1 @@
+public java.util.List<com.rootser.qcruncher.common.AppMsg<java.lang.String>> get10QTxtUrl(java.util.List<com.rootser.qcruncher.common.AppMsg<java.lang.String>> parentDocList);

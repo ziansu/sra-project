@@ -1,0 +1,3 @@
+double getWidth() {
+    return width;
+}

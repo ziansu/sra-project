@@ -1,0 +1,1 @@
+private static native void _imaqTruncate(long dest, long source, int highlow, float ratioToKeep);

@@ -1,0 +1,3 @@
+void cancelSendOverNetwork() {
+    networkServer.disconnect();
+}

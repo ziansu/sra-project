@@ -1,0 +1,1 @@
+public abstract void onLoadMore(boolean direction);

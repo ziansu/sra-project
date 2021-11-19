@@ -1,0 +1,1 @@
+void deleteItemVersion(org.amdocs.zusammen.datatypes.SessionContext context, org.amdocs.zusammen.datatypes.Space itemId, org.amdocs.zusammen.datatypes.Id versionId, org.amdocs.zusammen.datatypes.Id space);

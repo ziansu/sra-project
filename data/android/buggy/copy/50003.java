@@ -1,0 +1,1 @@
+public void virouDama(int i, int j);

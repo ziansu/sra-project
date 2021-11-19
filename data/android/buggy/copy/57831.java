@@ -1,0 +1,1 @@
+private static native void _imaqFillBorder(long image, int method);

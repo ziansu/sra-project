@@ -1,0 +1,1 @@
+public abstract void predict(com.yahoo.egads.data.TimeSeries.DataSequence sequence) throws java.lang.Exception;

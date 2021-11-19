@@ -1,0 +1,1 @@
+protected native void nativeEndGroup(long nativeQueryPtr);

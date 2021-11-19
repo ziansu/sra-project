@@ -1,0 +1,1 @@
+protected abstract int getPinnedContentView(int viewType);

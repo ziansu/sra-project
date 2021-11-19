@@ -1,0 +1,1 @@
+void requestNextPage(int currentPage);

@@ -1,0 +1,1 @@
+<R extends com.speedment.component.Component> R put(R item);

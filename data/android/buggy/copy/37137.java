@@ -1,0 +1,1 @@
+protected native void setBytesSockopt(int option, byte[] optval);

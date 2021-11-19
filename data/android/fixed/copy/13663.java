@@ -1,0 +1,3 @@
+double getZoomScaleX() {
+    return zoomScaleX;
+}

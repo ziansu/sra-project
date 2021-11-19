@@ -1,0 +1,2 @@
+public void joinRequest(java.lang.String ipAddress, int port, int clusterID, org.apache.thrift.async.AsyncMethodCallback<lk.filetributed.client.rpc.services.JoinNode.AsyncClient.joinRequest_call> resultHandler) throws org.apache.thrift.TException {
+}

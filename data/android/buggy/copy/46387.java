@@ -1,0 +1,1 @@
+void onEventWritten(com.vpedak.testsrecorder.core.events.RecordingEvent event);

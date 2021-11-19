@@ -1,0 +1,4 @@
+@org.springframework.transaction.annotation.Transactional(readOnly = true)
+public org.springframework.data.domain.Page<java.util.Map<java.lang.String, java.lang.Object>> findAll(br.com.maiscambio.model.repository.custom.CustomRepositorySelector<br.com.maiscambio.model.entity.Estabelecimento> customRepositorySelector, org.springframework.data.jpa.domain.Specification<br.com.maiscambio.model.entity.Estabelecimento> specification, org.springframework.data.domain.Pageable pageable) {
+    return estabelecimentoRepository.findAll(customRepositorySelector, org.springframework.data.jpa.domain.Specifications.where(specification), pageable);
+}

@@ -1,0 +1,1 @@
+void onDeleteClick(java.lang.String id);

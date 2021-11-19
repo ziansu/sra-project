@@ -1,0 +1,1 @@
+void positionRecieved(com.google.android.gms.maps.model.LatLng position, java.lang.String id, com.embedded.socialexercise.person.Person p);

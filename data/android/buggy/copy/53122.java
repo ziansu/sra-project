@@ -1,0 +1,1 @@
+void create(ID id, T object);

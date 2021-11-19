@@ -1,0 +1,1 @@
+private static native void _imaqRelabelClassifierSample(long session, int index, long newClass);

@@ -1,0 +1,1 @@
+java.util.List getAllCombinations(java.lang.Integer phoneNumber);

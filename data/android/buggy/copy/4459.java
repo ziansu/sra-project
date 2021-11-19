@@ -1,0 +1,1 @@
+java.lang.String decrypt(byte[] data) throws java.io.IOException;

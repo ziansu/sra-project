@@ -1,0 +1,1 @@
+public abstract void onLoadMore(int current_page);

@@ -1,0 +1,1 @@
+public boolean createUser(com.ibm.mcabuddy.beans.User user, com.ibm.mcabuddy.beans.RequestingUserCredentials requester) throws java.lang.Exception;

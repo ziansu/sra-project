@@ -1,0 +1,1 @@
+com.taotao.common.pojo.TaotaoResult deleteContentCategory(long id);

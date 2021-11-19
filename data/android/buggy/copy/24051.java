@@ -1,0 +1,1 @@
+public void onMovieSelected(int movieId, java.lang.String movieTitle);

@@ -1,0 +1,1 @@
+java.util.List<cn.edu.nju.software.entity.User> getUserListByPage(int offset, int limit);

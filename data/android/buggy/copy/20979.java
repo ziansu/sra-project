@@ -1,0 +1,1 @@
+public int getNumberOfEvents(java.util.ArrayList<java.lang.Integer> registration_id, int event_id);

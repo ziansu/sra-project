@@ -1,0 +1,2 @@
+public eu.unitn.disi.db.grava.graphs.BaseMultigraph merge(eu.unitn.disi.db.grava.graphs.BaseMultigraph graph) throws java.lang.NullPointerException, java.util.concurrent.ExecutionException {
+}

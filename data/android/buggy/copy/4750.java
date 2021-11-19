@@ -1,0 +1,8 @@
+public int indexOf(int elem) {
+    for (int i = 0; i < (mySize); i++) {
+        if (elem == (myData[i]))
+            return i;
+        
+    }
+    return -1;
+}

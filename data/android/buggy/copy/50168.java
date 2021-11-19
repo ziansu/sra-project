@@ -1,0 +1,1 @@
+<T> java.lang.Object getPayload(java.lang.Class<T> type);

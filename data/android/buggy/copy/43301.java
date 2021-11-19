@@ -1,0 +1,1 @@
+java.lang.Boolean isCommitDifferent(java.lang.String repository, java.lang.String owner, java.lang.String branch);

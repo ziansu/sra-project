@@ -1,0 +1,3 @@
+C getCircuitBreakerDisabledCommand(com.netflix.hystrix.HystrixCommandProperties.ExecutionIsolationStrategy isolationStrategy, com.netflix.hystrix.AbstractTestHystrixCommand.ExecutionResult executionResult) {
+    return getCommand(isolationStrategy, executionResult, 0, FallbackResult.UNIMPLEMENTED, 0, new com.netflix.hystrix.HystrixCircuitBreakerTest.TestCircuitBreaker(), null, 100, CacheEnabled.NO, "foo", 10, 10, true);
+}

@@ -1,0 +1,1 @@
+void createTopic(org.I0Itec.zkclient.ZkClient zookeeperClient, java.lang.String topic, int partitions, int replicationFactor, java.util.Properties props);

@@ -1,0 +1,1 @@
+private native long nativeInit(boolean lowMemDevice, int emptyColor, long nativeWindowAndroid, org.chromium.chrome.browser.compositor.LayerTitleCache layerTitleCache, org.chromium.chrome.browser.compositor.layouts.content.TabContentManager tabContentManager);

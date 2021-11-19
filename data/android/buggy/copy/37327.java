@@ -1,0 +1,1 @@
+public void createConfig(com.yermoon.entity.DbSrcEntity dataBase, java.lang.String table, java.lang.String path, java.lang.String packagePath) throws java.lang.Exception;

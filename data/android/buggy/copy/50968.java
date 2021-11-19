@@ -1,0 +1,1 @@
+abstract long refill(long limit, long available);

@@ -1,0 +1,1 @@
+rx.functions.Action1<java.lang.Throwable> deleteUnverifiedPrinter(long id);

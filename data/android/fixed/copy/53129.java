@@ -1,0 +1,2 @@
+void processPortUpdate(org.opendaylight.yang.gen.v1.urn.opendaylight.inventory.rev130819.node.NodeConnector oldPort, org.opendaylight.yang.gen.v1.urn.opendaylight.inventory.rev130819.node.NodeConnector update) {
+}

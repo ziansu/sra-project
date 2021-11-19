@@ -1,0 +1,1 @@
+int countUnread(java.lang.String echo);

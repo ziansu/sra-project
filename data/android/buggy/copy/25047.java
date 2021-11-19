@@ -1,0 +1,1 @@
+private static native void _imaqSetImageSize(long image, int width, int height);

@@ -1,0 +1,1 @@
+public abstract void doBusiness(android.content.Context mContext);

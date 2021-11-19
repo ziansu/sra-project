@@ -1,0 +1,3 @@
+public static io.github.agentwise.swarmview.trajectory.swarmmovements.decorators.VerticalCircleDecorator create(io.github.agentwise.swarmview.trajectory.control.FiniteTrajectory4d trajectory, double radius, double initialPhase, double frequency, io.github.agentwise.swarmview.trajectory.applications.trajectory.geom.point.Point4D shift) {
+    return new io.github.agentwise.swarmview.trajectory.swarmmovements.decorators.VerticalCircleDecorator(trajectory, radius, initialPhase, frequency, shift);
+}

@@ -1,0 +1,1 @@
+net.sf.jasperreports.engine.JasperPrint createJasperPrint(java.lang.String ids, java.lang.String reportTemplatePath);

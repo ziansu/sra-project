@@ -1,0 +1,1 @@
+public byte getBiome(int x, int z);

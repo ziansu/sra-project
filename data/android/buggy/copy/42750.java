@@ -1,0 +1,1 @@
+public java.util.Map<java.lang.String, java.lang.String> completeApplicationRegistration(java.lang.String userId, java.lang.String applicationName, java.lang.String tokenType, java.lang.String tokenScope, int applicationId) throws org.wso2.carbon.apimgt.api.APIManagementException;

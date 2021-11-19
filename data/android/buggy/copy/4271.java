@@ -1,0 +1,1 @@
+void addFile(java.io.RandomAccessFile file, int flags);

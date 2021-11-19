@@ -1,0 +1,1 @@
+private static native void _imaqSkeleton(long dest, long source, int method);

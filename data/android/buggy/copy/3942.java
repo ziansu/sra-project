@@ -1,0 +1,1 @@
+private static native void _IMAQdxOpenCamera(long name, int mode, long id);

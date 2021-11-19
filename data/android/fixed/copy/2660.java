@@ -1,0 +1,3 @@
+protected TangoSupport.TangoMatrixTransformData getCameraMatrixTransformAtTime(double timestamp) {
+    return com.projecttango.tangosupport.TangoSupport.getMatrixTransformAtTime(timestamp, TangoPoseData.COORDINATE_FRAME_AREA_DESCRIPTION, TangoPoseData.COORDINATE_FRAME_CAMERA_COLOR, TangoSupport.TANGO_SUPPORT_ENGINE_OPENGL, TangoSupport.TANGO_SUPPORT_ENGINE_OPENGL, 0);
+}

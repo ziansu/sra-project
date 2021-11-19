@@ -1,0 +1,3 @@
+public com.sebuilder.interpreter.TestRun createTestRun(com.sebuilder.interpreter.Script script, org.apache.commons.logging.Log log, com.sebuilder.interpreter.webdriverfactory.WebDriverFactory webDriverFactory, java.util.HashMap<java.lang.String, java.lang.String> webDriverConfig, java.util.Map<java.lang.String, java.lang.String> initialVars) {
+    return new com.sebuilder.interpreter.TestRun(script, log, webDriverFactory, webDriverConfig, implicitlyWaitDriverTimeout, pageLoadDriverTimeout, initialVars);
+}

@@ -1,0 +1,2 @@
+protected void fillOthers(org.bonitasoft.engine.session.APISession session) throws java.lang.Exception, org.bonitasoft.engine.exception.ServerAPIException, org.bonitasoft.engine.exception.UnknownAPITypeException {
+}

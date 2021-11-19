@@ -1,0 +1,1 @@
+com.dataloom.data.EntityKey getEntityKey(java.util.UUID entityKeyId);

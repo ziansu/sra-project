@@ -1,0 +1,1 @@
+public byte[] getAttestedFhirConsent(gov.samhsa.c2s.pcm.domain.Consent consent, gov.samhsa.c2s.pcm.infrastructure.dto.PatientDto patient);

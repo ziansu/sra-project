@@ -1,0 +1,1 @@
+void processVote(com.hhtv.eventqa.model.question.Result question, int pos, boolean up);

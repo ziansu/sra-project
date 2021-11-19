@@ -1,0 +1,1 @@
+void addFile(java.lang.String filename, int flags);

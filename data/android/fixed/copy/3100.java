@@ -1,0 +1,1 @@
+void onMessage(java.lang.String message);

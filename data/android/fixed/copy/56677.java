@@ -1,0 +1,1 @@
+public void ProcessStream(java.io.InputStream stream, java.net.URL url);

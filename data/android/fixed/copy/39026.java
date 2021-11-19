@@ -1,0 +1,1 @@
+void onError(java.lang.Integer errorCode, java.lang.String description);

@@ -1,0 +1,1 @@
+void send(java.util.Map<java.lang.String, java.lang.String> o) throws javax.jms.JMSException;

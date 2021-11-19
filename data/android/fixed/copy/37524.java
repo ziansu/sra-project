@@ -1,0 +1,4 @@
+@java.lang.Override
+public void asProductions(org.rascalmpl.value.IValueFactory vf, org.rascalmpl.value.type.TypeStore store, org.rascalmpl.value.ISetWriter grammar, java.util.Set<org.rascalmpl.value.IConstructor> done) {
+    arg.asProductions(vf, store, grammar, done);
+}

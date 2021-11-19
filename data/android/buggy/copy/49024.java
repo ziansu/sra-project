@@ -1,0 +1,1 @@
+void getRemoteDataListWithRx(io.reactivex.functions.Consumer<io.reactivex.disposables.Disposable> preLoadingCallback, io.reactivex.SingleObserver<java.util.List<T>> singleObserver);

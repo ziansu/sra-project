@@ -1,0 +1,3 @@
+private org.gbif.validation.evaluator.record.OccurrenceInterpretationEvaluator createInterpreter(org.gbif.dwc.terms.Term[] columnMapping) {
+    return new org.gbif.validation.evaluator.record.OccurrenceInterpretationEvaluator(org.mockito.Mockito.mock(org.gbif.occurrence.processor.interpreting.OccurrenceInterpreter.class), org.gbif.dwc.terms.DwcTerm.Occurrence, columnMapping, org.gbif.validation.evaluator.record.OccurrenceInterpretationEvaluatorTest.DEFAULT_VALUES);
+}

@@ -1,0 +1,1 @@
+public <T extends gr.cite.femme.core.Element> java.util.List<T> find(java.util.List<T> elementIds, java.lang.String xPath) throws gr.cite.femme.datastore.exceptions.MetadataStoreException;

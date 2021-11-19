@@ -1,0 +1,1 @@
+<T> com.sun.enterprise.container.common.spi.JCDIService.JCDIInjectionContext<T> createJCDIInjectionContext(com.sun.enterprise.deployment.EjbDescriptor ejbDesc, java.util.Map<java.lang.Class, java.lang.Object> ejbInfo);

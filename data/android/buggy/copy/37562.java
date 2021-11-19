@@ -1,0 +1,1 @@
+private static native void _imaqSetColorClassifierOptions(long session, long options);

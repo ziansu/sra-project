@@ -1,0 +1,3 @@
+getSupportCourseIds() {
+    return supportCourseIds;
+}

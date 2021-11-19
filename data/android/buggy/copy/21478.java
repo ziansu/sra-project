@@ -1,0 +1,3 @@
+private org.json.JSONObject processChildren(final java.lang.Iterable<org.opendaylight.yangtools.yang.model.api.DataSchemaNode> nodes, final org.opendaylight.yangtools.yang.common.QName parentQName, final java.lang.String moduleName, final org.json.JSONObject models, final org.opendaylight.yangtools.yang.model.api.SchemaContext schemaContext) throws java.io.IOException, org.json.JSONException {
+    return processChildren(nodes, parentQName, moduleName, models, true, schemaContext);
+}

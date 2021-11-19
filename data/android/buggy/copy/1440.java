@@ -1,0 +1,1 @@
+void setFromCache(boolean fc);

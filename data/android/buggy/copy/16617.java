@@ -1,0 +1,1 @@
+void startVector(android.content.Context mContext, java.lang.String mimetype, java.lang.String vectorData, java.lang.String vectorName);

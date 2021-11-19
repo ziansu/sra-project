@@ -1,0 +1,1 @@
+public abstract com.nrs.nsnik.notes.model.objects.CheckListObject build();

@@ -1,0 +1,1 @@
+public abstract void data(int target, java.nio.ShortBuffer data, int usage);

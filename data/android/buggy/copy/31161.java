@@ -1,0 +1,3 @@
+public static javax.money.convert.ExchangeRateProvider getExchangeRateProvider(javax.money.convert.ConversionQuery conversionQuery) {
+    return java.util.Optional.ofNullable(javax.money.convert.MonetaryConversions.getMonetaryConversionsSpi()).orElseThrow(() -> new javax.money.MonetaryException("No MonetaryConversionsSingletonSpi loaded, query functionality is not available.")).getExchangeRateProvider(conversionQuery);
+}

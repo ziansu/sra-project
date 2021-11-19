@@ -1,0 +1,1 @@
+private native void setOutputResolution(java.lang.Object outputFrame, int outWidth, int outHeight);

@@ -1,0 +1,4 @@
+@java.lang.Override
+public boolean equals(java.lang.Object other) {
+    return other.toString().equals(this.toString());
+}

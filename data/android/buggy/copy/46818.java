@@ -1,0 +1,1 @@
+int lsl_resolve_byprop(com.sun.jna.Pointer[] buffer, long buffer_elements, java.lang.String prop, java.lang.String value, int minimum, double wait_time);

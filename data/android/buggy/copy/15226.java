@@ -1,0 +1,1 @@
+private native void render(long objPtr, int drawOffset);

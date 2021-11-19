@@ -1,0 +1,1 @@
+org.springframework.social.instagram.api.PagedMediaList getRecentMedia(long userId, long maxId, long minId, long minTimestamp, long maxTimestamp);

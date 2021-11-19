@@ -1,0 +1,1 @@
+public abstract org.apache.lucene.util.LongBitSet acceptedGlobalOrdinals(org.apache.lucene.index.RandomAccessOrds globalOrdinals, org.elasticsearch.search.aggregations.support.ValuesSource.Bytes.WithOrdinals valueSource) throws java.io.IOException;

@@ -1,0 +1,7 @@
+@java.lang.Override
+public void windowClosing(java.awt.event.WindowEvent event) {
+    gov.ornl.eden.EDEN.log.debug("windowCLosing called");
+    if ((gov.ornl.eden.GUIContext.getInstance().getProperties()) != null) {
+        gov.ornl.eden.GUIContext.getInstance().getProperties().save();
+    }
+}

@@ -1,0 +1,1 @@
+public void getTransportInfo(java.lang.String applyDocCode, org.apache.thrift.async.AsyncMethodCallback resultHandler) throws org.apache.thrift.TException;

@@ -1,0 +1,1 @@
+protected abstract double findHeuristics(WorldState current);

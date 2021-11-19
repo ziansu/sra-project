@@ -1,0 +1,2 @@
+public void copyContentlet(com.dotmarketing.portlets.contentlet.model.Contentlet currentContentlet, com.dotmarketing.beans.Host host, com.liferay.portal.model.User user, boolean respectFrontendRoles, com.dotmarketing.portlets.contentlet.model.Contentlet returnValue) {
+}

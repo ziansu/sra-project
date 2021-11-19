@@ -1,0 +1,1 @@
+public ardoq.auth.ICustomAuthentication.ArdoqUser authenticate(java.lang.String providerURL, java.lang.String username, java.lang.String password);

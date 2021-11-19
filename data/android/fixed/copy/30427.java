@@ -1,0 +1,2 @@
+@org.springframework.data.jpa.repository.Query(value = "from Watertiming w where w.device_id = ?1 and w.tmplow <= ?2 and  w.tmphigh >= ?2")
+java.util.List findBytmp(java.lang.Long id, java.math.BigDecimal v);

@@ -1,0 +1,1 @@
+private static native long _imaqMatchColorPattern(long image, long pattern, long options, long searchRect, long numMatches);

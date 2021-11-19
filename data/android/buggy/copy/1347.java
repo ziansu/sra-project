@@ -1,0 +1,3 @@
+public static double calcFitness(jobshop.algorithm.metaheuristic.Particle pt) throws java.io.FileNotFoundException {
+    return 1.0 / (jobshop.calctime.Scheduler.calcTime(jobshop.algorithm.metaheuristic.FitnessCalc.mchCnt, jobshop.algorithm.metaheuristic.FitnessCalc.jobCnt, jobshop.algorithm.metaheuristic.FitnessCalc.stepCnt, jobshop.algorithm.metaheuristic.FitnessCalc.testcase_pcd, jobshop.algorithm.metaheuristic.FitnessCalc.testcase_time, pt));
+}

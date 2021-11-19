@@ -1,0 +1,1 @@
+public java.util.List<rfid.service.rfid.service.transportInfo> getTransportInfo(java.lang.String applyDocCode) throws org.apache.thrift.TException;

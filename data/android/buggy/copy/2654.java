@@ -1,0 +1,3 @@
+protected void writeFieldConflictResolution(com.sforce.soap.partner.wsc.XmlOutputStream __out, com.sforce.soap.partner.wsc.TypeMapper __typeMapper) throws java.io.IOException {
+    __typeMapper.writeObject(__out, getTypeInfo("conflictResolution", "urn:partner.soap.sforce.com", "conflictResolution", "urn:partner.soap.sforce.com", "EmailSyncConflictResolution", 1, 1, true), conflictResolution, conflictResolution__is_set);
+}

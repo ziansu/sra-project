@@ -1,0 +1,1 @@
+void scrollLoadingSuccess(java.lang.String msg, int type);

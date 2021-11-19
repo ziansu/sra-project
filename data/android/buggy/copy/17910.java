@@ -1,0 +1,1 @@
+java.util.List<com.psk.pms.model.DescItemDetail.ItemDetail> getBaseItemNames(java.util.Map<java.lang.String, java.lang.Object> request, java.lang.String itemType);

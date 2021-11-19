@@ -1,0 +1,1 @@
+private native void nativeGreaterEqual(long nativeQueryPtr, long[] columnIndex, float value);

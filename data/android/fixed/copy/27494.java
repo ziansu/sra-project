@@ -1,0 +1,3 @@
+public static java.lang.String and(java.lang.String operand1, java.lang.String operand2) {
+    return (operand1.equals(TechServices.BooleanOperationExecutor.BooleanOperationExecutor.TRUE)) && (operand2.equals(TechServices.BooleanOperationExecutor.BooleanOperationExecutor.TRUE)) ? TechServices.BooleanOperationExecutor.BooleanOperationExecutor.TRUE : TechServices.BooleanOperationExecutor.BooleanOperationExecutor.FALSE;
+}

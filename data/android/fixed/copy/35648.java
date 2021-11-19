@@ -1,0 +1,1 @@
+protected abstract int getLocation(org.elasql.sql.RecordKey key);

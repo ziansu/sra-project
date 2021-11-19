@@ -1,0 +1,2 @@
+@com.github.rodionmoiseev.c10n.annotations.En(value = "Storing data record from emitter {0} into table {1}...")
+public java.lang.String storingRecord(java.lang.String emitterName, java.lang.String tableName);

@@ -1,0 +1,4 @@
+@java.lang.Override
+public void callback(java.lang.String url, android.widget.ImageView iv, android.graphics.Bitmap bm, com.androidquery.callback.AjaxStatus status) {
+    aq.id(iv).image(com.florianmski.tracktoid.Utils.shadowBitmap(com.florianmski.tracktoid.Utils.borderBitmap(bm, context))).animate(android.R.anim.fade_in);
+}

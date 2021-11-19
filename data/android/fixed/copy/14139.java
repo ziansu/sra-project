@@ -1,0 +1,1 @@
+private native boolean nativeStartRtcEventLog(int file_descriptor, int max_size_bytes);

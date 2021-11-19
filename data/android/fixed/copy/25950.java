@@ -1,0 +1,1 @@
+void onClick(int rowIndex, com.example.android.mastermind.LineOfCirclesViewHolder viewHolder);

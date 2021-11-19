@@ -1,0 +1,3 @@
+private static org.opendaylight.yang.gen.v1.urn.opendaylight.action.types.rev131112.action.Action setVlanId(int vlanId) {
+    return new org.opendaylight.yang.gen.v1.urn.opendaylight.action.types.rev131112.action.action.SetVlanIdActionCaseBuilder().setSetVlanIdAction(new org.opendaylight.yang.gen.v1.urn.opendaylight.action.types.rev131112.action.action.set.vlan.id.action._case.SetVlanIdActionBuilder().setVlanId(new org.opendaylight.yang.gen.v1.urn.opendaylight.l2.types.rev130827.VlanId(vlanId)).build()).build();
+}

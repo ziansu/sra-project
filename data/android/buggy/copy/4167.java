@@ -1,0 +1,1 @@
+private static native long _imaqExtractContour(long image, long roi, int direction, long curveParams, long connectionConstraintParams, int numOfConstraints, int selection, long contourImage);

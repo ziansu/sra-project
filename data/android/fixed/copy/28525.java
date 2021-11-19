@@ -1,0 +1,1 @@
+void initialize(final de.tesis.dynaware.grapheditor.model.GModel model);
