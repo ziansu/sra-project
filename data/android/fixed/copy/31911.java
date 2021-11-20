@@ -1,1 +1,0 @@
-void removeParticipant(int groupId, int participant) throws com.workfront.intern.cb.common.custom.exception.FailedOperationException, com.workfront.intern.cb.common.custom.exception.ObjectNotFoundException;

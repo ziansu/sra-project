@@ -1,1 +1,0 @@
-public I newInt(java.lang.String constant);

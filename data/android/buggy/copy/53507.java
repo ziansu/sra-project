@@ -1,3 +1,0 @@
-public com.alibaba.dubbo.remoting.exchange.ExchangeClient connect(com.alibaba.dubbo.common.URL url, com.alibaba.dubbo.remoting.exchange.ExchangeHandler handler) throws com.alibaba.dubbo.remoting.RemotingException {
-    return new com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeClient(com.alibaba.dubbo.remoting.Transporters.connect(url, new com.alibaba.dubbo.remoting.transport.DecodeHandler(new com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler(handler))));
-}

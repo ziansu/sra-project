@@ -1,3 +1,0 @@
-protected com.ait.lienzo.client.core.shape.wires.picker.ColorMapBackedPicker makeColorMapBackedPicker(com.ait.tooling.nativetools.client.collection.NFastArrayList<com.ait.lienzo.client.core.shape.wires.WiresShape> children, com.ait.lienzo.client.core.util.ScratchPad scratchPad, com.ait.lienzo.client.core.shape.wires.WiresShape shape, boolean isDockingAllowed, int hotSpotSize) {
-    return new com.ait.lienzo.client.core.shape.wires.picker.ColorMapBackedPicker(children, scratchPad, shape, isDockingAllowed, hotSpotSize);
-}

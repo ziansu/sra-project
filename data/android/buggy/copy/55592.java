@@ -1,1 +1,0 @@
-public fr.univbrest.dosi.bean.Formation updateFormation(java.lang.String codeFormation, fr.univbrest.dosi.bean.Formation formation);

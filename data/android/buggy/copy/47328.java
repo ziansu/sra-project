@@ -1,1 +1,0 @@
-private native void deleteNativeInstance(long objPtr);

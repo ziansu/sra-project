@@ -1,1 +1,0 @@
-public void initServer(int i, int j) throws java.lang.Exception;

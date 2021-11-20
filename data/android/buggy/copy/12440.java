@@ -1,1 +1,0 @@
-public java.util.List<com.silverpeas.formsonline.model.FormDetail> getForms(java.util.List<java.lang.String> formIds) throws com.silverpeas.formsonline.model.FormsOnlineDatabaseException;

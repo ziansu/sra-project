@@ -1,1 +1,0 @@
-public abstract java.util.List<java.lang.Integer> getHeaderIndexes();

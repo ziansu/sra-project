@@ -1,1 +1,0 @@
-boolean isCellEditable(int column);

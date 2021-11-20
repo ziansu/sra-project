@@ -1,1 +1,0 @@
-boolean histo(java.lang.String type, java.lang.String value);

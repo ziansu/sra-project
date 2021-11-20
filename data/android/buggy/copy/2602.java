@@ -1,1 +1,0 @@
-private static native void _imaqExtractComplexPlane(long dest, long source, int plane);

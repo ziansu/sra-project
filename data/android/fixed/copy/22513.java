@@ -1,1 +1,0 @@
-public java.lang.String insert(gr.cite.femme.core.Metadatum metadatum) throws gr.cite.femme.datastore.exceptions.MetadataStoreException;

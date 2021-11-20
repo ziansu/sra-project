@@ -1,1 +1,0 @@
-public java.util.List<net.hunnor.dict.model.Autocomplete> suggest(java.lang.String term, int max) throws net.hunnor.dict.model.SearchException;

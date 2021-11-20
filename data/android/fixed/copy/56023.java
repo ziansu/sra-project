@@ -1,1 +1,0 @@
-public int realReadChars() throws java.io.IOException;

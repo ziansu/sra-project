@@ -1,1 +1,0 @@
-public void setSocket(se.de.hu_berlin.informatik.utils.processors.sockets.ProcessorSocket<A, B> socket);

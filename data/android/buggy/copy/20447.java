@@ -1,1 +1,0 @@
-public void saveAndCalcuteQYByRealTimeWeather(java.lang.String areaId) throws net.yanrc.app.common.exception.ServiceInvokerException;

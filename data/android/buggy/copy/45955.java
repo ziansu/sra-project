@@ -1,1 +1,0 @@
-public org.alfresco.service.cmr.repository.NodeRef createParty(java.lang.String caseId, java.lang.String role, java.util.List<java.lang.String> contacts);

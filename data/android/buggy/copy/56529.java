@@ -1,8 +1,0 @@
-public void deduct() {
-    if ((inventory) > 0)
-        (inventory)--;
-    
-    if (infinite)
-        refill();
-    
-}

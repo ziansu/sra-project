@@ -1,1 +1,0 @@
-private native void sendTracking(int id);

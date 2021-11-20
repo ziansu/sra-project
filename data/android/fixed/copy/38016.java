@@ -1,1 +1,0 @@
-public native void encode(byte[] inputArray, int size);

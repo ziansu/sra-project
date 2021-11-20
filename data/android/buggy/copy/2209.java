@@ -1,4 +1,0 @@
-void resetToDocumentSize(boolean documentChangedWithoutNotification) {
-    checkDisposed();
-    invalidateLines(0, ((myLines.size()) - 1), ((myDocument.getLineCount()) - 1), (!documentChangedWithoutNotification));
-}

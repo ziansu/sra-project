@@ -1,1 +1,0 @@
-public java.lang.String GetNoteText(java.lang.String id);

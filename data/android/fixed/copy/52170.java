@@ -1,1 +1,0 @@
-private native void end(long handle, int end);

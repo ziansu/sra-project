@@ -1,1 +1,0 @@
-void onClick(android.view.View view, long position);

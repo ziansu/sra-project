@@ -1,1 +1,0 @@
-public boolean handle(io.pingpang.simpleexchangeproxyserver.ExchangeSession session, io.pingpang.simpleexchangeproxyserver.ExchangeRequestObject requestObject) throws mx4j.tools.adaptor.http.HttpException;

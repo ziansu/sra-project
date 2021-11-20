@@ -1,3 +1,0 @@
-public static com.github.playerforcehd.gcaptchavalidator.captchaverification.CaptchaValidationRequest createRequest(com.github.playerforcehd.gcaptchavalidator.captchaconfiguration.CaptchaValidationConfiguration captchaValidationConfiguration) {
-    return new com.github.playerforcehd.gcaptchavalidator.captchaverification.CaptchaValidationRequest(captchaValidationConfiguration, (captchaValidationConfiguration == null ? com.github.playerforcehd.gcaptchavalidator.GCaptchaValidator.REQUEST_POOL : captchaValidationConfiguration.getExecutorService()));
-}

@@ -1,1 +1,0 @@
-public native void ModPlug_LogOutput(boolean flag);

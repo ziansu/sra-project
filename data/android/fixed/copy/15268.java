@@ -1,3 +1,0 @@
-protected org.apache.cassandra.db.columniterator.Reader createReader(org.apache.cassandra.db.columniterator.RowIndexEntry indexEntry, org.apache.cassandra.io.util.FileDataInput file, boolean shouldCloseFile) {
-    return indexEntry.isIndexed() ? new org.apache.cassandra.db.columniterator.SSTableIterator.ForwardIndexedReader(indexEntry, file, shouldCloseFile) : new org.apache.cassandra.db.columniterator.SSTableIterator.ForwardReader(file, shouldCloseFile);
-}

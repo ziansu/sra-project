@@ -1,1 +1,0 @@
-public abstract void convert(com.alphabet.alphabetsdklib.uitls.ViewHolder viewHolder, T t);

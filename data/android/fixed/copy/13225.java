@@ -1,1 +1,0 @@
-public boolean isHostStarred(int id);

@@ -1,1 +1,0 @@
-protected abstract java.lang.String getModelName();

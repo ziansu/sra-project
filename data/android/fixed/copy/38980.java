@@ -1,3 +1,0 @@
-long getTime() {
-    return mCurrentTime;
-}

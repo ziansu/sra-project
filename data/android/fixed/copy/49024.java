@@ -1,1 +1,0 @@
-void getRemoteDataListWithRx(io.reactivex.SingleObserver<java.util.List<T>> singleObserver);

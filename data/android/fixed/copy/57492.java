@@ -1,7 +1,0 @@
-@java.lang.Override
-public void onFocusChange(android.view.View view, boolean b) {
-    if (!(prevFocus.bool)) {
-        showTagsDialog();
-    }
-    prevFocus.bool = b;
-}

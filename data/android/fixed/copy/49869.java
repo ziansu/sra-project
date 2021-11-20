@@ -1,1 +1,0 @@
-public void onNewProfileFragmentInteraction(net.tscloud.hivenotes.db.Profile profile);

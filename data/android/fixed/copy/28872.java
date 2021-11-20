@@ -1,1 +1,0 @@
-public abstract void deleteRun(final java.lang.Long run_id);

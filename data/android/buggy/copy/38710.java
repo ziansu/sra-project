@@ -1,2 +1,0 @@
-@org.springframework.transaction.annotation.Transactional
-org.openmrs.module.muzimabiometrics.model.PatientFingerPrintModel addFingerprintToPatient(java.lang.String patientUUID, byte[] firstFingerImage, byte[] secondeFingerImage, byte[] thirdFingerImage, java.lang.Boolean fingerprintAlreadyExist) throws org.json.JSONException;

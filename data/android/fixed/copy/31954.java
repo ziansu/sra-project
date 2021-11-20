@@ -1,3 +1,0 @@
-public static edu.umass.cs.gnsserver.gnsapp.packet.InternalCommandPacket fieldUpdate(java.lang.String targetGUID, java.lang.String field, org.json.JSONObject value, edu.umass.cs.gnsserver.interfaces.InternalRequestHeader header) throws edu.umass.cs.gnscommon.exceptions.server.InternalRequestException, org.json.JSONException {
-    return edu.umass.cs.gnsserver.gnsapp.GNSCommandInternal.getCommand(CommandType.ReplaceUserJSONUnsigned, header, GNSCommandProtocol.GUID, targetGUID, GNSCommandProtocol.USER_JSON, value);
-}

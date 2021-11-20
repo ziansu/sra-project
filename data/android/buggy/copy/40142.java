@@ -1,4 +1,0 @@
-public static void main(java.lang.String[] args) {
-    java.lang.String testEng = "Unity uses <span class=\"doc-keyword\">Animation Layers</span> for managing complex state machines for different body parts. An example of this is if you have a lower-body layer for walking-jumping, and an upper-body layer for throwing objects / shooting.";
-    java.lang.String testEsp = "Unity usa <span class=\"doc-keyword\">Animation Layers</span> para manejar state machines complejos para differente partes del cuerpo. Un ejemplo de esto es si se tiene una capa inferior de cuerpo para caminar-saltar, y una capa superior de cuerpo para tirar objetos / disparar.";
-}

@@ -1,3 +1,0 @@
-public static org.usfirst.frc.team2339.Barracuda.components.SwerveSteeringPidController newSwerveSteeringController(int steeringEncoderChannelA, int steeringEncoderChannelB, int steeringMotorControllerPwm) {
-    return new org.usfirst.frc.team2339.Barracuda.components.SwerveSteeringPidController(org.usfirst.frc.team2339.Barracuda.RobotMap.Constants.STEERING_PID_P, org.usfirst.frc.team2339.Barracuda.RobotMap.Constants.STEERING_PID_I, org.usfirst.frc.team2339.Barracuda.RobotMap.Constants.STEERING_PID_D, new org.usfirst.frc.team2339.Barracuda.components.SwerveSteeringEncoder(steeringEncoderChannelA, steeringEncoderChannelB, org.usfirst.frc.team2339.Barracuda.RobotMap.Constants.STEERING_ENC_DEGREES_PER_PULSE), new edu.wpi.first.wpilibj.Talon(steeringMotorControllerPwm));
-}

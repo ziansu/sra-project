@@ -1,1 +1,0 @@
-void modifyFile(java.lang.String filename, int flags, java.lang.Object data);

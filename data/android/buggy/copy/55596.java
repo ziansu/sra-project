@@ -1,1 +1,0 @@
-public lk.filetributed.client.rpc.services.messageProtocol mergeFileTable(java.lang.String ipAddress, int port, int clusterID, java.lang.String fileTableEntries) throws org.apache.thrift.TException;

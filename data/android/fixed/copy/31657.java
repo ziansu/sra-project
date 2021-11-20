@@ -1,1 +1,0 @@
-void put(java.lang.String file, byte[] value) throws java.io.IOException;

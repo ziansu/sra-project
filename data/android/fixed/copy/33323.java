@@ -1,1 +1,0 @@
-public java.util.List<com.imis.domain.entities.Application> getPositionStatusList() throws java.lang.Exception;

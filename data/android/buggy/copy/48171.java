@@ -1,1 +1,0 @@
-private static native long _imaqEdgeTool3(long image, long roi, int processType, long edgeOptions);

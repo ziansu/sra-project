@@ -1,1 +1,0 @@
-protected abstract com.ning.billing.catalog.rules.Case<T> setProduct(com.ning.billing.catalog.DefaultProduct product);

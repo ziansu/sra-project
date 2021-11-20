@@ -1,3 +1,0 @@
-public static controllers.Result registrieren() {
-    return ok(registrieren.render("Got it"));
-}

@@ -1,1 +1,0 @@
-boolean topicExists(org.I0Itec.zkclient.ZkClient zookeeperClient, java.lang.String topic) throws java.lang.Exception;

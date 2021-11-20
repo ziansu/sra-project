@@ -1,1 +1,0 @@
-private static native void _imaqMulDiv(long dest, long sourceA, long sourceB, float value);

@@ -1,5 +1,0 @@
-@java.lang.Override
-public void onResume() {
-    super.onResume();
-    lockQuestionIfRequired(POSITION, CATEGORY, isUIVisibleToUser, mCallback);
-}

@@ -1,3 +1,0 @@
-protected void init() {
-    registerEntities();
-}

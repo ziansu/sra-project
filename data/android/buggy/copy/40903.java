@@ -1,3 +1,0 @@
-private com.app.game.quizee.TriviaApi getTriviaApi() {
-    return isPracticeMode ? new com.app.game.quizee.TriviaApi(java.util.Collections.singletonList(com.app.game.quizee.backend.Category.any()), com.app.game.quizee.QuestionActivity.QUESTIONS_NUMBER, true) : new com.app.game.quizee.TriviaApi(getCurrentPlayer().getCategoriesSelected(), com.app.game.quizee.QuestionActivity.QUESTIONS_NUMBER, false);
-}

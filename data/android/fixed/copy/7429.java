@@ -1,3 +1,0 @@
-private void incTempCounter() {
-    (tempCounter)++;
-}

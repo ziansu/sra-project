@@ -1,1 +1,0 @@
-boolean next(nulp.pist21.blackjack.model.actions.GameAction action);

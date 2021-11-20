@@ -1,1 +1,0 @@
-protected native long createRenderer(long parent, android.view.Surface surface);

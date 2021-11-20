@@ -1,1 +1,0 @@
-private static native long _imaqCreateROI();

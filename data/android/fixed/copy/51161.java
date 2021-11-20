@@ -1,1 +1,0 @@
-protected abstract void largeListGet(com.aerospike.client.Key key, int count) throws com.aerospike.client.AerospikeException;

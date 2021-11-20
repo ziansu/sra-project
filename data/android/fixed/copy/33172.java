@@ -1,3 +1,0 @@
-public static edu.umass.cs.gnsserver.gnsapp.clientCommandProcessor.commandSupport.GuidInfo lookupGuidInfoLocally(edu.umass.cs.gnsserver.interfaces.InternalRequestHeader header, java.lang.String guid, edu.umass.cs.gnsserver.gnsapp.clientCommandProcessor.ClientRequestHandlerInterface handler) {
-    return edu.umass.cs.gnsserver.gnsapp.clientCommandProcessor.commandSupport.AccountAccess.lookupGuidInfo(header, guid, handler, false, true);
-}

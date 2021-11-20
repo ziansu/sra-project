@@ -1,1 +1,0 @@
-protected abstract void onMoved(int height, int offset);

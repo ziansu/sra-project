@@ -1,1 +1,0 @@
-java.util.List<com.modelingbrain.home.model.Model> update(android.content.Context context, android.database.sqlite.SQLiteDatabase db);

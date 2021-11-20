@@ -1,6 +1,0 @@
-public com.orctom.pipeline.Pipeline withApplicationName(java.lang.String applicationName) {
-    validateName(applicationName);
-    this.applicationName = applicationName;
-    com.orctom.rmq.RMQOptions.getInstance().setId(applicationName);
-    return this;
-}

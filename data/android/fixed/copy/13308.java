@@ -1,1 +1,0 @@
-public abstract com.applitools.eyes.EyesScreenshot getSubScreenshot(com.applitools.eyes.Region region, boolean throwIfClipped);

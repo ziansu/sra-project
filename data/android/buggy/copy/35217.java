@@ -1,1 +1,0 @@
-<T> T getAttribute(java.lang.String name);

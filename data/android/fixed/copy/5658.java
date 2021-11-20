@@ -1,1 +1,0 @@
-public abstract Collection.Iterator<E> iterator();

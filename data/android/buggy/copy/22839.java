@@ -1,1 +1,0 @@
-public void onItemClick(android.widget.ImageView ivIcon, com.codepath.spiderman.mooddiary.models.ActivityModel activity, boolean isSelected);

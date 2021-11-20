@@ -1,2 +1,0 @@
-@org.springframework.data.jpa.repository.Query(value = "select u from User u where first_name LIKE ? or last_name LIKE ?")
-public java.util.List<ba.actis.models.User> findByName(java.lang.String name, java.lang.String lastName);

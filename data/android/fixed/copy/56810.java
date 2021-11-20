@@ -1,1 +1,0 @@
-void removeAllNotifications() throws org.bedework.calfacade.exc.CalFacadeException;

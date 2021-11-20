@@ -1,3 +1,0 @@
-void close() {
-    this.removeAllClusterNodes();
-}

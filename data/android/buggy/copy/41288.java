@@ -1,1 +1,0 @@
-java.util.List<io.github.spengergasse.ViennaRuns.domain.User> findByNameLike(java.sql.Connection con, java.lang.String like);

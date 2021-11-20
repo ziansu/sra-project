@@ -1,3 +1,0 @@
-public me.gnat008.perworldinventory.groups.Group getGroup(java.lang.String group) {
-    return this.groups.containsKey(group) ? this.groups.get(group) : null;
-}

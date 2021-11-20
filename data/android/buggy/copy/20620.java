@@ -1,1 +1,0 @@
-java.util.List<dk.statsbiblioteket.doms.updatetracker.improved.database.Entry> lookup(java.util.Date since, java.lang.String viewAngle, int offset, int limit, boolean newestFirst);

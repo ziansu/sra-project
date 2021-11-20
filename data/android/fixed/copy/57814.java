@@ -1,1 +1,0 @@
-private native void initNVG(int width, int height, float density);

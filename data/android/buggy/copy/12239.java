@@ -1,1 +1,0 @@
-public abstract void refreshPath(plugins.nchenouard.pathtracing.PathEvent pathEvent, plugins.nchenouard.pathtracing.InteractiveMultipleDjikstraTracingESC interactiveMultipleDjikstraTracingESC, double[][] path);

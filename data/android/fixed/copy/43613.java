@@ -1,2 +1,0 @@
-@com.emc.storageos.svcs.errorhandling.annotations.DeclareServiceCode(value = com.emc.storageos.svcs.errorhandling.resources.ServiceCode.SECURITY_ERROR)
-com.emc.storageos.security.exceptions.FatalSecurityException failToChangeIPsecState(java.lang.String state);

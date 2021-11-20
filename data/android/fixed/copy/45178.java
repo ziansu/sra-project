@@ -1,3 +1,0 @@
-protected void onClick() {
-    onClose();
-}

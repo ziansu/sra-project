@@ -1,1 +1,0 @@
-private native void render(int drawOffset);

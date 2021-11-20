@@ -1,3 +1,0 @@
-public static org.opendaylight.yang.gen.v1.urn.opendaylight.action.types.rev131112.action.Action popVlanAction() {
-    return new org.opendaylight.yang.gen.v1.urn.opendaylight.action.types.rev131112.action.action.PopVlanActionCaseBuilder().setPopVlanAction(new org.opendaylight.yang.gen.v1.urn.opendaylight.action.types.rev131112.action.action.pop.vlan.action._case.PopVlanActionBuilder().build()).build();
-}

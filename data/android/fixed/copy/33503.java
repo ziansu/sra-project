@@ -1,1 +1,0 @@
-public static native byte[] encode(byte[] data);

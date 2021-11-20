@@ -1,1 +1,0 @@
-protected native void applyPushType(com.google.gwt.dom.client.Element element, com.google.gwt.dom.client.Element activator, double width);

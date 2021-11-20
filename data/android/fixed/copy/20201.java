@@ -1,1 +1,0 @@
-public void readTypedList(java.util.List<blue.stack.serializableParcelable.IParcelable> list);

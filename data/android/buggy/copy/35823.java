@@ -1,1 +1,0 @@
-private static native long _imaqCreateImage(int type, int borderSize);

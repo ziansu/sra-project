@@ -1,1 +1,0 @@
-public native int slesProcessNext(long sles_data, double[] samples, long offset);

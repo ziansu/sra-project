@@ -1,1 +1,0 @@
-org.springframework.data.domain.Page<com.epam.ta.reportportal.database.entity.Launch> findLatestLaunches(com.epam.ta.reportportal.database.search.Queryable filter, org.springframework.data.domain.Pageable pageable);

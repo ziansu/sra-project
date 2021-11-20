@@ -1,3 +1,0 @@
-double getInterArrivalTime() {
-    return interArrivalTime;
-}

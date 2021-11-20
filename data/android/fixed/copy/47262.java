@@ -1,1 +1,0 @@
-public com.wm.lock.entity.Communication findNextWriteCommunication(java.lang.String userJobNumber);

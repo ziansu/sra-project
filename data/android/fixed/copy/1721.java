@@ -1,1 +1,0 @@
-private static native net.paslavsky.msm.client.ui.wizard.Wizard.DataState create();

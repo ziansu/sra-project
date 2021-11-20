@@ -1,3 +1,0 @@
-void bindShadersNative() {
-    bindShaders(getRoot());
-}

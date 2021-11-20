@@ -1,1 +1,0 @@
-java.lang.String createLoginInfo(com.nationsky.seccom.uc.domain.LoginInfoRequestData loginInfoRequestData);

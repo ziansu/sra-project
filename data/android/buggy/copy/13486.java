@@ -1,8 +1,0 @@
-public java.lang.String getMessagesReward(java.lang.String reward) {
-    java.lang.String msg = getData(reward).getString("Messages.Reward");
-    if (msg != null) {
-        return msg;
-    }else {
-        return com.Ben12345rocks.VotingPlugin.Config.ConfigFormat.getInstance().getRewardMsg();
-    }
-}

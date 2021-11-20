@@ -1,1 +1,0 @@
-private static native long _imaqReadLCD(long image, long roi, long options);

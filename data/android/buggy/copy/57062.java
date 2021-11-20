@@ -1,1 +1,0 @@
-demo.service.PaymentInfoDto findByPaymentId(java.lang.Long paymentId);

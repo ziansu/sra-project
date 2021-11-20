@@ -1,1 +1,0 @@
-void setCacheData(it.bsdsoftware.webservice.library.WebServiceTaskResult result);

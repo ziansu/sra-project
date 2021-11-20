@@ -1,3 +1,0 @@
-public java.util.Collection<org.traccar.model.Permission> getPermissions(java.lang.Class<? extends org.traccar.model.BaseModel> owner, java.lang.Class<? extends org.traccar.model.BaseModel> property) throws java.lang.ClassNotFoundException, java.sql.SQLException {
-    return org.traccar.database.QueryBuilder.create(dataSource, getQuery(org.traccar.database.DataManager.ACTION_SELECT_ALL, owner, property)).executePermissionsQuery();
-}

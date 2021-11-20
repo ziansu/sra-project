@@ -1,1 +1,0 @@
-public java.lang.String addNewCaseIssue(java.lang.Long caseId, java.lang.String departmentTo, java.lang.String issueProblem);

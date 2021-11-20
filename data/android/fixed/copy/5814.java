@@ -1,3 +1,0 @@
-public static com.facebook.buck.android.AndroidPlatformTarget getDefaultPlatformTarget(com.facebook.buck.android.AndroidDirectoryResolver androidDirectoryResolver, java.util.Optional<java.nio.file.Path> aaptOverride, java.util.Optional<java.nio.file.Path> aapt2Override) {
-    return com.facebook.buck.android.AndroidPlatformTarget.getTargetForId(com.facebook.buck.android.AndroidPlatformTarget.DEFAULT_ANDROID_PLATFORM_TARGET, androidDirectoryResolver, aaptOverride, aapt2Override);
-}

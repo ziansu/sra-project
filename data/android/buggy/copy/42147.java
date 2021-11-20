@@ -1,3 +1,0 @@
-public static void createMutants(com.vmusco.smf.analysis.ProcessStatistics ps, com.vmusco.smf.analysis.MutationStatistics ms, com.vmusco.smf.mutation.MutationCreationListener mcl, boolean reset, int safepersist) throws com.vmusco.smf.exceptions.BadObjectTypeException, com.vmusco.smf.exceptions.PersistenceException {
-    com.vmusco.smf.mutation.Mutation.createMutants(ps, ms, mcl, reset, (-1), safepersist);
-}

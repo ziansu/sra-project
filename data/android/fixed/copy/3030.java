@@ -1,3 +1,0 @@
-public org.sufficientlysecure.keychain.operations.results.PgpEditKeyResult modifySecretKeyRing(org.sufficientlysecure.keychain.pgp.CanonicalizedSecretKeyRing wsKR, org.sufficientlysecure.keychain.service.input.CryptoInputParcel cryptoInput, org.sufficientlysecure.keychain.service.SaveKeyringParcel saveParcel) {
-    return modifySecretKeyRing(wsKR, cryptoInput, saveParcel, new org.sufficientlysecure.keychain.operations.results.OperationResult.OperationLog(), 0);
-}

@@ -1,3 +1,0 @@
-void handleConstraintChange() {
-    considerAddingConsumers(true);
-}

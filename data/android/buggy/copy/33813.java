@@ -1,1 +1,0 @@
-boolean isCellEditable(java.lang.Object node, int column);

@@ -1,1 +1,0 @@
-public abstract double predict(com.yahoo.egads.data.TimeSeries.Entry entry);

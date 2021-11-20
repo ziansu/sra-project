@@ -1,1 +1,0 @@
-public java.lang.Long insertAccountRecord(com.peets.socialplay.server.IdentityType iType, java.lang.String userName, java.lang.String identity, boolean activated);

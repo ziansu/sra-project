@@ -1,1 +1,0 @@
-public java.util.List<com.smi.travel.datalayer.view.entity.CreditNoteView> getCreditNoteFromFilter(java.lang.String from, java.lang.String to, java.lang.String Department, java.lang.String status);

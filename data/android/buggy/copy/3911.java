@@ -1,1 +1,0 @@
-int addHistory(int userid, int examid, int questionid, java.util.List<java.lang.Integer> answeridList, java.lang.String status);

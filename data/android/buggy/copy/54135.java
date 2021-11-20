@@ -1,2 +1,0 @@
-protected static void startGame() {
-}

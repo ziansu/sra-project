@@ -1,3 +1,0 @@
-public static org.csstudio.opibuilder.model.AbstractWidgetModel XMLElementToWidget(org.jdom.Element element, org.csstudio.opibuilder.model.DisplayModel displayModel, java.util.Map<org.jdom.Element, org.csstudio.opibuilder.model.ConnectionModel> mapToReceiveConnections) throws java.lang.Exception {
-    return org.csstudio.opibuilder.persistence.XMLUtil.XMLElementToWidgetSub(element, displayModel, new java.util.ArrayList<org.eclipse.core.runtime.IPath>(), mapToReceiveConnections, true);
-}

@@ -1,1 +1,0 @@
-int lsl_push_chunk_ftp(com.sun.jna.Pointer obj, float[] data, long data_elements, double timestamp, int pushthrough);

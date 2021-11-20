@@ -1,1 +1,0 @@
-private static native void _IMAQdxEnumerateVideoModes(int id, long videoModeArray, long count, long currentMode);

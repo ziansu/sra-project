@@ -1,1 +1,0 @@
-public native java.lang.String ffmpeg_run(java.lang.String[] args);

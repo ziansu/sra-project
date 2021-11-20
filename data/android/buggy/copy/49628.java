@@ -1,4 +1,0 @@
-private org.ant4eclipse.lib.core.exception.Ant4EclipseException newBundleNotResolvedException(org.ant4eclipse.lib.pde.internal.tools.UnresolvedBundleException e, org.ant4eclipse.lib.pde.tools.TargetPlatform targetPlatform) {
-    org.eclipse.osgi.service.resolver.BundleDescription description = new org.ant4eclipse.lib.pde.internal.tools.UnresolvedBundlesAnalyzer(targetPlatform).getRootCause(e.getBundleDescription());
-    return new org.ant4eclipse.lib.core.exception.Ant4EclipseException(org.ant4eclipse.lib.pde.PdeExceptionCode.BUNDLE_NOT_RESOLVED_EXCEPTION, org.ant4eclipse.lib.pde.internal.tools.TargetPlatformImpl.dumpResolverErrors(description, true));
-}

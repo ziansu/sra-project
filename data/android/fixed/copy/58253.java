@@ -1,1 +1,0 @@
-public void fail(java.lang.Throwable t);

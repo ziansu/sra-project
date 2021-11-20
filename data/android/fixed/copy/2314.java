@@ -1,1 +1,0 @@
-void saveMoviesToRealm(java.util.List<com.example.filip.movielist.pojo.MovieListModel> listOfMovies);

@@ -1,3 +1,0 @@
-private static planner.ParseResult createParseResult(planner.Constants.RESULT_TYPE resultType, planner.Constants.COMMAND_TYPE commandType) {
-    return new planner.ParseResult(resultType, commandType, planner.Parser.date, planner.Parser.dateToRemind, planner.Parser.priorityLevel, planner.Parser.id, planner.Parser.name, planner.Parser.description, planner.Parser.tag, planner.Parser.errorMessage, planner.Parser.flags);
-}

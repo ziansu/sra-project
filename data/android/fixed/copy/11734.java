@@ -1,1 +1,0 @@
-boolean topicExists(java.lang.String topic) throws java.lang.Exception;

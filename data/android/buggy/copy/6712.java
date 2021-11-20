@@ -1,1 +1,0 @@
-public com.orientechnologies.orient.core.index.OIndex<?> createIndex(java.lang.String iName, com.orientechnologies.orient.core.metadata.schema.OClass.INDEX_TYPE iType, java.lang.String... fields);

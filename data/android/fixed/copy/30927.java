@@ -1,1 +1,0 @@
-void onNotify(double cash);

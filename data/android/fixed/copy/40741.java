@@ -1,1 +1,0 @@
-java.util.List<ru.radriges.site.domain.Photos> findByActiveTrue();

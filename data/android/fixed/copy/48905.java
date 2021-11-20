@@ -1,3 +1,0 @@
-void clear() {
-    list.clear();
-}

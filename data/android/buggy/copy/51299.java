@@ -1,1 +1,0 @@
-java.util.List<my.project.autodealer.dao.Advert> loadAdvertsByPageForUser(int currentPage, int advertsOnPage, my.project.autodealer.dao.User user);

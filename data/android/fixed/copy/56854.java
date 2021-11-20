@@ -1,1 +1,0 @@
-public boolean validateCashControlDocument(java.lang.String customerNumber, java.io.PrintWriter errorFile) throws java.io.IOException;

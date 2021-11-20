@@ -1,3 +1,0 @@
-public static com.sylvainautran.nanodegree.capstoneproject.data.loaders.CallsLoader getAllCalls(android.content.Context context) {
-    return new com.sylvainautran.nanodegree.capstoneproject.data.loaders.CallsLoader(context, AppelContract.CallEntry.CONTENT_URI, com.sylvainautran.nanodegree.capstoneproject.data.loaders.CallsLoader.Query.PROJECTION, null, null, AppelContract.CallEntry.MULTIPLE_SORT);
-}

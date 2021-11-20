@@ -1,3 +1,0 @@
-void incrementCompletedTaskCount() {
-    completedTaskCount.incrementAndGet();
-}

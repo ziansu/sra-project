@@ -1,3 +1,0 @@
-void thresholdValueLabelToInt() {
-    valueLabelToInt(thresholdSlider);
-}

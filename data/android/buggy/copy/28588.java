@@ -1,1 +1,0 @@
-void setProperties(int numOfThreads, int port, java.lang.String ip);

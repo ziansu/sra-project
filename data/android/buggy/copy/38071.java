@@ -1,2 +1,0 @@
-@com.willshex.blogwt.client.part.Template(value = "<a href=\"{0}\"><span class=\"glyphicon glyphicon-{1}\"></span> {2}</a>")
-com.google.gwt.safehtml.shared.SafeHtml glyphItem(com.google.gwt.safehtml.shared.SafeUri href, java.lang.String glyphName, java.lang.String title);

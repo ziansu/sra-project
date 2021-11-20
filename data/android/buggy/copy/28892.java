@@ -1,1 +1,0 @@
-<S extends E> S findOne(org.springframework.data.domain.Example<S> example);

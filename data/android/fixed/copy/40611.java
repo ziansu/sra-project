@@ -1,1 +1,0 @@
-public abstract org.apache.lucene.util.LongBitSet acceptedGlobalOrdinals(org.apache.lucene.index.RandomAccessOrds globalOrdinals) throws java.io.IOException;

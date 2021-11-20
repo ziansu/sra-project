@@ -1,1 +1,0 @@
-public void initSettings() throws org.talend.commons.exception.InvalidProjectException, org.talend.commons.exception.PersistenceException;

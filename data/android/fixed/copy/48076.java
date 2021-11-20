@@ -1,1 +1,0 @@
-java.lang.Class<? extends com.clouway.asynctaskscheduler.spi.AsyncEventListener> getValue();

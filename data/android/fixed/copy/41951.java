@@ -1,1 +1,0 @@
-public ucar.httpservices.HttpResponse execute(org.apache.http.client.methods.HttpRequestBase rq) throws java.io.IOException;

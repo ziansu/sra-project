@@ -1,3 +1,0 @@
-void blinkcursor() {
-    op.blink();
-}

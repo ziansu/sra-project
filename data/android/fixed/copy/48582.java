@@ -1,1 +1,0 @@
-public ardoq.auth.ICustomAuthentication.ArdoqUser authenticate(java.lang.String username, java.lang.String password);

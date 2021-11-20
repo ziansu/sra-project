@@ -1,1 +1,0 @@
-protected native void nativeGreater(long nativeQueryPtr, long[] columnIndex, long value);

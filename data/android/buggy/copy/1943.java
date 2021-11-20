@@ -1,1 +1,0 @@
-protected native long getLongSockopt(int option);

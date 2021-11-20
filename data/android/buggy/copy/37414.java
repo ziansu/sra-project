@@ -1,1 +1,0 @@
-public codeine.collectors.tags.TagsCollectorRunner create(codeine.jsons.project.ProjectJson project, codeine.api.NodeInfo node);

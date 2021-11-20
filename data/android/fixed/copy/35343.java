@@ -1,3 +1,0 @@
-public org.hibernate.validator.metadata.aggregated.PropertyMetaData build(boolean defaultGroupSequenceRedefined, java.util.List<java.lang.Class<?>> defaultGroupSequence) {
-    return new org.hibernate.validator.metadata.aggregated.PropertyMetaData(propertyType, propertyName, adaptOriginsAndImplicitGroups(beanClass, constraints), cascadingMembers, defaultGroupSequenceRedefined, defaultGroupSequence);
-}

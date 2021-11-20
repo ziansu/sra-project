@@ -1,1 +1,0 @@
-private static native int indexOf(java.lang.String s, java.lang.String str, int startIndex);

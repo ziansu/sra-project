@@ -1,1 +1,0 @@
-private static native void _IMAQdxWriteRegister(int id, int offset, int value);

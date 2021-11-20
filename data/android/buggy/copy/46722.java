@@ -1,1 +1,0 @@
-public java.lang.String getFileContent(final java.io.File directory, final java.lang.String filename) throws java.io.IOException;

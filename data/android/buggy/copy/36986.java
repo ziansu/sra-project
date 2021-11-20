@@ -1,1 +1,0 @@
-private static native long _imaqTransformRealWorldToPixel(long image, long realWorldCoordinates, int numCoordinates);

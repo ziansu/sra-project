@@ -1,1 +1,0 @@
-abstract int getIconResource(int position);

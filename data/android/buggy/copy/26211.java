@@ -1,1 +1,0 @@
-org.domeos.basemodel.HttpResponseTemp<?> listBaseImageCustomInfo(long userId);

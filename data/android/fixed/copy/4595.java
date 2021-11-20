@@ -1,1 +1,0 @@
-void OnWallpaperSelected(int imageResId, java.lang.String name, java.lang.String url);

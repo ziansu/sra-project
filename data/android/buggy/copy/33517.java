@@ -1,3 +1,0 @@
-public void addVisualAidPrescriptionEntries(java.lang.String description, java.lang.String dioptersLeft, java.lang.String dioptersRight) throws at.oculus.teamf.application.facade.dependenceResolverTB2.exceptions.NotInitiatedExceptions, at.oculus.teamf.persistence.exception.BadConnectionException, at.oculus.teamf.persistence.exception.DatabaseOperationException, at.oculus.teamf.persistence.exception.NoBrokerMappedException {
-    _visualAidPrescriptionController.createVisualAidPrescription(description, dioptersLeft, dioptersRight);
-}

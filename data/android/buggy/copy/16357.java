@@ -1,1 +1,0 @@
-private static native long _imaqGetGeometricTemplateFeatureInfo(long pattern, long numFeatures);

@@ -1,1 +1,0 @@
-public org.bson.types.ObjectId insert(gr.cite.femme.core.Metadatum metadatum, java.lang.String elementId) throws gr.cite.femme.datastore.exceptions.MetadataStoreException;

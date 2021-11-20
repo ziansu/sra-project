@@ -1,1 +1,0 @@
-public void CreateNewNote(java.lang.String text, java.lang.String title);

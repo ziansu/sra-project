@@ -1,1 +1,0 @@
-public abstract void select(java.util.Set<edu.stanford.nlp.sempre.interactive.actions.Item> set);

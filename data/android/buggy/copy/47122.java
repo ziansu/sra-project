@@ -1,1 +1,0 @@
-public abstract void configurePinnedHeader(android.view.View header, int position, int progress);

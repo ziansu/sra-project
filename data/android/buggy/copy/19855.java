@@ -1,1 +1,0 @@
-protected abstract com.example.alykoti.models.devices.DeviceStatus valueToStatus(java.lang.Object newValue);

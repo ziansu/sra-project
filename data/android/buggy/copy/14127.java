@@ -1,3 +1,0 @@
-public static net.aeronica.mods.mxtune.options.MusicOptionsUtil.EnumMuteOptions getMuteOptionEnum(net.minecraft.entity.player.EntityPlayer playerIn) {
-    return playerIn != null ? net.aeronica.mods.mxtune.options.MusicOptionsUtil.EnumMuteOptions.byMetadata(playerIn.getCapability(net.aeronica.mods.mxtune.options.MusicOptionsUtil.MUSIC_OPTIONS, null).getMuteOption()) : net.aeronica.mods.mxtune.options.MusicOptionsUtil.EnumMuteOptions.OFF;
-}

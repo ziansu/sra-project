@@ -1,1 +1,0 @@
-public void update(functiongenerator.core.EvolutionStateHelper state);

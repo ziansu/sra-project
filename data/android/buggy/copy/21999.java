@@ -1,1 +1,0 @@
-boolean retrieveBatterieCompatibili(int indiceAutovettura, java.util.ArrayList<Server.RMIInterface.Batteria> elencoBatterie, java.util.ArrayList<Server.RMIInterface.Stazione> elencoStazioni) throws java.rmi.RemoteException;

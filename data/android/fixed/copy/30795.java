@@ -1,4 +1,0 @@
-void shutDown() {
-    if (running) {
-    }
-}

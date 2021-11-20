@@ -1,1 +1,0 @@
-public java.util.List<de.bht.fpa.mail.gruppe15.model.data.Email> search(final java.lang.String input);

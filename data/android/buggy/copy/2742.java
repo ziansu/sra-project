@@ -1,3 +1,0 @@
-int getWidth() {
-    return width;
-}

@@ -1,3 +1,0 @@
-@retrofit2.http.GET(value = ((("services/rest/?" + ((("format=json" + "&nojsoncallback=1") + "&extras=url_s") + "&method=")) + (com.rpham64.android.photogallery.network.CoreApi.METHOD_FETCH_RECENTS)) + "&api_key=") + (com.rpham64.android.photogallery.network.CoreApi.API_KEY))
-rx.Observable<com.rpham64.android.photogallery.network.response.FlickrResponse> getRecentPhotosRx(@retrofit2.http.Query(value = "page")
-int page);

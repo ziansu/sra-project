@@ -1,1 +1,0 @@
-void logFilterChanged(java.lang.String enteredFilter, java.lang.String log);

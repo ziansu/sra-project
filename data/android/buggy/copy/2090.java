@@ -1,1 +1,0 @@
-void onError(java.lang.String message);

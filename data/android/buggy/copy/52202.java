@@ -1,1 +1,0 @@
-void onClick(com.way.recycleview.adapter.MyAdapter.MyViewHolder holder, int position);

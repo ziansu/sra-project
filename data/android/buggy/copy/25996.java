@@ -1,1 +1,0 @@
-void report2GenerierenListe(de.hdm.tellme.shared.bo.Nutzer n, com.google.gwt.user.client.rpc.AsyncCallback<de.hdm.tellme.client.gui.report.Report2> callback);

@@ -1,2 +1,0 @@
-private synchronized void applyPlaybackParamsNext() {
-}

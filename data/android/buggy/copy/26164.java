@@ -1,1 +1,0 @@
-public com.orientechnologies.orient.core.index.OIndex<?> createIndex(java.lang.String iName, java.lang.String iType, com.orientechnologies.common.listener.OProgressListener iProgressListener, com.orientechnologies.orient.core.record.impl.ODocument metadata, java.lang.String... fields);

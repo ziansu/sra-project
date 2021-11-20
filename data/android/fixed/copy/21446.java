@@ -1,1 +1,0 @@
-protected abstract void initParser(java.lang.String filePath);

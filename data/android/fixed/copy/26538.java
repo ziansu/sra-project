@@ -1,1 +1,0 @@
-public abstract byte[] get(cachelibrary.model.Cachable cachable, boolean useCache);

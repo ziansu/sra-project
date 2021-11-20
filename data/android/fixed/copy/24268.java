@@ -1,1 +1,0 @@
-private native long initialize(java.lang.String command);

@@ -1,1 +1,0 @@
-public dw317.hotel.business.interfaces.Name getName();

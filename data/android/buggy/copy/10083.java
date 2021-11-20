@@ -1,3 +1,0 @@
-double getValue() {
-    return value;
-}

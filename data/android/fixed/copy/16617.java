@@ -1,1 +1,0 @@
-void startVector(java.lang.String mimetype, java.lang.String vectorData, java.lang.String vectorName);

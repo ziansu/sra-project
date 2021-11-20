@@ -1,1 +1,0 @@
-protected abstract void onSubscribeEvent(java.lang.Object object);

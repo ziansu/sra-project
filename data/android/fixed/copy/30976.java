@@ -1,1 +1,0 @@
-void onToggleSwitchChangeListener(int position, boolean isChecked);

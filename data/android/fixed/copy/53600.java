@@ -1,1 +1,0 @@
-void onItemClicked(int mPosition, com.gnest.remember.data.SelectableMemo mMemo);

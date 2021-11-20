@@ -1,1 +1,0 @@
-private static native void _imaqContourAdvancedSetupMatchPattern(long matchSetupData, long geometricOptions, int numGeometricOptions);

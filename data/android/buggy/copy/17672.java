@@ -1,1 +1,0 @@
-com.example.domain.TableOfRestaurant getByNumber(int num);

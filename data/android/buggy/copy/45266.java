@@ -1,1 +1,0 @@
-static native int __sendfor(long self, java.lang.String address, java.lang.String subject, java.lang.String tracker, int timeout, long contentP);

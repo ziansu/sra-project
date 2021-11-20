@@ -1,1 +1,0 @@
-public abstract com.veggie.src.java.notification.AbstractSuccessNotification createSuccessNotification(java.lang.String message);

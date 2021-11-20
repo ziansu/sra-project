@@ -1,3 +1,0 @@
-public void updateNumTerritoryOwned() {
-    (numTerritoryOwned)++;
-}

@@ -1,1 +1,0 @@
-void setActiveUser(java.lang.String email, java.lang.String name, java.lang.String pass, java.lang.String bio, java.lang.String major, java.lang.String type);

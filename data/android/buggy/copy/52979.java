@@ -1,3 +1,0 @@
-public void phoneHome(final com.blackducksoftware.integration.hub.global.HubServerConfig hubServerConfig, final com.blackducksoftware.integration.phone.home.enums.ThirdPartyName thirdPartyName, final java.lang.String thirdPartyVersion, final java.lang.String pluginVersion, final java.lang.String hubVersion) {
-    phoneHome(hubServerConfig, thirdPartyName, thirdPartyVersion, pluginVersion, hubVersion);
-}

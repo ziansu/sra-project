@@ -1,1 +1,0 @@
-void loginWithFacebook(java.lang.String firstname, java.lang.String lastname, java.lang.String email);

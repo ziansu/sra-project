@@ -1,1 +1,0 @@
-void visit(java.lang.Integer bucketId, org.apache.geode.cache.Region r);

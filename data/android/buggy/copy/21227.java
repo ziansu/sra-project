@@ -1,1 +1,0 @@
-private static native long _imaqReadBarcode(long image, int type, long roi, int validate);

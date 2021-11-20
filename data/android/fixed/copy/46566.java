@@ -1,1 +1,0 @@
-public abstract void onPickup(final sem.group47.entity.Player p);

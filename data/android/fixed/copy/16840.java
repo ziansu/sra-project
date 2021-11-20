@@ -1,1 +1,0 @@
-public boolean setProvider(de.codemakers.bot.supreme.plugin.PluginProviderPlus provider);

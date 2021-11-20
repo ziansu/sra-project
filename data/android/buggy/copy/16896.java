@@ -1,4 +1,0 @@
-@java.lang.Override
-public org.killbill.billing.invoice.api.formatters.InvoiceFormatter createInvoiceFormatter(final org.killbill.billing.util.template.translation.TranslatorConfig config, final org.killbill.billing.invoice.api.Invoice invoice, final java.util.Locale locale, final org.killbill.billing.currency.api.CurrencyConversionApi currencyConversionApi, final org.killbill.billing.invoice.api.formatters.ResourceBundleFactory bundleFactory, final org.killbill.billing.callcontext.InternalTenantContext context) {
-    return new org.killbill.billing.invoice.template.formatters.DefaultInvoiceFormatter(config, invoice, locale, currencyConversionApi, bundleFactory, context, currencyLocaleMap);
-}

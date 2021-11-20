@@ -1,3 +1,0 @@
-int getItemCount() {
-    return mShadowItemCount;
-}

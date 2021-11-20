@@ -1,1 +1,0 @@
-void dataRestored(boolean b);

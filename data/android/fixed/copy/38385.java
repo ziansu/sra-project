@@ -1,6 +1,0 @@
-public int showVertexCover() {
-    java.util.Set<no.uib.ii.algo.st8.start.UnVertex> cover = no.uib.ii.algo.st8.algorithms.ExactVertexCover.findExactVertexCover(graph.getGraph());
-    clearAll();
-    markedVertices.addAll(cover);
-    return cover.size();
-}

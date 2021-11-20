@@ -1,4 +1,0 @@
-@java.lang.Override
-public boolean accept(java.io.File file) {
-    return (((isRCDR(file.getName())) == null) || (isRCDR(file.getName()))) || (file.isDirectory());
-}

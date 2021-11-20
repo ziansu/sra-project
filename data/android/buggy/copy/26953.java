@@ -1,1 +1,0 @@
-<S extends E> S saveAndFlush(S entity);

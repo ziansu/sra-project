@@ -1,3 +1,0 @@
-public java.util.Date getEnd() {
-    return end;
-}

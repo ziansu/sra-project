@@ -1,1 +1,0 @@
-void execQueryOneRecord(java.lang.String sql, java.lang.Object[] params, com.google.common.base.Function<net.bither.bitherj.db.imp.base.ICursor, java.lang.Void> func);

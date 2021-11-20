@@ -1,3 +1,0 @@
-private static java.lang.String createTitle(java.lang.String title) {
-    return fr.jgetmove.jgetmove.debug.Debug.stack.concat(fr.jgetmove.jgetmove.debug.Debug.pathSeparatorDirection(fr.jgetmove.jgetmove.debug.Debug.sizeDirection, fr.jgetmove.jgetmove.debug.Debug.METHOD_PREFIX, fr.jgetmove.jgetmove.debug.Debug.METHOD_PREFIX_MORE, fr.jgetmove.jgetmove.debug.Debug.METHOD_PREFIX_LESS)).concat(title).concat(fr.jgetmove.jgetmove.debug.Debug.METHOD_SUFFIX);
-}

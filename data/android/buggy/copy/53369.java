@@ -1,1 +1,0 @@
-void loadMoreData(int initialItem, int totalItems, int visibleItem);

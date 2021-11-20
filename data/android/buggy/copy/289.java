@@ -1,1 +1,0 @@
-void userFavorites(com.dreamdigitizers.androidbaselibrary.utilities.UtilsDialog.IRetryAction pRetryAction, int pId, int pLinkedPartitioning, int pLimit, java.lang.String pOffset);

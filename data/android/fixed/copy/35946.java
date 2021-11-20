@@ -1,1 +1,0 @@
-void onTrackSelected(int trackPos);

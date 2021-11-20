@@ -1,8 +1,0 @@
-@java.lang.Override
-public void onLoadFinished(Loader<android.database.Cursor> loader, android.database.Cursor cursor) {
-    cursor.moveToFirst();
-    while (!(cursor.isAfterLast())) {
-    } 
-    adapter.swapCursor(cursor);
-    adapter.notifyDataSetChanged();
-}

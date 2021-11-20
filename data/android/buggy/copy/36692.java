@@ -1,1 +1,0 @@
-void addSysAdmin(java.lang.String username, java.lang.String password, java.lang.String firstName, java.lang.String lastName, java.lang.String middleName, java.lang.String phone, java.lang.String email, com.softserve.edu.entity.Address address, java.lang.Boolean isAvailable);

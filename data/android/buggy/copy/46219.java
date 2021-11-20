@@ -1,1 +1,0 @@
-public void onFatalError(java.lang.String errorMessage);

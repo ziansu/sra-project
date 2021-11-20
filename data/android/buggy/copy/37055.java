@@ -1,1 +1,0 @@
-protected abstract void execute() throws java.lang.InterruptedException;

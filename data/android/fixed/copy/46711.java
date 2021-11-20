@@ -1,1 +1,0 @@
-public java.util.List<home.model.Address> findByCity_Id(java.lang.Long id);

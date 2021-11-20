@@ -1,3 +1,0 @@
-static argelbargel.jenkins.plugins.gitlab_branch_source.GitLabLinkAction toMergeRequest(org.gitlab.api.models.GitlabProject project, java.lang.String id) {
-    return argelbargel.jenkins.plugins.gitlab_branch_source.GitLabLinkAction.create(project, argelbargel.jenkins.plugins.gitlab_branch_source.Messages.GitLabLink_DisplayName_MergeRequest(), argelbargel.jenkins.plugins.gitlab_branch_source.GitLabSCMIcons.ICON_MERGE_REQUEST, ("merge_requests/" + (java.lang.String.valueOf(id))));
-}

@@ -1,1 +1,0 @@
-boolean isVacancyLinkUnique(java.lang.String link);
