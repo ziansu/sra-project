@@ -1,0 +1,5 @@
+@org.junit.Before
+public void setUp() {
+    ar.fiuba.tdd.grupo10.nikoligames.grid.cells.Cell[] theCells = new ar.fiuba.tdd.grupo10.nikoligames.grid.cells.Cell[]{ new ar.fiuba.tdd.grupo10.nikoligames.grid.cells.ImmutableCell(new ar.fiuba.tdd.grupo10.nikoligames.grid.cells.content.ImmutableContent(1, "_")) , new ar.fiuba.tdd.grupo10.nikoligames.grid.cells.ImmutableCell(new ar.fiuba.tdd.grupo10.nikoligames.grid.cells.content.ImmutableContent(2, "_")) , new ar.fiuba.tdd.grupo10.nikoligames.grid.cells.ImmutableCell(new ar.fiuba.tdd.grupo10.nikoligames.grid.cells.content.ImmutableContent(3, "_")) , new ar.fiuba.tdd.grupo10.nikoligames.grid.cells.ImmutableCell(new ar.fiuba.tdd.grupo10.nikoligames.grid.cells.content.ImmutableContent(4, "_")) };
+    this.flattenCells = new java.util.ArrayList<ar.fiuba.tdd.grupo10.nikoligames.grid.cells.Cell>(java.util.Arrays.asList(theCells));
+}

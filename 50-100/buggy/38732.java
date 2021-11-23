@@ -1,0 +1,3 @@
+protected java.util.Map<de.espirit.firstspirit.module.WebEnvironment.WebScope, java.io.File> getWebScopeFileMap(java.lang.String webAppConfigurationFiles) {
+    return getStringFilesMap(webAppConfigurationFiles).entrySet().stream().collect(java.util.stream.Collectors.toMap(( entry) -> WebEnvironment.WebScope.valueOf(entry.getKey().trim().toUpperCase(java.util.Locale.getDefault())), java.util.Map.Entry::getValue));
+}

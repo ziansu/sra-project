@@ -1,0 +1,5 @@
+public java.util.List<com.realdolmen.togethair.domain.Flight> findFlightsByParams(java.util.Date departureDate, java.lang.String departureLocation, java.lang.String arrivalLocation) {
+    java.lang.String qlString = "SELECT f FROM Flight f JOIN FETCH f.arrivalAirport aa JOIN FETCH f.departureAirport da" + (((" WHERE f.departureDate = :departureDate" + " AND ") + " AND (aa.city LIKE :departureLocation OR aa.country LIKE :departureLocation)") + " AND (da.city LIKE :arrivalLocation OR da.country LIKE :arrivalLocation)");
+    java.util.List<com.realdolmen.togethair.domain.Flight> q = em.createQuery(qlString, com.realdolmen.togethair.domain.Flight.class).setParameter("departureDate", departureDate).setParameter("departureLocation", (("%" + departureLocation) + "%")).setParameter("arrivalLocation", (("%" + arrivalLocation) + "%")).getResultList();
+    return q;
+}

@@ -1,0 +1,4 @@
+public final hu.akarnokd.rxjava2.basetypes.Solo<T> doAfterNext(hu.akarnokd.rxjava2.basetypes.Consumer<? super T> onAfterNext) {
+    hu.akarnokd.rxjava2.basetypes.ObjectHelper.requireNonNull(onAfterNext, "onAfterNext is null");
+    return hu.akarnokd.rxjava2.basetypes.Solo.onAssembly(new hu.akarnokd.rxjava2.basetypes.SoloDoOnLifecycle<T>(this, hu.akarnokd.rxjava2.basetypes.Functions.emptyConsumer(), onAfterNext, Functions.ERROR_CONSUMER, Functions.EMPTY_ACTION, Functions.EMPTY_ACTION, hu.akarnokd.rxjava2.basetypes.Functions.emptyConsumer(), Functions.EMPTY_LONG_CONSUMER, Functions.EMPTY_ACTION));
+}

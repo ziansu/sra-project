@@ -1,0 +1,13 @@
+@org.junit.Test
+public void testUnknownTableJobGetsRemoved() throws java.lang.Exception {
+    execute("set global stats.enabled=true");
+    try {
+        execute("select * from foobar");
+    } catch (io.crate.action.sql.SQLActionException e) {
+        assertEquals(e.getMessage(), "Table 'foobar' unknown");
+        execute("select * from sys.jobs");
+        assertEquals(response.rowCount(), 1L);
+    } finally {
+        execute("reset global stats.enabled");
+    }
+}

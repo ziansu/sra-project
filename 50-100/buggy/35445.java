@@ -1,0 +1,11 @@
+@org.springframework.web.bind.annotation.RequestMapping(value = "/{id}/reopen", method = org.springframework.web.bind.annotation.RequestMethod.PUT)
+public org.springframework.http.ResponseEntity<java.lang.String> reopenTask(@org.springframework.web.bind.annotation.PathVariable
+java.lang.Long id) {
+    try {
+        tm.reopenTask(id);
+        return new org.springframework.http.ResponseEntity("success", org.springframework.http.HttpStatus.OK);
+    } catch (java.lang.Exception e) {
+        com.taskmaster.controller.TaskController.logger.error(("Error occurred while reopening task = " + id), e);
+        return new org.springframework.http.ResponseEntity((("{\"error\":\"" + (e.getMessage())) + "\"}"), org.springframework.http.HttpStatus.INTERNAL_SERVER_ERROR);
+    }
+}

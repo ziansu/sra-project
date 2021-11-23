@@ -1,0 +1,3 @@
+public static java.util.List<com.davidbalazs.chess.model.FriendlyPiecePosition> dummyChessPosition3() {
+    return java.util.Arrays.asList(new com.davidbalazs.chess.model.FriendlyPiecePosition(com.davidbalazs.chess.model.FriendlyPieceType.BLACK_KING, 7, 3), new com.davidbalazs.chess.model.FriendlyPiecePosition(com.davidbalazs.chess.model.FriendlyPieceType.WHITE_KING, 2, 1), new com.davidbalazs.chess.model.FriendlyPiecePosition(com.davidbalazs.chess.model.FriendlyPieceType.WHITE_QUEEN, 3, 7), new com.davidbalazs.chess.model.FriendlyPiecePosition(com.davidbalazs.chess.model.FriendlyPieceType.WHITE_PAWN, 4, 6));
+}

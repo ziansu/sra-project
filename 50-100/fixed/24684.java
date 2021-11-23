@@ -1,0 +1,10 @@
+protected com.orientechnologies.orient.server.hazelcast.ODistributedWorker unqueuePendingMessages(java.lang.String queueName, com.hazelcast.core.IQueue requestQueue) {
+    if (com.orientechnologies.orient.server.distributed.ODistributedServerLog.isDebugEnabled())
+        com.orientechnologies.orient.server.distributed.ODistributedServerLog.debug(this, getLocalNodeName(), null, DIRECTION.NONE, "listening for incoming requests on queue: %s", queueName);
+    
+    msgService.checkForPendingMessages(requestQueue, queueName);
+    final com.orientechnologies.orient.server.hazelcast.ODistributedWorker listenerThread = new com.orientechnologies.orient.server.hazelcast.ODistributedWorker(this, requestQueue, databaseName, 0, restoringMessages);
+    listenerThread.initDatabaseInstance();
+    listenerThread.start();
+    return listenerThread;
+}

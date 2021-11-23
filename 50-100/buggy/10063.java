@@ -1,0 +1,3 @@
+public java.util.List<statistics.model.Transaction> getTransactions(statistics.model.Account account, int limit, int offset, java.util.Date startDate, java.util.Date endDate, statistics.model.enums.TransactionType[] transactionTypes, statistics.model.enums.PlanFactType... planFactTypes) {
+    return transactionManager.getTransactions(account.getAccountSettings(), startDate, endDate, java.util.Arrays.asList(transactionTypes), java.util.Arrays.asList(planFactTypes), limit, offset);
+}

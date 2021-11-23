@@ -1,0 +1,3 @@
+public static java.util.function.Predicate<de.subcentral.core.metadata.release.Release> filterByMedia(java.lang.String requiredMediaName, de.subcentral.core.naming.NamingService mediaNamingService, java.util.Map<java.lang.String, java.lang.Object> namingParams) {
+    return ( rls) -> requiredMediaName.isEmpty() ? true : requiredMediaName.equalsIgnoreCase(mediaNamingService.name(rls.getMedia(), namingParams));
+}

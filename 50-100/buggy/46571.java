@@ -1,0 +1,4 @@
+public void getHostAndPath() {
+    org.redfrog404.mobycraft.utils.MessageSender.sendMessage(((((((net.minecraft.util.EnumChatFormatting.BLUE) + "") + (net.minecraft.util.EnumChatFormatting.BOLD)) + "Docker host: ") + (net.minecraft.util.EnumChatFormatting.RESET)) + (getConfigProperties().getDockerHostProperty())));
+    org.redfrog404.mobycraft.utils.MessageSender.sendMessage(((((((net.minecraft.util.EnumChatFormatting.GOLD) + "") + (net.minecraft.util.EnumChatFormatting.BOLD)) + "Docker cert path: ") + (net.minecraft.util.EnumChatFormatting.RESET)) + (getConfigProperties().getCertPathProperty())));
+}

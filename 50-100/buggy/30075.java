@@ -1,0 +1,10 @@
+@java.lang.Override
+public double calculateUtility(firefighters.actions.Plan plan, firefighters.agent.Agent agent) {
+    double weatherUtility;
+    if (constants.SimulationParameters.useWeatherInformation)
+        weatherUtility = (weightWeather) * (weatherFunction.calculateUtility(action, agent));
+    else
+        weatherUtility = 0;
+    
+    return ((fixedFunction.calculateUtility(plan, agent)) + ((weightRisk) * (riskFunction.calculateUtility(plan, agent)))) + ((weightCooperating) * (cooperativeFunction.calculateUtility(plan, agent)));
+}

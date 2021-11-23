@@ -1,0 +1,3 @@
+private static java.util.List<de.setsoftware.reviewtool.base.Pair<de.setsoftware.reviewtool.model.changestructure.PositionInText, de.setsoftware.reviewtool.model.changestructure.PositionInText>> determineDiff(java.lang.String oldContent, java.lang.String newContent) throws java.lang.Exception {
+    return de.setsoftware.reviewtool.diffalgorithms.SimpleTextDiffAlgorithmTest.toPositionsInNewFile(new de.setsoftware.reviewtool.diffalgorithms.MyersSourceDiffAlgorithm(true).determineDiff(de.setsoftware.reviewtool.model.changestructure.ChangestructureFactory.createFileInRevision("", null, null), oldContent.getBytes("UTF-8"), de.setsoftware.reviewtool.model.changestructure.ChangestructureFactory.createFileInRevision("", null, null), newContent.getBytes("UTF-8"), "UTF-8"));
+}

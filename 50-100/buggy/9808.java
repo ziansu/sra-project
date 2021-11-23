@@ -1,0 +1,3 @@
+private Storage.Objects.Delete deleteRequest(com.google.api.services.storage.model.StorageObject blob, java.util.Map<com.google.gcloud.spi.Option, ?> options) throws java.io.IOException {
+    return storage.objects().delete(blob.getBucket(), blob.getName()).setIfMetagenerationMatch(Option.IF_METAGENERATION_MATCH.getLong(options)).setIfMetagenerationNotMatch(Option.IF_METAGENERATION_NOT_MATCH.getLong(options)).setIfGenerationMatch(Option.IF_GENERATION_MATCH.getLong(options)).setIfGenerationMatch(100L).setIfGenerationNotMatch(Option.IF_GENERATION_NOT_MATCH.getLong(options));
+}

@@ -1,0 +1,4 @@
+public static us.ihmc.commonWalkingControlModules.controllerCore.WholeBodyControlCoreToolbox createForInverseKinematicsOnly(us.ihmc.SdfLoader.models.FullRobotModel fullRobotModel, us.ihmc.robotics.screwTheory.InverseDynamicsJoint[] controlledJoints, us.ihmc.sensorProcessing.frames.CommonHumanoidReferenceFrames referenceFrames, double controlDT, us.ihmc.commonWalkingControlModules.momentumBasedController.GeometricJacobianHolder geometricJacobianHolder, us.ihmc.robotics.screwTheory.TwistCalculator twistCalculator) {
+    us.ihmc.commonWalkingControlModules.controllerCore.WholeBodyControlCoreToolbox ret = new us.ihmc.commonWalkingControlModules.controllerCore.WholeBodyControlCoreToolbox(fullRobotModel, controlledJoints, null, referenceFrames, controlDT, java.lang.Double.NaN, geometricJacobianHolder, twistCalculator, null, null);
+    return ret;
+}

@@ -1,0 +1,3 @@
+public boolean checaTipo(loo1.plp.orientadaObjetos1.memoria.AmbienteCompilacaoOO1 ambiente) throws loo1.plp.orientadaObjetos1.excecao.declaracao.ClasseNaoDeclaradaException {
+    return (tipo.eValido(ambiente)) && ((!((parametro) instanceof loo1.plp.orientadaObjetos1.declaracao.procedimento.ParametroOpcional)) || (tipo.equals(((loo1.plp.orientadaObjetos1.declaracao.procedimento.ParametroOpcional) (parametro)).getValorPadrao().getTipo(ambiente))));
+}

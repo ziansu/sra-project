@@ -1,0 +1,6 @@
+public static org.sosy_lab.cpachecker.cpa.smg.refiner.SMGPrecision createRefineablePrecision(org.sosy_lab.cpachecker.cpa.smg.refiner.SMGPrecision pPrecision) {
+    com.google.common.collect.SetMultimap<org.sosy_lab.cpachecker.cfa.model.CFANode, org.sosy_lab.cpachecker.cpa.smg.refiner.SMGMemoryPath> emptyMemoryPaths = com.google.common.collect.ImmutableSetMultimap.of();
+    com.google.common.collect.SetMultimap<org.sosy_lab.cpachecker.cfa.model.CFANode, org.sosy_lab.cpachecker.cpa.smg.SMGAbstractionBlock> emptyAbstractionBlocks = com.google.common.collect.ImmutableSetMultimap.of();
+    com.google.common.collect.SetMultimap<org.sosy_lab.cpachecker.cfa.model.CFANode, org.sosy_lab.cpachecker.util.states.MemoryLocation> emptyStackVariable = com.google.common.collect.ImmutableSetMultimap.of();
+    return new org.sosy_lab.cpachecker.cpa.smg.refiner.SMGPrecision.SMGRefineablePrecision(pPrecision.logger, new org.sosy_lab.cpachecker.cpa.smg.refiner.SMGPrecision.SMGPrecisionAbstractionOptions(pPrecision.allowsHeapAbstraction(), true, true), emptyMemoryPaths, emptyAbstractionBlocks, emptyStackVariable);
+}

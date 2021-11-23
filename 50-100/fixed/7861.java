@@ -1,0 +1,3 @@
+private com.google.common.util.concurrent.ListenableFuture<org.atlasapi.content.IndexQueryResult> queryIndex(org.atlasapi.query.common.Query<org.atlasapi.content.Content> query) throws org.atlasapi.query.common.exceptions.QueryExecutionException {
+    return index.query(query.getOperands(), query.getContext().getApplication().getConfiguration().getEnabledReadSources(), query.getContext().getSelection().or(com.metabroadcast.common.query.Selection.all()));
+}

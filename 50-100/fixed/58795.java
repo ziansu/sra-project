@@ -1,0 +1,3 @@
+protected static void addEditTextAction(java.util.List<android.support.v17.leanback.widget.GuidedAction> actions, long id, java.lang.String title, java.lang.String desc, java.lang.String editdesc) {
+    actions.add(new android.support.v17.leanback.widget.GuidedAction.Builder().id(id).title(title).description(desc).editDescription(editdesc).descriptionEditInputType(InputType.TYPE_CLASS_TEXT).descriptionEditable(true).build());
+}

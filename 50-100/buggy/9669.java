@@ -1,0 +1,11 @@
+public java.lang.String getClassName() {
+    if (mClassList.isEmpty()) {
+        return mClassName.isEmpty() ? null : mClassName;
+    }else {
+        java.lang.String class_name = mClassList.get(0).getName();
+        for (int i = 1; i < (mClassList.size()); i++) {
+            class_name = "," + (mClassList.get(i).getName());
+        }
+        return class_name;
+    }
+}

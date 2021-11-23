@@ -1,0 +1,7 @@
+@org.junit.Test
+public void registerUserCallsServiceWithCorrectValues() throws java.lang.Exception {
+    webclient.registerUser(coursesketch.auth.AuthenticationWebSocketClientTest.VALID_ITEM_TYPE, coursesketch.auth.AuthenticationWebSocketClientTest.VALID_ITEM_ID, coursesketch.auth.AuthenticationWebSocketClientTest.TEACHER_USER_ID, coursesketch.auth.AuthenticationWebSocketClientTest.VALID_REGISTRATION_KEY);
+    final protobuf.srl.services.authentication.Authentication.AuthRequest request = Authentication.AuthRequest.newBuilder().setItemId(coursesketch.auth.AuthenticationWebSocketClientTest.VALID_ITEM_ID).setItemType(coursesketch.auth.AuthenticationWebSocketClientTest.VALID_ITEM_TYPE).setAuthId(coursesketch.auth.AuthenticationWebSocketClientTest.TEACHER_USER_ID).build();
+    final protobuf.srl.services.authentication.Authentication.UserRegistration userRequest = Authentication.UserRegistration.newBuilder().setItemRequest(request).setRegistrationKey(coursesketch.auth.AuthenticationWebSocketClientTest.VALID_REGISTRATION_KEY).build();
+    org.mockito.Mockito.verify(mockAuthenticationService).registerUser(org.mockito.Matchers.any(com.google.protobuf.RpcController.class), org.mockito.Matchers.eq(userRequest));
+}

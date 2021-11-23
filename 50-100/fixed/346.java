@@ -1,0 +1,5 @@
+public void sendMessage(java.lang.String text, com.therods.YetAnotherToDoList.model.User user) throws com.therods.YetAnotherToDoList.server.JMSException {
+    topic = session.createTopic(java.lang.String.valueOf(user.getId()));
+    messageProducer = session.createProducer(topic);
+    messageProducer.send(topic, session.createTextMessage(text));
+}

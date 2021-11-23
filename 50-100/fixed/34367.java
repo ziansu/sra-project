@@ -1,0 +1,7 @@
+private void importResults(org.sonar.api.batch.sensor.SensorContext context) {
+    org.sonar.plugins.csharp.CSharpSensor.parseProtobuf(context, org.sonarsource.dotnet.shared.plugins.protobuf.ProtobufImporters.metricsImporter(fileLinesContextFactory, noSonarFilter), org.sonarsource.dotnet.shared.plugins.protobuf.ProtobufImporters.METRICS_OUTPUT_PROTOBUF_NAME);
+    org.sonar.plugins.csharp.CSharpSensor.parseProtobuf(context, org.sonarsource.dotnet.shared.plugins.protobuf.ProtobufImporters.issuesImporter(CSharpSonarRulesDefinition.REPOSITORY_KEY), org.sonarsource.dotnet.shared.plugins.protobuf.ProtobufImporters.ISSUES_OUTPUT_PROTOBUF_NAME);
+    org.sonar.plugins.csharp.CSharpSensor.parseProtobuf(context, org.sonarsource.dotnet.shared.plugins.protobuf.ProtobufImporters.highlightImporter(), org.sonarsource.dotnet.shared.plugins.protobuf.ProtobufImporters.HIGHLIGHT_OUTPUT_PROTOBUF_NAME);
+    org.sonar.plugins.csharp.CSharpSensor.parseProtobuf(context, org.sonarsource.dotnet.shared.plugins.protobuf.ProtobufImporters.symbolRefsImporter(), org.sonarsource.dotnet.shared.plugins.protobuf.ProtobufImporters.SYMBOLREFS_OUTPUT_PROTOBUF_NAME);
+    org.sonar.plugins.csharp.CSharpSensor.parseProtobuf(context, org.sonarsource.dotnet.shared.plugins.protobuf.ProtobufImporters.cpdTokensImporter(), org.sonarsource.dotnet.shared.plugins.protobuf.ProtobufImporters.CPDTOKENS_OUTPUT_PROTOBUF_NAME);
+}

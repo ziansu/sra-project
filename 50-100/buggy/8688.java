@@ -1,0 +1,3 @@
+public static org.mifosplatform.infrastructure.scheduledemail.domain.EmailMessage pendingEmail(final java.lang.Long externalId, final org.mifosplatform.portfolio.group.domain.Group group, final org.mifosplatform.portfolio.client.domain.Client client, final org.mifosplatform.organisation.staff.domain.Staff staff, final java.lang.String emailSubject, final java.lang.String message, final java.lang.String sourceAddress, final java.lang.String emailAddress, final java.lang.String campaignName) {
+    return new org.mifosplatform.infrastructure.scheduledemail.domain.EmailMessage(externalId, group, client, staff, EmailMessageStatusType.PENDING, message, sourceAddress, emailSubject, emailAddress, campaignName);
+}

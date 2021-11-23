@@ -1,0 +1,9 @@
+public void setIterations(int iterations) {
+    if (iterations < 2)
+        this.iterations = 2;
+    else
+        this.iterations = iterations;
+    
+    renderingImage = javafx.embed.swing.SwingFXUtils.toFXImage(javafx.embed.swing.SwingFXUtils.fromFXImage(originalImage, null), null);
+    transformImage();
+}

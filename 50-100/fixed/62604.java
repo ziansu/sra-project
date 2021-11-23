@@ -1,0 +1,7 @@
+@org.springframework.web.bind.annotation.RequestMapping(value = "/deleteComment", method = org.springframework.web.bind.annotation.RequestMethod.POST)
+public java.lang.String deleteComment(java.lang.Integer commentNo, java.lang.Integer articleNo, java.lang.String boardCd, java.lang.Integer curPage, java.lang.String searchWord) throws java.lang.Exception {
+    net.java_school.board.Comment comment = boardService.getComment(commentNo);
+    boardService.removeComment(comment);
+    searchWord = java.net.URLEncoder.encode(searchWord, "UTF-8");
+    return (((((("redirect:/bbs/view?articleNo=" + articleNo) + "&boardCd=") + boardCd) + "&curPage=") + curPage) + "&searchWord=") + searchWord;
+}

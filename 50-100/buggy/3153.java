@@ -1,0 +1,3 @@
+public java.lang.String fight(com.example.foes.Fire withFire, java.lang.String foeName, byte byteParam, short shortParam, int intParam, long longParam, float floatParam, double doubleParam, char charParam, boolean booleanParam, java.lang.Byte byteParamWrapper, java.lang.Short shortParamWrapper, java.lang.Integer intParamWrapper, java.lang.Long longParamWrapper, java.lang.Float floatParamWrapper, java.lang.Double doubleParamWrapper, java.lang.Character charParamWrapper, java.lang.Boolean booleanParamWrapper, java.math.BigDecimal bigDecimalParam) {
+    return fooFighter.fight(withFire);
+}

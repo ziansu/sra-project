@@ -1,0 +1,5 @@
+public android.database.Cursor fullQuery() {
+    android.util.Log.i("db", getReadableDatabase().toString());
+    java.lang.String[] projection = new java.lang.String[]{ com.example.kaan.architecture314app.DatabaseHelper.COL_ID , com.example.kaan.architecture314app.DatabaseHelper.COL_NAME , com.example.kaan.architecture314app.DatabaseHelper.COL_COMPANY , com.example.kaan.architecture314app.DatabaseHelper.COL_YEAR , com.example.kaan.architecture314app.DatabaseHelper.COL_INSTRUCTIONSET , com.example.kaan.architecture314app.DatabaseHelper.COL_BITSIZE , com.example.kaan.architecture314app.DatabaseHelper.COL_MICROARCH , com.example.kaan.architecture314app.DatabaseHelper.COL_SPEED , com.example.kaan.architecture314app.DatabaseHelper.COL_OTHER };
+    return this.getReadableDatabase().rawQuery((("Select * from " + (com.example.kaan.architecture314app.DatabaseHelper.TABLE_PROCESSORS)) + ";"), null);
+}

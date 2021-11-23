@@ -1,0 +1,3 @@
+private java.util.Map<us.kbase.workspace.database.ObjectIdentifier, us.kbase.workspace.database.ObjectIDResolvedWS> checkPerms(final us.kbase.workspace.database.WorkspaceUser user, final java.util.List<us.kbase.workspace.database.ObjectIdentifier> loi, final us.kbase.workspace.database.Permission perm, final java.lang.String operation) throws us.kbase.workspace.database.exceptions.CorruptWorkspaceDBException, us.kbase.workspace.database.exceptions.InaccessibleObjectException, us.kbase.workspace.database.exceptions.WorkspaceCommunicationException {
+    return checkPerms(user, loi, perm, operation, false, false);
+}

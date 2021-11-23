@@ -1,0 +1,12 @@
+public int showFingers() {
+    java.util.Scanner sc = new java.util.Scanner(java.lang.System.in);
+    java.lang.System.out.print(((this.name) + ", please choose a number of fingers to show between 1 and 10. Type 0 to quit: "));
+    int fingers = sc.nextInt();
+    while ((fingers < 0) && (fingers > (this.maxFingers))) {
+        java.lang.System.out.print((fingers + " is not a valid number; please retry with a number between 1 and 10 or 0 to quit: "));
+        fingers = sc.nextInt();
+    } 
+    sc.close();
+    this.setFingers(fingers);
+    return fingers;
+}

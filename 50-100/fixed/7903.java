@@ -1,0 +1,4 @@
+@java.lang.Override
+public org.spongepowered.api.command.args.CommandElement[] getArguments() {
+    return new org.spongepowered.api.command.args.CommandElement[]{ org.spongepowered.api.command.args.GenericArguments.optionalWeak(org.spongepowered.api.command.args.GenericArguments.requiringPermission(org.spongepowered.api.command.args.GenericArguments.onlyOne(org.spongepowered.api.command.args.GenericArguments.player(org.spongepowered.api.text.Text.of(playerKey))), permissions.getPermissionWithSuffix("other"))) , org.spongepowered.api.command.args.GenericArguments.optional(org.spongepowered.api.command.args.GenericArguments.onlyOne(org.spongepowered.api.command.args.GenericArguments.bool(org.spongepowered.api.text.Text.of(b)))) };
+}

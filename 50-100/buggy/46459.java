@@ -1,0 +1,3 @@
+protected static final edu.umass.cs.gnscommon.packets.CommandPacket fieldCreateIndex(edu.umass.cs.gnsclient.client.util.GuidEntry GUID, java.lang.String field, java.lang.String index) throws edu.umass.cs.gnscommon.exceptions.client.ClientException {
+    return edu.umass.cs.gnsclient.client.GNSCommand.getCommand(CommandType.CreateIndex, GUID, GNSProtocol.GUID.toString(), GUID.getGuid(), GNSProtocol.FIELD.toString(), field, GNSProtocol.VALUE.toString(), index, GNSProtocol.WRITER.toString(), GUID.getGuid());
+}

@@ -1,0 +1,3 @@
+public static java.util.function.Predicate<java.lang.Class> getPredicateToFilterByAttribute(java.util.Optional<java.lang.Boolean> doesExist, java.lang.String attributeType) {
+    return ( e) -> (!(doesExist.isPresent())) || ((doesExist.get()) == (java.lang.Boolean.TRUE) ? e.getAttributes().toUpperCase().contains(attributeType) : ((doesExist.get()) != (java.lang.Boolean.FALSE)) || (!(e.getAttributes().toUpperCase().contains(attributeType))));
+}

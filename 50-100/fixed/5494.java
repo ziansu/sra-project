@@ -1,0 +1,16 @@
+public void close() {
+    if (closed)
+        return ;
+    
+    notifyClose = true;
+    eqh.breakEventLoop();
+    synchronized(this) {
+        while (!(closed)) {
+            try {
+                wait(100);
+            } catch (java.lang.InterruptedException e) {
+                logger.error(("exception while waiting to close " + e));
+            }
+        } 
+    }
+}

@@ -1,0 +1,4 @@
+private static org.eclipse.sw360.datahandler.thrift.vulnerabilities.VulnerabilityCheckStatus newVulnerabilityCheckStatusFromRequest(javax.portlet.ResourceRequest request) {
+    org.eclipse.sw360.datahandler.thrift.vulnerabilities.VulnerabilityRatingForProject vulnerabilityRatingForProject = org.eclipse.sw360.datahandler.thrift.vulnerabilities.VulnerabilityRatingForProject.findByValue(java.lang.Integer.parseInt(request.getParameter(PortalConstants.VULNERABILITY_RATING_VALUE)));
+    return new org.eclipse.sw360.datahandler.thrift.vulnerabilities.VulnerabilityCheckStatus().setCheckedBy(org.eclipse.sw360.portal.users.UserCacheHolder.getUserFromRequest(request).getEmail()).setCheckedOn(org.eclipse.sw360.datahandler.common.SW360Utils.getCreatedOn()).setComment(request.getParameter(PortalConstants.VULNERABILITY_RATING_COMMENT)).setVulnerabilityRating(vulnerabilityRatingForProject);
+}

@@ -1,0 +1,3 @@
+private static com.yarolegovich.wellsql.SelectQuery<org.wordpress.android.fluxc.model.MediaModel> getSiteImagesQuery(org.wordpress.android.fluxc.model.SiteModel siteModel) {
+    return com.yarolegovich.wellsql.WellSql.select(org.wordpress.android.fluxc.model.MediaModel.class).where().beginGroup().equals(MediaModelTable.LOCAL_SITE_ID, siteModel.getSiteId()).contains(MediaModelTable.MIME_TYPE, MediaUtils.MIME_TYPE_IMAGE).endGroup().endWhere();
+}

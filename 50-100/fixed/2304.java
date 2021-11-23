@@ -1,0 +1,3 @@
+private io.minio.HttpResponse executePut(java.lang.String bucketName, java.lang.String objectName, java.util.Map<java.lang.String, java.lang.String> headerMap, java.util.Map<java.lang.String, java.lang.String> queryParamMap, java.lang.String region, byte[] data, int length) throws io.minio.ErrorResponseException, io.minio.InternalException, io.minio.InvalidBucketNameException, io.minio.NoResponseException, java.io.IOException, org.xmlpull.v1.XmlPullParserException {
+    return execute(Method.PUT, region, bucketName, objectName, headerMap, queryParamMap, data, length);
+}

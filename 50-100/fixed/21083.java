@@ -1,0 +1,16 @@
+@javax.ws.rs.POST
+@javax.ws.rs.Path(value = "/insert")
+@javax.ws.rs.Consumes(value = "application/x-www-form-urlencoded")
+public javax.ws.rs.core.Response insertUser(@javax.ws.rs.FormParam(value = "username")
+java.lang.String userName, @javax.ws.rs.FormParam(value = "password")
+java.lang.String password, @javax.ws.rs.FormParam(value = "ini")
+java.lang.String ini, @javax.ws.rs.FormParam(value = "role")
+java.lang.String role, @javax.ws.rs.FormParam(value = "cpr")
+java.lang.String cpr) throws java.net.URISyntaxException, webapplication.rest.DALException {
+    java.util.List<java.lang.String> roles = new java.util.ArrayList<java.lang.String>();
+    roles.add(role);
+    webapplication.rest.OperatoerDTO user = new webapplication.rest.OperatoerDTO(0, userName, ini, password, true);
+    dao.createOperatoer(user);
+    java.net.URI location = new java.net.URI("../userpage.html");
+    return javax.ws.rs.core.Response.temporaryRedirect(location).build();
+}

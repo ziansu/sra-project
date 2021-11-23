@@ -1,0 +1,6 @@
+private static java.util.ArrayList<org.rstudio.core.client.widget.WizardPage<org.rstudio.studio.client.rsconnect.model.RSConnectPublishInput, org.rstudio.studio.client.rsconnect.model.RSConnectPublishResult>> createPages(org.rstudio.studio.client.rsconnect.model.RSConnectPublishInput input) {
+    java.util.ArrayList<org.rstudio.core.client.widget.WizardPage<org.rstudio.studio.client.rsconnect.model.RSConnectPublishInput, org.rstudio.studio.client.rsconnect.model.RSConnectPublishResult>> pages = new java.util.ArrayList<org.rstudio.core.client.widget.WizardPage<org.rstudio.studio.client.rsconnect.model.RSConnectPublishInput, org.rstudio.studio.client.rsconnect.model.RSConnectPublishResult>>();
+    pages.add(new org.rstudio.studio.client.rsconnect.ui.PublishRPubsPage("RPubs", ("RPubs is a free service from " + "RStudio for sharing documents on the web.")));
+    pages.add(new org.rstudio.studio.client.rsconnect.ui.PublishStaticPage("A server in your organization", ("RStudio Connect enables members of your organization to share and " + "collaborate privately and securely.")));
+    return pages;
+}

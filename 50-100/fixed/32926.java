@@ -1,0 +1,10 @@
+@java.lang.Override
+public synchronized void paint(java.awt.Graphics g) {
+    java.awt.Graphics2D g2d = ((java.awt.Graphics2D) (g));
+    int[] background = getBackgroundImage();
+    int[] userBackground = getUserMapImage(background);
+    drawBackground(g, userBackground);
+    drawUserSkeleton(g2d);
+    drawStatus(g2d);
+    coordinate = new java.util.ArrayList<>();
+}

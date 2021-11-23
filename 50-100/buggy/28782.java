@@ -1,0 +1,6 @@
+@org.junit.Test
+public void metaAnnotationsByClass() {
+    org.assertj.core.api.Assertions.assertThat(scanner.getNamesOfClassesWithAnnotation(io.github.lukehutch.fastclasspathscanner.metaannotation.MetaAnnotatedAnnotation.class)).containsExactly(io.github.lukehutch.fastclasspathscanner.metaannotation.MetaAnnotatedClass.class.getName());
+    org.assertj.core.api.Assertions.assertThat(scanner.getNamesOfClassesWithMetaAnnotation(io.github.lukehutch.fastclasspathscanner.metaannotation.MetaAnnotation.class)).containsOnly(io.github.lukehutch.fastclasspathscanner.metaannotation.MetaAndNonMetaAnnotatedClass.class.getName(), io.github.lukehutch.fastclasspathscanner.metaannotation.MetaAnnotatedClass.class.getName());
+    org.assertj.core.api.Assertions.assertThat(scanner.getNamesOfClassesWithMetaAnnotation(io.github.lukehutch.fastclasspathscanner.metaannotation.MetaAnnotatedAnnotation.class)).containsOnly(io.github.lukehutch.fastclasspathscanner.metaannotation.MetaAnnotatedClass.class.getName(), io.github.lukehutch.fastclasspathscanner.metaannotation.MetaMetaAnnotatedClass.class.getName());
+}

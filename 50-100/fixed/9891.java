@@ -1,0 +1,3 @@
+private com.questdb.ql.parser.RecordSource compile(com.questdb.ql.parser.QueryModel model, com.questdb.factory.JournalReaderFactory factory) throws com.questdb.ex.JournalException, com.questdb.ex.ParserException {
+    return limit(order(selectColumns(((model.getJoinModels().size()) > 1 ? optimise(model, factory).compileJoins(model, factory) : compileSingleOrSubQuery(model, factory)), model), model), model);
+}

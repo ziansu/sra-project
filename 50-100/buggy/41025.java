@@ -1,0 +1,3 @@
+org.ovirt.engine.core.common.businessentities.VmwareVmProviderProperties getVmwareVmProviderProperties(org.ovirt.engine.core.compat.Guid dataCenterId) {
+    return new org.ovirt.engine.core.common.businessentities.VmwareVmProviderProperties(getvCenter().getEntity(), getEsx().getEntity(), getVmwareDatacenter().getEntity(), getVerifySSL().getEntity(), dataCenterId, ((getProxyHost()) != null ? getProxyHost().getSelectedItem().getId() : null));
+}

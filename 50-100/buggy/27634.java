@@ -1,0 +1,5 @@
+private fi.otavanopisto.muikku.plugins.coursepicker.CoursePickerWorkspace createRestModel(fi.otavanopisto.muikku.model.workspace.WorkspaceEntity workspaceEntity, java.lang.String name, java.lang.String nameExtension, java.lang.String description, java.lang.String educationTypeName, boolean canSignup, java.lang.Boolean canCopyWorkspace, boolean isCourseMember) {
+    java.lang.Long numVisits = workspaceVisitController.getNumVisits(workspaceEntity);
+    java.util.Date lastVisit = workspaceVisitController.getLastVisit(workspaceEntity);
+    return new fi.otavanopisto.muikku.plugins.coursepicker.CoursePickerWorkspace(workspaceEntity.getId(), workspaceEntity.getUrlName(), workspaceEntity.getArchived(), workspaceEntity.getPublished(), name, nameExtension, description, numVisits, lastVisit, educationTypeName, canSignup, canCopyWorkspace, isCourseMember);
+}

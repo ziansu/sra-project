@@ -1,0 +1,3 @@
+public com.couchbase.lite.ReplicatorConfiguration copy() {
+    return new com.couchbase.lite.ReplicatorConfiguration(database, target, replicatorType, continuous, conflictResolver, authenticator, ((pinnedServerCertificate) != null ? java.util.Arrays.copyOf(pinnedServerCertificate, pinnedServerCertificate.length) : null), ((channels) != null ? new java.util.ArrayList<>(channels) : null), ((documentIDs) != null ? new java.util.ArrayList<>(documentIDs) : null));
+}

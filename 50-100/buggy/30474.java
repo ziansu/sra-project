@@ -1,0 +1,18 @@
+@java.lang.Override
+public void setUserVisibleHint(boolean isVisibleToUser) {
+    super.setUserVisibleHint(isVisibleToUser);
+    if (isVisibleToUser) {
+        if ((getActivity()) != null) {
+            if ((this.progressDialog) == null) {
+                this.progressDialog = com.stgobain.samuha.utility.AppUtils.createProgressDialog(getActivity());
+                this.progressDialog.show();
+            }else {
+                this.progressDialog.show();
+            }
+            if (!(isDataFetched)) {
+                isDataFetched = true;
+                requestEvents();
+            }
+        }
+    }
+}

@@ -1,0 +1,3 @@
+public static java.lang.String genCopyHdfsSql(java.lang.String prefix, java.util.List<java.lang.String> fieldNameList, java.lang.String tn, java.lang.String dbschema, java.lang.String rootWebHdfs, java.lang.String csvFileName, java.lang.String username, etl.engine.types.DBType dbType) {
+    return etl.util.DBUtil.genCopyHdfsSql(prefix, fieldNameList, tn, dbschema, rootWebHdfs, csvFileName, username, dbType, ",", "\"");
+}

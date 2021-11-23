@@ -1,0 +1,4 @@
+@java.lang.Override
+protected java.util.List<com.facebook.react.ReactPackage> getPackages() {
+    return java.util.Arrays.<com.facebook.react.ReactPackage>asList(new com.facebook.react.shell.MainReactPackage(), new co.apptailor.googlesignin.RNGoogleSigninPackage(), new com.microsoft.codepush.react.CodePush("Fa0Ug7tNp1xFH9EShk5GXlBEIXCE4JbRhcGg7", getApplicationContext(), BuildConfig.DEBUG), new com.oblador.vectoricons.VectorIconsPackage(), new com.zmxv.RNSound.RNSoundPackage(), new com.futurice.rctaudiotoolkit.AudioPackage(), new com.facebook.reactnative.androidsdk.FBSDKPackage(com.talktekapp.MainApplication.mCallbackManager), new co.apptailor.googlesignin.RNGoogleSigninPackage());
+}

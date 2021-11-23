@@ -1,0 +1,4 @@
+private void TableLoad() {
+    MainSystem.DB_Connect.DB_ResultSet = MainSystem.AutoSQLQuery.db_con.executeQuery(("SELECT `T_Bill_Of_Material_Table`.`Date`,\n" + (((((("    `T_Bill_Of_Material_Table`.`StyleID`,\n" + "    `T_Bill_Of_Material_Table`.`StyleDesc`,\n") + "    `T_Bill_Of_Material_Table`.`Accessories`,\n") + "    `T_Bill_Of_Material_Table`.`Quantity`,\n") + "    `T_Bill_Of_Material_Table`.`Cost`,\n") + "    `T_Bill_Of_Material_Table`.`Final_Cost`\n") + "FROM `garmentsystem`.`T_Bill_Of_Material_Table`;")));
+    jTable2.setModel(net.proteanit.sql.DbUtils.resultSetToTableModel(DB_Connect.DB_ResultSet));
+}

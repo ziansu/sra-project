@@ -1,0 +1,3 @@
+private com.jforex.programming.order.OrderSpecification getOrderSpecification(final java.lang.String label, final com.dukascopy.api.Instrument instrument, final com.dukascopy.api.IEngine.OrderCommand orderCommand, final double orderAmount, final double stopLossPrice, final double takeProfitPrice) {
+    return new com.jforex.programming.order.OrderSpecification.Builder(label, instrument, orderCommand, orderAmount).stopLossPrice(stopLossPrice).takeProfitPrice(takeProfitPrice).build();
+}

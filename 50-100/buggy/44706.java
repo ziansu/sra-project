@@ -1,0 +1,5 @@
+@java.lang.Override
+public void onCreate(android.database.sqlite.SQLiteDatabase db) {
+    java.lang.String SQL_CREATE_PRODUCTS_TABLE = ((((((((((((("CREATE TABLE " + (com.example.android.inventory.data.ProductContract.ProductEntry.TABLE_NAME)) + " (") + (com.example.android.inventory.data.ProductContract.ProductEntry._ID)) + " INTEGER PRIMARY KEY AUTOINCREMENT, ") + (com.example.android.inventory.data.ProductContract.ProductEntry.COLUMN_PRODUCT_NAME)) + " TEXT NOT NULL, ") + (com.example.android.inventory.data.ProductContract.ProductEntry.COLUMN_PRODUCT_PRICE)) + " INTEGER NOT NULL, ") + (com.example.android.inventory.data.ProductContract.ProductEntry.COLUMN_PRODUCT_QUANTITY)) + " INTEGER NOT NULL DEFAULT 0, ") + (com.example.android.inventory.data.ProductContract.ProductEntry.COLUMN_PRODUCT_SUPPLIER_EMAIL)) + " TEXT NOT NULL, ") + (com.example.android.inventory.data.ProductContract.ProductEntry.COLUMN_PRODUCT_IMAGE)) + " TEXT NOT NULL);";
+    db.execSQL(SQL_CREATE_PRODUCTS_TABLE);
+}

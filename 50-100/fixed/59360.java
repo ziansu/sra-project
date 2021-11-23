@@ -1,0 +1,3 @@
+private void saveLongLat(android.content.SharedPreferences.Editor prefEditor, int pickerIndex, com.teamagam.gimelgimel.domain.map.entities.geometries.PointGeometry point) {
+    prefEditor.putFloat(((com.teamagam.gimelgimel.app.map.viewModel.SendQuadrilateralActionViewModel.QUADRILATERAL_LONG_PREF) + pickerIndex), ((float) (point.getLongitude()))).putFloat(((com.teamagam.gimelgimel.app.map.viewModel.SendQuadrilateralActionViewModel.QUADRILATERAL_LAT_PREF) + pickerIndex), ((float) (point.getLatitude()))).apply();
+}

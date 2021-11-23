@@ -1,0 +1,6 @@
+public static void main(java.lang.String[] args) throws java.io.IOException {
+    java.util.concurrent.ScheduledThreadPoolExecutor threadPoolExe = new java.util.concurrent.ScheduledThreadPoolExecutor(5);
+    com.saymtfmtfmtf.view.Interface inter = new com.saymtfmtfmtf.view.Interface();
+    threadPoolExe.scheduleWithFixedDelay(inter, 1, 1, java.util.concurrent.TimeUnit.SECONDS);
+    new java.lang.Thread(inter).start();
+}

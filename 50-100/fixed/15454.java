@@ -1,0 +1,3 @@
+public void addTransaction(java.lang.String eventId, java.lang.String fromAccountId, net.chrisrichardson.eventstore.javaexamples.banking.common.accounts.AccountTransactionInfo ti) {
+    mongoTemplate.updateMulti(new org.springframework.data.mongodb.core.query.Query(org.springframework.data.mongodb.core.query.Criteria.where("id").is(fromAccountId)), new org.springframework.data.mongodb.core.query.Update().push("transactions", ti).set("version", eventId), net.chrisrichardson.eventstore.javaexamples.banking.backend.queryside.accounts.AccountInfo.class);
+}

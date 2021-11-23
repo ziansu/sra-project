@@ -1,0 +1,3 @@
+public static <C extends org.forgerock.opendj.config.ConfigurationClient, S extends org.forgerock.opendj.config.Configuration> org.forgerock.opendj.config.dsconfig.CreateSubCommandHandler<C, S> create(com.forgerock.opendj.cli.SubCommandArgumentParser parser, org.forgerock.opendj.config.ManagedObjectPath<?, ?> p, org.forgerock.opendj.config.OptionalRelationDefinition<C, S> r) throws com.forgerock.opendj.cli.ArgumentException {
+    return new org.forgerock.opendj.config.dsconfig.CreateSubCommandHandler(parser, p, r, null, p.child(r));
+}

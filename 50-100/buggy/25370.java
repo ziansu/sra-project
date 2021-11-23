@@ -1,0 +1,7 @@
+public static synchronized void enableAnonymizationProfile(boolean activate) {
+    org.weasis.core.api.media.data.TagW[] list = new org.weasis.core.api.media.data.TagW[]{ org.weasis.core.api.media.data.TagW.PatientName , org.weasis.core.api.media.data.TagW.PatientID , org.weasis.core.api.media.data.TagW.PatientSex , org.weasis.core.api.media.data.TagW.PatientBirthDate , org.weasis.core.api.media.data.TagW.PatientBirthTime , org.weasis.core.api.media.data.TagW.PatientComments , org.weasis.core.api.media.data.TagW.PatientPseudoUID , org.weasis.core.api.media.data.TagW.PatientWeight , org.weasis.core.api.media.data.TagW.AccessionNumber , org.weasis.core.api.media.data.TagW.StudyID , org.weasis.core.api.media.data.TagW.InstitutionalDepartmentName , org.weasis.core.api.media.data.TagW.InstitutionName , org.weasis.core.api.media.data.TagW.ReferringPhysicianName , org.weasis.core.api.media.data.TagW.StudyDescription , org.weasis.core.api.media.data.TagW.SeriesDescription , org.weasis.core.api.media.data.TagW.RequestAttributesSequence , org.weasis.core.api.media.data.TagW.StationName , org.weasis.core.api.media.data.TagW.ImageComments };
+    int type = (activate) ? 1 : 0;
+    for (org.weasis.core.api.media.data.TagW t : list) {
+        t.setAnonymizationType(type);
+    }
+}

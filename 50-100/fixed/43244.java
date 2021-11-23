@@ -1,0 +1,3 @@
+public static java.lang.String getTitle() {
+    return (("Family ID," + ((((((((("Child," + "Sample Type (Child),") + "Mother,") + "Father,") + "Gene Name,") + "Artifacts in Gene,") + "Flag,") + "Multi qualified var combinations,") + "Var Case Freq #1 & #2 (co-occurance),") + "Var Ctrl Freq #1 & #2 (co-occurance),")) + (function.genotype.trio.CompHetOutput.initVarTitleStr("1"))) + (function.genotype.trio.CompHetOutput.initVarTitleStr("2"));
+}

@@ -1,0 +1,8 @@
+public com.google.common.util.concurrent.ListenableFuture<org.opendaylight.yangtools.yang.common.RpcResult<java.lang.Void>> floodArp(org.opendaylight.ovsdb.openstack.netvirt.providers.openflow13.services.arp.ArpMessageAddress senderAddress, org.opendaylight.yang.gen.v1.urn.ietf.params.xml.ns.yang.ietf.inet.types.rev100924.Ipv4Address tpa, org.opendaylight.yangtools.yang.binding.InstanceIdentifier<org.opendaylight.yang.gen.v1.urn.opendaylight.inventory.rev130819.nodes.Node> nodeIid) {
+    com.google.common.base.Preconditions.checkNotNull(senderAddress);
+    com.google.common.base.Preconditions.checkNotNull(tpa);
+    com.google.common.base.Preconditions.checkNotNull(nodeIid);
+    org.opendaylight.yang.gen.v1.urn.opendaylight.inventory.rev130819.node.NodeConnectorKey nodeConnectorKey = new org.opendaylight.yang.gen.v1.urn.opendaylight.inventory.rev130819.node.NodeConnectorKey(createNodeConnectorId(org.opendaylight.ovsdb.openstack.netvirt.providers.openflow13.services.arp.ArpSender.OFPP_ALL, nodeIid.firstKeyOf(org.opendaylight.yang.gen.v1.urn.opendaylight.inventory.rev130819.nodes.Node.class, org.opendaylight.yang.gen.v1.urn.opendaylight.inventory.rev130819.nodes.NodeKey.class).getId()));
+    org.opendaylight.yangtools.yang.binding.InstanceIdentifier<org.opendaylight.yang.gen.v1.urn.opendaylight.inventory.rev130819.node.NodeConnector> egressNc = nodeIid.child(org.opendaylight.yang.gen.v1.urn.opendaylight.inventory.rev130819.node.NodeConnector.class, nodeConnectorKey);
+    return sendArp(senderAddress, tpa, null, egressNc);
+}

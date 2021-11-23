@@ -1,0 +1,3 @@
+public static void createCompositeFile(javax.swing.JFrame parent, java.io.File[] inputFileArray, java.io.File outputFile, java.lang.Integer startYear, java.lang.Integer endYear, org.fhaes.enums.FireFilterType filter, java.lang.Double fireFilterValue, java.lang.Integer minNumberSamples) {
+    new org.fhaes.tools.FHOperations(parent, inputFileArray, outputFile, startYear, endYear, fireFilterValue, filter, false, true, false, minNumberSamples, null, null);
+}

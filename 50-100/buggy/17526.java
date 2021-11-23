@@ -1,0 +1,3 @@
+private seedu.bulletjournal.model.task.Task generatePerson(int seed) throws java.lang.Exception {
+    return new seedu.bulletjournal.model.task.Task(new seedu.bulletjournal.model.task.TaskName(("Person " + seed)), new seedu.bulletjournal.model.task.DueDate(("" + (java.lang.Math.abs(seed)))), new seedu.bulletjournal.model.task.Status((seed + "undone")), new seedu.bulletjournal.model.task.BeginDate(("House of " + seed)), new seedu.bulletjournal.model.tag.UniqueTagList(new seedu.bulletjournal.model.tag.Tag(("tag" + (java.lang.Math.abs(seed)))), new seedu.bulletjournal.model.tag.Tag(("tag" + (java.lang.Math.abs((seed + 1)))))));
+}

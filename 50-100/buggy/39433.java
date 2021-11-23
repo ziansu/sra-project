@@ -1,0 +1,3 @@
+boolean isInGen0ExclusionZone(int x, int z) {
+    return ((java.lang.Math.abs((x - (vazkii.botania.common.block.subtile.generating.SubTileDandelifeon.RANGE)))) <= (vazkii.botania.common.block.subtile.generating.SubTileDandelifeon.GEN_0_EXCLUSION_RADIUS)) && ((java.lang.Math.abs(((y) - (vazkii.botania.common.block.subtile.generating.SubTileDandelifeon.RANGE)))) <= (vazkii.botania.common.block.subtile.generating.SubTileDandelifeon.GEN_0_EXCLUSION_RADIUS));
+}

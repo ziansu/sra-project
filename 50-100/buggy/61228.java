@@ -1,0 +1,3 @@
+public boolean onTarget() {
+    return (((m_yaw) < (edu.wpi.first.wpilibj.Preferences.getInstance().getDouble("Boiler Threshold", DEFAULTTHRESHOLD))) && ((java.lang.Math.abs(org.usfirst.frc.team3130.robot.subsystems.ShooterWheelsLeft.GetError())) < (edu.wpi.first.wpilibj.Preferences.getInstance().getDouble("ShooterWheel Tolerance", SHOOTERTHRESHOLD)))) && ((java.lang.Math.abs(org.usfirst.frc.team3130.robot.subsystems.ShooterWheelsRight.GetError())) < (edu.wpi.first.wpilibj.Preferences.getInstance().getDouble("ShooterWheel Tolerance", SHOOTERTHRESHOLD)));
+}

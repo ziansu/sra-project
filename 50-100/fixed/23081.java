@@ -1,0 +1,7 @@
+public void setUniform(final java.lang.String name, final float value) {
+    int uniformID = uniformsMap.get(name);
+    if ((!(this.uniformsMap.containsKey(name))) || (uniformID <= 0)) {
+        throw new java.lang.RuntimeException((("OpenGL Error: Cannot set value for uniform '" + name) + "', because uniform doesnt exists."));
+    }
+    glUniform1f(uniformID, value);
+}

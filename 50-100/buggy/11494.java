@@ -1,0 +1,5 @@
+@java.lang.Override
+public void onCreate(android.database.sqlite.SQLiteDatabase db) {
+    db.execSQL((((((("CREATE TABLE " + (com.example.android.farliggodtapp.database.DatabaseHelper.tableName)) + " (") + (com.example.android.farliggodtapp.database.DatabaseHelper.tableColValue)) + " VARCHAR(255), ") + (com.example.android.farliggodtapp.database.DatabaseHelper.tableColType)) + " VARCHAR(255) PRIMARY KEY UNIQUE)"));
+    db.execSQL(("CREATE TABLE `blacklist` (" + ((((((((("  `id` INTEGER PRIMARY KEY AUTOINCREMENT," + "  `scientificName` varchar(255) NOT NULL,") + "  `navn` varchar(255) NOT NULL,") + "  `svalbard` tinyint(1) NOT NULL DEFAULT '0',") + "  `risiko` varchar(255) NOT NULL,") + "  `taxonID` int(11) NOT NULL,") + "  `canEat` tinyint(1) NOT NULL DEFAULT '0',") + "  `family` varchar(255) NOT NULL,") + "  `image` int(11) NOT NULL") + ")")));
+}

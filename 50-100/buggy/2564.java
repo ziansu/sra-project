@@ -1,0 +1,4 @@
+@java.lang.Override
+protected java.util.List<com.facebook.react.ReactPackage> getPackages() {
+    return java.util.Arrays.<com.facebook.react.ReactPackage>asList(new com.slowpath.hockeyapp.RNHockeyAppPackage(this), new com.facebook.react.shell.MainReactPackage(), new com.AlexanderZaytsev.RNI18n.RNI18nPackage(), new io.realm.react.RealmReactPackage(), new com.oblador.vectoricons.VectorIconsPackage(), new org.wonday.pdf.RCTPdfView(), new com.RNFetchBlob.RNFetchBlobPackage(), new com.instabug.reactlibrary.RNInstabugReactnativePackage.Builder("YOUR_ANDROID_APPLICATION_TOKEN", this).setInvocationEvent("shake").setPrimaryColor("#1D82DC").setFloatingEdge("left").setFloatingButtonOffsetFromTop(250).build(), new com.instabug.reactlibrary.RNInstabugReactnativePackage(Secrets.INSTABUG_ANDROID_ID, this, "shake", "#1D82DC"));
+}

@@ -1,0 +1,11 @@
+@java.lang.Override
+public void onCreate(android.os.Bundle savedInstanceState) {
+    dataHandler.addOnStudentClassChangeListener(this);
+    super.onCreate(savedInstanceState);
+    if (savedInstanceState != null) {
+        classNames = savedInstanceState.getStringArrayList(no.glv.android.stdntworkflow.InstalledClassesFragment.INST_STATE_CLASS_NAMES);
+    }else {
+        classNames = dataHandler.getStudentClassNames();
+    }
+    config = ((no.glv.android.stdntworkflow.InstalledClassesFragment.ClassViewConfig) (getArguments().getSerializable(no.glv.android.stdntworkflow.PARAM_CONFIG)));
+}

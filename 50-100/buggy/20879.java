@@ -1,0 +1,15 @@
+@java.lang.Override
+public void forEachRemaining(java.util.function.DoubleConsumer action) {
+    java.util.Objects.requireNonNull(action);
+    int i;
+    if (((i = index) >= 0) && (i < (index = fence))) {
+        do {
+            try {
+                action.accept(array[arrayIndex]);
+            } catch (java.lang.Exception e) {
+                e.printStackTrace();
+            }
+            arrayIndex = nextArrayIndex(arrayIndex);
+        } while ((++i) < (fence) );
+    }
+}

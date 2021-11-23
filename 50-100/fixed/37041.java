@@ -1,0 +1,4 @@
+public retrofit.RestAdapter getRestAdapter(com.squareup.okhttp.HttpUrl serverUrl, org.hisp.dhis.android.sdk.network.Credentials credentials) {
+    retrofit.RestAdapter restAdapter = new retrofit.RestAdapter.Builder().setEndpoint(serverUrl.newBuilder().addPathSegment("api").build().toString()).setConverter(new retrofit.converter.JacksonConverter(org.hisp.dhis.android.sdk.controllers.DhisController.getInstance().getObjectMapper())).setClient(new retrofit.client.OkClient(org.hisp.dhis.android.sdk.network.RepoManager.provideOkHttpClient(credentials))).setErrorHandler(new org.hispindia.bidtrackerreports.dagger.module.HIModuleModel.RetrofitErrorHandler()).setLogLevel(RestAdapter.LogLevel.BASIC).build();
+    return restAdapter;
+}

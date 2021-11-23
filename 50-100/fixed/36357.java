@@ -1,0 +1,11 @@
+public java.lang.String getMultiLevelDropdownIds() throws java.lang.Exception {
+    java.lang.StringBuilder dropdownIdsBuilder = new java.lang.StringBuilder();
+    java.util.Map<java.lang.String, java.util.Set<java.lang.String>> choicesByDropdownId = calculateChoicesByDropdownId();
+    for (java.lang.String id : choicesByDropdownId.keySet()) {
+        if ((dropdownIdsBuilder.length()) > 0) {
+            dropdownIdsBuilder.append(",");
+        }
+        dropdownIdsBuilder.append(id);
+    }
+    return dropdownIdsBuilder.toString();
+}

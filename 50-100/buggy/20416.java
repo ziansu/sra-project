@@ -1,0 +1,4 @@
+public void exportXfl(com.jpexs.decompiler.flash.AbortRetryIgnoreHandler handler, java.lang.String outfile, java.lang.String swfName, java.lang.String generator, java.lang.String generatorVerName, java.lang.String generatorVersion, boolean parallel, com.jpexs.decompiler.flash.xfl.FLAVersion version, com.jpexs.decompiler.flash.xfl.XFLExportSettings settings) throws java.io.IOException, java.lang.InterruptedException {
+    com.jpexs.decompiler.flash.xfl.XFLConverter.convertSWF(handler, this, swfName, outfile, settings, generator, generatorVerName, generatorVersion, parallel, version);
+    clearAllCache();
+}

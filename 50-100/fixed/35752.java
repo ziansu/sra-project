@@ -1,0 +1,4 @@
+public void setErrorMode(java.lang.String msg, java.lang.String file, int line) {
+    this.menuBarControl.updateUndoRedo(this.leftPanelControl.getSourcePane(), false);
+    this.leftPanelControl.setErrorMode(file, this.rightPanelControl.showErrorPanel(msg), line);
+}

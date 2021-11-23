@@ -1,0 +1,17 @@
+@java.lang.Override
+public void run() {
+    try {
+        synchronized(this) {
+            trafficLightsView.changeLight(TrafficLightsView.Light.RED);
+            java.lang.Thread.sleep(this.offset);
+            while (!(java.lang.Thread.interrupted())) {
+                trafficLightsView.changeLight(TrafficLightsView.Light.GREEN);
+                java.lang.Thread.sleep(greenLightDuration);
+                trafficLightsView.changeLight(TrafficLightsView.Light.RED);
+                java.lang.Thread.sleep(redLightDuration);
+            } 
+        }
+    } catch (java.lang.InterruptedException ex) {
+        java.lang.System.out.println("Traffic lights modelling stopped.");
+    }
+}

@@ -1,0 +1,5 @@
+@java.lang.Override
+public void acquireLock(io.hops.transaction.lock.TransactionLocks locks) throws java.io.IOException {
+    io.hops.transaction.lock.LockFactory lf = io.hops.transaction.lock.LockFactory.getInstance();
+    locks.add(lf.getINodeLock((!(dir.isQuotaEnabled()) ? true : false), nameNode, INodeLockType.WRITE, INodeResolveType.PATH, false, true, path));
+}

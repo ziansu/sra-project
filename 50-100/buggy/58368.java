@@ -1,0 +1,4 @@
+private com.netflix.metacat.common.dto.notifications.sns.messages.UpdateTableMessage createUpdateTableMessage(final java.lang.String id, final long timestamp, final java.lang.String requestId, final java.lang.String name, final com.netflix.metacat.common.dto.TableDto oldTable, final com.netflix.metacat.common.dto.TableDto currentTable) throws java.io.IOException {
+    final com.github.fge.jsonpatch.JsonPatch patch = com.github.fge.jsonpatch.diff.JsonDiff.asJsonPatch(this.mapper.valueToTree(oldTable), this.mapper.valueToTree(currentTable));
+    return new com.netflix.metacat.common.dto.notifications.sns.messages.UpdateTableMessage(id, timestamp, requestId, name, new com.netflix.metacat.common.dto.notifications.sns.payloads.UpdatePayload(oldTable, patch, currentTable));
+}

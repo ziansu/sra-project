@@ -1,0 +1,4 @@
+private boolean hasValidFlags() {
+    assert (argMultimap) != null;
+    return !((((seedu.multitasky.logic.parser.ParserUtil.areAllPrefixesPresent(argMultimap, seedu.multitasky.logic.parser.CliSyntax.PREFIX_TAG, seedu.multitasky.logic.parser.CliSyntax.PREFIX_ADDTAG)) || (seedu.multitasky.logic.parser.ParserUtil.areAllPrefixesPresent(argMultimap, seedu.multitasky.logic.parser.CliSyntax.PREFIX_FLOATINGTASK, seedu.multitasky.logic.parser.CliSyntax.PREFIX_DEADLINE))) || (seedu.multitasky.logic.parser.ParserUtil.areAllPrefixesPresent(argMultimap, seedu.multitasky.logic.parser.CliSyntax.PREFIX_DEADLINE, seedu.multitasky.logic.parser.CliSyntax.PREFIX_EVENT))) || (seedu.multitasky.logic.parser.ParserUtil.areAllPrefixesPresent(argMultimap, seedu.multitasky.logic.parser.CliSyntax.PREFIX_FLOATINGTASK, seedu.multitasky.logic.parser.CliSyntax.PREFIX_EVENT)));
+}

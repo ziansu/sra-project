@@ -1,0 +1,4 @@
+static dagger.internal.codegen.ResolvedBindings create(dagger.internal.codegen.BindingKey bindingKey, java.util.Set<? extends dagger.internal.codegen.Binding> ownedBindings, java.util.Set<? extends dagger.internal.codegen.Binding> inheritedBindings) {
+    com.google.common.collect.ImmutableSet<dagger.internal.codegen.Binding> immutableOwnedBindings = com.google.common.collect.ImmutableSet.<dagger.internal.codegen.Binding>copyOf(ownedBindings);
+    return new dagger.internal.codegen.AutoValue_ResolvedBindings(bindingKey, immutableOwnedBindings, com.google.common.collect.ImmutableSet.<dagger.internal.codegen.Binding>builder().addAll(inheritedBindings).addAll(immutableOwnedBindings).build());
+}

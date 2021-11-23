@@ -1,0 +1,19 @@
+public void startConsumers() {
+    startConsumerOfResourceCreationMessages(this.authorizationManager);
+    startConsumerOfResourceModificationMessages(this.authorizationManager);
+    startConsumerOfResourceRemovalMessages(this.authorizationManager);
+    startConsumerOfPlatformCreationMessages();
+    startConsumerOfPlatformModificationMessages();
+    startConsumerOfPlatformRemovalMessages();
+    startConsumerOfInformationModelCreationMessages();
+    startConsumerOfInformationModelModificationMessages();
+    startConsumerOfInformationModelRemovalMessages();
+    startConsumerOfFederationCreationMessages();
+    startConsumerOfFederationModificationMessages();
+    startConsumerOfFederationRemovalMessages();
+    startConsumerOfGetFederationForPlatformMessages();
+    startConsumerOfGetAllFederationsMessages();
+    startConsumerOfPlatformResourcesRequestsMessages();
+    startConsumerOfListAllInformationModelsRequestsMessages();
+    startConsumerOfPlatformDetailsConsumer();
+}

@@ -1,0 +1,3 @@
+private enmasse.controller.common.AddressSpace createAddressSpace(java.lang.String name) {
+    return new enmasse.controller.common.AddressSpace.Builder().setName(name).setNamespace(name).setType(new io.enmasse.address.model.types.standard.StandardAddressSpaceType()).setPlan(new io.enmasse.address.model.types.standard.StandardAddressSpaceType().getPlans().get(0)).setStatus(new enmasse.controller.common.Status(false)).appendEndpoint(new enmasse.controller.common.Endpoint.Builder().setName("foo").setService("messaging").setCertProvider(new enmasse.controller.common.SecretCertProvider("mysecret")).build()).build();
+}

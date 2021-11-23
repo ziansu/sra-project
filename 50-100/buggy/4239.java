@@ -1,0 +1,3 @@
+private java.util.Set<de.sven_torben.cqrest.CommandInfo> createCommandInfos(final java.util.Collection<? extends java.lang.reflect.Method> cmdHandlers) {
+    return cmdHandlers.stream().flatMap(( handler) -> java.util.Arrays.asList(handler.getParameterTypes()).stream()).filter(( paramType) -> this.commandType.isAssignableFrom(paramType)).map(( commandType) -> new de.sven_torben.cqrest.CommandInfo(commandType.getSimpleName())).collect(java.util.stream.Collectors.toSet());
+}

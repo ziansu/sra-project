@@ -1,0 +1,4 @@
+public uk.gov.justice.digital.prisoneraccounts.jpa.entity.Transaction creditAccount(uk.gov.justice.digital.prisoneraccounts.jpa.entity.Account account, java.lang.Long amountPence, java.lang.String description, java.lang.String clientRef) throws uk.gov.justice.digital.prisoneraccounts.service.AccountClosedException {
+    checkNotClosed(account);
+    return transactionRepository.save(uk.gov.justice.digital.prisoneraccounts.jpa.entity.Transaction.builder().account(account).amountPence(amountPence).description(description).clientReference(clientRef).transactionType(Transaction.TransactionTypes.CREDIT).build());
+}

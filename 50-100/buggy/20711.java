@@ -1,0 +1,7 @@
+private java.lang.String createWorkflowStepForRestoreNativeSnapshotSession(com.emc.storageos.workflow.Workflow workflow, com.emc.storageos.db.client.model.StorageSystem parentSystem, java.net.URI snapSessionURI, java.lang.String waitFor, com.emc.storageos.workflow.Workflow.Method rollbackMethod) {
+    java.net.URI parentSystemURI = parentSystem.getId();
+    com.emc.storageos.workflow.Workflow.Method restoreMethod = new com.emc.storageos.workflow.Workflow.Method(com.emc.storageos.vplexcontroller.VPlexDeviceController.RESTORE_SNAP_SESSION_METHOD_NAME, parentSystemURI, snapSessionURI, java.lang.Boolean.FALSE);
+    workflow.createStep(com.emc.storageos.vplexcontroller.VPlexDeviceController.RESTORE_SNAP_SESSION_STEP, java.lang.String.format("Restore snapshot session %s", snapSessionURI), waitFor, parentSystemURI, parentSystem.getSystemType(), com.emc.storageos.volumecontroller.impl.block.BlockDeviceController.class, restoreMethod, null, null);
+    com.emc.storageos.vplexcontroller.VPlexDeviceController._log.info("Created workflow step to restore snapshot session {}", snapSessionURI);
+    return com.emc.storageos.vplexcontroller.VPlexDeviceController.RESTORE_SNAP_SESSION_STEP;
+}

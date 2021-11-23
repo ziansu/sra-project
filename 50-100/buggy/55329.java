@@ -1,0 +1,14 @@
+private void calculateStatsInBackground(boolean refresh) {
+    new java.lang.Thread() {
+        @java.lang.Override
+        public void run() {
+            iso.piotrowski.marek.nyndro.statistics.HistoryAnalysis[] historyAnalysises = getPresenter().doHistoryAnalysis(refresh);
+            new android.os.Handler(iso.piotrowski.marek.nyndro.Application.NyndroApp.getContext().getMainLooper()).post(new java.lang.Runnable() {
+                @java.lang.Override
+                public void run() {
+                    getPresenter().propagateAnalysis(historyAnalysises);
+                }
+            });
+        }
+    }.start();
+}

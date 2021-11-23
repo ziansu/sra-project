@@ -1,0 +1,3 @@
+public template.Team.team.Team map(int i, java.sql.ResultSet resultSet, org.skife.jdbi.v2.StatementContext statementContext) throws java.sql.SQLException {
+    return new template.Team.team.Team(resultSet.getString("id"), resultSet.getString("name"), resultSet.getString("logo"), resultSet.getString("topic"), resultSet.getString("brief"), resultSet.getString("assistant_player"), resultSet.getString("goal_player"));
+}

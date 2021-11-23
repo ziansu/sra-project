@@ -1,0 +1,4 @@
+public static com.pokescanner.helper.Settings getSettings(android.content.Context context) {
+    android.content.SharedPreferences sharedPrefs = context.getSharedPreferences(context.getString(R.string.shared_key), Context.MODE_PRIVATE);
+    return new com.pokescanner.helper.Settings(sharedPrefs.getBoolean(com.pokescanner.SettingsController.KEY_BOUNDING_BOX, false), sharedPrefs.getInt(com.pokescanner.SettingsController.SERVER_REFRESH_RATE, 3), sharedPrefs.getInt(com.pokescanner.SettingsController.MAP_REFRESH_RATE, 3), sharedPrefs.getInt(com.pokescanner.SettingsController.POKEMON_ICON_SCALE, 2), sharedPrefs.getString(com.pokescanner.SettingsController.LAST_USERNAME, ""), sharedPrefs.getBoolean(com.pokescanner.SettingsController.SHOW_ONLY_LURED, true));
+}

@@ -1,0 +1,10 @@
+public static void remove(java.lang.String feed) {
+    try {
+        java.util.Set<java.lang.String> feeds = feedblender.utils.FeedStorage.getFeeds();
+        feeds.remove(feed);
+        feedblender.utils.FeedStorage.prefs.put(feedblender.utils.FeedStorage.PREFS_FEED_URL, feedblender.utils.FeedStorage.gson.toJson(feeds));
+        feedblender.utils.FeedStorage.prefs.sync();
+    } catch (java.lang.Exception ex) {
+        throw new java.lang.IllegalStateException("Could not save preferences");
+    }
+}

@@ -1,0 +1,3 @@
+public static double crossProduct(org.sbml.jsbml.ext.layout.Point startPoint1, org.sbml.jsbml.ext.layout.Point startPoint2, org.sbml.jsbml.ext.layout.Point endPoint1, org.sbml.jsbml.ext.layout.Point endPoint2) {
+    return (((endPoint1.getX()) - (startPoint1.getX())) * ((endPoint2.getY()) - (startPoint2.getY()))) - (((endPoint1.getY()) - (startPoint1.getY())) * ((endPoint2.getX()) - (startPoint2.getX())));
+}

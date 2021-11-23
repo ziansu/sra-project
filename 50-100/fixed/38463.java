@@ -1,0 +1,4 @@
+public static com.jaspersoft.android.sdk.service.server.ServerInfoService create(com.jaspersoft.android.sdk.service.RestClient client) {
+    com.jaspersoft.android.sdk.network.ServerRestApi restApi = new com.jaspersoft.android.sdk.network.ServerRestApi.Builder().baseUrl(client.getServerUrl()).connectionTimeOut(client.getConnectionTimeOut(), java.util.concurrent.TimeUnit.MILLISECONDS).readTimeout(client.getReadTimeOut(), java.util.concurrent.TimeUnit.MILLISECONDS).build();
+    return new com.jaspersoft.android.sdk.service.server.ServerInfoService(restApi, com.jaspersoft.android.sdk.service.server.ServerInfoTransformer.get());
+}

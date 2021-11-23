@@ -1,0 +1,6 @@
+private void configureDBAdaptor(java.util.Properties properties) throws org.opencb.opencga.catalog.db.CatalogDBException {
+    com.mongodb.MongoCredential mongoCredential = com.mongodb.MongoCredential.createMongoCRCredential(properties.getProperty(org.opencb.opencga.catalog.CatalogManager.CATALOG_DB_USER, ""), properties.getProperty(org.opencb.opencga.catalog.CatalogManager.CATALOG_DB_DATABASE, ""), properties.getProperty(org.opencb.opencga.catalog.CatalogManager.CATALOG_DB_PASSWORD, "").toCharArray());
+    org.opencb.datastore.core.config.DataStoreServerAddress dataStoreServerAddress = new org.opencb.datastore.core.config.DataStoreServerAddress(properties.getProperty(org.opencb.opencga.catalog.CatalogManager.CATALOG_DB_HOST, ""), java.lang.Integer.parseInt(properties.getProperty(org.opencb.opencga.catalog.CatalogManager.CATALOG_DB_PORT, "0")));
+    catalogDBAdaptor = new org.opencb.opencga.catalog.db.CatalogMongoDBAdaptor(dataStoreServerAddress, mongoCredential);
+    java.lang.System.out.println(("catalogDBAdaptor = " + (catalogDBAdaptor)));
+}

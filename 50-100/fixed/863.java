@@ -1,0 +1,3 @@
+void initModel(java.lang.String dbRecordID, int parcelID, java.lang.String taxMapID, java.lang.String county, java.lang.String state, int acreage, java.lang.String township, java.lang.String range, int section, java.lang.String PM, java.lang.String description, java.lang.String b_north, java.lang.String b_east, java.lang.String b_south, java.lang.String b_west) {
+    model.setValues(parcelID, taxMapID, county, state, acreage, township, range, section, PM, description, b_north, b_east, b_south, b_west);
+}

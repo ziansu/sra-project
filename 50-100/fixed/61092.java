@@ -1,0 +1,4 @@
+@java.lang.Override
+protected java.util.List<com.facebook.react.ReactPackage> getPackages() {
+    return java.util.Arrays.<com.facebook.react.ReactPackage>asList(new com.facebook.react.shell.MainReactPackage(), new io.invertase.firebase.RNFirebasePackage(), new io.invertase.firebase.admob.RNFirebaseAdMobPackage(), new io.invertase.firebase.analytics.RNFirebaseAnalyticsPackage(), new io.invertase.firebase.auth.RNFirebaseAuthPackage(), new io.invertase.firebase.config.RNFirebaseRemoteConfigPackage(), new io.invertase.firebase.crash.RNFirebaseCrashPackage(), new io.invertase.firebase.database.RNFirebaseDatabasePackage(), new io.invertase.firebase.messaging.RNFirebaseMessagingPackage(), new io.invertase.firebase.perf.RNFirebasePerformancePackage(), new io.invertase.firebase.storage.RNFirebaseStoragePackage());
+}

@@ -1,0 +1,3 @@
+public void editUniversity(java.lang.String name, java.lang.String state, java.lang.String location, java.lang.String control, int numStudents, int perFemale, int satVerbal, int satMath, int expenses, int perFinancial, int numApplicants, int perAdmitted, int perEnrolled, int acadScale, int socialScale, int QOLScale) {
+    db.editSchool(name, state, location, control, numStudents, perFemale, satVerbal, satMath, expenses, perFinancial, numApplicants, perAdmitted, perEnrolled, acadScale, socialScale, QOLScale);
+}

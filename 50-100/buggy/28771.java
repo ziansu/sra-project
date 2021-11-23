@@ -1,0 +1,9 @@
+private void measureSentMessages(int queryID) {
+    java.lang.String[] values = new java.lang.String[1 + ((sentMessages.length) * 2)];
+    values[0] = java.lang.Integer.toString(queryID);
+    for (int i = 1; i < (sentMessages.length); i++) {
+        values[i] = java.lang.Integer.toString(i);
+        values[(i + 1)] = java.lang.Long.toString(sentMessages[i]);
+    }
+    measurementCollector.measureValue(MeasurementType.SLAVE_SENT_MAPPING_BATCHES_TO_SLAVE, values);
+}

@@ -1,0 +1,5 @@
+private static org.neo4j.kernel.impl.query.TransactionalContext createTransactionalContext(java.lang.String query) {
+    org.neo4j.kernel.impl.coreapi.InternalTransaction transaction = org.neo4j.cypher.javacompat.internal.DocsExecutionEngineTest.database.beginTransaction(KernelTransaction.Type.implicit, SecurityContext.AUTH_DISABLED);
+    org.neo4j.kernel.impl.query.clientconnection.BoltConnectionInfo boltConnection = new org.neo4j.kernel.impl.query.clientconnection.BoltConnectionInfo("username", "neo4j-java-bolt-driver", new java.net.InetSocketAddress("127.0.0.1", 56789), new java.net.InetSocketAddress("127.0.0.1", 7687));
+    return org.neo4j.cypher.javacompat.internal.DocsExecutionEngineTest.contextFactory.newContext(boltConnection, transaction, query, java.util.Collections.emptyMap());
+}

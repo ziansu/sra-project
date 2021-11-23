@@ -1,0 +1,3 @@
+private boolean isConsiderOptimizedClearForBlobstore(com.j_spaces.core.cache.context.Context context, com.gigaspaces.internal.server.storage.ITemplateHolder template, com.j_spaces.core.cache.IEntryCacheInfo pEntry) {
+    return (((((pEntry.isOffHeapEntry()) && ((template.getBatchOperationContext()) != null)) && (template.getBatchOperationContext().isClear())) && ((template.getXidOriginatedTransaction()) == null)) && (_cacheManager.optimizedBlobStoreClear())) && (template.getOptimizedForBlobStoreClearOp(getCacheManager()));
+}

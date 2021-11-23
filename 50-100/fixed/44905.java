@@ -1,0 +1,8 @@
+@org.junit.Test
+public void should_getScriptFromCache_return_different_script_if_different_definition() throws java.lang.Exception {
+    final java.lang.Class script1 = groovyScriptExpressionExecutorCacheStrategy.getScriptFromCache("MyScriptContent", 12L);
+    final java.lang.Class script2 = groovyScriptExpressionExecutorCacheStrategy.getScriptFromCache("MyScriptContent", 13L);
+    org.assertj.core.api.Assertions.assertThat(script1).isNotNull();
+    org.assertj.core.api.Assertions.assertThat(script2).isNotNull();
+    org.assertj.core.api.Assertions.assertThat(script1).isNotEqualTo(script2);
+}

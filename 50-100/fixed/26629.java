@@ -1,0 +1,3 @@
+public static int parse(final java.lang.String iSource, final java.lang.StringBuilder iBuffer, final int beginIndex, final int endIndex, final char[] iSeparator, final boolean iStringSeparatorExtended, final boolean iConsiderBraces, final boolean iConsiderSets, final int iMinPosSeparatorAreValid, boolean considerBags, final char... iJumpChars) {
+    return com.orientechnologies.orient.core.serialization.serializer.OStringSerializerHelper.parse(iSource.toCharArray(), iBuffer, beginIndex, endIndex, iSeparator, iStringSeparatorExtended, iConsiderBraces, iConsiderSets, iMinPosSeparatorAreValid, considerBags, true, false, iJumpChars);
+}

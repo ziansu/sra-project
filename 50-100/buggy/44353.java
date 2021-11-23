@@ -1,0 +1,3 @@
+private java.util.List<org.teavm.optimization.MethodOptimization> getOptimizations() {
+    return java.util.Arrays.asList(new org.teavm.optimization.ArrayUnwrapMotion(), new org.teavm.optimization.LoopInversion(), new org.teavm.optimization.LoopInvariantMotion(), new org.teavm.optimization.GlobalValueNumbering(), new org.teavm.optimization.ConstantConditionElimination(), new org.teavm.optimization.RedundantJumpElimination(), new org.teavm.optimization.UnusedVariableElimination(), new org.teavm.optimization.ClassInitElimination(), new org.teavm.optimization.UnreachableBasicBlockElimination());
+}

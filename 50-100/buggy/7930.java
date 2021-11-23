@@ -1,0 +1,9 @@
+@java.lang.Override
+public void close() throws java.sql.SQLException {
+    if ((connection) != null) {
+        if (com.intrack.transaction.jdbc.JdbcTransaction.log.isDebugEnabled()) {
+            com.intrack.transaction.jdbc.JdbcTransaction.log.debug((("Closing JDBC Connection [" + (connection)) + "]"));
+        }
+        connectionPool.release(connection);
+    }
+}

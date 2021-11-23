@@ -1,0 +1,17 @@
+@java.lang.Override
+public void closeFile(long fileId, boolean flush, com.orientechnologies.orient.core.storage.cache.local.OWriteCache writeCache) throws java.io.IOException {
+    fileId = com.orientechnologies.orient.core.storage.cache.local.OAbstractWriteCache.checkFileIdCompatibility(writeCache.getId(), fileId);
+    java.util.concurrent.locks.Lock fileLock;
+    cacheLock.acquireReadLock();
+    try {
+        fileLock = fileLockManager.acquireExclusiveLock(fileId);
+        try {
+            writeCache.close(fileId, flush);
+            clearFile(fileId);
+        } finally {
+            fileLockManager.releaseLock(fileLock);
+        }
+    } finally {
+        cacheLock.releaseReadLock();
+    }
+}

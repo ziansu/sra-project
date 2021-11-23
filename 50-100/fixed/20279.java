@@ -1,0 +1,11 @@
+private void previousTrack() {
+    if ((mAllTracks.size()) > 1) {
+        if ((mCurrentTrackIndex) == 0) {
+            mCurrentTrackIndex = mAllTracks.size();
+        }
+        mCurrentTrackIndex = (mCurrentTrackIndex) - 1;
+        mCurrentTrackDetails = ((com.udacity.neerajbholani.spotifystreamer.parcelables.TrackDetails) (mAllTracks.get(mCurrentTrackIndex)));
+        updateViewsWithCurrentTrackDetails();
+        playTrack();
+    }
+}

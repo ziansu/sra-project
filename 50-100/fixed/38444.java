@@ -1,0 +1,6 @@
+protected java.lang.Object convertDocumentToObject(final com.orientechnologies.orient.core.record.impl.ODocument value, final java.lang.Object self) {
+    if (value == null)
+        return null;
+    
+    return com.orientechnologies.orient.object.enhancement.OObjectEntityEnhancer.getInstance().getProxiedInstance(value.getClassName(), getDatabase().getEntityManager(), value, (self instanceof javassist.util.proxy.ProxyObject ? ((javassist.util.proxy.ProxyObject) (self)) : null));
+}

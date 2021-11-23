@@ -1,0 +1,6 @@
+private io.realm.RealmResults<com.example.studentslist.realm.data.User> searchUser(java.lang.String name) {
+    io.realm.Realm realm = io.realm.Realm.getDefaultInstance();
+    io.realm.RealmResults<com.example.studentslist.realm.data.User> searchUsers = realm.where(com.example.studentslist.realm.data.User.class).contains("name", name).findAllSorted("name", Sort.ASCENDING);
+    realm.close();
+    return searchUsers;
+}

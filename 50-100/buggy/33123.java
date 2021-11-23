@@ -1,0 +1,10 @@
+@java.lang.Override
+public void onAuthStateChanged(@android.support.annotation.NonNull
+com.google.firebase.auth.FirebaseAuth firebaseAuth) {
+    com.google.firebase.auth.FirebaseUser user = firebaseAuth.getCurrentUser();
+    if (user != null) {
+        cz.vspj.schrek.im.common.Utils.setUserOnlineState(user.getUid());
+        startActivity(new android.content.Intent(getApplicationContext(), cz.vspj.schrek.im.activity.MainActivity.class));
+        finish();
+    }
+}

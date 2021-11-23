@@ -1,0 +1,5 @@
+private void migrateToArtifactAndSetRelation(com.buschmais.jqassistant.core.store.api.Store store, com.buschmais.jqassistant.plugin.m2repo.api.model.MavenRepositoryDescriptor repoDescriptor, java.lang.String lastModified, com.buschmais.jqassistant.core.store.api.model.Descriptor descriptor) {
+    com.buschmais.jqassistant.plugin.m2repo.api.model.RepositoryArtifactDescriptor artifactDescriptor = store.addDescriptorType(descriptor, com.buschmais.jqassistant.plugin.m2repo.api.model.RepositoryArtifactDescriptor.class, com.buschmais.jqassistant.plugin.m2repo.api.model.RepositoryArtifactDescriptor.class);
+    com.buschmais.jqassistant.plugin.m2repo.api.model.ContainsArtifactDescriptor containsDescriptor = store.create(repoDescriptor, com.buschmais.jqassistant.plugin.m2repo.api.model.ContainsArtifactDescriptor.class, artifactDescriptor);
+    containsDescriptor.setLastModified(org.apache.commons.lang.StringUtils.defaultString(lastModified));
+}

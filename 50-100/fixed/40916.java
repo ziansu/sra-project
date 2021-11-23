@@ -1,0 +1,4 @@
+public org.opendaylight.yangtools.yang.binding.InstanceIdentifier<org.opendaylight.yang.gen.v1.urn.opendaylight.genius.idmanager.rev160406.id.pools.id.pool.ReleasedIdsHolder> getReleasedIdsHolderInstance(java.lang.String poolName) {
+    org.opendaylight.yangtools.yang.binding.InstanceIdentifier.InstanceIdentifierBuilder<org.opendaylight.yang.gen.v1.urn.opendaylight.genius.idmanager.rev160406.id.pools.id.pool.ReleasedIdsHolder> releasedIdsHolder = org.opendaylight.yangtools.yang.binding.InstanceIdentifier.builder(org.opendaylight.yang.gen.v1.urn.opendaylight.genius.idmanager.rev160406.IdPools.class).child(org.opendaylight.yang.gen.v1.urn.opendaylight.genius.idmanager.rev160406.id.pools.IdPool.class, new org.opendaylight.yang.gen.v1.urn.opendaylight.genius.idmanager.rev160406.id.pools.IdPoolKey(poolName)).child(org.opendaylight.yang.gen.v1.urn.opendaylight.genius.idmanager.rev160406.id.pools.id.pool.ReleasedIdsHolder.class);
+    return releasedIdsHolder.build();
+}

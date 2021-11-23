@@ -1,0 +1,12 @@
+private int getCharAfterS() throws com.ximpleware.EOFException, com.ximpleware.EncodingException, com.ximpleware.ParseException {
+    int n;
+    int k;
+    n = k = 0;
+    while (true) {
+        n = getChar();
+        if ((((n == ' ') || (n == '\t')) || (n == '\n')) || (n == '\r')) {
+        }else
+            return n;
+        
+    } 
+}

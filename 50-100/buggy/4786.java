@@ -1,0 +1,6 @@
+public RecyclerView.ViewHolder onCreateViewHolder(android.view.ViewGroup parent, int viewType, android.support.v4.app.Fragment fragment, com.xamoom.android.xamoomsdk.EnduserApi enduserApi, java.lang.String youtubeApiKey, android.support.v4.util.LruCache bitmapCache, android.support.v4.util.LruCache contentCache, boolean showContentLinks, com.xamoom.android.xamoomcontentblocks.ViewHolders.ContentBlock3ViewHolder.OnContentBlock3ViewHolderInteractionListener onContentBlock3ViewHolderInteractionListener, com.xamoom.android.xamoomcontentblocks.XamoomContentFragment.OnXamoomContentFragmentInteractionListener onXamoomContentFragmentInteractionListener) {
+    com.xamoom.android.xamoomcontentblocks.Adapters.AdapterDelegate<T> delegate = adapterDelegates.get(viewType);
+    android.util.Log.d(com.xamoom.android.xamoomcontentblocks.Adapters.AdapterDelegatesManager.TAG, (("Tried to load viewtype " + viewType) + " adapter"));
+    android.support.v7.widget.RecyclerView.ViewHolder vh = delegate.onCreateViewHolder(parent, fragment, enduserApi, youtubeApiKey, bitmapCache, contentCache, showContentLinks, onContentBlock3ViewHolderInteractionListener, onXamoomContentFragmentInteractionListener);
+    return vh;
+}

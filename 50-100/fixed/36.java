@@ -1,0 +1,3 @@
+public org.apache.ignite.internal.processors.odbc.jdbc.JdbcQueryExecuteResult queryExecute(java.lang.String cache, int fetchSize, int maxRows, java.lang.String sql, java.util.List<java.lang.Object> args) throws java.io.IOException, org.apache.ignite.IgniteCheckedException {
+    return sendRequest(new org.apache.ignite.internal.processors.odbc.jdbc.JdbcQueryExecuteRequest(cache, fetchSize, maxRows, sql, (args == null ? null : args.toArray(new java.lang.Object[args.size()]))), org.apache.ignite.internal.jdbc.thin.JdbcThinTcpIo.QUERY_EXEC_MSG_INIT_CAP);
+}

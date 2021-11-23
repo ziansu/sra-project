@@ -1,0 +1,4 @@
+private static void createTable(android.database.sqlite.SQLiteDatabase db) {
+    db.execSQL((((((((((((((("CREATE TABLE " + (com.ckt.io.wifidirect.Constants.TABLE_NAME)) + " (") + (Constants.InstanceColumns.ID)) + " TEXT PRIMARY KEY,") + (Constants.InstanceColumns.NAME)) + " TEXT NOT NULL, ") + (Constants.InstanceColumns.LENGTH)) + " INTEGER NOT NULL, ") + (Constants.InstanceColumns.STATE)) + " INTEGER NOT NULL") + (Constants.InstanceColumns.TRANSFER_LENGTH)) + " INTEGER NOT NULL") + (Constants.InstanceColumns.TRANSFER_DIRECTION)) + " INTEGER NOT NULL);"));
+    com.ckt.io.wifidirect.utils.LogUtils.i(com.ckt.io.wifidirect.provider.WifiDirectDbHelper.TAG, "table created");
+}

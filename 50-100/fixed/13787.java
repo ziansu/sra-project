@@ -1,0 +1,6 @@
+@org.junit.Test
+public void testDefault() throws java.lang.Exception {
+    final com.puppycrawl.tools.checkstyle.DefaultConfiguration checkConfig = createCheckConfig(com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck.class);
+    final java.lang.String[] expected = new java.lang.String[]{ "9:13: Variable 'i' should be declared final." , "9:16: Variable 'j' should be declared final." , "10:18: Variable 'runnable' should be declared final." , "20:13: Variable 'i' should be declared final." , "24:13: Variable 'z' should be declared final." , "26:16: Variable 'obj' should be declared final." , "30:16: Variable 'x' should be declared final." , "36:18: Variable 'runnable' should be declared final." , "40:21: Variable 'q' should be declared final." , "56:13: Variable 'i' should be declared final." , "60:13: Variable 'z' should be declared final." , "62:16: Variable 'obj' should be declared final." , "66:16: Variable 'x' should be declared final." , "74:21: Variable 'w' should be declared final." , "75:26: Variable 'runnable' should be declared final." , "96:17: Variable 'weird' should be declared final." , "97:17: Variable 'j' should be declared final." , "98:17: Variable 'k' should be declared final." };
+    verify(checkConfig, getPath("coding/InputFinalLocalVariable.java"), expected);
+}

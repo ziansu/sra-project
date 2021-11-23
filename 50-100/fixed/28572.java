@@ -1,0 +1,3 @@
+public static final boolean validParameters1Number1CharReplace(java.lang.String[] parameters) {
+    return ((parameters != null) && (((parameters.length) == 1) || (org.talend.dataquality.datamasking.functions.CharactersOperationUtils.factorise(parameters, 2, org.talend.dataquality.datamasking.functions.CharactersOperationUtils.patternCharacter)))) && (org.talend.dataquality.datamasking.functions.CharactersOperationUtils.patternNumber.matcher(parameters[0]).matches());
+}

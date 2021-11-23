@@ -1,0 +1,3 @@
+static boolean cannotDisplay(com.forgerock.opendj.cli.ConsoleApplication app, org.forgerock.opendj.config.PropertyDefinition<?> pd, java.util.Set<java.lang.String> allowedPropertyNames) {
+    return ((pd.hasOption(PropertyOption.HIDDEN)) || ((!(app.isAdvancedMode())) && (pd.hasOption(PropertyOption.ADVANCED)))) || (!(allowedPropertyNames.contains(pd.getName())));
+}

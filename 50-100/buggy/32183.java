@@ -1,0 +1,8 @@
+private com.google.api.client.util.DateTime getEndDate(java.sql.Timestamp timestamp) {
+    int year = timestamp.getYear();
+    int month = timestamp.getMonth();
+    int day = (timestamp.getDay()) + 7;
+    int hour = timestamp.getHours();
+    java.util.Date date = new java.util.Date(year, month, (day - 1), hour, 59);
+    return new com.google.api.client.util.DateTime(date);
+}

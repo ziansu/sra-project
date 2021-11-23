@@ -1,0 +1,4 @@
+public static java.util.Set<me.newyith.util.Point> getPointsConnected(me.newyith.util.Point origin, java.util.Set<me.newyith.util.Point> originLayer, java.util.Set<org.bukkit.Material> wallBlocks, java.util.Set<org.bukkit.Material> returnBlocks, int rangeLimit, java.util.Set<me.newyith.util.Point> ignorePoints, java.util.Set<me.newyith.util.Point> searchablePoints) {
+    java.util.List<java.util.List<me.newyith.util.Point>> layers = me.newyith.generator.Wall.getPointsConnectedAsLayers(origin, originLayer, wallBlocks, returnBlocks, rangeLimit, ignorePoints, searchablePoints, me.newyith.generator.Wall.ConnectedThreshold.FACES);
+    return me.newyith.generator.Wall.flattenLayers(layers);
+}

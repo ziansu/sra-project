@@ -1,0 +1,4 @@
+private static void setTableFeatureProperty(org.opendaylight.yang.gen.v1.urn.opendaylight.table.types.rev131026.table.feature.prop.type.table.feature.prop.type.NextTable propType, org.opendaylight.yang.gen.v1.urn.opendaylight.openflow.protocol.rev130731.table.features.properties.grouping.TableFeaturePropertiesBuilder propBuilder) {
+    org.opendaylight.openflowplugin.openflow.md.core.sal.convertor.Tables tables = ((org.opendaylight.yang.gen.v1.urn.opendaylight.table.types.rev131026.table.feature.prop.type.table.feature.prop.type.NextTable) (propType)).getTables();
+    org.opendaylight.openflowplugin.openflow.md.core.sal.convertor.TableFeaturesConvertor.setNextTableFeatureProperty(propBuilder, TableFeaturesPropType.OFPTFPTNEXTTABLES, (tables == null ? new java.util.ArrayList<java.lang.Short>() : tables.getTableIds()));
+}

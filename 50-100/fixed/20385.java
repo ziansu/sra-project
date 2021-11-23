@@ -1,0 +1,3 @@
+private com.divae.ageto.hybris.install.extensions.binary.ExtensionBinary findBinary(final java.io.File hybrisDirectory, final com.divae.ageto.hybris.install.extensions.Extension extension) {
+    return com.divae.ageto.hybris.install.extensions.ExtensionFactory.getBinary(extension.getName(), java.util.Collections.singletonMap(extension.getName(), new java.io.File(hybrisDirectory, new java.io.File(extension.getBaseDirectory(), "web/webroot/WEB-INF").toString())), hybrisDirectory);
+}

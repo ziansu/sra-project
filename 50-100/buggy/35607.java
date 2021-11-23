@@ -1,0 +1,4 @@
+static org.bson.Document buildMongoLatePolicy(final protobuf.srl.grading.Grading.LatePolicy latePolicy) {
+    final org.bson.Document late = new org.bson.Document(coursesketch.database.util.DatabaseStringConstants.LATE_POLICY_FUNCTION_TYPE, latePolicy.getFunctionType().getNumber()).append(coursesketch.database.util.DatabaseStringConstants.LATE_POLICY_TIME_FRAME_TYPE, latePolicy.getTimeFrameType().getNumber()).append(coursesketch.database.util.DatabaseStringConstants.LATE_POLICY_RATE, latePolicy.getRate()).append(coursesketch.database.util.DatabaseStringConstants.LATE_POLICY_SUBTRACTION_TYPE, latePolicy.getSubtractionType().getNumber()).append(coursesketch.database.util.DatabaseStringConstants.APPLY_ONLY_TO_LATE_PROBLEMS, latePolicy.getApplyOnlyToLateProblems());
+    return late;
+}

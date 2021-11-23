@@ -1,0 +1,3 @@
+public static net.minecraftforge.fluids.FluidStack extractFluid(net.minecraftforge.fluids.FluidTank tileTank, mekanism.common.tile.prefab.TileEntityContainerBlock tile, int slotID, mekanism.common.util.FluidContainerUtils.FluidChecker checker) {
+    return mekanism.common.util.FluidContainerUtils.extractFluid(((tileTank.getCapacity()) - (tileTank.getFluidAmount())), tile.inventory.get(slotID), checker);
+}

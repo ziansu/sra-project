@@ -1,0 +1,3 @@
+protected org.openl.rules.lang.xls.binding.XlsModuleOpenClass createModuleOpenClass(org.openl.rules.lang.xls.syntax.XlsModuleSyntaxNode moduleNode, org.openl.OpenL openl, org.openl.rules.data.IDataBase dbase, java.util.Set<org.openl.dependency.CompiledDependency> moduleDependencies, org.openl.binding.IBindingContext bindingContext) {
+    return new org.openl.rules.lang.xls.binding.XlsModuleOpenClass(null, org.openl.rules.lang.xls.XlsHelper.getModuleName(moduleNode), new org.openl.rules.lang.xls.binding.XlsMetaInfo(moduleNode), openl, dbase, moduleDependencies, org.openl.engine.OpenLSystemProperties.isDTDispatchingMode(bindingContext.getExternalParams()), org.openl.engine.OpenLSystemProperties.isDispatchingValidationEnabled(bindingContext.getExternalParams()));
+}

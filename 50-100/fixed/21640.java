@@ -1,0 +1,3 @@
+public br.com.ingenieux.jenkins.plugins.awsebdeployment.AWSEBDeploymentConfig asConfig() {
+    return new br.com.ingenieux.jenkins.plugins.awsebdeployment.AWSEBDeploymentConfig(credentialId, awsRegion, applicationName, environmentName, bucketName, keyPrefix, versionLabelFormat, rootObject, includes, excludes, zeroDowntime, null, createEnvironmentIfNotExist, environmentCNAMEPrefix, environmentTemplateName, environmentSettings, route53UpdateRecordSet, route53HostedZoneId, route53DomainName, route53RecordTTL, route53RecordType);
+}

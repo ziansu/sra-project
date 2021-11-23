@@ -1,0 +1,11 @@
+public void downloadAll() {
+    java.util.concurrent.ExecutorService executor = com.atlauncher.utils.Utils.generateDownloadExecutor();
+    for (com.atlauncher.data.Downloadable dl : this) {
+        executor.execute(new com.atlauncher.collection.DownloadPool.Downloader(dl));
+    }
+    executor.shutdown();
+    if (this.wait) {
+        while (!(executor.isTerminated())) {
+        } 
+    }
+}

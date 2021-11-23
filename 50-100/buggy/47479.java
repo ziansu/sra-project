@@ -1,0 +1,3 @@
+private boolean canShortCircuit(edu.pugetsound.mathcs.nlp.features.Utterance h) {
+    return ((((((h.daTag) == (edu.pugetsound.mathcs.nlp.datag.DialogueActTag.BACKCHANNEL)) || ((h.daTag) == (edu.pugetsound.mathcs.nlp.datag.DialogueActTag.SIGNAL_NON_UNDERSTANDING))) || ((h.daTag) == (edu.pugetsound.mathcs.nlp.datag.DialogueActTag.AGREEMENTS))) || ((h.daTag) == (edu.pugetsound.mathcs.nlp.datag.DialogueActTag.COMMENT))) || ((h.daTag) == (edu.pugetsound.mathcs.nlp.datag.DialogueActTag.COLLABORATIVE_COMPLETION))) || ((h.daTag) == (edu.pugetsound.mathcs.nlp.datag.DialogueActTag.COLLABORATIVE_COMPLETION));
+}

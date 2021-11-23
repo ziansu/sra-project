@@ -1,0 +1,4 @@
+public static com.twitter.heron.spi.common.Config loadConfig(java.lang.String cluster, java.lang.String role, java.lang.String environ, java.lang.String topologyBinaryFile, java.lang.String topologyDefnFile, java.lang.Boolean verbose, com.twitter.heron.api.generated.TopologyAPI.Topology topology) {
+    com.twitter.heron.spi.common.Config config = com.twitter.heron.spi.common.Config.expand(com.twitter.heron.spi.common.Config.newBuilder().putAll(com.twitter.heron.spi.utils.SchedulerConfig.sandboxConfigs()).putAll(com.twitter.heron.spi.utils.SchedulerConfig.commandLineConfigs(cluster, role, environ, verbose)).putAll(com.twitter.heron.spi.utils.SchedulerConfig.topologyConfigs(topologyJarFile, topologyDefnFile, topology)).build());
+    return config;
+}

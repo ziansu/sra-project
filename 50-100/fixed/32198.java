@@ -1,0 +1,10 @@
+private void setupServiceEnabledSwitch(android.support.v7.widget.SwitchCompat serviceEnabledSwitch) {
+    serviceEnabledSwitch.setOnCheckedChangeListener(new android.widget.CompoundButton.OnCheckedChangeListener() {
+        @java.lang.Override
+        public void onCheckedChanged(android.widget.CompoundButton buttonView, boolean isChecked) {
+            enableService(isChecked);
+        }
+    });
+    boolean isServiceEnabled = isServiceEnabled();
+    serviceEnabledSwitch.setChecked(isServiceEnabled);
+}

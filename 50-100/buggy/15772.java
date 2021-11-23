@@ -1,0 +1,12 @@
+@java.lang.Override
+public void onAnimate(int value) {
+    if (null != (mHeaderIndicatorView)) {
+        if ((mHeaderIndicatorLocation) != (com.yat3s.chopin.ChopinLayout.INDICATOR_LOCATION_BACK)) {
+            mHeaderIndicatorView.translateVerticalWithOffset(value);
+        }
+        if (null != (mRefreshHeaderIndicatorProvider)) {
+            int progress = (100 * value) / (mHeaderIndicatorView.getHeight());
+            mRefreshHeaderIndicatorProvider.onHeaderIndicatorViewScrollChange(progress);
+        }
+    }
+}

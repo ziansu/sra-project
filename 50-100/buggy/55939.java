@@ -1,0 +1,7 @@
+@com.javaclasses.chatroom.client.controller.PostMapping(value = "/{chatRoomId}/join")
+public com.javaclasses.chatroom.client.controller.NicknameDTO joinChatRoom(@com.javaclasses.chatroom.client.controller.PathVariable
+java.lang.Long chatRoomId, @com.javaclasses.chatroom.client.controller.RequestBody
+com.javaclasses.chatroom.client.controller.JoinChatRoomInfoRequest joinChatRoomInfoRequest) throws com.javaclasses.chatroom.client.controller.ActionNotPermittedException, com.javaclasses.chatroom.client.controller.ChatRoomNotFoundException, com.javaclasses.chatroom.client.controller.EmptyNicknameValueException, com.javaclasses.chatroom.client.controller.NicknameUnavailableException, com.javaclasses.chatroom.client.controller.UserNotFoundException {
+    com.javaclasses.chatroom.client.controller.JwtUser jwtUser = getActorFromPrincipals();
+    return chatRoomService.joinChatRoom(new com.javaclasses.chatroom.client.controller.UserId(jwtUser.getId()), new com.javaclasses.chatroom.client.controller.ChatRoomId(joinChatRoomInfoRequest.getChatRoomId()), new com.javaclasses.chatroom.client.controller.NicknameValue(joinChatRoomInfoRequest.getNicknameValue()), new com.javaclasses.chatroom.client.controller.UserId(joinChatRoomInfoRequest.getUserId()));
+}

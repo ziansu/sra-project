@@ -1,0 +1,12 @@
+@java.lang.Override
+public void run() {
+    request.resolve();
+    if ((request.getResolution()) == null) {
+        return ;
+    }
+    if ((((candidate) != null) && ((candidate) instanceof fr.imag.adele.apam.Instance)) && ((request.getResolution()) != null)) {
+        if (!(((fr.imag.adele.apam.Instance) (candidate)).isSharable()))
+            reducePriorityDynamicRequest(request);
+        
+    }
+}

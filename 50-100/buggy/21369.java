@@ -1,0 +1,4 @@
+private com.google.android.gms.maps.model.Marker addMarkerOnMap(edu.upc.eetac.dsa.mapsapplicationsample.entity.serviceLibraryResults.ProfemonLocationResult profemonLocation) {
+    com.google.android.gms.maps.model.LatLng markerLatLng = new com.google.android.gms.maps.model.LatLng(profemonLocation.latitude, profemonLocation.longitude);
+    return mMap.addMarker(new com.google.android.gms.maps.model.MarkerOptions().position(markerLatLng).title(profemonLocation.name).icon(com.google.android.gms.maps.model.BitmapDescriptorFactory.fromBitmap(pokEETACGoBusiness.getProfemonIcon(profemonLocation.name.toLowerCase()))));
+}

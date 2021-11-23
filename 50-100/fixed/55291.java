@@ -1,0 +1,4 @@
+@java.lang.SuppressWarnings(value = { "deprecation" , "unchecked" })
+private java.util.Set<org.openmrs.Obs> getObsFromConceptForPatient(org.openmrs.Patient patient, java.lang.String gpCodeForConcept, java.lang.Integer conceptId) {
+    return ((java.util.Set<org.openmrs.Obs>) (new java.util.HashSet<org.openmrs.Obs>(org.openmrs.api.context.Context.getObsService().getObservationsByPersonAndConcept(patient, org.openmrs.api.context.Context.getConceptService().getConcept((org.apache.commons.lang.StringUtils.isNotBlank(org.openmrs.api.context.Context.getAdministrationService().getGlobalProperty(gpCodeForConcept)) ? java.lang.Integer.parseInt(org.openmrs.api.context.Context.getAdministrationService().getGlobalProperty(gpCodeForConcept)) : conceptId))))));
+}

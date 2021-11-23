@@ -1,0 +1,8 @@
+@java.lang.Override
+protected java.util.ArrayList<java.lang.String> doInBackground(byte[]... bytes) {
+    java.util.List<com.hanuor.onyx.helper.RecognitionResult> results = clarifai.recognize(new com.hanuor.onyx.helper.RecognitionRequest(tags.videoArray));
+    for (com.hanuor.onyx.helper.Tag tag : results.get(0).getTags()) {
+        probableTags.add(tag.getName());
+    }
+    return probableTags;
+}

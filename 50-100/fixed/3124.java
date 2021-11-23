@@ -1,0 +1,8 @@
+@java.lang.Override
+public android.support.v4.content.Loader<android.database.Cursor> onCreateLoader(int id, android.os.Bundle args) {
+    final java.lang.String[] FORECAST_COLUMNS = new java.lang.String[]{ ((WeatherContract.WeatherEntry.TABLE_NAME) + ".") + (WeatherContract.WeatherEntry._ID) , WeatherContract.WeatherEntry.COLUMN_DATE , WeatherContract.WeatherEntry.COLUMN_SHORT_DESC , WeatherContract.WeatherEntry.COLUMN_MAX_TEMP , WeatherContract.WeatherEntry.COLUMN_MIN_TEMP , WeatherContract.LocationEntry.COLUMN_LOCATION_SETTING , WeatherContract.WeatherEntry.COLUMN_WEATHER_ID , WeatherContract.LocationEntry.COLUMN_COORD_LAT , WeatherContract.LocationEntry.COLUMN_COORD_LONG , WeatherContract.WeatherEntry.COLUMN_HUMIDITY , WeatherContract.WeatherEntry.COLUMN_WIND_SPEED , WeatherContract.WeatherEntry.COLUMN_PRESSURE , WeatherContract.WeatherEntry.COLUMN_DEGREES };
+    if ((mUri) != null) {
+        return new android.support.v4.content.CursorLoader(getActivity(), mUri, FORECAST_COLUMNS, null, null, null);
+    }
+    return null;
+}

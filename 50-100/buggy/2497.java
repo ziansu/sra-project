@@ -1,0 +1,5 @@
+@org.junit.Test
+public void cancelActionsCaseNotFound() throws java.lang.Exception {
+    org.springframework.test.web.servlet.ResultActions resultActions = mockMvc.perform(uk.gov.ons.ctp.common.MvcHelper.putJson(java.lang.String.format("/actions/case/%s/cancel", uk.gov.ons.ctp.response.action.endpoint.ActionEndpointUnitTest.NON_EXISTING_ID), ""));
+    resultActions.andExpect(org.springframework.test.web.servlet.result.MockMvcResultMatchers.status().isNotFound()).andExpect(org.springframework.test.web.servlet.result.MockMvcResultMatchers.handler().handlerType(uk.gov.ons.ctp.response.action.endpoint.ActionEndpoint.class)).andExpect(org.springframework.test.web.servlet.result.MockMvcResultMatchers.handler().methodName("cancelActions")).andExpect(org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath("$.error.code", org.hamcrest.CoreMatchers.is(CTPException.Fault.RESOURCE_NOT_FOUND.name())));
+}

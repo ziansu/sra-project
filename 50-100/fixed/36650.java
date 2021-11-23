@@ -1,0 +1,5 @@
+private void insertIntoArrayListOfTypeAccountAndCustomer() {
+    com.harsh.practicemakesperfect.accountmanagementsystem.CustomerAndAccountHelper.Customers.add(new com.harsh.practicemakesperfect.accountmanagementsystem.Customer(customerName, com.harsh.practicemakesperfect.accountmanagementsystem.CustomerAndAccountHelper.accountNo, accountType, accountPassword, securityAnswer));
+    com.harsh.practicemakesperfect.accountmanagementsystem.CustomerAndAccountHelper.Accounts.add(new com.harsh.practicemakesperfect.accountmanagementsystem.Account(com.harsh.practicemakesperfect.accountmanagementsystem.CustomerAndAccountHelper.accountNo, accountPassword, accountType, securityAnswer, 0.0));
+    java.lang.System.out.println(com.harsh.practicemakesperfect.accountmanagementsystem.ACCOUNT_CREATED_SUCCESSFULLY);
+}

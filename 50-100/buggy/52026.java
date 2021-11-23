@@ -1,0 +1,4 @@
+private static org.sbolstandard.core2.ComponentDefinition get_pLac(org.sbolstandard.core2.SBOLDocument SBOL2Doc_test) {
+    org.sbolstandard.core2.Sequence temp = org.sbolstandard.core2.writeTester.get_pLacSeq(SBOL2Doc_test);
+    return org.sbolstandard.core2.writeTester.createComponentDefinitionData(SBOL2Doc_test, org.sbolstandard.core2.writeTester.getSetPropertyURI("DNA"), org.sbolstandard.core2.writeTester.getSetPropertyURI("Promoter"), org.sbolstandard.core2.writeTester.getData("pLac/1/0", "pLac", "1.0", "pLac", "pLac", "pLac"), org.sbolstandard.core2.writeTester.get_pLacSeq(SBOL2Doc_test), null, null, null);
+}

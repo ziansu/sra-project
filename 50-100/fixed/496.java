@@ -1,0 +1,19 @@
+@java.lang.Override
+protected void onActivityResult(int requestCode, int resultCode, android.content.Intent data) {
+    switch (requestCode) {
+        case Constant.RESULT_INPUT_FILE :
+            {
+                try {
+                    audioURL = new java.io.File(data.getData().getPath()).toURI().toURL();
+                    isFileChosen = true;
+                } catch (java.net.MalformedURLException e) {
+                    e.printStackTrace();
+                    audioURL = null;
+                    android.util.Log.d("InputFileError", "Malformed URL Input file");
+                    isFileChosen = false;
+                }
+                break;
+            }
+    }
+    super.onActivityResult(requestCode, resultCode, data);
+}

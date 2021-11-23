@@ -1,0 +1,3 @@
+public static java.lang.String HierarchicalStateMachineClassHeader(java.lang.String dependency_, java.lang.String className_, java.util.List<java.lang.String> subMachines_, java.lang.String public_, java.lang.String protected_, java.lang.String private_, java.lang.Boolean rt_) {
+    return hu.elte.txtuml.export.cpp.templates.GenerationTemplates.HierarchicalStateMachineClassHeader(dependency_, className_, null, subMachines_, public_, protected_, private_, rt_);
+}

@@ -1,0 +1,11 @@
+public java.util.Map<java.lang.String, java.lang.String> getValue() {
+    java.util.Map<java.lang.String, java.lang.String> ret = new java.util.HashMap<java.lang.String, java.lang.String>();
+    for (org.roda.wui.client.ingest.process.PluginParameterPanel panel : panels) {
+        java.lang.String key = panel.getParameter().getName();
+        java.lang.String value = panel.getParameter().getValue();
+        if (value != null) {
+            ret.put(key, value);
+        }
+    }
+    return ret;
+}

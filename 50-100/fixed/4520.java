@@ -1,0 +1,3 @@
+private void withDriverAndFlight(java.util.function.BiConsumer<com.lightbend.lagom.javadsl.testkit.PersistentEntityTestDriver<less.stupid.flights.impl.FlightCommand, less.stupid.flights.impl.FlightEvent, less.stupid.flights.impl.FlightState>, com.lightbend.lagom.javadsl.testkit.PersistentEntityTestDriver.Outcome<less.stupid.flights.impl.FlightEvent, less.stupid.flights.impl.FlightState>> block) {
+    block.accept(driver, driver.run(new less.stupid.flights.impl.FlightCommand.AddFlight(less.stupid.flights.impl.FlightEntityTest.callsign, less.stupid.flights.impl.FlightEntityTest.equipment, less.stupid.flights.impl.FlightEntityTest.departure, less.stupid.flights.impl.FlightEntityTest.arrival)));
+}

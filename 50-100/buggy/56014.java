@@ -1,0 +1,4 @@
+static com.offdk.play.model.slack.request.Action createButton(java.lang.String group, java.lang.String text, com.offdk.play.model.slack.request.Style style) {
+    com.google.common.base.Preconditions.checkArgument(((text.length()) <= 30), "Use a maximum of 30 characters or so for best results across form factors");
+    return com.offdk.play.model.slack.request.ImmutableAction.builder().name(group).text(text).type(ActionType.BUTTON.toString()).style(style).value(com.google.common.base.CaseFormat.UPPER_UNDERSCORE.to(com.google.common.base.CaseFormat.LOWER_CAMEL, text.toUpperCase().replace(" ", "_"))).build();
+}

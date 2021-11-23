@@ -1,0 +1,6 @@
+public com.ning.billing.entitlement.alignment.TimedMigration[] getEventsOnFuturePlanCancelMigration(com.ning.billing.entitlement.api.user.SubscriptionData subscription, com.ning.billing.catalog.api.Plan plan, com.ning.billing.catalog.api.PlanPhase initialPhase, java.lang.String priceList, org.joda.time.DateTime effectiveDate, org.joda.time.DateTime effectiveDateForCancellation) {
+    com.ning.billing.entitlement.alignment.TimedMigration[] result = new com.ning.billing.entitlement.alignment.TimedMigration[2];
+    result[0] = new com.ning.billing.entitlement.alignment.TimedMigration(effectiveDate, com.ning.billing.entitlement.events.EntitlementEvent.EventType.API_USER, com.ning.billing.entitlement.events.user.ApiEventType.MIGRATE_ENTITLEMENT, plan, initialPhase, priceList);
+    result[1] = new com.ning.billing.entitlement.alignment.TimedMigration(effectiveDateForCancellation, com.ning.billing.entitlement.events.EntitlementEvent.EventType.API_USER, com.ning.billing.entitlement.events.user.ApiEventType.CANCEL, null, null, null);
+    return result;
+}

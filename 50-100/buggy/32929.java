@@ -1,0 +1,3 @@
+public ru.alepar.rpc.api.RpcServer build() {
+    return new ru.alepar.rpc.server.NettyRpcServer(bindAddress, java.util.Collections.unmodifiableMap(implementations), exceptionListeners.toArray(new ru.alepar.rpc.api.ExceptionListener[exceptionListeners.size()]), clientListeners.toArray(new ru.alepar.rpc.api.ClientListener[clientListeners.size()]), new ru.alepar.rpc.common.PrimitiveTypesClassResolver(classResolver), keepAlive, bossExecutor, workerExecutor);
+}

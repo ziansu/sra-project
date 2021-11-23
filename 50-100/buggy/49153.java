@@ -1,0 +1,3 @@
+private static org.takes.Request addSocketHeaders(final org.takes.Request req, final java.net.Socket socket) {
+    return new org.takes.rq.RqWithHeaders(req, java.lang.String.format("X-Takes-LocalAddress: %s", socket.getLocalAddress().toString()), java.lang.String.format("X-Takes-LocalPort: %d", socket.getLocalPort()), java.lang.String.format("X-Takes-RemoteAddress: %s", socket.getInetAddress().toString()), java.lang.String.format("X-Takes-RemotePort: %d", socket.getPort()));
+}

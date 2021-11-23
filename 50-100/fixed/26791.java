@@ -1,0 +1,9 @@
+protected java.lang.String[] parseStringList(java.lang.String value) {
+    java.lang.String[] values;
+    if (((stringsDelimiter.length()) == 0) || ((value.indexOf(stringsDelimiter)) < 0)) {
+        values = new java.lang.String[]{ value };
+    }else {
+        values = value.split(stringsDelimiter);
+    }
+    return values;
+}

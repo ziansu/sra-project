@@ -1,0 +1,5 @@
+@java.lang.Override
+@javax.annotation.Nullable
+public java.util.Map<java.lang.String, java.lang.Integer> getCommandsMap() {
+    return com.facebook.react.common.MapBuilder.of("animateToRegion", com.airbnb.android.react.maps.AirMapManager.ANIMATE_TO_REGION, "animateToCoordinate", com.airbnb.android.react.maps.AirMapManager.ANIMATE_TO_COORDINATE, "fitToElements", com.airbnb.android.react.maps.AirMapManager.FIT_TO_ELEMENTS, "fitToSuppliedMarkers", com.airbnb.android.react.maps.AirMapManager.FIT_TO_SUPPLIED_MARKERS, "fitToCoordinates", com.airbnb.android.react.maps.AirMapManager.FIT_TO_COORDINATES, "clearPoly", com.airbnb.android.react.maps.AirMapManager.CLEAR_POLY, "createPoly", com.airbnb.android.react.maps.AirMapManager.CREATE_POLY, "addPointToPoly", com.airbnb.android.react.maps.AirMapManager.ADD_POINT_TO_POLY, "addPointsToPoly", com.airbnb.android.react.maps.AirMapManager.ADD_POINTS_TO_POLY, "removePointsFromPoly", com.airbnb.android.react.maps.AirMapManager.REMOVE_POINTS_FROM_POLY);
+}

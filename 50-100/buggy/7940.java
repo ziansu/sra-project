@@ -1,0 +1,5 @@
+private de.be4.classicalb.core.parser.rules.PSubstitution createConditionalFailAssignment(de.be4.classicalb.core.parser.rules.TIdentifierLiteral ruleLiteral) {
+    final java.lang.String ctName = (ruleLiteral.getText()) + (de.be4.classicalb.core.parser.rules.RulesTransformation.RULE_COUNTER_EXAMPLE_VARIABLE_SUFFIX);
+    de.be4.classicalb.core.parser.rules.PPredicate ifCondition = new de.be4.classicalb.core.parser.rules.ANotEqualPredicate(de.be4.classicalb.core.parser.rules.RulesTransformation.createIdentifier(ctName), new de.be4.classicalb.core.parser.rules.AEmptySetExpression());
+    return new de.be4.classicalb.core.parser.rules.AIfSubstitution(ifCondition, createRuleFailAssignment(currentRule.getNameLiteral()), new java.util.ArrayList<de.be4.classicalb.core.parser.rules.PSubstitution>(), null);
+}

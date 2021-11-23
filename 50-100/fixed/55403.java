@@ -1,0 +1,4 @@
+@java.lang.Override
+public org.egov.domain.model.EmailMessageContext getMessageContext(org.egov.domain.model.SevaRequest sevaRequest, org.egov.domain.model.ServiceType serviceType, org.egov.domain.model.Tenant tenant) {
+    return org.egov.domain.model.EmailMessageContext.builder().bodyTemplateName(org.egov.domain.service.UpdateDeliverableStatusEmailMessageStrategy.EMAIL_BODY_EN_TEMPLATE).bodyTemplateValues(getBodyTemplate(sevaRequest, tenant, serviceType)).subjectTemplateName(org.egov.domain.service.UpdateDeliverableStatusEmailMessageStrategy.EMAIL_SUBJECT_EN_TEMPLATE).subjectTemplateValues(getSubjectTemplateValues(sevaRequest)).build();
+}

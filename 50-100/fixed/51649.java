@@ -1,0 +1,6 @@
+private com.ning.billing.entitlement.alignment.TimedMigration[] getEventsOnFuturePlanChangeMigration(com.ning.billing.catalog.api.Plan currentPlan, com.ning.billing.catalog.api.PlanPhase currentPhase, com.ning.billing.catalog.api.Plan newPlan, com.ning.billing.catalog.api.PlanPhase newPhase, java.lang.String priceList, org.joda.time.DateTime effectiveDate, org.joda.time.DateTime effectiveDateForChangePlan) {
+    com.ning.billing.entitlement.alignment.TimedMigration[] result = new com.ning.billing.entitlement.alignment.TimedMigration[2];
+    result[0] = new com.ning.billing.entitlement.alignment.TimedMigration(effectiveDate, com.ning.billing.entitlement.events.EntitlementEvent.EventType.API_USER, com.ning.billing.entitlement.events.user.ApiEventType.MIGRATE_ENTITLEMENT, currentPlan, currentPhase, priceList);
+    result[1] = new com.ning.billing.entitlement.alignment.TimedMigration(effectiveDateForChangePlan, com.ning.billing.entitlement.events.EntitlementEvent.EventType.API_USER, com.ning.billing.entitlement.events.user.ApiEventType.CHANGE, newPlan, newPhase, priceList);
+    return result;
+}

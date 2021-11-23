@@ -1,0 +1,4 @@
+@java.lang.Override
+public boolean isItemValid(net.minecraft.item.ItemStack itemStack) {
+    return (((super.isItemValid(itemStack)) && ((itemStack.getItem()) instanceof com.weebly.pixelbots.item.ItemMedal)) && (!(this.getHasStack()))) && (medafighter.getDisplayNameString().equals(((com.weebly.pixelbots.item.ItemMedal) (itemStack.getItem())).getMedafighterName(itemStack)));
+}

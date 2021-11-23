@@ -1,0 +1,3 @@
+protected static void addPasswordAction(java.util.List<android.support.v17.leanback.widget.GuidedAction> actions, int id, java.lang.String title, java.lang.String desc, java.lang.String editdesc) {
+    actions.add(new android.support.v17.leanback.widget.GuidedAction.Builder().id(id).title(title).description(desc).editDescription(editdesc).descriptionEditInputType(((android.text.InputType.TYPE_CLASS_TEXT) | (android.text.InputType.TYPE_TEXT_VARIATION_PASSWORD))).descriptionEditable(true).build());
+}

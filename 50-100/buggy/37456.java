@@ -1,0 +1,11 @@
+@java.lang.Override
+public boolean onTouchEvent(android.view.MotionEvent event) {
+    if ((event.getAction()) == (android.view.MotionEvent.ACTION_DOWN)) {
+        if (((popupwindow) != null) && (popupwindow.isShowing())) {
+            popupwindow.dismiss();
+            headBar.setRightButtonIcon("fa-chevron-down");
+            popupwindow = null;
+        }
+    }
+    return super.onTouchEvent(event);
+}

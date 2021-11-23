@@ -1,0 +1,4 @@
+public final hu.akarnokd.rxjava2.basetypes.Solo<T> doOnRequest(hu.akarnokd.rxjava2.basetypes.LongConsumer onRequest) {
+    hu.akarnokd.rxjava2.basetypes.ObjectHelper.requireNonNull(onRequest, "onRequest is null");
+    return hu.akarnokd.rxjava2.basetypes.Solo.onAssembly(new hu.akarnokd.rxjava2.basetypes.SoloDoOnLifecycle<T>(this, hu.akarnokd.rxjava2.basetypes.Functions.emptyConsumer(), hu.akarnokd.rxjava2.basetypes.Functions.emptyConsumer(), Functions.ERROR_CONSUMER, Functions.EMPTY_ACTION, Functions.EMPTY_ACTION, hu.akarnokd.rxjava2.basetypes.Functions.emptyConsumer(), onRequest, Functions.EMPTY_ACTION));
+}

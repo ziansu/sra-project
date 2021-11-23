@@ -1,0 +1,8 @@
+@java.lang.Override
+public java.lang.String toString() {
+    java.lang.StringBuffer result = new java.lang.StringBuffer();
+    for (int i = 0; i < (this.labels.size()); i++) {
+        result.append(getPieLabelRecord(i).toString()).append("\n");
+    }
+    return result.toString();
+}

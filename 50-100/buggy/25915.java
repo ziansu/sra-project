@@ -1,0 +1,3 @@
+public boolean loadCert(gov.usdot.cv.security.crypto.CryptoProvider cryptoProvider, java.lang.String name, java.nio.file.Path certFilePath, java.nio.file.Path privateKeyReconFilePath, java.nio.file.Path seedPrivateKeyFilePath) throws com.oss.asn1.DecodeFailedException, com.oss.asn1.DecodeNotSupportedException, com.oss.asn1.EncodeFailedException, com.oss.asn1.EncodeNotSupportedException, gov.usdot.cv.security.cert.CertificateException, gov.usdot.cv.security.crypto.CryptoException, java.io.IOException, org.apache.commons.codec.DecoderException {
+    return gov.usdot.cv.security.cert.FileCertificateStore.load(new gov.usdot.cv.security.crypto.CryptoProvider(), name, certFilePath, privateKeyReconFilePath, seedPrivateKeyFilePath);
+}

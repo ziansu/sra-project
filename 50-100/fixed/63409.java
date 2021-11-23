@@ -1,0 +1,4 @@
+public android.database.Cursor getPreviousSimilarWorkout(java.lang.String s) {
+    android.database.sqlite.SQLiteDatabase db = this.getWritableDatabase();
+    return db.rawQuery(((((((("SELECT EXERCISE1, REPS1, SERIES1, WEIGHT1, REST1," + ((((((("EXERCISE2, REPS2, SERIES2, WEIGHT2, REST2," + " EXERCISE3, REPS3, SERIES3, WEIGHT3, REST3, ") + "EXERCISE4, REPS4, SERIES4, WEIGHT4, REST4,") + "EXERCISE5, REPS5, SERIES5, WEIGHT5, REST5,") + " EXERCISE6, REPS6, SERIES6, WEIGHT6, REST6, ") + "EXERCISE7, REPS7, SERIES7, WEIGHT7, REST7,") + " EXERCISE8, REPS8, SERIES8, WEIGHT8, REST8, DAY, TOTPOINT ") + "FROM ")) + (com.androidJpec.jpec.able.Workout_DbHelper.TABLE_NAME)) + " WHERE ") + (com.androidJpec.jpec.able.Workout_DbHelper.COL2BIS)) + "= '") + s) + "'"), null);
+}

@@ -1,0 +1,4 @@
+@java.lang.Override
+public boolean isDefinitionNode(com.intellij.psi.PsiElement def) {
+    return ((((((((def instanceof org.ballerinalang.plugins.idea.psi.PackageNameNode) || (def instanceof org.ballerinalang.plugins.idea.psi.VariableDefinitionNode)) || (def instanceof org.ballerinalang.plugins.idea.psi.ParameterNode)) || (def instanceof org.ballerinalang.plugins.idea.psi.ConstantDefinitionNode)) || (def instanceof org.ballerinalang.plugins.idea.psi.TypeNameNode)) || (def instanceof org.ballerinalang.plugins.idea.psi.ConnectorDefinitionNode)) || (def instanceof org.ballerinalang.plugins.idea.psi.StructDefinitionNode)) || (def instanceof org.ballerinalang.plugins.idea.psi.GlobalVariableDefinitionStatementNode)) || (def instanceof org.ballerinalang.plugins.idea.psi.ConstantDefinitionNode);
+}

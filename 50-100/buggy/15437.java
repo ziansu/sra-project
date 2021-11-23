@@ -1,0 +1,3 @@
+public com.yahoo.bard.webservice.table.resolver.DataSourceConstraint withMetricIntersection(java.util.Set<com.yahoo.bard.webservice.data.metric.MetricColumn> metricColumns) {
+    return new com.yahoo.bard.webservice.table.resolver.DataSourceConstraint(requestDimensions, filterDimensions, metricDimensions, metricColumns.stream().map(MetricColumn::getName).filter(metricNames::contains).collect(java.util.stream.Collectors.toSet()), allDimensions, allDimensionNames, allColumnNames, apiFilters);
+}

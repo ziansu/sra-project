@@ -1,0 +1,15 @@
+org.infinity.util.io.zip.DlcFileAttributes getFileAttributes(byte[] path) throws java.io.IOException {
+    org.infinity.util.io.zip.ZipNode folder = null;
+    beginRead();
+    try {
+        ensureOpen();
+        folder = root.getNode(path);
+    } finally {
+        endRead();
+    }
+    if (folder != null) {
+        return new org.infinity.util.io.zip.DlcFileAttributes(folder);
+    }else {
+        return null;
+    }
+}

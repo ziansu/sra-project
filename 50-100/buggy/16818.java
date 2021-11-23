@@ -1,0 +1,3 @@
+static int calcEdgeCutStay(int uid1, int uid2, java.util.Map<java.lang.Integer, java.util.Set<java.lang.Integer>> friendships, java.util.Map<java.lang.Integer, java.util.Set<java.lang.Integer>> partitions, java.util.Map<java.lang.Integer, java.lang.Integer> uidToPidMap) {
+    return io.vntr.befriend.HBefriender.getNumberOfEdgesCutThatHaveAtLeastOneUserInOneOfTheseTwoPartitions(uid1, uid2, friendships, partitions, uidToPidMap);
+}

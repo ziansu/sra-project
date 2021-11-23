@@ -1,0 +1,3 @@
+private void flush(final org.apache.hadoop.hbase.regionserver.Region r, final org.apache.hadoop.hbase.regionserver.HRegionServer server) throws java.io.IOException {
+    org.apache.hadoop.hbase.TestGlobalMemStoreSize.LOG.info(((((((("Flush " + (r.toString())) + " on ") + (server.getServerName())) + ", ") + (r.flushcache(true))) + ", size=") + (server.getRegionServerAccounting().getGlobalMemstoreSize())));
+}

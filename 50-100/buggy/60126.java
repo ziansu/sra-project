@@ -1,0 +1,4 @@
+@java.lang.Override
+public gregtech.api.interfaces.ITexture[] getTexture(gregtech.api.interfaces.tileentity.IGregTechTileEntity aBaseMetaTileEntity, byte aSide, byte aFacing, byte aColorIndex, boolean aActive, boolean aRedstone) {
+    return new gregtech.api.interfaces.ITexture[]{ Textures.BlockIcons.MACHINE_CASINGS[mTier][(aColorIndex + 1)] , aSide != (this.getBaseMetaTileEntity().getFrontFacing()) ? aActive ? com.github.technus.tectech.thing.metaTileEntity.hatch.GT_MetaTileEntity_Hatch_DynamoMulti.overlay[mTier] : com.github.technus.tectech.thing.metaTileEntity.hatch.GT_MetaTileEntity_Hatch_EnergyMulti.overlay[mTier] : new gregtech.api.objects.GT_RenderedTexture(com.github.technus.tectech.thing.metaTileEntity.single.GT_MetaTileEntity_DebugPowerGenerator.GENNY) };
+}

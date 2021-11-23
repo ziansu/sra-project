@@ -1,0 +1,9 @@
+@java.lang.Override
+public void quit() {
+    java.lang.String winner = myController.getWinner();
+    if (!("".equals(winner))) {
+        de.htwg.se.moerakikemu.view.viewimpl.TextUI.LOGGER.error((("Der Gewinner ist " + winner) + "!!!\n"));
+    }else {
+        de.htwg.se.moerakikemu.view.viewimpl.TextUI.LOGGER.error("Unentschieden");
+    }
+}

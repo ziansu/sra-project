@@ -1,0 +1,5 @@
+private void createReportMailingJobRunHistroryAfterJobExecution(final org.mifosplatform.infrastructure.reportmailingjob.domain.ReportMailingJob reportMailingJob, final java.lang.StringBuilder errorLog, final org.joda.time.DateTime jobStartDateTime, final java.lang.String jobRunStatus) {
+    final org.joda.time.DateTime jobEndDateTime = org.mifosplatform.infrastructure.core.service.DateUtils.getLocalDateTimeOfTenant().toDateTime();
+    final org.mifosplatform.infrastructure.reportmailingjob.domain.ReportMailingJobRunHistory reportMailingJobRunHistory = org.mifosplatform.infrastructure.reportmailingjob.domain.ReportMailingJobRunHistory.instance(reportMailingJob, jobStartDateTime, jobEndDateTime, jobRunStatus, null, errorLog.toString());
+    this.reportMailingJobRunHistoryRepository.save(reportMailingJobRunHistory);
+}

@@ -1,0 +1,4 @@
+@org.junit.Test
+public void testEveryXYears() {
+    com.cronutils.builder.CronBuilder.cron(com.cronutils.model.definition.CronDefinitionBuilder.instanceDefinitionFor(CronType.QUARTZ)).withDoM(com.cronutils.model.field.expression.FieldExpressionFactory.on(1)).withDoW(com.cronutils.model.field.expression.FieldExpressionFactory.questionMark()).withYear(com.cronutils.model.field.expression.FieldExpressionFactory.every(com.cronutils.model.field.expression.FieldExpressionFactory.between(1970, 2099), 4)).withMonth(com.cronutils.model.field.expression.FieldExpressionFactory.on(1)).withHour(com.cronutils.model.field.expression.FieldExpressionFactory.on(0)).withMinute(com.cronutils.model.field.expression.FieldExpressionFactory.on(0)).withSecond(com.cronutils.model.field.expression.FieldExpressionFactory.on(0));
+}

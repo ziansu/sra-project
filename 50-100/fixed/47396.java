@@ -1,0 +1,3 @@
+public static com.yarolegovich.wellsql.WellCursor<org.wordpress.android.fluxc.model.MediaModel> getImagesWithStates(org.wordpress.android.fluxc.model.SiteModel site, java.util.List<java.lang.String> uploadStates) {
+    return com.yarolegovich.wellsql.WellSql.select(org.wordpress.android.fluxc.model.MediaModel.class).where().beginGroup().equals(MediaModelTable.SITE_ID, site.getSiteId()).contains(MediaModelTable.MIME_TYPE, MediaUtils.MIME_TYPE_IMAGE).isIn(MediaModelTable.UPLOAD_STATE, uploadStates).endGroup().endWhere().orderBy(MediaModelTable.UPLOAD_DATE, SelectQuery.ORDER_DESCENDING).getAsCursor();
+}

@@ -1,0 +1,3 @@
+public static com.zimbra.common.soap.Element encodeContact(com.zimbra.common.soap.Element parent, com.zimbra.cs.service.util.ItemIdFormatter ifmt, com.zimbra.cs.mailbox.OperationContext octxt, com.zimbra.cs.mailbox.Contact contact, boolean summary, java.util.Collection<java.lang.String> attrFilter, int fields) throws com.zimbra.common.service.ServiceException {
+    return com.zimbra.cs.service.mail.ToXML.encodeContact(parent, ifmt, octxt, contact, null, null, summary, attrFilter, fields, null, false, GetContacts.NO_LIMIT_MAX_MEMBERS, true);
+}

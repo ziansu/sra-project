@@ -1,0 +1,5 @@
+@org.junit.Test
+public void testDefault() throws java.lang.Exception {
+    final java.lang.String[] expected = new java.lang.String[]{ "25:17: " + (getCheckMessage(com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck.MSG_KEY_LINE_SAME, "}")) , "28:17: " + (getCheckMessage(com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck.MSG_KEY_LINE_SAME, "}")) , "40:13: " + (getCheckMessage(com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck.MSG_KEY_LINE_SAME, "}")) , "44:13: " + (getCheckMessage(com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck.MSG_KEY_LINE_SAME, "}")) , "93:27: " + (getCheckMessage(com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck.MSG_KEY_LINE_BREAK_BEFORE, "}")) };
+    verify(checkConfig, getPath("InputLeftCurlyOther.java"), expected);
+}
