@@ -1,1 +1,0 @@
-private static native void _imaqDetectRotation(long referenceImage, long testImage, long referenceCenter, long testCenter, int radius, float precision, long angle);

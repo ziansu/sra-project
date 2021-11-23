@@ -1,1 +1,0 @@
-private static native long _imaqCaliperTool(long image, long points, int numPoints, long edgeOptions, long caliperOptions, long numEdgePairs);

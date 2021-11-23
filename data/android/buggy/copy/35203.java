@@ -1,1 +1,0 @@
-<C extends T> io.hekate.messaging.MessagingChannel<C> withLoadBalancer(io.hekate.messaging.unicast.LoadBalancer<C> balancer);

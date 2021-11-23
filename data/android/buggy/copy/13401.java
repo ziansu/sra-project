@@ -1,4 +1,0 @@
-public org.elassandra.cluster.routing.AbstractSearchStrategy.Router.Route newRoute(@org.elasticsearch.common.Nullable
-java.lang.String preference, org.elasticsearch.common.transport.TransportAddress src) {
-    return this.route;
-}

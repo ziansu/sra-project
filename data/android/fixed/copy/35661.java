@@ -1,1 +1,0 @@
-public com.rootser.qcruncher.common.AppMsg<java.lang.String> get10QHtmUrl(com.rootser.qcruncher.common.AppMsg<java.lang.String> parentDoc);

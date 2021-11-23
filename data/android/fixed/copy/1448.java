@@ -1,1 +1,0 @@
-protected abstract void populateViewHolder(VH viewHolder, T model, int position);

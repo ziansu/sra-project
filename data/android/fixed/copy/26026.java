@@ -1,1 +1,0 @@
-public abstract de.setsoftware.reviewtool.model.changestructure.Fragment traceFragment(de.setsoftware.reviewtool.model.changestructure.Fragment fragment);

@@ -1,1 +1,0 @@
-public java.util.List<io.github.jass2125.igeo.core.entity.Ride> getRides(java.lang.String origin, java.lang.String date) throws io.github.jass2125.igeo.core.exceptions.ApplicationException;

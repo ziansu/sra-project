@@ -1,2 +1,0 @@
-public void saveBusinessRuleDefinition(java.lang.String uuid, org.wso2.carbon.business.rules.core.internal.bean.businessRulesFromTemplate.BusinessRuleFromTemplate businessRuleFromTemplate) throws org.wso2.carbon.business.rules.core.internal.exceptions.TemplateManagerException {
-}

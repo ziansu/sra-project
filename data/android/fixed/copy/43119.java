@@ -1,1 +1,0 @@
-abstract void send(java.lang.String mesageIn);

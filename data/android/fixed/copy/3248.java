@@ -1,1 +1,0 @@
-private static native int ffmpeg_uninit();

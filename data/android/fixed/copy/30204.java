@@ -1,1 +1,0 @@
-public native int VerifyFixation(eyegaze.jni.EyeGazeData[] gazeDatalist);

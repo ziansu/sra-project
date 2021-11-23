@@ -1,1 +1,0 @@
-protected abstract void val(double val);

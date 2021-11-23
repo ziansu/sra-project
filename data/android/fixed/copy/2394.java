@@ -1,1 +1,0 @@
-void onItemClick(int pos, java.lang.String id);

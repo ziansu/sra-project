@@ -1,1 +1,0 @@
-void Y(int y);

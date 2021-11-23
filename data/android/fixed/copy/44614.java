@@ -1,1 +1,0 @@
-abstract java.util.List<org.apache.hadoop.hdfs.server.namenode.INode> fetchINodes(java.lang.String path, boolean tryToSetParitionKey) throws java.io.IOException;

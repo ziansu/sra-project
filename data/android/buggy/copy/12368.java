@@ -1,3 +1,0 @@
-private static void maybeStoreSymlink(com.google.devtools.build.lib.actions.FilesetOutputSymlink nestedLink, com.google.devtools.build.lib.vfs.PathFragment destPath, java.util.Set<java.lang.String> exclusions, java.util.Map<com.google.devtools.build.lib.vfs.PathFragment, com.google.devtools.build.lib.actions.FilesetOutputSymlink> result) {
-    com.google.devtools.build.lib.skyframe.FilesetEntryFunction.maybeStoreSymlink(nestedLink.name, nestedLink.target, nestedLink.metadata, destPath, exclusions, result);
-}

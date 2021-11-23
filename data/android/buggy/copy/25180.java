@@ -1,2 +1,0 @@
-public void typing(boolean updateGUI, boolean heuristic) {
-}

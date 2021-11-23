@@ -1,3 +1,0 @@
-private org.bson.BsonDocument marshall() {
-    return new com.eightkdata.mongowp.mongoserver.api.safe.tools.bson.BsonDocumentBuilder().append(com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.commands.general.DeleteCommand.DeleteStatement.QUERY_FIELD, query).append(com.eightkdata.mongowp.mongoserver.api.safe.library.v3m0.commands.general.DeleteCommand.DeleteStatement.LIMIT_FIELD, (justOne ? 1.0 : 0.0)).build();
-}

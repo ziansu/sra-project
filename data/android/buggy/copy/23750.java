@@ -1,1 +1,0 @@
-protected abstract void initTableColumns(org.eclipse.jface.layout.TreeColumnLayout treeLayout, boolean keepColumnStatus);

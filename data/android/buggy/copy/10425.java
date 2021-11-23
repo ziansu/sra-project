@@ -1,1 +1,0 @@
-private static native long _imaqContourSetupMatchPattern(long matchMode, int enableSubPixelAccuracy, long curveParams, int useLearnCurveParameters, long rangeSettings, int numRangeSettings);

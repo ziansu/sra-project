@@ -1,1 +1,0 @@
-void map(int target, int access);

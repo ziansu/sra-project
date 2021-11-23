@@ -1,1 +1,0 @@
-public abstract void visualize(util.ImageDrawer drawer, double[] viewMatrix, long renderingId);

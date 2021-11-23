@@ -1,1 +1,0 @@
-public abstract rx.Observable<org.researchstack.skin.DataResponse> signUp(android.content.Context context, java.lang.String email, java.lang.String password);

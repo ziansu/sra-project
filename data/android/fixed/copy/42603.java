@@ -1,1 +1,0 @@
-com.uyoung.core.base.bean.Page<com.uyoung.core.api.model.ActivitySignUp> getPageByUid(java.lang.Integer uid, int offset, int limit);

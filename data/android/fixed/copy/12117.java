@@ -1,1 +1,0 @@
-public boolean createUser(com.ibm.mcabuddy.beans.User user) throws java.lang.Exception;

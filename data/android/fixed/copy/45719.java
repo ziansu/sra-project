@@ -1,1 +1,0 @@
-java.util.List<io.cattle.platform.configitem.context.data.DnsEntryData> getServiceDnsData(io.cattle.platform.core.model.Instance instance, boolean isVIPProvider);

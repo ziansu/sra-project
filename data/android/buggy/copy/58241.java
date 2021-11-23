@@ -1,1 +1,0 @@
-org.wso2.carbon.apimgt.api.AccessTokenInfo renewAccessToken(java.lang.String oldAccessToken, java.lang.String clientId, java.lang.String clientSecret, java.lang.String validityTime, java.lang.String[] accessAllowDomainsArray, java.lang.String[] requestedScopes, java.lang.String jsonInput) throws org.wso2.carbon.apimgt.api.APIManagementException;

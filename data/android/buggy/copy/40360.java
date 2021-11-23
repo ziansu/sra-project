@@ -1,4 +1,0 @@
-private static void fullUsage() {
-    java.lang.System.out.println(("ros2service_java is a command-line tool for printing information about ROS Services.\n" + ((((("Commands:\n" + "\tros2service_java find\tfind service by type\n") + "\tros2service_java list\tlist active services\n") + "\tros2service_java req\trequest data to service\n") + "\tros2service_java type\tprint service type\n") + "Type rosservice_java <command> -h for more detailed usage, e.g. \'ros2service_java find -h\'\n")));
-    java.lang.System.exit(1);
-}

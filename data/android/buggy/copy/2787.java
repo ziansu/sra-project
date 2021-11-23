@@ -1,1 +1,0 @@
-void onScroll(app.ctrlyati.android.lazyquickreturn.QuickReturnHelper.Direction direction, float scrollY);

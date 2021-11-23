@@ -1,1 +1,0 @@
-void editPortfolio(com.lasso.rest.model.datasource.Account __desiger, com.lasso.rest.model.datasource.Portfolio __portfolio, com.lasso.rest.model.api.request.EditPortfolioRequest __editPortfolioRequest) throws com.mashape.unirest.http.exceptions.UnirestException, java.io.IOException, java.net.URISyntaxException;

@@ -1,1 +1,0 @@
-public abstract void clientDisconnected(com.redmintie.game.util.net.Client client);

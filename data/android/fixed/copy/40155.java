@@ -1,1 +1,0 @@
-private native void setOutputResolution(int outWidth, int outHeight);

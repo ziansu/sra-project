@@ -1,1 +1,0 @@
-void deleteDog(java.lang.Integer id);

@@ -1,3 +1,0 @@
-public java.util.Date getTime() {
-    return time;
-}

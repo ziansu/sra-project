@@ -1,1 +1,0 @@
-public void DeleteNote(java.lang.String name);

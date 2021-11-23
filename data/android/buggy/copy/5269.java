@@ -1,1 +1,0 @@
-private native void updateSubscriptions(long nativePtr, long proxyConfigPtr, boolean onlyWhenRegistered);

@@ -1,1 +1,0 @@
-public void update(com.yahoo.egads.data.TimeSeries.Entry entry);

@@ -1,3 +1,0 @@
-private de.kaiserpfalzedv.paladinsinn.commons.paging.Page<java.lang.String> generatePage(long page) throws de.kaiserpfalzedv.paladinsinn.commons.BuilderValidationException {
-    return new de.kaiserpfalzedv.paladinsinn.commons.paging.impl.PageBuilder<java.lang.String>().withPage(de.kaiserpfalzedv.paladinsinn.commons.paging.PageTest.DATA, page, de.kaiserpfalzedv.paladinsinn.commons.paging.PageTest.PAGE_SIZE).withTotalElements(de.kaiserpfalzedv.paladinsinn.commons.paging.PageTest.DATA.size()).build();
-}

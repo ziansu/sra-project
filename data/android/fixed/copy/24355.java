@@ -1,3 +1,0 @@
-public void revalidate() {
-    getGraph();
-}

@@ -1,1 +1,0 @@
-public I newInt(it.cnr.istc.iloc.api.core.IInt integer, java.lang.String constant);

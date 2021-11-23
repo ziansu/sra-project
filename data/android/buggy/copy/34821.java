@@ -1,3 +1,0 @@
-public java.lang.Long getTransactionsCount(statistics.model.Account account, java.util.Date startDate, java.util.Date endDate, statistics.model.enums.TransactionType[] transactionTypes, statistics.model.enums.PlanFactType... planFactTypes) {
-    return transactionManager.getTransactionsCount(account.getAccountSettings(), startDate, endDate, java.util.Arrays.asList(transactionTypes), java.util.Arrays.asList(planFactTypes));
-}

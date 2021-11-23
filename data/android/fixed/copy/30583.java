@@ -1,1 +1,0 @@
-public abstract void update(com.packt.model.Book book);

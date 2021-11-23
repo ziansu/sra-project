@@ -1,1 +1,0 @@
-public abstract io.biblia.workflows.definition.Action parseAction(org.json.simple.JSONObject object) throws io.biblia.workflows.definition.parser.WorkflowParseException;

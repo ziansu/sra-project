@@ -1,1 +1,0 @@
-public abstract com.packt.model.Book read(java.lang.String id);

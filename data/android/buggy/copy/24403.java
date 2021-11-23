@@ -1,1 +1,0 @@
-void checkPermissions(org.orcid.jaxb.model.message.ScopePathType requiredScope, java.lang.String orcid);

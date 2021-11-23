@@ -1,1 +1,0 @@
-void onCommentListItemClicked(com.igniva.indiecore.ui.adapters.WallPostAdapter.RecyclerViewHolders view, int position, java.lang.String postId);

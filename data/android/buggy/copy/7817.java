@@ -1,4 +1,0 @@
-void runDiagnostics() {
-    validateContentPath();
-    generateStatus();
-}

@@ -1,1 +1,0 @@
-public java.lang.StringBuilder encode(model.IModel model);

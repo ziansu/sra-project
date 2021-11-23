@@ -1,1 +1,0 @@
-java.util.List<org.wickedsource.budgeteer.persistence.record.WeeklyAggregatedRecordBean> aggregateByWeekForBudgets(long projectId, java.util.Date start);

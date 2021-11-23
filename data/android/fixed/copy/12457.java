@@ -1,4 +1,0 @@
-@java.lang.Override
-public void grantPrivileges(java.util.List<org.apache.hadoop.hive.ql.security.authorization.plugin.HivePrincipal> hivePrincipals, java.util.List<org.apache.hadoop.hive.ql.security.authorization.plugin.HivePrivilege> hivePrivileges, org.apache.hadoop.hive.ql.security.authorization.plugin.HivePrivilegeObject hivePrivObject, org.apache.hadoop.hive.ql.security.authorization.plugin.HivePrincipal grantorPrincipal, boolean grantOption) throws org.apache.hadoop.hive.ql.security.authorization.plugin.HiveAccessControlException, org.apache.hadoop.hive.ql.security.authorization.plugin.HiveAuthzPluginException {
-    grantOrRevokePrivlegeOnRole(hivePrincipals, hivePrivileges, hivePrivObject, grantOption, true);
-}

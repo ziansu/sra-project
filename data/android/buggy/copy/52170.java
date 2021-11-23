@@ -1,1 +1,0 @@
-private native void endHour(long handle, int endHour);

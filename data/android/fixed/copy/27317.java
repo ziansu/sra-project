@@ -1,1 +1,0 @@
-public java.lang.String list(java.lang.String parentId, java.lang.String groupNamePattern, com.edubrite.api.plugins.vo.PagedList pagination);

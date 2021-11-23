@@ -1,1 +1,0 @@
-void onDeleteClick(java.lang.String name, java.lang.String id);

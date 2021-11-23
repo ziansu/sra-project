@@ -1,1 +1,0 @@
-int lsl_resolve_all(com.sun.jna.Pointer[] buffer, long buffer_elements, double wait_time);

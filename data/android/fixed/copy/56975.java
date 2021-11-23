@@ -1,2 +1,0 @@
-private static void swLock() {
-}

@@ -1,1 +1,0 @@
-public void initSettings(java.util.List<org.talend.core.repository.model.Project> allAvailableProjects) throws org.talend.commons.exception.InvalidProjectException, org.talend.commons.exception.PersistenceException;

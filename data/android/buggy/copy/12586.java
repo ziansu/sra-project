@@ -1,1 +1,0 @@
-public void open(java.lang.String repositoryPath, int binaryThreshold);

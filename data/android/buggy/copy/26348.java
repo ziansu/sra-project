@@ -1,1 +1,0 @@
-protected native long nativeFindAll(long nativeQueryPtr, long start, long end, long limit);

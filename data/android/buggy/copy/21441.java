@@ -1,8 +1,0 @@
-@java.lang.Override
-public void dispose() {
-    soundManager.dispose();
-    musicManager.dispose();
-    renderer.dispose();
-    apiClientThread.interrupt();
-    isDone = true;
-}

@@ -1,1 +1,0 @@
-void exportSalaryLetter(javax.servlet.http.HttpServletResponse response, java.lang.String id);

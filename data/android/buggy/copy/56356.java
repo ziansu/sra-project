@@ -1,3 +1,0 @@
-void sold() {
-    available = true;
-}

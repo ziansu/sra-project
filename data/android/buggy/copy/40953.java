@@ -1,1 +1,0 @@
-public java.util.List<com.smi.travel.datalayer.entity.OtherBooking> searchOtherBooking(com.smi.travel.datalayer.entity.Customer customer, int filter);

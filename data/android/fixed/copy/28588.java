@@ -1,1 +1,0 @@
-void setProperties(java.lang.String ip, int port);

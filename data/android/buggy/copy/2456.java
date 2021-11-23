@@ -1,1 +1,0 @@
-public abstract boolean check(cluedo.model.Game game);

@@ -1,1 +1,0 @@
-public java.util.List<com.wso2telco.services.dep.sandbox.dao.model.domain.MessageLog> getResponseLists(int userid, java.util.List<java.lang.Integer> serviceNameIds, java.lang.String reference, java.lang.String value, java.util.Date startTimeStamp, java.util.Date endTimeStamp, int offSet, int limit, int type) throws java.lang.Exception;

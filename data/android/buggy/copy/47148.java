@@ -1,1 +1,0 @@
-public java.util.List<My.model.Contact> regExFilterContacts(java.util.List<My.model.Contact> contacts, java.lang.String filter);

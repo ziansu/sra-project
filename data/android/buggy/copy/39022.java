@@ -1,1 +1,0 @@
-int lsl_push_chunk_strtp(com.sun.jna.Pointer obj, java.lang.String[] data, long data_elements, double timestamp, int pushthrough);

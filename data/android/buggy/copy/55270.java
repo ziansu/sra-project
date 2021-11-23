@@ -1,1 +1,0 @@
-java.util.List<cz.cvut.fel.integracniportal.model.AccessControlEntry> getByTargetUserAndNode(java.lang.Long userId, java.lang.Long nodeId);

@@ -1,1 +1,0 @@
-void showError(java.lang.String error);

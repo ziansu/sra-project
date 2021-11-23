@@ -1,3 +1,0 @@
-boolean isShapeSupported() {
-    return true;
-}

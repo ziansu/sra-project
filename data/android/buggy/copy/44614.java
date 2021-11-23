@@ -1,1 +1,0 @@
-abstract java.util.List<org.apache.hadoop.hdfs.server.namenode.INode> fetchINodes(io.hops.transaction.lock.TransactionLockTypes.INodeLockType lockType, java.lang.String path, boolean tryToSetParitionKey) throws java.io.IOException;

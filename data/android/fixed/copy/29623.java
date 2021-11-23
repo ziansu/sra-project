@@ -1,3 +1,0 @@
-public static java.util.List<org.talend.designer.core.model.components.ElementParameter> getParametersFromForm(org.talend.core.model.process.IElement element, org.talend.core.model.process.EComponentCategory category, org.talend.components.api.properties.ComponentProperties compProperties, org.talend.daikon.properties.presentation.Form form) {
-    return org.talend.designer.core.generic.utils.ComponentsUtils.getParametersFromForm(element, category, compProperties, compProperties, null, form, null, null);
-}

@@ -1,1 +1,0 @@
-public abstract <T> void cache(java.lang.String key, io.reactivex.Maybe<T> maybe);

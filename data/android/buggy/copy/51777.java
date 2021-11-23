@@ -1,3 +1,0 @@
-public static <TResponse> com.fuzz.datacontroller.source.DataSource.Builder<TResponse> builderInstance(com.fuzz.datacontroller.okhttp.OkHttpDataSource.ResponseConverter<TResponse> responseConverter, com.fuzz.datacontroller.okhttp.OkHttpDataSource.CallbackHandler<TResponse> handler) {
-    return new com.fuzz.datacontroller.source.DataSource.Builder<>(new com.fuzz.datacontroller.okhttp.OkHttpDataSource<>(responseConverter, handler), DataSource.SourceType.NETWORK);
-}

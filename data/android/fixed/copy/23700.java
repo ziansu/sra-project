@@ -1,1 +1,0 @@
-public java.lang.String getCustomConfsJarName(java.lang.String id);

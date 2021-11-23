@@ -1,1 +1,0 @@
-public slogo.backend.evaluation.IExecutionContext execute(slogo.backend.evaluation.IExecutionContext previous, java.util.List<java.lang.String> args);

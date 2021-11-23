@@ -1,1 +1,0 @@
-void validate(java.lang.Integer productID, java.lang.String mail, java.lang.Integer quantity, java.lang.Integer prodpackID);

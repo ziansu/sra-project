@@ -1,9 +1,0 @@
-@java.lang.Override
-public void update(internetofeveryone.ioe.Data.DataType type) {
-    if ((type.equals(DataType.CHAT)) || (type.equals(DataType.MESSAGE))) {
-        if (isViewAttached()) {
-            getView().dataChanged();
-        }else {
-        }
-    }
-}

@@ -1,1 +1,0 @@
-void onIndicatorChanged(int index);

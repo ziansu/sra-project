@@ -1,1 +1,0 @@
-protected abstract long consumerReferenceArrayIndex(long offset);

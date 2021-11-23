@@ -1,1 +1,0 @@
-private static native long _imaqLineProfile(long image, long start, long end);

@@ -1,1 +1,0 @@
-void OnItemClick(int position, android.view.View view);

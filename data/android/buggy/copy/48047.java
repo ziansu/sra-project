@@ -1,1 +1,0 @@
-boolean isLoginOK(java.lang.String userName, java.lang.String userPass) throws com.xsoft.android.ebookreader.repository.exceptions.CacheException;

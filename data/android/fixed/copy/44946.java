@@ -1,1 +1,0 @@
-void delete(model.Attachment attachment) throws java.sql.SQLException;

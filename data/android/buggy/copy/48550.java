@@ -1,1 +1,0 @@
-protected abstract POINT newPointInstance(long from, java.util.List<DATA> metricDatas);

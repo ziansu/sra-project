@@ -1,3 +1,0 @@
-@java.lang.Override
-public void testConnection(java.util.Map<java.lang.String, java.lang.String> properties) throws java.io.IOException {
-}

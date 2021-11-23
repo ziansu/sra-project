@@ -1,3 +1,0 @@
-private void callToDialer() {
-    getPermissionsForPhoneCall();
-}

@@ -1,3 +1,0 @@
-void exportWithoutContentsButtonClicked() {
-    export(false);
-}

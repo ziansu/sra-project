@@ -1,1 +1,0 @@
-public java.lang.String createCashControlDocuments(java.lang.String customerNumber, org.kuali.rice.core.api.util.type.KualiDecimal totalAmount, java.io.PrintWriter errorFile) throws java.io.IOException;

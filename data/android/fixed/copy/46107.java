@@ -1,1 +1,0 @@
-public java.lang.String deleteUser(java.lang.Long id);

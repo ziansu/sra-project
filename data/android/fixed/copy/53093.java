@@ -1,1 +1,0 @@
-protected abstract void onPostSuccess(org.apache.wicket.ajax.AjaxRequestTarget target);

@@ -1,3 +1,0 @@
-private static boolean existingFileOk() {
-    return ((ibcontroller.JtsIniManager.findSettingInSection(ibcontroller.JtsIniManager.LogonSectionHeader, ibcontroller.JtsIniManager.S3storeFalseSetting)) || (ibcontroller.JtsIniManager.findSettingInSection(ibcontroller.JtsIniManager.LogonSectionHeader, ibcontroller.JtsIniManager.S3storeTrueSetting))) & (ibcontroller.JtsIniManager.findSettingInSection(ibcontroller.JtsIniManager.IBGatewaySectionHeader, ibcontroller.JtsIniManager.ApiOnlyTrueSetting));
-}

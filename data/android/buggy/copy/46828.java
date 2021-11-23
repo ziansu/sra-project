@@ -1,1 +1,0 @@
-private static native void _imaqRemoveContour(long roi, int id);

@@ -1,1 +1,0 @@
-java.lang.String processDynamicQuery(java.lang.String queryCode, org.devocative.metis.entity.data.config.XDSQuery xdsQuery, java.util.Map<java.lang.String, java.lang.Object> params);

@@ -1,1 +1,0 @@
-public static native void convertARGB8888ToYUV420SP(int[] input, byte[] output, int width, int height);

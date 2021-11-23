@@ -1,1 +1,0 @@
-boolean filter(java.lang.String line);

@@ -1,1 +1,0 @@
-private static native void invokeIfPresent(com.google.gwt.core.client.JavaScriptObject connectorWrapper, java.lang.String functionName, java.lang.Object... arguments);

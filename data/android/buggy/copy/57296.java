@@ -1,1 +1,0 @@
-public abstract boolean canPlaceRoadAtLocation(int playerIndex, shared.locations.EdgeLocation edge);

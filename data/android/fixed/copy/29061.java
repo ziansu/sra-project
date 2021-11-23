@@ -1,1 +1,0 @@
-abstract java.util.List<java.lang.String> getWailaBodyToCache(net.minecraft.item.ItemStack itemStack, mcp.mobius.waila.api.IWailaDataAccessor accessor, mcp.mobius.waila.api.IWailaConfigHandler config);

@@ -1,1 +1,0 @@
-public java.util.List<com.smi.travel.datalayer.view.entity.OutputTaxView> SearchOutputTaxViewFromFilter(java.lang.String from, java.lang.String to, java.lang.String department, java.lang.String status);

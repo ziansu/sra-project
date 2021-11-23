@@ -1,8 +1,0 @@
-public int getMessageDigestBufferSize() {
-    int messageDigestBufferSize = preferences.getMessageDigestBufferSize();
-    if (messageDigestBufferSize < (com.googlecode.cchlib.apps.duplicatefiles.prefs.PreferencesControler.MIN_MESSAGE_DIGEST_BUFFER_SIZE)) {
-        messageDigestBufferSize = com.googlecode.cchlib.apps.duplicatefiles.prefs.PreferencesControler.DEFAULT_MESSAGEDIGEST_BUFFER_SIZE;
-        preferences.setMessageDigestBufferSize(messageDigestBufferSize);
-    }
-    return messageDigestBufferSize;
-}

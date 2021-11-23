@@ -1,1 +1,0 @@
-void store(org.springframework.web.multipart.MultipartFile file, int num);

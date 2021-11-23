@@ -1,3 +1,0 @@
-protected org.sosy_lab.cpachecker.cfa.ast.c.CRightHandSideVisitor<org.sosy_lab.solver.api.Formula, org.sosy_lab.cpachecker.exceptions.UnrecognizedCCodeException> createCRightHandSideVisitor(org.sosy_lab.cpachecker.cfa.model.CFAEdge pEdge, java.lang.String pFunction, org.sosy_lab.cpachecker.util.predicates.pathformula.SSAMap.SSAMapBuilder ssa, org.sosy_lab.cpachecker.util.predicates.pathformula.pointeraliasing.PointerTargetSetBuilder pts, org.sosy_lab.cpachecker.util.predicates.pathformula.ctoformula.Constraints constraints, org.sosy_lab.cpachecker.util.predicates.pathformula.ErrorConditions errorConditions) {
-    return new org.sosy_lab.cpachecker.util.predicates.pathformula.ctoformula.ExpressionToFormulaVisitor(this, fmgr, pEdge, pFunction, ssa, constraints, pts);
-}

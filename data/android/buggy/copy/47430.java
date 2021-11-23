@@ -1,1 +1,0 @@
-public void redraw(functiongenerator.core.EvolutionStateHelper state);

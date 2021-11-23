@@ -1,1 +1,0 @@
-public abstract boolean equalStruct(Expression ot, java.util.HashMap<java.lang.String, java.lang.String> d, boolean type);

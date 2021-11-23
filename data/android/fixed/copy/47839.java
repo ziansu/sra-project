@@ -1,1 +1,0 @@
-public static native java.lang.String encode2String(byte[] data);

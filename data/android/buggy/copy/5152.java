@@ -1,1 +1,0 @@
-public int resetLoginUserPwd(java.lang.String email, java.lang.String password);

@@ -1,6 +1,0 @@
-Connector() {
-    registerRpc($);
-    {
-        componentClassName = $missing$;
-    }
-}

@@ -1,1 +1,0 @@
-private native void nativeEndGroup(long nativeQueryPtr);

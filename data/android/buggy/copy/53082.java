@@ -1,3 +1,0 @@
-byte[] getByteCode() {
-    return byteCode;
-}

@@ -1,1 +1,0 @@
-org.domeos.basemodel.HttpResponseTemp<?> previewFile(long userId, org.domeos.framework.api.model.image.BaseImageCustom baseImageCustom, java.lang.String docMD5);

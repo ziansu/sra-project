@@ -1,1 +1,0 @@
-public java.lang.Integer getNumberOfEvents(int event_id);

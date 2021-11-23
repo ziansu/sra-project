@@ -1,3 +1,0 @@
-protected com.dataloom.serializer.AbstractJacksonSerializationTest.SerializationResult serialize(T data) throws java.io.IOException {
-    return new com.dataloom.serializer.AbstractJacksonSerializationTest.SerializationResult(com.dataloom.serializer.AbstractJacksonSerializationTest.mapper.writeValueAsString(data), com.dataloom.serializer.AbstractJacksonSerializationTest.mapper.writeValueAsBytes(data), com.dataloom.serializer.AbstractJacksonSerializationTest.smile.writeValueAsBytes(data));
-}

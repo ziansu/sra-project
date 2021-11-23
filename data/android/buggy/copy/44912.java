@@ -1,3 +1,0 @@
-protected play.twirl.api.Content renderForm(K key, play.data.Form<M> form) {
-    return render(templateForForm(), play.utils.crud.CRUDController.with(keyClass, key).and(play.data.Form.class, form));
-}

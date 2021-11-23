@@ -1,1 +1,0 @@
-void updateRetry(final int id, final java.lang.String errMsg, final int retryingTimes, final long soFar);

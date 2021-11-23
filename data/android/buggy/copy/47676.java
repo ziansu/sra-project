@@ -1,1 +1,0 @@
-void modifyFile(java.io.RandomAccessFile file, int flags, java.lang.Object data);

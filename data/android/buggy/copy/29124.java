@@ -1,1 +1,0 @@
-static native void __version(int major, int minor, int patch);

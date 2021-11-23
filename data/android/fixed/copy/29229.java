@@ -1,2 +1,0 @@
-@com.willshex.blogwt.client.part.Template(value = "<span>{0}</span><img class=\"img-circle\" src=\"{1}\" />")
-com.google.gwt.safehtml.shared.SafeHtml imageItem(java.lang.String src, java.lang.String title);

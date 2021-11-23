@@ -1,1 +1,0 @@
-void processVote(int id, int pos, boolean up);

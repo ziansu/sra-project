@@ -1,1 +1,0 @@
-public void remove(java.lang.Long id);

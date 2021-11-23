@@ -1,2 +1,0 @@
-@org.springframework.data.jpa.repository.Query(value = "from Watertiming w where w.device_id = ?1 and enable=true and (w.runat >= ?2 and w.runmax <= ?2)")
-java.util.List findBytmp(java.lang.Long id, java.math.BigDecimal v, org.springframework.data.domain.Pageable p);

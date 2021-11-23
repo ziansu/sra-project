@@ -1,1 +1,0 @@
-public void connectionLost(routing.pitt.community.DTNHost myHost, routing.pitt.community.DTNHost peer, routing.pitt.community.CommunityDetection peerCD, java.util.List<routing.pitt.community.Duration> connHistory);

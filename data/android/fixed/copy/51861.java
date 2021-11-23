@@ -1,1 +1,0 @@
-void submitBridgeKeyWithSearchNonce(com.kryptnostic.sharing.v1.models.DocumentId documentId, com.kryptnostic.crypto.EncryptedSearchSharingKey sharingKey) throws com.kryptnostic.kodex.v1.exceptions.types.IrisException;

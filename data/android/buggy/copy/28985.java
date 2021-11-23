@@ -1,1 +1,0 @@
-private static native void _imaqContourOverlay(long image, long contourImage, long pointsSettings, long eqnSettings, long groupName);

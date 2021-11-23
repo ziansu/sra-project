@@ -1,1 +1,0 @@
-abstract void setOptions(com.google.javascript.jscomp.CompilerOptions options);

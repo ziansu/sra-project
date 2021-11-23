@@ -1,1 +1,0 @@
-void delete(java.lang.Integer id);

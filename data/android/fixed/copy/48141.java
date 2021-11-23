@@ -1,1 +1,0 @@
-public abstract void removeInfoView(android.view.View view);

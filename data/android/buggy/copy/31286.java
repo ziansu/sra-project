@@ -1,3 +1,0 @@
-boolean isLocal() {
-    return isFromWire();
-}

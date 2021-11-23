@@ -1,1 +1,0 @@
-public abstract void doBusiness(android.content.Context mContext, android.view.View view);

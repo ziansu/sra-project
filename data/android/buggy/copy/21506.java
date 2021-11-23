@@ -1,3 +1,0 @@
-public static void showDijkstra(org.educationalProject.surfacePathfinder.timing.NanoClock clock, org.educationalProject.surfacePathfinder.onlineTriangulation.GraphProxy graph, org.educationalProject.surfacePathfinder.test.Point a, org.educationalProject.surfacePathfinder.test.Point b) throws org.educationalProject.surfacePathfinder.timing.TicTocException {
-    org.educationalProject.surfacePathfinder.test.YegorTest.showAStar(clock, graph, a, b, "Dijkstra");
-}

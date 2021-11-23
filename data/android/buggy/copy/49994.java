@@ -1,3 +1,0 @@
-public void rowSelected(final pjpo.github.com.consplan.model.Employee employee) {
-    view.editEmployee(employee);
-}

@@ -1,3 +1,0 @@
-public static com.cloudbees.plugins.credentials.common.StandardUsernamePasswordCredentials lookupSystemCredentials(java.lang.String credentialsId) {
-    return com.cloudbees.plugins.credentials.CredentialsMatchers.firstOrNull(com.cloudbees.plugins.credentials.CredentialsProvider.lookupCredentials(com.cloudbees.plugins.credentials.common.StandardUsernamePasswordCredentials.class, jenkins.model.Jenkins.getInstance(), ACL.SYSTEM, flexagon.fd.plugin.jenkins.utils.Credential.HTTP_SCHEME, flexagon.fd.plugin.jenkins.utils.Credential.HTTPS_SCHEME), com.cloudbees.plugins.credentials.CredentialsMatchers.withId(credentialsId));
-}

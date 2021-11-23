@@ -1,6 +1,0 @@
-private java.lang.String visitName(com.jetbrains.jetpad.vclang.parser.NameContext ctx) {
-    if (ctx == null)
-        return null;
-    
-    return ((java.lang.String) (visit(ctx)));
-}

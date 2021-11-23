@@ -1,1 +1,0 @@
-void moveCollection(java.lang.String courseId, java.lang.String unitId, java.lang.String lessonId, java.lang.String collectionId, org.ednovo.gooru.core.api.model.User user);

@@ -1,1 +1,0 @@
-private static native void _imaqReadMeter(long image, long arcInfo, long percentage, long endOfNeedle);

@@ -1,1 +1,0 @@
-public boolean speichern(model.LieferKund lieferKund, model.KopfDaten daten, java.lang.String posAktiv);

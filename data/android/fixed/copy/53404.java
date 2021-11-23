@@ -1,3 +1,0 @@
-protected org.springframework.test.web.servlet.setup.DefaultMockMvcBuilder createMvcWebAppContext() {
-    return org.springframework.test.web.servlet.setup.MockMvcBuilders.webAppContextSetup(context).addFilter(new org.eclipse.hawkbit.security.ExcludePathAwareShallowETagFilter("/rest/v1/softwaremodules/{smId}/artifacts/{artId}/download", "/{tenant}/controller/v1/{controllerId}/softwaremodules/{softwareModuleId}/artifacts/**", "/api/v1/downloadserver/**"));
-}

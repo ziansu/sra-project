@@ -1,4 +1,0 @@
-@java.lang.Override
-public int size() {
-    return sourceLists.stream().mapToInt(javafx.collections.ObservableList<? extends E>::size).sum();
-}

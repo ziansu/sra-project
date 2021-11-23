@@ -1,3 +1,0 @@
-protected java.lang.String getPasswordAccessToken() throws java.lang.Exception {
-    return new it.infn.mw.iam.test.oauth.EndpointsTestUtils.AccessTokenGetter().grantType("password").clientId(it.infn.mw.iam.test.oauth.EndpointsTestUtils.DEFAULT_CLIENT_ID).clientSecret(it.infn.mw.iam.test.oauth.EndpointsTestUtils.DEFAULT_CLIENT_SECRET).scope(it.infn.mw.iam.test.oauth.EndpointsTestUtils.DEFAULT_SCOPE).username(it.infn.mw.iam.test.oauth.EndpointsTestUtils.DEFAULT_USERNAME).password(it.infn.mw.iam.test.oauth.EndpointsTestUtils.DEFAULT_PASSWORD).getAccessToken();
-}

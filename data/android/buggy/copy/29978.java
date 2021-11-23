@@ -1,1 +1,0 @@
-<K, U> U getKey(K input);

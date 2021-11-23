@@ -1,1 +1,0 @@
-private static native void _IMAQdxIsAttributeWritable(int id, long name, long writable);

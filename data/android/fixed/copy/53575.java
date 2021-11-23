@@ -1,1 +1,0 @@
-public com.syvenko.model.Lesson findByTimetableAndId(com.syvenko.model.Timetable timetable, java.lang.Long id);

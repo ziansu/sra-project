@@ -1,1 +1,0 @@
-java.util.List<uk.ac.ebi.spot.goci.model.Association> findByEfoTraitsIdAndStudyHousekeepingCatalogPublishDateIsNotNullAndStudyHousekeepingCatalogUnpublishDateIsNull(org.springframework.data.domain.Sort sort, java.lang.Long efoTraitId);

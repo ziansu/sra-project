@@ -1,3 +1,0 @@
-public android.database.Cursor fetchAllUnCommonNames() {
-    return database.query(balu.android.database.UnCommonNamesAdapter.DATABASE_TABLE_2, new java.lang.String[]{ balu.android.database.UnCommonNamesAdapter.UN_COMMON_NAME_ROWID , balu.android.database.UnCommonNamesAdapter.UN_COMMON_NAME , balu.android.database.UnCommonNamesAdapter.UN_COMMON_NAME_MEANING }, null, null, null, null, balu.android.database.UnCommonNamesAdapter.UN_COMMON_NAME);
-}

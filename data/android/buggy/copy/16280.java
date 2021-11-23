@@ -1,3 +1,0 @@
-public static org.deidentifier.arx.BenchmarkSetup.BenchmarkMetric[] getMetrics() {
-    return new org.deidentifier.arx.BenchmarkSetup.BenchmarkMetric[]{ org.deidentifier.arx.BenchmarkSetup.BenchmarkMetric.LOSS , org.deidentifier.arx.BenchmarkSetup.BenchmarkMetric.ENTROPY , org.deidentifier.arx.BenchmarkSetup.BenchmarkMetric.AECS , org.deidentifier.arx.BenchmarkSetup.BenchmarkMetric.DISCERNABILITY , org.deidentifier.arx.BenchmarkSetup.BenchmarkMetric.PRECISION , org.deidentifier.arx.BenchmarkSetup.BenchmarkMetric.HEIGHT };
-}

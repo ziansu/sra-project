@@ -1,3 +1,0 @@
-private static org.gbif.validation.api.model.RecordEvaluationResult toColumnCountMismatchResult(java.lang.Long lineNumber, int expectedColumnCount, int actualColumnCount) {
-    return new org.gbif.validation.api.model.RecordEvaluationResult.Builder().withLineNumber(lineNumber).addBaseDetail(EvaluationType.COLUMN_MISMATCH, java.lang.Integer.toString(expectedColumnCount), java.lang.Integer.toString(actualColumnCount)).build();
-}

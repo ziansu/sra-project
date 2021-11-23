@@ -1,1 +1,0 @@
-private static native java.lang.String fft_float_test(float[] real, float[] imag, int len);

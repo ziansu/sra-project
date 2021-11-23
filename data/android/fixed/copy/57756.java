@@ -1,1 +1,0 @@
-void selected(java.lang.String tag, android.view.View view);

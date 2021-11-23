@@ -1,1 +1,0 @@
-java.util.List<spike.emde.card.model.Card> getCardsBySize(java.lang.String size);

@@ -1,1 +1,0 @@
-public abstract boolean isEmpty(int x, int y, int z);

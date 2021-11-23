@@ -1,1 +1,0 @@
-io.hekate.messaging.MessagingChannel<T> withFailover(io.hekate.failover.FailoverPolicy policy);

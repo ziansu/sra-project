@@ -1,1 +1,0 @@
-E DoDelete(java.lang.String uri, java.lang.Class<E> typeClass) throws com.metaco.client.exceptions.MetacoClientException;

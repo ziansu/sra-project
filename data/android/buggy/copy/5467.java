@@ -1,3 +1,0 @@
-public java.lang.String createSnapshotSchedule(java.lang.String name, java.lang.String path, java.lang.String schedule, java.lang.String pattern, java.lang.Integer duration) throws com.emc.storageos.isilon.restapi.IsilonException {
-    return create(_baseUrl.resolve(com.emc.storageos.isilon.restapi.IsilonApi.URI_SNAPSHOT_SCHEDULES), "schedule", new com.emc.storageos.isilon.restapi.IsilonSnapshotSchedule(name, path, schedule, pattern, duration));
-}

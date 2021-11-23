@@ -1,4 +1,0 @@
-@java.lang.Override
-public org.wso2.carbon.event.execution.manager.core.structure.configuration.TemplateConfiguration getConfiguration(java.lang.String domainName, java.lang.String configName) {
-    return org.wso2.carbon.event.execution.manager.core.internal.util.ExecutionManagerHelper.getConfiguration(((((((org.wso2.carbon.event.execution.manager.core.internal.util.ExecutionManagerConstants.TEMPLATE_CONFIG_PATH) + (java.io.File.separator)) + domainName) + (java.io.File.separator)) + configName) + (org.wso2.carbon.event.execution.manager.core.internal.util.ExecutionManagerConstants.CONFIG_FILE_EXTENSION)), registry);
-}

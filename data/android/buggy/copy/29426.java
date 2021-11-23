@@ -1,1 +1,0 @@
-public abstract java.lang.Object find(java.lang.String key, java.lang.String value);

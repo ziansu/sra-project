@@ -1,3 +1,0 @@
-public void sendGeolocation(org.jivesoftware.smackx.geoloc.packet.GeoLocation geoLocation) throws java.lang.InterruptedException, org.jivesoftware.smack.SmackException.NoResponseException, org.jivesoftware.smack.SmackException.NotConnectedException, org.jivesoftware.smack.XMPPException.XMPPErrorException {
-    getNode().send(new org.jivesoftware.smackx.pubsub.PayloadItem<org.jivesoftware.smackx.geoloc.packet.GeoLocation>(geoLocation));
-}

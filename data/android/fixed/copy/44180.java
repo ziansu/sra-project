@@ -1,3 +1,0 @@
-public org.killbill.billing.plugin.notification.email.EmailContent generateEmailForSubscriptionCancellationEffective(final org.killbill.billing.account.api.AccountData account, final org.killbill.billing.entitlement.api.Subscription subscription, final org.killbill.billing.util.callcontext.TenantContext context) throws java.io.IOException {
-    return getEmailContent(TemplateType.SUBSCRIPTION_CANCELLATION_EFFECTIVE, account, subscription, null, null, context);
-}

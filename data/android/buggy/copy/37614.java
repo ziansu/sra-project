@@ -1,1 +1,0 @@
-public edu.fzu.progds.superasso.dto.ActivityProfile getActivityInfo(int actId, int userId);

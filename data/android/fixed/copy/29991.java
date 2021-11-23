@@ -1,1 +1,0 @@
-void onAudioEncode(byte[] data, int size, long timeUs);

@@ -1,1 +1,0 @@
-private static native void _imaqDeleteClassifierSample(long session, int index);

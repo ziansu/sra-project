@@ -1,1 +1,0 @@
-public boolean addRating(java.lang.String uid, java.lang.String bid, int rating, java.lang.String review);

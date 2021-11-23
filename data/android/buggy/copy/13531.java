@@ -1,1 +1,0 @@
-public void download(java.lang.String essayId, javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response);

@@ -1,1 +1,0 @@
-public java.lang.String getCourseOwnerFilter() throws uk.ac.ox.oucs.vle.ExternalGroupException;

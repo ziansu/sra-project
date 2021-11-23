@@ -1,1 +1,0 @@
-private static native void _IMAQdxGetAttributeType(int id, long name, long type);

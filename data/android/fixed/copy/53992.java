@@ -1,1 +1,0 @@
-void receiveDirection(game.Direction direction);

@@ -1,3 +1,0 @@
-@com.wantscart.jade.annotation.SQL(value = ((((((("SELECT " + (TableSchema.TEMPLATE_PK)) + ", ") + (TableSchema.TEMPLATE_COLUMN_KEYS)) + " FROM ") + (TableSchema.TEMPLATE_TABLE)) + " WHERE ") + (TableSchema.TEMPLATE_PK)) + " IN (:_ids)", type = com.wantscart.jade.annotation.SQLType.TEMPLATE)
-java.util.List<T> gets(@com.wantscart.jade.annotation.SQLParam(value = "_ids")
-java.util.List<java.lang.Number> ids);

@@ -1,1 +1,0 @@
-public void onRepositorySelected(int position, com.ivshinaleksei.githubviewer.domain.impl.RepositoryFullInfoImpl data);

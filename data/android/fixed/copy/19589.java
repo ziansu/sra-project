@@ -1,1 +1,0 @@
-public abstract void onScroll(int position, float positionOffset);

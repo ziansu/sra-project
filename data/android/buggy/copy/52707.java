@@ -1,1 +1,0 @@
-protected abstract void startSessionChecker(final long interval);

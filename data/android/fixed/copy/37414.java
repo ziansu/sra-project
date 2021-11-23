@@ -1,1 +1,0 @@
-public codeine.collectors.tags.TagsCollectorRunner create(java.lang.String name, codeine.api.NodeInfo node);

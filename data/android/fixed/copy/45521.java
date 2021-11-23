@@ -1,3 +1,0 @@
-void finaliza() {
-    in = null;
-}
