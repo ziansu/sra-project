@@ -1,0 +1,4 @@
+protected org.neo4j.kernel.impl.storageengine.impl.recordstorage.id.BufferedIdController createBufferedIdController(org.neo4j.kernel.impl.store.id.IdGeneratorFactory idGeneratorFactory, org.neo4j.scheduler.JobScheduler scheduler, org.neo4j.kernel.impl.store.id.IdReuseEligibility eligibleForIdReuse, org.neo4j.kernel.impl.store.id.configuration.IdTypeConfigurationProvider idTypeConfigurationProvider) {
+    org.neo4j.kernel.impl.store.id.BufferingIdGeneratorFactory bufferingIdGeneratorFactory = new org.neo4j.kernel.impl.store.id.BufferingIdGeneratorFactory(idGeneratorFactory, eligibleForIdReuse, idTypeConfigurationProvider);
+    return new org.neo4j.kernel.impl.storageengine.impl.recordstorage.id.BufferedIdController(bufferingIdGeneratorFactory, scheduler);
+}

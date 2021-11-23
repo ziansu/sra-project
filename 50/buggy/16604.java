@@ -1,0 +1,1 @@
+void updateProgress(int progress, boolean fromShow);

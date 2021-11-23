@@ -1,0 +1,1 @@
+void onClientLostRoute(client.Client client);

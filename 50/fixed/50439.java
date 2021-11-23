@@ -1,0 +1,1 @@
+org.smart4j.framework.dao.bean.Pager<org.bright.sepe.entity.Notice> getNoticePager(int pageNumber, int pageSize, java.lang.String param, java.lang.String type);

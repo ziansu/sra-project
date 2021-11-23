@@ -1,0 +1,1 @@
+void receiveDirection(game.Direction direction, game.input.KeyModifier modifier);

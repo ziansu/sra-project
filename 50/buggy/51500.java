@@ -1,0 +1,1 @@
+protected native java.lang.String nativeValidateQuery(long nativeQueryPtr);

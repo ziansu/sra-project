@@ -1,0 +1,3 @@
+double getValue() {
+    return value;
+}

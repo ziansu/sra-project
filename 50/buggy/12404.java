@@ -1,0 +1,1 @@
+private static native void _IMAQdxResetCamera(long name, int resetAll);

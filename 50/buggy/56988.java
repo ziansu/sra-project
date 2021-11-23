@@ -1,0 +1,1 @@
+public abstract int findFirstEmpty(int x, int y, int z);

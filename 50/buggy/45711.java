@@ -1,0 +1,1 @@
+protected abstract void doRead(java.util.Map<java.lang.String, java.lang.Object> attributes, java.nio.file.Path... paths) throws java.io.IOException;

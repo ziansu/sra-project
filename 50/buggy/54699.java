@@ -1,0 +1,1 @@
+protected native byte[] getBytesSockopt(int option);

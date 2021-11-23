@@ -1,0 +1,1 @@
+private static native void _imaqModulo(long dest, long sourceA, long sourceB);

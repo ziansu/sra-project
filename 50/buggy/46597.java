@@ -1,0 +1,1 @@
+<T> T add(java.lang.Class<T> type, java.lang.Object id, T entity);

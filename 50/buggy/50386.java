@@ -1,0 +1,1 @@
+public void sendMSG(java.lang.String text, int target, boolean flag, int msgIndex, boolean first);

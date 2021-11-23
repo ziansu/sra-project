@@ -1,0 +1,1 @@
+public java.lang.String electTrader(int myId) throws java.rmi.RemoteException;

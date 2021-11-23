@@ -1,0 +1,1 @@
+public java.util.List<com.smi.travel.datalayer.entity.OtherBooking> searchOtherBooking(java.lang.String name);

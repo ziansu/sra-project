@@ -1,0 +1,1 @@
+private static native long _imaqContourFitLine(long image, double pixelRadius);

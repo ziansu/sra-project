@@ -1,0 +1,5 @@
+@java.lang.Override
+public void actionPerformed(java.awt.event.ActionEvent e) {
+    paint.setType(paint.LINE);
+    java.lang.System.out.println(("set shape: " + (paint.getShapeType())));
+}

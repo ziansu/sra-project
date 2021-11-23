@@ -1,0 +1,1 @@
+private static native long _imaqGetPointsOnLine(long start, long end, long numPoints);

@@ -1,0 +1,1 @@
+int apply(int outerPosition);

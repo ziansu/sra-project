@@ -1,0 +1,1 @@
+public static native im.actor.core.js.entity.JsGroup create(int id, java.lang.String name, java.lang.String about, java.lang.String avatar, java.lang.String bigAvatar, java.lang.String placeholder, java.lang.String presence, com.google.gwt.core.client.JsArray<im.actor.core.js.entity.JsGroupMember> members);

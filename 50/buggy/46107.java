@@ -1,0 +1,1 @@
+public java.lang.String deleteUser(beans.User u);

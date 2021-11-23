@@ -1,0 +1,1 @@
+public void function(java.lang.Object... args);

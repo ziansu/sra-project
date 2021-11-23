@@ -1,0 +1,1 @@
+private static native long _imaqMatchMultipleGeometricPatterns(long image, long multiplePattern, long roi, long numMatches);

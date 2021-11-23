@@ -1,0 +1,1 @@
+boolean onProgress(int progress, int max, java.lang.String message);

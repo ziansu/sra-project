@@ -1,0 +1,1 @@
+void onUploadFile(java.lang.String type, java.lang.String filename, java.io.InputStream is);

@@ -1,0 +1,2 @@
+@org.springframework.data.jpa.repository.Query(value = "select r from Booking r where r.room.id = ?1 and not(r.end<=?2 or r.start>=?3)")
+public java.util.List<co.simplon.kif.core.model.Booking> getBookingsRoom(java.lang.Integer roomId, java.util.Date startTime, java.util.Date endTime);

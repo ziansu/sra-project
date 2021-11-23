@@ -1,0 +1,1 @@
+void store(org.springframework.web.multipart.MultipartFile file, java.lang.String userId);

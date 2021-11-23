@@ -1,0 +1,1 @@
+private static native void _imaqSetContourColor(long roi, int id, long color);

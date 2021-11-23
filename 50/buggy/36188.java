@@ -1,0 +1,1 @@
+protected native long nativeFind(long nativeQueryPtr, long fromTableRow);

@@ -1,0 +1,1 @@
+public boolean importParameters(pl.edu.agh.pea.Core.ProblemParameters pp);

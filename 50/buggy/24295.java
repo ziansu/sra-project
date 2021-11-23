@@ -1,0 +1,2 @@
+@com.emc.storageos.svcs.errorhandling.annotations.DeclareServiceCode(value = com.emc.storageos.svcs.errorhandling.resources.ServiceCode.RECOVER_POINT_ERROR)
+public com.emc.storageos.recoverpoint.exceptions.RecoverPointException failedToEnableDirectAccessForCopy(final java.lang.String cgCopyName, final java.lang.String cgName, java.lang.String state, final java.lang.Throwable cause);

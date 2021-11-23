@@ -1,0 +1,1 @@
+public void onNewProfileFragmentInteraction(android.net.Uri uri, net.tscloud.hivenotes.db.Profile profile);

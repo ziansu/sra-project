@@ -1,0 +1,1 @@
+public abstract void Init(android.widget.ImageView imageView, android.widget.ImageView imageView2, com.xingzhiqiao.zipperlockdemo.LockScreenUtils lockScreenUtils);

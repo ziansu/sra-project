@@ -1,0 +1,4 @@
+@java.lang.Override
+public boolean shouldShow(net.osmand.plus.OsmandSettings settings, net.osmand.plus.activities.MapActivity activity, java.lang.String tag) {
+    return (super.shouldShow(settings, activity, tag)) && (activity.getMyApplication().getAppInitializer().checkPreviousRunsForExceptions(activity));
+}

@@ -1,0 +1,1 @@
+private static native long _imaqAutoThreshold2(long dest, long source, int numClasses, int method, long mask);

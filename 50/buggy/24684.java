@@ -1,0 +1,1 @@
+abstract void setCurrentTab(int position);

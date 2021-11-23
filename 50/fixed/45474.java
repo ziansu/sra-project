@@ -1,0 +1,1 @@
+public abstract org.openprovenance.prov.model.Key newKey(java.lang.Object o, org.openprovenance.prov.model.QualifiedName type);

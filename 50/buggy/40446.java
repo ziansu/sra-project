@@ -1,0 +1,1 @@
+<D extends org.esupportail.catappsrvs.web.json.JsHasCode<T>> D withCode(java.lang.String code);

@@ -1,0 +1,5 @@
+public void postOrderTraverse(DataStructuresClasses.BinarySearchTree.BinaryTreeNode node) {
+    postOrderTraverse(node.left);
+    postOrderTraverse(node.right);
+    java.lang.System.out.print(((node.data) + " "));
+}

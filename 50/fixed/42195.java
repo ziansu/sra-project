@@ -1,0 +1,1 @@
+public abstract void receive(org.jitsi.videobridge.simulcast.sendmodes.SimulcastStream simStream);

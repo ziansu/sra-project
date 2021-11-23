@@ -1,0 +1,7 @@
+@org.junit.Test
+public void testQuery() throws java.lang.Exception {
+    java.util.List<org.david.rain.dubbox.provider.entity.Task> list = taskMapper.getMemberListPage(new org.david.rain.dubbox.provider.dao.utils.EasyPageInfo(5, 1));
+    for (org.david.rain.dubbox.provider.entity.Task t : list) {
+        java.lang.System.out.println(t);
+    }
+}

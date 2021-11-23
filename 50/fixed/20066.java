@@ -1,0 +1,3 @@
+void thresholdValueLabelToInt() {
+    valueLabelToInt(thresholdSlider);
+}

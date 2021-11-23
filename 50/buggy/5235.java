@@ -1,0 +1,1 @@
+public void writeRecord(org.apache.avro.generic.GenericContainer genericContainer) throws java.lang.Exception;

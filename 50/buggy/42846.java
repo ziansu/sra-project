@@ -1,0 +1,3 @@
+static com.exemple.android.cookbook.adapters.CategoryRecipeRecyclerAdapter.CustomViewHolder create(android.view.LayoutInflater inflater, android.view.ViewGroup parent, com.exemple.android.cookbook.adapters.CategoryRecipeRecyclerAdapter.ItemClickListener clickListener) {
+    return new com.exemple.android.cookbook.adapters.CategoryRecipeRecyclerAdapter.CustomViewHolder(inflater.inflate(R.layout.row_item, parent, false), clickListener);
+}

@@ -1,0 +1,1 @@
+void setSeed(long seed);

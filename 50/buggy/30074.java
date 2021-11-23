@@ -1,0 +1,1 @@
+private static native long _imaqContourFitCircle(long image, double pixelRadius, int rejectOutliers);

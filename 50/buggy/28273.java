@@ -1,0 +1,1 @@
+private static native long _imaqContourComputeCurvature(long contourImage, int kernel);

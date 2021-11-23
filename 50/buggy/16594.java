@@ -1,0 +1,1 @@
+private static native long _imaqMatchColor(long image, long info, long roi, long numScores);

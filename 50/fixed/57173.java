@@ -1,0 +1,1 @@
+public abstract void map(int target, int access);

@@ -1,0 +1,1 @@
+public abstract boolean productCallback(java.lang.String categoryCode, java.lang.String name, java.lang.String description, java.lang.String quantity, java.lang.String price, java.lang.String reorderThreshold, java.lang.String reorderQuantity);

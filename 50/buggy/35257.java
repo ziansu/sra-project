@@ -1,0 +1,4 @@
+public static void main(java.lang.String[] args) throws java.io.IOException {
+    eulerproject.level4.problem82.Solution.loadContents(eulerproject.level4.problem82.Solution.FILENAME);
+    java.lang.System.out.println(eulerproject.level4.problem82.Solution.getMinimumPath(eulerproject.level4.problem82.Solution.array));
+}

@@ -1,0 +1,3 @@
+public static double calcFitness(jobshop.algorithm.hyperheuristic.Chromosome cho) throws java.io.FileNotFoundException {
+    return 1.0 / ((jobshop.calctime.Scheduler.calcTime(jobshop.algorithm.hyperheuristic.FitnessCalc.mchCnt, jobshop.algorithm.hyperheuristic.FitnessCalc.jobCnt, jobshop.algorithm.hyperheuristic.FitnessCalc.stepCnt, jobshop.algorithm.hyperheuristic.FitnessCalc.testcase_pcd, jobshop.algorithm.hyperheuristic.FitnessCalc.testcase_time, cho, jobshop.algorithm.hyperheuristic.FitnessCalc.ruleList)) - 1);
+}

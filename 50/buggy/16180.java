@@ -1,0 +1,6 @@
+public boolean onMenuItemClick(android.view.MenuItem item) {
+    java.lang.String task = item.toString();
+    android.util.Log.d("TAG", task);
+    previewTask(task);
+    return true;
+}

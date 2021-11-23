@@ -1,0 +1,1 @@
+private static native long _imaqLearnColor(long image, long roi, int sensitivity, int saturation);

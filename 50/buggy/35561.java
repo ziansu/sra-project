@@ -1,0 +1,1 @@
+private native void open(int baudRate, int gpioDE);

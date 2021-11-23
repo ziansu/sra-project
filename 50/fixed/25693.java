@@ -1,0 +1,1 @@
+public void doOkConfirmClick(int SearchType);

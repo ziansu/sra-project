@@ -1,0 +1,6 @@
+private int root(int p) {
+    while ((id[p]) != p) {
+        p = id[p];
+    } 
+    return p;
+}

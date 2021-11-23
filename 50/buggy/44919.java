@@ -1,0 +1,1 @@
+void invalidateRange(int offset, int length);

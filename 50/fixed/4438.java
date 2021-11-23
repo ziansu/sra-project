@@ -1,0 +1,1 @@
+protected abstract boolean doJoinGroup(long userId, long groupId, java.lang.String groupName);

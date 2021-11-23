@@ -1,0 +1,1 @@
+void testConnection(java.util.Map<java.lang.String, java.lang.String> properties, boolean createMode) throws java.io.IOException;

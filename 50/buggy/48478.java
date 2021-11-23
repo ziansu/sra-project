@@ -1,0 +1,1 @@
+private static native void _imaqRemoveCustomData(long image, long key);

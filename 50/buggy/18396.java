@@ -1,0 +1,1 @@
+public native void detectLanguageAndEncodingNative(org.geometerplus.fbreader.book.AbstractBook book);

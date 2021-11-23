@@ -1,0 +1,1 @@
+public boolean isHostStarred(int id, java.lang.String name);

@@ -1,0 +1,1 @@
+public void imageReceived(int requestId);

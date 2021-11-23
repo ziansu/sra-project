@@ -1,0 +1,1 @@
+public void whileEditingNode(com.horstmann.violet.product.diagram.abstracts.node.INode node, java.beans.PropertyChangeEvent event);

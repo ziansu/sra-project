@@ -1,0 +1,1 @@
+private static native long _imaqReadClassifierFile(long session, long fileName, int mode, long type, long engine, long description);

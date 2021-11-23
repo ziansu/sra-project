@@ -1,0 +1,1 @@
+private static native boolean nativeStartRtcEventLog(long nativePeerConnection, int file_descriptor, long max_size_bytes);

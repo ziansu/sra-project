@@ -1,0 +1,4 @@
+@java.lang.Override
+public boolean accept(java.io.File f) {
+    return (f.getName().startsWith("log4j")) && (f.getName().endsWith(".jar"));
+}

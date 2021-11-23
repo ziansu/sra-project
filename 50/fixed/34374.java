@@ -1,0 +1,1 @@
+int getUnreadCount(com.vaguehope.onosendai.config.Column column);

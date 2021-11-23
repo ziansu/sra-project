@@ -1,0 +1,1 @@
+public boolean uploadFileToBlobStorage(java.lang.String filePath, java.lang.String prefix, java.lang.String fileId, java.lang.String fileName);

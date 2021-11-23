@@ -1,0 +1,1 @@
+org.domeos.basemodel.HttpResponseTemp<?> deleteBaseImageCustom(int imageId);

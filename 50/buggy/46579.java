@@ -1,0 +1,3 @@
+public java.util.ArrayList<org.sleuthkit.datamodel.BlackboardArtifact> getBlackboardArtifacts(org.sleuthkit.datamodel.BlackboardArtifact.ARTIFACT_TYPE artifactType, long obj_id) throws org.sleuthkit.datamodel.TskCoreException {
+    return getArtifactsHelper((((("blackboard_artifacts.obj_id = " + obj_id) + " AND blackboard_artifact_types.artifact_type_id = ") + (artifactType.getTypeID())) + ";"));
+}

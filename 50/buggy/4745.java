@@ -1,0 +1,1 @@
+public void function(T object);

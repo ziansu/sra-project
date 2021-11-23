@@ -1,0 +1,3 @@
+private org.talend.components.api.exception.ComponentException generateJiraException(int code, java.lang.String errorMessage) {
+    return new org.talend.components.api.exception.ComponentException(new org.talend.daikon.exception.error.DefaultErrorCode(code), org.talend.daikon.exception.ExceptionContext.build().put("message", (("Can't get response from server, error code is " + code) + errorMessage)));
+}

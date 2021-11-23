@@ -1,0 +1,1 @@
+org.domeos.basemodel.HttpResponseTemp<?> downloadLogFile(int imageId, long userId);

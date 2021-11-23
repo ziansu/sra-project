@@ -1,0 +1,1 @@
+int deleteUserRole(java.util.Map<java.lang.String, java.lang.Object> param);

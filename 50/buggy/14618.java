@@ -1,0 +1,1 @@
+<S extends E> org.springframework.data.domain.Page<S> findAll(org.springframework.data.domain.Example<S> example, org.springframework.data.domain.Pageable pageable);

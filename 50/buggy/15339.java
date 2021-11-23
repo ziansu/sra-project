@@ -1,0 +1,1 @@
+private native void nativeSetJsOnlineProperty(long nativeXWalkContent, boolean networkUp);

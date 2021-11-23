@@ -1,0 +1,3 @@
+public static com.contentful.java.cda.interceptor.ContentfulUserAgentHeaderInterceptor.Section app(java.lang.String name, com.contentful.java.cda.interceptor.ContentfulUserAgentHeaderInterceptor.Section.Version version) {
+    return new com.contentful.java.cda.interceptor.ContentfulUserAgentHeaderInterceptor.Section(com.contentful.java.cda.interceptor.ContentfulUserAgentHeaderInterceptor.Section.APP, com.contentful.java.cda.interceptor.ContentfulUserAgentHeaderInterceptor.Section.check(name).replace(" ", ""), version);
+}

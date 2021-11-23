@@ -1,0 +1,1 @@
+int lsl_resolve_bypred(com.sun.jna.Pointer[] buffer, int buffer_elements, java.lang.String pred, int minimum, double wait_time);

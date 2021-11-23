@@ -1,0 +1,3 @@
+double getClock() {
+    return clock;
+}

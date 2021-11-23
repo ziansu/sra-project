@@ -1,0 +1,1 @@
+protected abstract void populateView(android.view.View v, T model, int position);

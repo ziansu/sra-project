@@ -1,0 +1,1 @@
+protected abstract java.lang.Exception getLastKnownError();

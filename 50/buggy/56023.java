@@ -1,0 +1,1 @@
+public int realReadChars(char[] cbuf, int off, int len) throws java.io.IOException;

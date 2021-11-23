@@ -1,0 +1,1 @@
+void error(java.lang.Throwable error);

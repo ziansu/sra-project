@@ -1,0 +1,1 @@
+public java.lang.String getSiteGroupList(java.lang.String parentId, java.lang.String groupNamePattern, com.edubrite.api.plugins.vo.PagedList pagination);

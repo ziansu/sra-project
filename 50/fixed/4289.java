@@ -1,0 +1,3 @@
+boolean isViaDvi() {
+    return false;
+}

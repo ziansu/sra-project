@@ -1,0 +1,1 @@
+private native void nativeSubtable(long nativeQueryPtr, long columnIndex);

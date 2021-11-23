@@ -1,0 +1,1 @@
+public <MT extends org.epics.ca.data.Metadata<T>> org.epics.ca.Monitor<MT> addMonitor(java.lang.Class<? extends MT> clazz, com.lmax.disruptor.dsl.Disruptor<? extends MT> disruptor);

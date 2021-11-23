@@ -1,0 +1,1 @@
+public void cancelBookTour(int idBT, int idTour);

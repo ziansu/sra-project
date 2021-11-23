@@ -1,0 +1,1 @@
+public void otherCollect(com.favorites.domain.Collect collect, com.favorites.domain.Collect other);

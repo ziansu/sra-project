@@ -1,0 +1,1 @@
+private static native long _imaqROIProfile(long image, long roi);

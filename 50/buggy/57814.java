@@ -1,0 +1,1 @@
+private native void initNVG(long objPtr, int width, int height, float density);

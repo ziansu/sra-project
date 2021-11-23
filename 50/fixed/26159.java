@@ -1,0 +1,1 @@
+java.util.List<lv.velexauto.velex.domain.Agreement> getUnpaidAgreements(lv.velexauto.velex.domain.Company company, java.util.Date date);

@@ -1,0 +1,1 @@
+public abstract void setPriority(seedu.tasklist.model.task.Priority priority);

@@ -1,0 +1,3 @@
+private static void startHardAI(int rows, int columns) {
+    new de.hsMannheim.informatik.oot.ss17.ttt.controller.Game(new de.hsMannheim.informatik.oot.ss17.ttt.controller.LocalPlayer("Player1"), new de.hsMannheim.informatik.oot.ss17.ttt.controller.AIPlayerHard(2, "KI"), new de.hsMannheim.informatik.oot.ss17.ttt.controller.GameBoard(new de.hsMannheim.informatik.oot.ss17.ttt.controller.GameBoardSize(rows, columns))).play();
+}

@@ -1,0 +1,1 @@
+boolean deleteRating(online.mrsys.movierecommender.domain.Rating rating);

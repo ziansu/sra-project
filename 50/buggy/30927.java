@@ -1,0 +1,1 @@
+void onNotify(java.lang.String currency, double cash);

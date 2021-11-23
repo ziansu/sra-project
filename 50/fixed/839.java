@@ -1,0 +1,1 @@
+void deleteRating(java.lang.Integer id);

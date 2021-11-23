@@ -1,0 +1,1 @@
+public double calculate(double... params);

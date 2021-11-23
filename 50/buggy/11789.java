@@ -1,0 +1,3 @@
+public static void createFluids() {
+    net.minecraftforge.fluids.FluidRegistry.registerFluid((com.TRIUMPH.aos.items.Fluids.MainModFluid.Nitroglycerin = new com.TRIUMPH.aos.items.Fluids.ModFluid(com.TRIUMPH.aos.unLocalizedNames.FluidNitroglycerin, new net.minecraft.util.ResourceLocation("aos:blocks/fluid/Nitroglycerin_still"), new net.minecraft.util.ResourceLocation("blocks/water_flow"), -20561, 295, 3000)));
+}

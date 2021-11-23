@@ -1,0 +1,1 @@
+public boolean subscribe() throws ServerExistsException, java.rmi.RemoteException;

@@ -1,0 +1,1 @@
+public abstract void execute() throws java.lang.Exception;

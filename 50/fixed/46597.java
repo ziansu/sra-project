@@ -1,0 +1,1 @@
+<T> T add(T entity);

@@ -1,0 +1,1 @@
+public abstract void setStatus(seedu.tasklist.model.task.Status status);

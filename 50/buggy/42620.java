@@ -1,0 +1,3 @@
+public com.hp.hpl.jena.sparql.engine.Plan create(com.hp.hpl.jena.query.Query query, com.hp.hpl.jena.sparql.core.DatasetGraph dataset, com.hp.hpl.jena.sparql.engine.binding.Binding inputBinding, com.hp.hpl.jena.sparql.util.Context context) {
+    return new de.fuberlin.wiwiss.d2rq.engine.QueryEngineD2RQ(((de.fuberlin.wiwiss.d2rq.jena.GraphD2RQ) (dataset.getDefaultGraph())), query, context).getPlan();
+}

@@ -1,0 +1,1 @@
+protected abstract void onUpdateError(org.apache.wicket.ajax.AjaxRequestTarget target, java.lang.Exception ex);

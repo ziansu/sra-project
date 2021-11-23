@@ -1,0 +1,1 @@
+public com.telefonica.iot.cygnus.backends.http.JsonResponse deleteSubscriptionV1(java.lang.String subscriptionId, java.lang.String token) throws java.lang.Exception;

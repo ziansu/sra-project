@@ -1,0 +1,8 @@
+@java.lang.Override
+public void onDestroy() {
+    if ((mCameraView) != null) {
+        mCameraView.disableView();
+    }
+    sound.release();
+    super.onDestroy();
+}

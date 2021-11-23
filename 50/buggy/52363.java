@@ -1,0 +1,1 @@
+abstract java.lang.String receive(java.lang.String mesageOut, java.lang.String user);

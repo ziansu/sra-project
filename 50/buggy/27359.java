@@ -1,0 +1,1 @@
+public abstract void setupSpecialSprite(final int x, final int y);

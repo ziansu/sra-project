@@ -1,0 +1,1 @@
+public void initializeReceiver(java.lang.String host, int port, java.lang.String password, org.openhab.binding.resolvbus.model.ResolVBUSConfig config);

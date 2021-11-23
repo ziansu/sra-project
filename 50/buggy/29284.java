@@ -1,0 +1,1 @@
+public java.util.Date getEarliestDate(org.dspace.core.Context context, java.lang.String dbDriver) throws java.sql.SQLException, org.dspace.xoai.exceptions.InvalidMetadataFieldException;

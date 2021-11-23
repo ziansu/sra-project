@@ -1,0 +1,3 @@
+public void addPairOfSynonyms(java.lang.String a, java.lang.String b) throws java.io.FileNotFoundException {
+    synonymFinder.addPair(a, b);
+}

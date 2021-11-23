@@ -1,0 +1,3 @@
+public static org.talend.core.runtime.process.IBuildJobHandler createBuildJobHandler(org.talend.core.model.properties.ProcessItem processItem, java.lang.String contextName, java.lang.String version, java.util.Map<org.talend.repository.ui.wizards.exportjob.scriptsmanager.JobScriptsManager.ExportChoice, java.lang.Object> exportChoiceMap) {
+    return org.talend.repository.ui.wizards.exportjob.scriptsmanager.BuildJobFactory.createBuildJobHandler(processItem, contextName, version, exportChoiceMap, ((java.lang.String) (null)));
+}

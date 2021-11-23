@@ -1,0 +1,1 @@
+protected abstract java.util.List<com.kkolcz.model.Product> createProductList();

@@ -1,0 +1,1 @@
+void removeParticipant(int tournamentId, int groupId, com.workfront.intern.cb.common.Participant participant) throws com.workfront.intern.cb.common.custom.exception.FailedOperationException, com.workfront.intern.cb.common.custom.exception.ObjectNotFoundException;

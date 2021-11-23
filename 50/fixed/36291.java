@@ -1,0 +1,1 @@
+protected native int initWithPreset(int preset, int tune);

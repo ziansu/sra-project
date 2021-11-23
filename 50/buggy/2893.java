@@ -1,0 +1,3 @@
+public void upEvent() {
+    (menuPosition)--;
+}

@@ -1,0 +1,1 @@
+org.sagebionetworks.bridge.models.ForwardCursorPagedResourceList<org.sagebionetworks.bridge.models.schedules.ScheduledActivity> getActivityHistoryV2(java.lang.String healthCode, java.lang.String activityGuid, org.joda.time.DateTime scheduledOnOrAfter, org.joda.time.DateTime scheduledOnOrBefore, java.lang.Long offsetBy, int pageSize);

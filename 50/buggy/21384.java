@@ -1,0 +1,1 @@
+org.glowroot.storage.repo.Result<org.glowroot.common.live.LiveAggregateRepository.TransactionErrorSummary> readTransactionErrorSummaries(org.glowroot.storage.repo.AggregateRepository.ErrorSummaryQuery query, int rollupLevel) throws java.lang.Exception;

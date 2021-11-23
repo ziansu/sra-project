@@ -1,0 +1,1 @@
+void removeAllNotifications(final java.lang.String principalHref) throws org.bedework.calfacade.exc.CalFacadeException;

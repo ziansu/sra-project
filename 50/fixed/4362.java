@@ -1,0 +1,3 @@
+com.centurylink.mdw.model.event.EventWaitInstance createEventWaitInstances(java.lang.Long actInstId, java.lang.String[] pEventNames, java.lang.String[] pWakeUpEventTypes, boolean[] pEventOccurances, boolean notifyIfArrived) throws com.centurylink.mdw.dataaccess.DataAccessException, com.centurylink.mdw.services.ProcessException {
+    return createEventWaitInstances(actInstId, pEventNames, pWakeUpEventTypes, pEventOccurances, notifyIfArrived, false, false);
+}

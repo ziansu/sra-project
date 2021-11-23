@@ -1,0 +1,1 @@
+public abstract void onScroll(android.view.ViewGroup container, int position, float positionOffset);

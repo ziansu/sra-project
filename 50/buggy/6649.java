@@ -1,0 +1,3 @@
+public static org.apache.atlas.typesystem.types.HierarchicalTypeDefinition<org.apache.atlas.typesystem.types.ClassType> createClassTypeDef(java.lang.String name, java.lang.String description, java.lang.String version, com.google.common.collect.ImmutableSet<java.lang.String> superTypes, org.apache.atlas.typesystem.types.AttributeDefinition... attrDefs) {
+    return new org.apache.atlas.typesystem.types.HierarchicalTypeDefinition(org.apache.atlas.typesystem.types.ClassType.class, name, description, superTypes, attrDefs);
+}

@@ -1,0 +1,3 @@
+public static org.sonar.api.notifications.NotificationDispatcherMetadata newMetadata() {
+    return org.sonar.api.notifications.NotificationDispatcherMetadata.create(com.cruson.review.NewIssuesNotificationDispatcher.KEY).setProperty(NotificationDispatcherMetadata.GLOBAL_NOTIFICATION, java.lang.String.valueOf(false)).setProperty(NotificationDispatcherMetadata.PER_PROJECT_NOTIFICATION, java.lang.String.valueOf(false));
+}

@@ -1,0 +1,1 @@
+void update(model.Attachment attachment);

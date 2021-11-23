@@ -1,0 +1,3 @@
+void flush() {
+    writer.flush();
+}

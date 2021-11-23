@@ -1,0 +1,1 @@
+com.sbiger.qbe.ExampleCriteria<T> andNotLike(com.sbiger.qbe.ExampleCriteria.BooleanOperator type, java.lang.Boolean condition, java.lang.String property, java.lang.String value);

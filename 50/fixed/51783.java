@@ -1,0 +1,1 @@
+public abstract void updateBattlecodeFiles(final java.io.File battlecode_server, final java.io.File allowedPackages, final java.io.File disallowedClasses, final java.io.File methodCosts);

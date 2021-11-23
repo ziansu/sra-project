@@ -1,0 +1,1 @@
+public abstract com.hazelcast.spi.Operation createPartitionOperation(int partition);

@@ -1,0 +1,1 @@
+private static native void nativeRestoreCookies(java.lang.String url, java.lang.String name, java.lang.String value, java.lang.String domain, java.lang.String path, long creation, long expiration, long lastAccess, boolean secure, boolean httpOnly, int sameSite, int priority);

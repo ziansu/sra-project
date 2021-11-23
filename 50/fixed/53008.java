@@ -1,0 +1,1 @@
+void copyTableData(java.lang.String sourceVersion, java.lang.String destinationVersion, java.lang.String tableNamePattern, java.util.List<java.lang.String> excludeTableNames) throws org.ihtsdo.otf.rest.exception.BusinessServiceException;

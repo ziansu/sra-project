@@ -1,0 +1,3 @@
+public java.lang.String getDocumentEntityFilename(com.dreameddeath.core.model.entity.model.EntityModelId modelId) {
+    return java.lang.String.format("%s/%s/%s/%s/v%s.json", com.dreameddeath.core.model.entity.EntityDefinitionManager.ROOT_PATH, com.dreameddeath.core.model.entity.EntityDefinitionManager.DOCUMENT_DEF_PATH, modelId.getDomain().toLowerCase(), modelId.getName().toLowerCase(), modelId.getEntityVersion().getMajor());
+}

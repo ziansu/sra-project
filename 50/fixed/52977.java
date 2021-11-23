@@ -1,0 +1,1 @@
+public abstract java.sql.Connection newConnection(java.lang.String address, java.lang.Integer port, java.lang.String name, java.lang.String username, java.lang.String password);

@@ -1,0 +1,1 @@
+protected abstract void printPatternDefinitions(final int startPattern, final int numberOfPatterns);

@@ -1,0 +1,1 @@
+public java.lang.Iterable<programming_assignments.HW2_SeamCarving.seam_carving.SeamCarver.Point> adj(int x, int y);

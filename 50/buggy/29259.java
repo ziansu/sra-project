@@ -1,0 +1,1 @@
+native void sendLocalNotification(java.lang.String id, java.lang.String alertTitle, java.lang.String alertBody, java.lang.String alertLaunchImage, java.lang.String alertSound, int badgeNumber, long fireDate, int repeatType);

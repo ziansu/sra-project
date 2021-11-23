@@ -1,0 +1,1 @@
+public boolean handle(io.pingpang.simpleexchangeproxyserver.ExchangeSession session, io.pingpang.simpleexchangeproxyserver.ExchangeResponseLine responseLine);

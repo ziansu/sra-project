@@ -1,0 +1,2 @@
+public double mod(double input1, double input2) {
+}

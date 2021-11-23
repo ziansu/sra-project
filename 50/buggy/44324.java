@@ -1,0 +1,1 @@
+<S extends E> java.util.List<S> save(java.lang.Iterable<S> entities);

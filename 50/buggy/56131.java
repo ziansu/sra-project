@@ -1,0 +1,1 @@
+int lsl_push_chunk_ctp(com.sun.jna.Pointer obj, byte[] data, long data_elements, double timestamp, int pushthrough);

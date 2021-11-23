@@ -1,0 +1,1 @@
+private static native void _imaqGetImageInfo(long image, long info);

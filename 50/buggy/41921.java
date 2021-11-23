@@ -1,0 +1,1 @@
+public abstract java.util.Map<java.lang.Integer, java.lang.Double> getNbrs(int node);

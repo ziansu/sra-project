@@ -1,0 +1,1 @@
+double log10EmissionProbability(final D data, final T time, final S state);

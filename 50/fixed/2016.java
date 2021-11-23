@@ -1,0 +1,3 @@
+@org.apache.ibatis.annotations.Insert(value = "insert into " + ((("promotion(name, type, discount, full, cut, buy, give, from_time, " + "to_time, store_id, is_all_site) ") + "values(#{name}, #{type}, #{discount}, #{full}, #{cut}, #{buy}, #{give},") + " #{from_time}, #{to_time}, #{store_id}, #{is_all_site})"))
+@org.apache.ibatis.annotations.Options(keyProperty = "promotion_id", useGeneratedKeys = true)
+void addPromotion(com.shop.model.domain.Promotion promotion);

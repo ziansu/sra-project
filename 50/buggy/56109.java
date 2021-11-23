@@ -1,0 +1,1 @@
+private native void stdErrWrite(long ptr, int b);

@@ -1,0 +1,1 @@
+protected abstract com.fasterxml.jackson.databind.ObjectMapper provideObjectMapper(com.picdrop.helper.EnvHelper env);

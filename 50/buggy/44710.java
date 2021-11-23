@@ -1,0 +1,1 @@
+public abstract java.util.List<cs544.theblogger.entity.Role> getRoles(java.lang.Long roleId);

@@ -1,0 +1,1 @@
+void process(java.lang.String name, java.lang.Object value, org.dawnsci.common.richbeans.beans.IFieldWidget box) throws java.lang.Exception;

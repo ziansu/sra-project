@@ -1,0 +1,1 @@
+public void loadCopyFile(java.lang.String tableName, java.lang.String timeStamp, java.lang.String userName) throws java.io.IOException, java.sql.SQLException, java.text.ParseException, org.crce.interns.exception.IncorrectEncodingTypeException;

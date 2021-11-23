@@ -1,0 +1,1 @@
+public abstract long addEntities(net.sf.jailer.datamodel.Table table, java.lang.String condition, int today) throws java.sql.SQLException;

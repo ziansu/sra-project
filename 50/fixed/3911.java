@@ -1,0 +1,1 @@
+int addHistory(int userid, int examid);

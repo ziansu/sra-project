@@ -1,0 +1,1 @@
+public void onUpdate(boolean root, com.jecelyin.android.file_explorer.io.JecFile path);

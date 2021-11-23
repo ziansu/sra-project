@@ -1,0 +1,1 @@
+public void onComputeMd5Finished(java.io.File file, java.lang.String md5);

@@ -1,0 +1,1 @@
+void merge(edu.brandeis.cs.nlp.mae.util.HashedCollection<K, V> newHash);

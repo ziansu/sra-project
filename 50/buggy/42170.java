@@ -1,0 +1,3 @@
+public boolean copySoundFiles(java.lang.String targetScene, java.lang.String targetProject, java.lang.String sourceScene, java.lang.String sourceProject) {
+    return copyFiles(targetScene, targetProject, sourceScene, sourceProject, true);
+}

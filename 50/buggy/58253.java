@@ -1,0 +1,1 @@
+public void fail(java.lang.Exception e);

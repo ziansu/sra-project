@@ -1,0 +1,1 @@
+void info(java.lang.String message, java.lang.Throwable throwable);

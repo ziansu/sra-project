@@ -1,0 +1,1 @@
+void report2GenerierenListe(int i, com.google.gwt.user.client.rpc.AsyncCallback<java.util.Vector<de.hdm.tellme.shared.bo.Nutzer>> callback);

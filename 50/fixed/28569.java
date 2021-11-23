@@ -1,0 +1,1 @@
+private static native void convertYUV420SPToARGB8888(byte[] input, int[] output, int width, int height, boolean halfSize);

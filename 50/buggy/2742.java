@@ -1,0 +1,3 @@
+int getWidth() {
+    return width;
+}

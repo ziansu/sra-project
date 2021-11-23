@@ -1,0 +1,1 @@
+long lsl_pull_chunk_c(com.sun.jna.Pointer obj, byte[] data_buffer, double[] timestamp_buffer, long data_buffer_elements, long timestamp_buffer_elements, double timeout, int[] ec);

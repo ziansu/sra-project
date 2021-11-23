@@ -1,0 +1,3 @@
+C getSharedCircuitBreakerCommand(com.netflix.hystrix.HystrixCommandProperties.ExecutionIsolationStrategy isolationStrategy, com.netflix.hystrix.AbstractTestHystrixCommand.FallbackResult fallbackResult, com.netflix.hystrix.HystrixCircuitBreakerTest.TestCircuitBreaker circuitBreaker) {
+    return getCommand(isolationStrategy, ExecutionResult.FAILURE, 0, fallbackResult, circuitBreaker, null, 100, CacheEnabled.NO, "foo", 10);
+}

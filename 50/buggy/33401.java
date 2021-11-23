@@ -1,0 +1,1 @@
+protected abstract java.util.Map<java.lang.String, java.lang.String> initParamsMap(java.lang.String from, java.lang.String targ, java.lang.String query);

@@ -1,0 +1,1 @@
+okhttp3.Response onAfterRequest(okhttp3.Response response, java.lang.String result, okhttp3.Interceptor.Chain chain);

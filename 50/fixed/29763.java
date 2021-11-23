@@ -1,0 +1,1 @@
+protected abstract java.util.Iterator<gov.va.cpe.vpr.m4j.mmap.MVar.MVarKey> iterator();

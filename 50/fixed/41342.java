@@ -1,0 +1,1 @@
+protected abstract boolean isFilterable(java.lang.String statement);

@@ -1,0 +1,4 @@
+public static void main(java.lang.String[] args) throws java.lang.Exception {
+    com.smartbt.girocheck.servercommon.utils.IDScanner.testParseID();
+    java.util.Map map = com.smartbt.girocheck.servercommon.utils.IDScanner.parseID("48fa49a3-8ca4-4fc5-9a60-93271739969d", "QU5TSSA2MzYwMTAwMTAyREwwMDM5MDE3MVpGMDIxMDAwNDdETERBQURFIExBIE5VRVosUEVEUk8sTFVJUw0KREFHNzAxOSBQT01FTE8gRFINCkRBSU9STEFORE8NCkRBSkZMDQpEQUszMjgxOS0wMDAwIA0KREFRRDQ1MjY3Mjc3MTM1MA0KREFSRSANCkRBU05PTkUNCkRBVE5PTkUNCkRCQTIwMjUwNDE1DQpEQkIxOTc3MDQxNQ0KREJDMQ0KREJEMjAxNjA2MjENCkRCSE4NCkRBVTUxMA0KWkZaRkENClpGQg0KWkZDRzgxMTYwNjIxMDA5Mw0KWkZEDQpaRkUwNi0wMS0xNA0KWkZG");
+}

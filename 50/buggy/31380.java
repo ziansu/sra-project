@@ -1,0 +1,1 @@
+public byte[] Encrypt(java.lang.String word);

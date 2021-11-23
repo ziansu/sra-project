@@ -1,0 +1,3 @@
+public  getRestaurantHistory() {
+    return history;
+}

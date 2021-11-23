@@ -1,0 +1,1 @@
+public int resetLoginUserPwd(java.lang.String password);

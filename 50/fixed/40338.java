@@ -1,0 +1,1 @@
+public void onChange(java.lang.String rowKey, java.lang.Boolean newValue);

@@ -1,0 +1,1 @@
+public native com.gwtmobile.phonegap.client.plugins.iphone.Map.Pin subTitle(java.lang.String t);

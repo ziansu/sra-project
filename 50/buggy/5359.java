@@ -1,0 +1,1 @@
+private static native void _IMAQdxWriteAttributes(int id, long filename);

@@ -1,0 +1,7 @@
+@java.lang.Override
+public int onStartCommand(android.content.Intent intent, int flags, int startId) {
+    if (intent == null) {
+        pendingIntent = intent.getParcelableExtra(ListPhotosPresenter.PENDING_INTENT_CODE);
+    }
+    return super.onStartCommand(intent, flags, startId);
+}

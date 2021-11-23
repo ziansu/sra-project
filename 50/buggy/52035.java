@@ -1,0 +1,1 @@
+public void onZoomEnd(boolean byGesture, float scale, int centerX, int centerY);

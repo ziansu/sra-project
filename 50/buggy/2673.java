@@ -1,0 +1,8 @@
+private void saveAllPoints() throws java.sql.SQLException {
+    ru.sukharev.pathtracker.provider.DatabaseHelper.PointDAO dao = mDatabaseHelper.getPointDAO();
+    synchronized(mPoints) {
+        for (ru.sukharev.pathtracker.utils.orm.MapPoint mapPoint : mPoints)
+            dao.create(mapPoint);
+        
+    }
+}

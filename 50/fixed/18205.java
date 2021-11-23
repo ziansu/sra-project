@@ -1,0 +1,1 @@
+public void joinRequest(java.lang.String ipAddress, int port, org.apache.thrift.async.AsyncMethodCallback resultHandler) throws org.apache.thrift.TException;

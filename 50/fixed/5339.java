@@ -1,0 +1,3 @@
+public static org.matsim.contrib.analysis.vsp.qgis.GraduatedSymbolRenderer createDensitiesRenderer(org.matsim.contrib.analysis.vsp.qgis.VectorLayer layer, int populationThreshold, int symbolSize) {
+    return new org.matsim.contrib.analysis.vsp.qgis.GraduatedSymbolRenderer(layer, ((double) (populationThreshold)), ((double) (populationThreshold)), 2, symbolSize, ColorRangeUtils.ColorRange.BLACK_TO_WHITE);
+}

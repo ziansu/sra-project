@@ -1,0 +1,3 @@
+void sold() {
+    available = true;
+}

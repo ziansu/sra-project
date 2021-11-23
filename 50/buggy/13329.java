@@ -1,0 +1,1 @@
+public abstract org.jruby.truffle.nodes.rubinius.RubyString executeRubyString(com.oracle.truffle.api.frame.VirtualFrame frame, org.jruby.truffle.nodes.rubinius.RubyString string, int beg, int len);

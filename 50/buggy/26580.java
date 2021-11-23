@@ -1,0 +1,1 @@
+void subClear(int target, int internalformat, long offset, long size, int format, int type, java.nio.ShortBuffer data);

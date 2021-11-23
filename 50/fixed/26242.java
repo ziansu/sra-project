@@ -1,0 +1,1 @@
+protected abstract void initView(android.view.View rootView);

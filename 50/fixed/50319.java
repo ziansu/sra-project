@@ -1,0 +1,1 @@
+public abstract void visualize(double[] viewMatrix, long renderingId);
