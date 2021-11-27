@@ -1,4 +1,0 @@
-private void createUploadURLFields() {
-    createUploadURLField(productionUploadURLTextField, Messages.PrefsFacade_ProductionUploadURLKey, Messages.UploadingPreferencePage_ProductionUploadURLTextField, Messages.AuthenticationPrompter_ProductionRepositoryURL);
-    createUploadURLField(testUploadURLTextField, Messages.PrefsFacade_TestUploadURLKey, Messages.UploadingPreferencePage_TestUploadURLTextField, Messages.AuthenticationPrompter_TestRepositoryURL);
-}

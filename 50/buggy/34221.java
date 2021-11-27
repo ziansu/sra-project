@@ -1,1 +1,0 @@
-private static native long _imaqEnumerateCustomKeys(long image, long size);

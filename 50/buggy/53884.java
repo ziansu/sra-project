@@ -1,3 +1,0 @@
-public static ru.ydn.wicket.wicketorientdb.security.RequiredOrientResource[] requireOClass(final com.orientechnologies.orient.core.metadata.schema.OClass oClass, final org.apache.wicket.authorization.Action action, final ru.ydn.wicket.wicketorientdb.security.OrientPermission... permissions) {
-    return ru.ydn.wicket.wicketorientdb.security.OSecurityHelper.requireOClass(oClass.getName(), action, permissions);
-}

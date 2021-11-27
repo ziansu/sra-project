@@ -1,1 +1,0 @@
-boolean isVacancyLinkUnique(java.lang.Integer id, java.lang.String link);

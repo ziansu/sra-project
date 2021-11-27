@@ -1,3 +1,0 @@
-public int[] getSlotsForFace(net.minecraft.util.EnumFacing side) {
-    return side == (net.minecraft.util.EnumFacing.DOWN) ? com.blakebr0.mysticalagriculture.tileentity.TileEntitySeedReprocessor.sides : side == (net.minecraft.util.EnumFacing.UP) ? com.blakebr0.mysticalagriculture.tileentity.TileEntitySeedReprocessor.top : com.blakebr0.mysticalagriculture.tileentity.TileEntitySeedReprocessor.sides;
-}

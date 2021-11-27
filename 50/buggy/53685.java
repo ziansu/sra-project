@@ -1,3 +1,0 @@
-public static com.idevicesinc.sweetblue.utils.BluetoothEnabler.BluetoothEnablerListener.Please stop(android.content.Context context) {
-    return new com.idevicesinc.sweetblue.utils.BluetoothEnabler.BluetoothEnablerListener.Please(context, com.idevicesinc.sweetblue.utils.BluetoothEnabler.BluetoothEnablerListener.Please.END, com.idevicesinc.sweetblue.utils.BluetoothEnabler.BluetoothEnablerListener.Please.NULL_REQUEST_CODE);
-}

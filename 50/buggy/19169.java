@@ -1,3 +1,0 @@
-public static jetbrains.mps.make.ModuleAnalyzer.ModuleAnalyzerResult build(boolean hasJavaToCompile, boolean hasResourcesToUpdate, java.util.Set<org.jetbrains.mps.openapi.module.SModule> modulesWithRemovals, java.util.Set<java.io.File> filesToDelete, java.util.List<jetbrains.mps.messages.IMessage> errors) {
-    return new jetbrains.mps.make.ModuleAnalyzer.ModuleAnalyzerResult(hasJavaToCompile, hasResourcesToUpdate, modulesWithRemovals, filesToDelete, errors);
-}

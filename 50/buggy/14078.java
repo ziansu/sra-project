@@ -1,1 +1,0 @@
-private native int getCurrentHour(long handle);

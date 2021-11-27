@@ -1,3 +1,0 @@
-getSupportCourseIds() {
-    return supportCourseIds;
-}

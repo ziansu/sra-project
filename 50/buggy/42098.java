@@ -1,3 +1,0 @@
-public  getRestaurantHistory() {
-    return history;
-}

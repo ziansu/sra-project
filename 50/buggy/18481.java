@@ -1,1 +1,0 @@
-private static native long _imaqHistogram(long image, int numClasses, float min, float max, long mask);

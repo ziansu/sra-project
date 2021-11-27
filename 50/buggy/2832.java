@@ -1,4 +1,0 @@
-public static void main(java.lang.String[] args) {
-    java.lang.System.out.println("hello there");
-    error = $missing$;
-}

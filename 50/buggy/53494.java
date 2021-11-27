@@ -1,1 +1,0 @@
-private static native java.lang.String toLocaleUpperCase(java.lang.String s);

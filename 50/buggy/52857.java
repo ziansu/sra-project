@@ -1,1 +1,0 @@
-private static native long _imaqConcentricRake(long image, long roi, int direction, int process, long options);

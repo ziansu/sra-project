@@ -1,1 +1,0 @@
-void onWaitingForOpponent(java.lang.CharSequence hint);

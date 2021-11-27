@@ -1,1 +1,0 @@
-void pickStones(nl.bos.games.rummikub.IBag bag, int size);

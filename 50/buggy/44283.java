@@ -1,5 +1,0 @@
-@java.lang.Override
-public void onResult(java.lang.String location) {
-    btnSelectLocation.setText(location);
-    com.ib2b.habanerorestaurant.models.OrderForm.get().setTempLocation(location);
-}

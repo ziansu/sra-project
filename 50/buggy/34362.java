@@ -1,1 +1,0 @@
-T get(com.comphenix.protocol.events.PacketContainer packet, java.lang.Integer index);

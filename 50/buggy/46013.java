@@ -1,1 +1,0 @@
-<C extends gr.uom.se.util.context.Context> java.util.Set<java.lang.Class<C>> getContextTypes();

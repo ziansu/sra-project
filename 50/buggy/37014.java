@@ -1,1 +1,0 @@
-public abstract java.util.HashMap<java.lang.String, java.lang.Object> index(java.util.HashMap<java.lang.String, java.lang.Object> params);

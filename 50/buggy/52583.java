@@ -1,3 +1,0 @@
-public java.util.Optional<com.wise2c.samples.Service> restartService(java.lang.String environmentId, java.lang.String serviceId, com.wise2c.samples.action.ServiceRestart serviceRestart) throws java.io.IOException {
-    return java.util.Optional.ofNullable(post(java.lang.String.format("/projects/%s/services/%s/?action=restart", environmentId, serviceId, serviceRestart), com.wise2c.samples.Service.class));
-}

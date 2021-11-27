@@ -1,1 +1,0 @@
-public abstract java.awt.image.BufferedImage getImage(int count);

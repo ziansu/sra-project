@@ -1,1 +1,0 @@
-iso.piotrowski.marek.nyndro.statistics.HistoryAnalysis[] doHistoryAnalysis(boolean refresh);

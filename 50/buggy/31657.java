@@ -1,1 +1,0 @@
-void put(byte[] key, byte[] value) throws java.io.IOException;

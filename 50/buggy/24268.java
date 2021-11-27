@@ -1,1 +1,0 @@
-private native void initialize(java.lang.String command);

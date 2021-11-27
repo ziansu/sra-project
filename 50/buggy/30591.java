@@ -1,1 +1,0 @@
-boolean histo(java.lang.String thread, java.lang.String frameLocation);

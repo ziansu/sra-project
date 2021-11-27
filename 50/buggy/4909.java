@@ -1,1 +1,0 @@
-public void delete(java.lang.String objectId) throws org.silverpeas.core.contribution.content.form.FormException;

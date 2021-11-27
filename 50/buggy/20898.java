@@ -1,1 +1,0 @@
-protected native void setLongSockopt(int option, long optval);

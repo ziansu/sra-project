@@ -1,1 +1,0 @@
-protected abstract org.apache.cassandra.db.columniterator.AbstractSSTableIterator.Reader createReader(org.apache.cassandra.db.columniterator.RowIndexEntry indexEntry, org.apache.cassandra.io.util.FileDataInput file, boolean isAtPartitionStart, boolean shouldCloseFile);

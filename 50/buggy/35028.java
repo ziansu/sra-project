@@ -1,1 +1,0 @@
-private static native void _IMAQdxConfigureAcquisition(int id, int continuous, int bufferCount);

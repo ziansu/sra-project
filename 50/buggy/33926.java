@@ -1,1 +1,0 @@
-int deleteUserRole(java.lang.String userId, java.lang.String curUid);

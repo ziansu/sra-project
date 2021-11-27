@@ -1,1 +1,0 @@
-public void onNewApiaryFragmentInteraction(android.net.Uri uri);

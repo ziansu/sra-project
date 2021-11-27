@@ -1,1 +1,0 @@
-int checkOut(int roomID, java.lang.String guestEmail);

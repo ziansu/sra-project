@@ -1,1 +1,0 @@
-public abstract void create(android.view.View view);

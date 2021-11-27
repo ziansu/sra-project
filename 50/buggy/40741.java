@@ -1,1 +1,0 @@
-org.springframework.data.domain.Page<ru.radriges.site.domain.Photos> findByActiveTrue(org.springframework.data.domain.Pageable aPageable);

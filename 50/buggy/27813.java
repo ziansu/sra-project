@@ -1,1 +1,0 @@
-private native void mouseMove(int x, int y);

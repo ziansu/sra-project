@@ -1,1 +1,0 @@
-public void doOkConfirmClick(int SearchType, int SearchCount, boolean bmuseum, boolean bamusement, boolean bgallery, boolean brestaurant);

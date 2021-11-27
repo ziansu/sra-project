@@ -1,1 +1,0 @@
-java.util.List<com.dao.Training> getTrainingListPrevandNext(long id, int count);

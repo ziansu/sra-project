@@ -1,1 +1,0 @@
-void onItemClick(int pos, java.lang.String title, java.lang.String desc);

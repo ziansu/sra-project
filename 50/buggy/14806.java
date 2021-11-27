@@ -1,1 +1,0 @@
-void onDaySelected(kr.djsch.dsmhs.beinone.materialcalendar.DayView v, java.util.Calendar calendar);

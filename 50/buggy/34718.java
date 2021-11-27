@@ -1,3 +1,0 @@
-public org.apache.cassandra.service.MessageIn<org.apache.cassandra.service.ReadResponse> readResponseMessage(java.net.InetAddress from, org.apache.cassandra.service.UnfilteredPartitionIterator partitionIterator) {
-    return org.apache.cassandra.service.MessageIn.create(from, org.apache.cassandra.service.ReadResponse.createRemoteDataResponse(partitionIterator, command.columnFilter()), java.util.Collections.EMPTY_MAP, MessagingService.Verb.REQUEST_RESPONSE, MessagingService.current_version);
-}

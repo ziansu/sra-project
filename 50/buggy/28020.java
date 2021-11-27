@@ -1,3 +1,0 @@
-public static void report(android.app.Activity activity, com.heinrichreimersoftware.androidissuereporter.model.Report report, com.heinrichreimersoftware.androidissuereporter.model.github.GithubTarget target, com.heinrichreimersoftware.androidissuereporter.model.github.GithubLogin login) {
-    new com.heinrichreimersoftware.androidissuereporter.IssueReporterActivity.ReportIssueTask(activity, report, target, login).execute();
-}

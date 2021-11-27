@@ -1,3 +1,0 @@
-public double getTotal() {
-    return this.total;
-}

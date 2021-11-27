@@ -1,3 +1,0 @@
-public static void transformAtomToUnified() {
-    de.tu_bs.cs.isf.mbse.mbtimes.crawler.m2m.Transformator.transform(de.tu_bs.cs.isf.mbse.mbtimes.crawler.m2m.Transformator.atomMetaModelPath, de.tu_bs.cs.isf.mbse.mbtimes.crawler.m2m.Transformator.targetMetaModelPath, de.tu_bs.cs.isf.mbse.mbtimes.crawler.m2m.Transformator.atomModelPath, de.tu_bs.cs.isf.mbse.mbtimes.crawler.m2m.Transformator.atomTargetPath, de.tu_bs.cs.isf.mbse.mbtimes.crawler.m2m.Transformator.atom2unifiedPath, "Atom");
-}

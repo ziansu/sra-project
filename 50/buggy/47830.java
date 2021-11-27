@@ -1,1 +1,0 @@
-protected abstract void matchOpponents(java.util.ArrayList<values.TournamentParticipant> participants);

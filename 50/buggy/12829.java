@@ -1,1 +1,0 @@
-private native void nativeUpdateSharedViewConfiguration(float maximumFlingVelocity, float minimumFlingVelocity, float touchSlop, float doubleTapSlop, float minScalingSpan, float minScalingTouchMajor);

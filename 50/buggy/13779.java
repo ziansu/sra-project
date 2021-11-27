@@ -1,1 +1,0 @@
-cern.colt.bitvector.BitVector generateIndexForToken(java.lang.String token, cern.colt.bitvector.BitVector searchNonce, com.kryptnostic.crypto.EncryptedSearchSharingKey sharingKey) throws com.kryptnostic.kodex.v1.exceptions.types.ResourceNotFoundException;

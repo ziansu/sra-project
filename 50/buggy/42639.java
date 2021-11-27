@@ -1,1 +1,0 @@
-public abstract <T> T parseResponse(java.lang.String content, java.lang.reflect.Type type) throws java.lang.Exception;

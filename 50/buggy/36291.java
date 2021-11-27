@@ -1,1 +1,0 @@
-public native int initWithPreset(java.lang.String preset, java.lang.String tune);

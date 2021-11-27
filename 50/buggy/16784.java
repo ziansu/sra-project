@@ -1,1 +1,0 @@
-public void remove(org.jboss.as.quickstarts.wicketEar.ejbjar.model.Contact modelObject);

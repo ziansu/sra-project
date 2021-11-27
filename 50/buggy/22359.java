@@ -1,2 +1,0 @@
-android.view.View create(android.content.Context context, android.view.View convertView, android.view.ViewGroup parent, android.view.LayoutInflater inflater) {
-}

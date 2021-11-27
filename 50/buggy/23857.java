@@ -1,6 +1,0 @@
-@org.junit.Test
-public void isResultBitArraySizeEquals5WhenInputSize5() {
-    viewModel.setArraySize("5");
-    viewModel.initializeArray();
-    assertTrue(((viewModel.getResultBitArray().getSize()) == 5));
-}

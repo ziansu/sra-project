@@ -1,1 +1,0 @@
-protected abstract void waitForAck(int timeout) throws com.rapplogic.aru.uploader.SketchUploader.NoAckException, java.lang.Exception;

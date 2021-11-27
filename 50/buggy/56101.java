@@ -1,1 +1,0 @@
-private static native void _imaqSetBorderSize(long image, int size);

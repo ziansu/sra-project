@@ -1,4 +1,0 @@
-@java.lang.Override
-public <MT extends org.epics.ca.data.Metadata<T>> org.epics.ca.Monitor<MT> addMonitor(java.lang.Class<? extends MT> clazz, java.util.function.Consumer<? extends MT> handler, int queueSize) {
-    return null;
-}

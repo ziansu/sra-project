@@ -1,1 +1,0 @@
-void OnResponseReceived(java.lang.String response, boolean isError);

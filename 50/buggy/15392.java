@@ -1,3 +1,0 @@
-public boolean isFailed() {
-    return (((cm.aptoide.pt.v8engine.billing.authorization.Authorization.Status.CANCELLED.equals(status)) || (cm.aptoide.pt.v8engine.billing.authorization.Authorization.Status.EXPIRED.equals(status))) || (cm.aptoide.pt.v8engine.billing.authorization.Authorization.Status.SESSION_EXPIRED.equals(status))) || (cm.aptoide.pt.v8engine.billing.authorization.Authorization.Status.UNKNOWN_ERROR.equals(status));
-}

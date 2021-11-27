@@ -1,4 +1,0 @@
-private void startHttpThread(java.lang.String cmd, java.lang.String URL, java.lang.String pollInterval, java.lang.String data) {
-    eu.musesproject.client.connectionmanager.ConnectionManager.HttpClientAsyncThread httpClientAsyncThread = new eu.musesproject.client.connectionmanager.ConnectionManager.HttpClientAsyncThread();
-    httpClientAsyncThread.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, eu.musesproject.client.connectionmanager.ConnectionManager.ACK, URL, java.lang.Integer.toString(eu.musesproject.client.connectionmanager.AlarmReceiver.getCurrentPollInterval()), data, eu.musesproject.client.connectionmanager.ConnectionManager.certificate);
-}

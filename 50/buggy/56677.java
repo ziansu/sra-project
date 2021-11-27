@@ -1,1 +1,0 @@
-public void ProcessStream(java.io.InputStream stream);

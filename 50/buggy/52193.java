@@ -1,1 +1,0 @@
-void navigateToStepsActivity(dk.jbfp.staveapp.User user, java.lang.String[] words);

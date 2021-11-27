@@ -1,1 +1,0 @@
-boolean onProgress(int progress, int max);

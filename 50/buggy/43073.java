@@ -1,1 +1,0 @@
-void saveToFile(uniol.aptgui.editor.document.Document<?> document);

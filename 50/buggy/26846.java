@@ -1,1 +1,0 @@
-public native void error_config_file();

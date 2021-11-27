@@ -1,1 +1,0 @@
-public abstract boolean onCanProcessClick(android.view.View _view);

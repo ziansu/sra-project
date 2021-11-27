@@ -1,3 +1,0 @@
-public void execute() {
-    cleanUp();
-}

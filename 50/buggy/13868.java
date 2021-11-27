@@ -1,1 +1,0 @@
-void onClientLostRoute(client.Client client, client.Client route);

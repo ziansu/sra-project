@@ -1,1 +1,0 @@
-public abstract void onLoadMore(int page, int totalItemsCount, android.support.v7.widget.RecyclerView view);

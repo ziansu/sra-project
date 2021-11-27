@@ -1,1 +1,0 @@
-void storage(int target, long size, int flags);

@@ -1,6 +1,0 @@
-@java.lang.Override
-public void onSaveInstanceState(android.os.Bundle outState) {
-    if ((mCurrentPhotoLarge) != null)
-        outState.putParcelable(sk.momosi.fuelapp.activities.AddCarActivity.PHOTO, mCurrentPhotoLarge);
-    
-}

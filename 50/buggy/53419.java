@@ -1,1 +1,0 @@
-cn.liutils.cgui.gui.Widget getWidget(cn.academy.terminal.app.settings.UIProperty prop);

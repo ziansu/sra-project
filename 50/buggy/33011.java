@@ -1,4 +1,0 @@
-@java.lang.Override
-public java.lang.String toString() {
-    return "RequestDecorator for " + (request.toString());
-}

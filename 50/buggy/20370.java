@@ -1,3 +1,0 @@
-private void getCollocationsList(boolean threadSafe) {
-    getCollocationsList(qTree, threadSafe);
-}

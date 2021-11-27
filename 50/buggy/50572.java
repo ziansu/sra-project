@@ -1,3 +1,0 @@
-public static com.pi4j.io.i2c.impl.I2CBusImplBananaPi getBus(int busNumber, long lockAquireTimeout, java.util.concurrent.TimeUnit lockAquireTimeoutUnit) throws com.pi4j.io.i2c.impl.UnsupportedBusNumberException, java.io.IOException {
-    return ((com.pi4j.io.i2c.impl.I2CBusImplBananaPi) (com.pi4j.io.i2c.impl.I2CBusImpl.getBus(new com.pi4j.io.i2c.impl.I2CBusImplBananaPi(busNumber, lockAquireTimeout, lockAquireTimeoutUnit), busNumber, lockAquireTimeout, lockAquireTimeoutUnit)));
-}

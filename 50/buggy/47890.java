@@ -1,7 +1,0 @@
-@com.fasterxml.jackson.annotation.JsonIgnore
-public boolean isOutdated() {
-    if ((timestamp.getTime()) < ((new java.util.Date().getTime()) - (3600 * 1000))) {
-        return true;
-    }
-    return false;
-}

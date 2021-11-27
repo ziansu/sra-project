@@ -1,1 +1,0 @@
-public abstract ucar.httpservices.HttpResponse execute(org.apache.http.client.methods.HttpRequestBase rq, ucar.httpservices.HttpHost targethost, org.apache.http.client.HttpClient httpclient, ucar.httpservices.HTTPSession session) throws ucar.httpservices.HTTPException;

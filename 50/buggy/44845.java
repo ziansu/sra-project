@@ -1,1 +1,0 @@
-protected native void nativeGreaterEqual(long nativeQueryPtr, long[] columnIndex, double value);

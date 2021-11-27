@@ -1,1 +1,0 @@
-private static native long _imaqContourComputeDistances(long targetImage, long templateImage, long matchSetupData, int smoothingKernel);

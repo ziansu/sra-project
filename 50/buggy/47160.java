@@ -1,1 +1,0 @@
-private static native void _imaqTranspose(long dest, long source);

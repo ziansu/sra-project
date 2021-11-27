@@ -1,1 +1,0 @@
-public void runTest(org.terracotta.passthrough.IClientTestEnvironment env, org.terracotta.passthrough.IClusterControl control, org.terracotta.connection.Connection connection) throws java.lang.Throwable;

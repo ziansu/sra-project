@@ -1,1 +1,0 @@
-private static native int _imaqGetContour(long roi, int index);

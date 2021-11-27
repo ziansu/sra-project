@@ -1,4 +1,0 @@
-public static org.spine3.samples.lobby.registration.contracts.OrderPlaced orderPlaced(com.google.protobuf.Timestamp reservationExpiration) {
-    final org.spine3.samples.lobby.registration.contracts.OrderPlaced.Builder builder = org.spine3.samples.lobby.registration.contracts.OrderPlaced.newBuilder().setOrderId(org.spine3.samples.lobby.registration.procman.Given.ORDER_ID).setConferenceId(org.spine3.samples.lobby.registration.procman.Given.CONFERENCE_ID).addAllSeat(org.spine3.samples.lobby.registration.procman.Given.Event.SEATS).setReservationAutoExpiration(reservationExpiration);
-    return builder.build();
-}

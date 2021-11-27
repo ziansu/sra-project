@@ -1,1 +1,0 @@
-private static native long _imaqFindCircles(long dest, long source, float minRadius, float maxRadius, long numCircles);

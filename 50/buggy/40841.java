@@ -1,1 +1,0 @@
-public NT convert(OT originalValue);

@@ -1,1 +1,0 @@
-model.societies.Society getSociety(java.lang.String name);

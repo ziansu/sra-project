@@ -1,1 +1,0 @@
-private static native long _imaqLabelToROI(long image, long labelsIn, int numLabelsIn, int maxNumVectors, int isExternelEdges);

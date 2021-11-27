@@ -1,1 +1,0 @@
-protected abstract org.spine3.server.storage.EntityStorage<I> getEntityStorage();

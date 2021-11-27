@@ -1,1 +1,0 @@
-public java.util.LinkedList<type.Type> getRow() throws prototype.DatabaseException;

@@ -1,1 +1,0 @@
-private static native void _imaqGetImageSize(long image, long width, long height);

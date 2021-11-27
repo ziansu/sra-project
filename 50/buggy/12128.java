@@ -1,1 +1,0 @@
-public java.util.Set<com.orientechnologies.orient.core.index.OIndex<?>> getClassInvolvedIndexes(java.util.Collection<java.lang.String> fields);

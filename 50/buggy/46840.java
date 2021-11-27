@@ -1,1 +1,0 @@
-void onDataReceived(com.jacks205.spots.model.ParkingStructure[] structures, java.util.Date lastUpdated);
