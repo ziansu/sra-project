@@ -1,75 +1,75 @@
-private void METHOD_1 ( ) { VAR_1 . METHOD_2 ( false ) ; VAR_2 . METHOD_2 ( false ) ; VAR_3 . METHOD_2 ( false ) ; VAR_4 . METHOD_3 ( STRING_1 ) ; VAR_5 = false ; }
+private void METHOD_1 ( ) { VAR_1 . METHOD_2 ( false ) ; VAR_2 . METHOD_2 ( false ) ; VAR_3 . METHOD_2 ( false ) ; VAR_4 . setText ( STRING_1 ) ; VAR_5 = false ; }
 public void METHOD_1 ( long VAR_1 , long value ) throws java.io.IOException { VAR_2 . METHOD_2 ( ) ; METHOD_3 ( VAR_1 , value ) ; VAR_2 . METHOD_4 ( ) ; }
-public TYPE_1 < java.lang.String > METHOD_1 ( ) { try { VAR_1 . METHOD_2 ( ) . METHOD_3 ( ) ; return new TYPE_2 < java.lang.String > ( VAR_2 . METHOD_4 ( ) ) ; } finally { VAR_1 . METHOD_2 ( ) . METHOD_5 ( ) ; } }
-public void METHOD_1 ( TYPE_1 VAR_1 , TYPE_2 < TYPE_3 > VAR_2 ) { if ( ! ( VAR_3 ) ) { throw new TYPE_4 ( VAR_4 ) ; } VAR_2 . on ( true ) ; }
-public void METHOD_1 ( TYPE_1 VAR_1 ) { METHOD_2 ( new TYPE_2 ( METHOD_3 ( ) , VAR_2 class ) , VAR_3 ) ; VAR_4 . METHOD_4 ( 1 ) ; METHOD_5 ( VAR_5 . METHOD_6 ( ) , VAR_6 . METHOD_7 ( ) ) ; }
+public java.util.Collection < java.lang.String > METHOD_1 ( ) { try { VAR_1 . METHOD_2 ( ) . METHOD_3 ( ) ; return new TYPE_1 < java.lang.String > ( VAR_2 . METHOD_4 ( ) ) ; } finally { VAR_1 . METHOD_2 ( ) . METHOD_5 ( ) ; } }
+public void METHOD_1 ( TYPE_1 VAR_1 , TYPE_2 < java.lang.Boolean > VAR_2 ) { if ( ! ( VAR_3 ) ) { throw new TYPE_3 ( VAR_4 ) ; } VAR_2 . METHOD_2 ( true ) ; }
+public void METHOD_1 ( android.view.View VAR_1 ) { METHOD_2 ( new android.content.Intent ( METHOD_3 ( ) , VAR_2 class ) , VAR_3 ) ; VAR_4 . METHOD_4 ( 1 ) ; METHOD_5 ( VAR_5 . METHOD_6 ( ) , VAR_6 . METHOD_7 ( ) ) ; }
 public TYPE_1 METHOD_1 ( ) { final TYPE_2 VAR_1 = this . VAR_1 ; VAR_1 . METHOD_2 ( ) ; try { return METHOD_3 ( ) ; } finally { VAR_1 . METHOD_4 ( ) ; } }
-public void METHOD_1 ( TYPE_1 VAR_1 , TYPE_2 VAR_2 , TYPE_3 result ) { METHOD_2 ( ( STRING_1 + ( VAR_3 ) ) ) ; TYPE_4 . d ( VAR_4 , VAR_3 . toString ( ) ) ; METHOD_3 ( ) ; }
+public void METHOD_1 ( TYPE_1 VAR_1 , TYPE_2 VAR_2 , TYPE_3 result ) { METHOD_2 ( ( STRING_1 + ( VAR_3 ) ) ) ; TYPE_4 . METHOD_3 ( VAR_4 , VAR_3 . toString ( ) ) ; METHOD_4 ( ) ; }
 public void METHOD_1 ( ) { TYPE_1 VAR_1 = this . VAR_2 . METHOD_2 ( ) ; VAR_1 . METHOD_3 ( ) ; this . VAR_3 = false ; VAR_1 . METHOD_4 ( ) ; }
-public java.lang.String METHOD_1 ( ) { VAR_1 . METHOD_2 ( ) . METHOD_3 ( ) ; java.lang.String s = VAR_2 . METHOD_1 ( ) ; VAR_1 . METHOD_2 ( ) . METHOD_4 ( ) ; return s ; }
+public java.lang.String METHOD_1 ( ) { VAR_1 . METHOD_2 ( ) . METHOD_3 ( ) ; java.lang.String VAR_2 = VAR_3 . METHOD_1 ( ) ; VAR_1 . METHOD_2 ( ) . METHOD_4 ( ) ; return VAR_2 ; }
 protected void METHOD_1 ( TYPE_1 VAR_1 ) { VAR_2 . METHOD_2 ( ) ; super . METHOD_1 ( VAR_1 ) ; VAR_2 . METHOD_3 ( ) ; }
-public final void METHOD_1 ( ) { TYPE_1 t = TYPE_1 . METHOD_2 ( ) ; VAR_1 . METHOD_3 ( ) ; }
-private void METHOD_1 ( ) { VAR_1 = ( ( TYPE_1 ) ( VAR_2 . METHOD_2 ( VAR_3 ) ) ) ; VAR_1 . METHOD_3 ( STRING_1 ) ; }
-public void METHOD_1 ( TYPE_1 VAR_1 ) { VAR_2 . METHOD_2 ( ) ; try { METHOD_3 ( VAR_1 ) ; VAR_3 . METHOD_4 ( ) ; } finally { VAR_2 . METHOD_5 ( ) ; } }
-public void METHOD_1 ( ) throws TYPE_1 { VAR_1 . METHOD_2 ( ) ; while ( VAR_2 ) { VAR_3 . METHOD_3 ( STRING_1 ) ; VAR_4 . METHOD_4 ( ) ; } VAR_3 . METHOD_3 ( STRING_2 ) ; VAR_1 . METHOD_5 ( ) ; }
+public final void METHOD_1 ( ) { java.lang.Thread t = java.lang.Thread . METHOD_2 ( ) ; VAR_1 . METHOD_3 ( ) ; }
+private void METHOD_1 ( ) { VAR_1 = ( ( TYPE_1 ) ( VAR_2 . METHOD_2 ( VAR_3 ) ) ) ; VAR_1 . setText ( STRING_1 ) ; }
+public void METHOD_1 ( java.lang.Object VAR_1 ) { VAR_2 . METHOD_2 ( ) ; try { METHOD_3 ( VAR_1 ) ; VAR_3 . execute ( ) ; } finally { VAR_2 . METHOD_4 ( ) ; } }
+public void METHOD_1 ( ) throws TYPE_1 { VAR_1 . METHOD_2 ( ) ; while ( VAR_2 ) { java.lang.System.out.println ( STRING_1 ) ; VAR_3 . METHOD_3 ( ) ; } java.lang.System.out.println ( STRING_2 ) ; VAR_1 . METHOD_4 ( ) ; }
 final void METHOD_1 ( final TYPE_1 VAR_1 ) { VAR_2 . METHOD_2 ( VAR_1 , METHOD_3 ( ) ) ; VAR_3 . METHOD_4 ( ) ; }
 public byte [ ] METHOD_1 ( ) { TYPE_1 VAR_1 = VAR_2 . METHOD_2 ( ) ; VAR_1 . METHOD_3 ( ) ; try { return VAR_3 ; } finally { VAR_1 . METHOD_4 ( ) ; } }
 public void METHOD_1 ( ) { if ( VAR_1 . METHOD_2 ( ) ) { METHOD_3 ( ) ; VAR_1 . METHOD_4 ( ) ; } }
-public void METHOD_1 ( ) { if ( ( ++ ( VAR_1 ) ) == 2 ) { VAR_2 . METHOD_2 ( STRING_1 ) ; TYPE_1 . METHOD_3 ( ) ; try { TYPE_2 . METHOD_4 ( ) ; } finally { TYPE_1 . METHOD_5 ( ) ; } } }
-public void METHOD_1 ( TYPE_1 VAR_1 ) { if ( ! ( VAR_2 ) ) { return ; } VAR_3 = VAR_4 ; METHOD_2 ( VAR_1 ) ; }
+public void METHOD_1 ( ) { if ( ( ++ ( VAR_1 ) ) == INT_1 ) { java.lang.System.out.println ( STRING_1 ) ; TYPE_1 . METHOD_2 ( ) ; try { TYPE_2 . METHOD_3 ( ) ; } finally { TYPE_1 . METHOD_4 ( ) ; } } }
+public void METHOD_1 ( TYPE_1 listener ) { if ( ! ( VAR_1 ) ) { return ; } VAR_2 = VAR_3 ; show ( listener ) ; }
 public void METHOD_1 ( ) { TYPE_1 VAR_1 = this . VAR_2 . METHOD_2 ( ) ; VAR_1 . METHOD_3 ( ) ; this . VAR_3 . set ( TYPE_2 . METHOD_4 ( ) ) ; this . VAR_4 = true ; VAR_1 . METHOD_5 ( ) ; }
 public long METHOD_1 ( ) { VAR_1 . METHOD_2 ( ) ; METHOD_3 ( ) ; VAR_1 . METHOD_4 ( ) ; return VAR_2 . get ( ) ; }
 public void METHOD_1 ( ) { VAR_1 . METHOD_2 ( ) . METHOD_3 ( ) ; try { VAR_2 . METHOD_1 ( false ) ; VAR_2 . METHOD_4 ( 0 , 0 ) ; } finally { VAR_1 . METHOD_2 ( ) . METHOD_5 ( ) ; } }
 public void METHOD_1 ( ) throws TYPE_1 { this . VAR_1 . METHOD_2 ( ) . METHOD_3 ( ) ; VAR_2 . METHOD_4 ( ) ; METHOD_5 ( false ) ; this . VAR_1 . METHOD_2 ( ) . METHOD_6 ( ) ; }
-public void METHOD_1 ( ) { try { VAR_1 . METHOD_2 ( ) ; -- ( VAR_2 ) ; VAR_3 = true ; VAR_4 . METHOD_3 ( ) ; VAR_5 . METHOD_4 ( STRING_1 ) ; } finally { VAR_1 . METHOD_5 ( ) ; } }
-private void METHOD_1 ( ) { while ( true ) { try { VAR_1 . METHOD_2 ( ) ; VAR_2 . METHOD_3 ( ) ; } catch ( TYPE_1 e ) { } finally { VAR_1 . METHOD_4 ( ) ; } } }
+public void METHOD_1 ( ) { try { VAR_1 . METHOD_2 ( ) ; -- ( VAR_2 ) ; VAR_3 = true ; VAR_4 . METHOD_3 ( ) ; java.lang.System.out.println ( STRING_1 ) ; } finally { VAR_1 . METHOD_4 ( ) ; } }
+private void METHOD_1 ( ) { while ( true ) { try { VAR_1 . METHOD_2 ( ) ; VAR_2 . METHOD_3 ( ) ; } catch ( TYPE_1 VAR_3 ) { } finally { VAR_1 . METHOD_4 ( ) ; } } }
 public java.util.Set < java.lang.String > METHOD_1 ( java.lang.String VAR_1 ) { VAR_2 . METHOD_2 ( ) ; java.util.Set < java.lang.String > VAR_3 = VAR_4 . get ( VAR_1 ) ; VAR_2 . METHOD_3 ( ) ; return VAR_3 ; }
-public void METHOD_1 ( TYPE_1 VAR_1 ) { VAR_2 . METHOD_2 ( ) . METHOD_3 ( ) ; this . VAR_3 . METHOD_4 ( VAR_1 ) ; VAR_2 . METHOD_2 ( ) . METHOD_5 ( ) ; }
+public void METHOD_1 ( java.lang.Integer VAR_1 ) { VAR_2 . METHOD_2 ( ) . METHOD_3 ( ) ; this . VAR_3 . remove ( VAR_1 ) ; VAR_2 . METHOD_2 ( ) . METHOD_4 ( ) ; }
 public boolean METHOD_1 ( ) { return this . VAR_1 . METHOD_2 ( STRING_1 , true ) ; }
 public void METHOD_1 ( ) { try { VAR_1 . METHOD_2 ( ) ; VAR_2 . METHOD_3 ( ) ; ++ ( VAR_3 ) ; -- ( VAR_4 ) ; VAR_5 . METHOD_4 ( ) ; } finally { VAR_1 . METHOD_5 ( ) ; } }
 public void METHOD_1 ( ) { super . METHOD_1 ( ) ; if ( ! ( VAR_1 ) ) { TYPE_1 . METHOD_2 ( this , VAR_2 , VAR_3 , VAR_4 . METHOD_3 ( ) ) ; } VAR_5 = false ; }
-public void close ( ) throws TYPE_1 { VAR_1 . METHOD_1 ( ) ; VAR_2 . METHOD_2 ( STRING_1 ) ; VAR_3 . METHOD_3 ( ) ; }
-public TYPE_1 getKey ( int index ) { VAR_1 . METHOD_1 ( ) ; TYPE_1 key ; try { key = this . VAR_2 . get ( index ) ; } finally { VAR_1 . METHOD_2 ( ) ; } return key ; }
+public void METHOD_1 ( ) throws TYPE_1 { VAR_1 . METHOD_2 ( ) ; VAR_2 . METHOD_3 ( STRING_1 ) ; VAR_3 . METHOD_4 ( ) ; }
+public TYPE_1 METHOD_1 ( int index ) { VAR_1 . METHOD_2 ( ) ; TYPE_1 key ; try { key = this . keys . get ( index ) ; } finally { VAR_1 . METHOD_3 ( ) ; } return key ; }
 private void METHOD_1 ( ) { VAR_1 = null ; VAR_2 = null ; VAR_3 = null ; VAR_4 . METHOD_2 ( ) ; VAR_5 = null ; VAR_6 = false ; VAR_4 . METHOD_3 ( ) ; }
-private void METHOD_1 ( TYPE_1 VAR_1 ) { try { VAR_2 . METHOD_2 ( ) ; VAR_3 . METHOD_1 ( VAR_1 ) ; } finally { VAR_2 . METHOD_3 ( ) ; } }
-public void METHOD_1 ( TYPE_1 VAR_1 ) { if ( ! ( VAR_2 ) ) { return ; } VAR_3 = VAR_4 ; METHOD_2 ( VAR_1 ) ; }
+private void remove ( TYPE_1 VAR_1 ) { try { VAR_2 . METHOD_1 ( ) ; VAR_3 . remove ( VAR_1 ) ; } finally { VAR_2 . METHOD_2 ( ) ; } }
+public void METHOD_1 ( TYPE_1 listener ) { if ( ! ( VAR_1 ) ) { return ; } VAR_2 = VAR_3 ; METHOD_2 ( listener ) ; }
 public boolean METHOD_1 ( ) { TYPE_1 VAR_1 = this . VAR_2 . METHOD_2 ( ) ; VAR_1 . METHOD_3 ( ) ; try { return this . VAR_3 ; } finally { VAR_1 . METHOD_4 ( ) ; } }
 public boolean METHOD_1 ( ) { VAR_1 . METHOD_2 ( ) ; try { return ( VAR_2 ) && ( ( VAR_3 ) == 0 ) ; } finally { VAR_1 . METHOD_3 ( ) ; } }
-public void insert ( TYPE_1 VAR_1 ) { VAR_2 . METHOD_1 ( ) ; try { METHOD_2 ( VAR_1 ) ; VAR_3 . METHOD_3 ( ) ; } finally { VAR_2 . METHOD_4 ( ) ; } }
-public void METHOD_1 ( ) { try { VAR_1 . METHOD_2 ( ) ; ( VAR_2 ) -- ; if ( ( VAR_3 ) && ( ( VAR_2 ) == 0 ) ) { close ( ) ; } } finally { VAR_1 . METHOD_3 ( ) ; } }
-private boolean METHOD_1 ( java.lang.String key ) { if ( ( VAR_1 . get ( key ) ) == STRING_1 ) { VAR_1 . METHOD_2 ( key ) ; VAR_1 . METHOD_3 ( key , STRING_2 ) ; } return true ; }
-public void METHOD_1 ( java.lang.String s ) { VAR_1 . METHOD_2 ( ) . METHOD_3 ( ) ; VAR_2 . METHOD_1 ( s ) ; VAR_1 . METHOD_2 ( ) . METHOD_4 ( ) ; }
-public void METHOD_1 ( ) { super . METHOD_1 ( ) ; if ( ( VAR_1 ) != null ) { VAR_2 = ( ( TYPE_1 ) ( VAR_3 [ 0 ] ) ) . VAR_4 ; VAR_5 . METHOD_2 ( ) ; } }
-public void METHOD_1 ( ) throws TYPE_1 { VAR_1 . METHOD_2 ( ) ; while ( VAR_2 ) { VAR_3 . METHOD_3 ( STRING_1 ) ; VAR_4 . METHOD_4 ( ) ; } VAR_3 . METHOD_3 ( STRING_2 ) ; VAR_2 = true ; VAR_1 . METHOD_5 ( ) ; }
-public void METHOD_1 ( TYPE_1 VAR_1 , TYPE_2 VAR_2 , TYPE_3 result ) { super . METHOD_1 ( VAR_1 , VAR_2 , result ) ; TYPE_4 VAR_3 = VAR_4 . METHOD_2 ( ) ; VAR_5 . METHOD_3 ( STRING_1 ) ; METHOD_4 ( ) ; }
-public void METHOD_1 ( TYPE_1 VAR_1 , TYPE_2 VAR_2 , TYPE_3 result ) { TYPE_4 . METHOD_2 ( this , ( STRING_1 + ( VAR_3 ) ) , VAR_4 ) . METHOD_3 ( ) ; METHOD_4 ( ) ; }
-public void METHOD_1 ( ) { VAR_1 . METHOD_2 ( STRING_1 ) ; VAR_1 . METHOD_2 ( STRING_2 ) ; VAR_1 . METHOD_2 ( STRING_3 ) ; VAR_1 . METHOD_2 ( STRING_4 ) ; VAR_1 . METHOD_2 ( STRING_5 ) ; VAR_1 . METHOD_2 ( STRING_6 ) ; VAR_1 . METHOD_2 ( STRING_1 ) ; }
-public boolean METHOD_1 ( TYPE_1 VAR_1 ) { VAR_2 . METHOD_2 ( ) . METHOD_3 ( ) ; boolean VAR_3 = ! ( this . VAR_4 . get ( VAR_1 ) ) ; VAR_2 . METHOD_2 ( ) . METHOD_4 ( ) ; return VAR_3 ; }
+public void METHOD_1 ( java.lang.Object VAR_1 ) { VAR_2 . METHOD_2 ( ) ; try { METHOD_3 ( VAR_1 ) ; VAR_3 . METHOD_4 ( ) ; } finally { VAR_2 . METHOD_5 ( ) ; } }
+public void METHOD_1 ( ) { try { VAR_1 . METHOD_2 ( ) ; ( VAR_2 ) -- ; if ( ( VAR_3 ) && ( ( VAR_2 ) == 0 ) ) { METHOD_3 ( ) ; } } finally { VAR_1 . METHOD_4 ( ) ; } }
+private boolean METHOD_1 ( java.lang.String key ) { if ( ( VAR_1 . get ( key ) ) == "true" ) { VAR_1 . METHOD_2 ( key ) ; VAR_1 . replace ( key , "false" ) ; } return true ; }
+public void METHOD_1 ( java.lang.String VAR_1 ) { VAR_2 . METHOD_2 ( ) . METHOD_3 ( ) ; VAR_3 . METHOD_1 ( VAR_1 ) ; VAR_2 . METHOD_2 ( ) . METHOD_4 ( ) ; }
+public void show ( ) { super . show ( ) ; if ( ( VAR_1 ) != null ) { VAR_2 = ( ( TYPE_1 ) ( VAR_3 [ 0 ] ) ) . VAR_4 ; VAR_5 . METHOD_1 ( ) ; } }
+public void METHOD_1 ( ) throws TYPE_1 { VAR_1 . METHOD_2 ( ) ; while ( VAR_2 ) { java.lang.System.out.println ( STRING_1 ) ; VAR_3 . METHOD_3 ( ) ; } java.lang.System.out.println ( STRING_2 ) ; VAR_2 = true ; VAR_1 . METHOD_4 ( ) ; }
+public void METHOD_1 ( TYPE_1 VAR_1 , TYPE_2 VAR_2 , TYPE_3 result ) { super . METHOD_1 ( VAR_1 , VAR_2 , result ) ; TYPE_4 VAR_3 = VAR_4 . METHOD_2 ( ) ; java.lang.System.out.println ( STRING_1 ) ; METHOD_3 ( ) ; }
+public void METHOD_1 ( TYPE_1 VAR_1 , TYPE_2 VAR_2 , TYPE_3 result ) { TYPE_4 . METHOD_2 ( this , ( STRING_1 + ( VAR_3 ) ) , VAR_4 ) . show ( ) ; METHOD_3 ( ) ; }
+public void METHOD_1 ( ) { java.lang.System.out.println ( STRING_1 ) ; java.lang.System.out.println ( STRING_2 ) ; java.lang.System.out.println ( STRING_3 ) ; java.lang.System.out.println ( STRING_4 ) ; java.lang.System.out.println ( STRING_5 ) ; java.lang.System.out.println ( STRING_6 ) ; java.lang.System.out.println ( STRING_1 ) ; }
+public boolean METHOD_1 ( java.lang.Integer VAR_1 ) { VAR_2 . METHOD_2 ( ) . METHOD_3 ( ) ; boolean VAR_3 = ! ( this . VAR_4 . get ( VAR_1 ) ) ; VAR_2 . METHOD_2 ( ) . METHOD_4 ( ) ; return VAR_3 ; }
 private void METHOD_1 ( ) { VAR_1 . METHOD_2 ( ) ; if ( ! ( VAR_2 ) ) { VAR_3 . METHOD_3 ( ) ; } VAR_2 = false ; VAR_1 . METHOD_4 ( ) ; }
-void METHOD_1 ( TYPE_1 < TYPE_2 > VAR_1 ) { VAR_2 . METHOD_2 ( ) ; try { this . VAR_3 . METHOD_1 ( VAR_1 ) ; this . VAR_4 . METHOD_3 ( ) ; } finally { VAR_2 . METHOD_4 ( ) ; } }
+void remove ( TYPE_1 < TYPE_2 > VAR_1 ) { VAR_2 . METHOD_1 ( ) ; try { this . VAR_3 . remove ( VAR_1 ) ; this . VAR_4 . METHOD_2 ( ) ; } finally { VAR_2 . METHOD_3 ( ) ; } }
 public void METHOD_1 ( TYPE_1 message ) throws TYPE_2 { METHOD_2 ( ) . METHOD_3 ( message . METHOD_4 ( ) ) . put ( STRING_1 ) ; }
 public void METHOD_1 ( ) throws TYPE_1 { VAR_1 . METHOD_2 ( ) ; try { while ( ! ( this . VAR_2 . isEmpty ( ) ) ) { VAR_3 . METHOD_3 ( ) ; } } finally { VAR_1 . METHOD_4 ( ) ; } }
 public void METHOD_1 ( ) { try { VAR_1 . METHOD_2 ( ) ; ( VAR_2 ) ++ ; } finally { VAR_1 . METHOD_3 ( ) ; } }
-public void close ( ) throws java.io.IOException { VAR_1 . METHOD_1 ( ) . METHOD_2 ( ) ; this . VAR_2 . METHOD_3 ( ) . METHOD_4 ( ) ; this . VAR_2 . close ( ) ; VAR_1 . METHOD_1 ( ) . METHOD_5 ( ) ; }
+public void METHOD_1 ( ) throws java.io.IOException { VAR_1 . METHOD_2 ( ) . METHOD_3 ( ) ; this . f . METHOD_4 ( ) . METHOD_5 ( ) ; this . f . METHOD_1 ( ) ; VAR_1 . METHOD_2 ( ) . METHOD_6 ( ) ; }
 public final void METHOD_1 ( ) { VAR_1 . METHOD_2 ( ) ; VAR_2 = true ; VAR_3 . METHOD_3 ( ) ; VAR_1 . METHOD_4 ( ) ; }
 void METHOD_1 ( ) { VAR_1 . METHOD_2 ( ) ; VAR_2 . set ( false ) ; VAR_3 . METHOD_3 ( ) ; VAR_1 . METHOD_4 ( ) ; }
 public void METHOD_1 ( TYPE_1 VAR_1 ) throws TYPE_1 { METHOD_2 ( ) ; boolean VAR_2 = ( VAR_3 ) != 0 ; if ( VAR_2 ) -- ( VAR_3 ) ; METHOD_3 ( ) ; if ( VAR_2 ) throw VAR_1 ; else METHOD_4 ( VAR_1 ) ; }
 public boolean METHOD_1 ( java.lang.String key ) { METHOD_2 ( key ) ; METHOD_3 ( ) ; try { return VAR_1 . METHOD_4 ( key ) ; } finally { METHOD_5 ( ) ; } }
-public void METHOD_1 ( int VAR_1 , boolean VAR_2 ) { METHOD_2 ( this ) ; java.util.List < TYPE_1 > notes = METHOD_3 ( VAR_1 , VAR_2 ) ; VAR_3 . METHOD_4 ( notes ) ; METHOD_5 ( this ) ; }
+public void METHOD_1 ( int VAR_1 , boolean VAR_2 ) { METHOD_2 ( this ) ; java.util.List < TYPE_1 > VAR_3 = METHOD_3 ( VAR_1 , VAR_2 ) ; VAR_4 . METHOD_4 ( VAR_3 ) ; METHOD_5 ( this ) ; }
 public int size ( ) { final TYPE_1 VAR_1 = this . VAR_1 ; VAR_1 . METHOD_1 ( ) ; try { return VAR_2 . size ( ) ; } finally { VAR_1 . METHOD_2 ( ) ; } }
-public void METHOD_1 ( ) throws java.lang.Exception { try { TYPE_1 VAR_1 = VAR_2 . METHOD_2 ( ) ; TYPE_2 VAR_3 = VAR_1 . METHOD_3 ( VAR_4 . METHOD_4 ( STRING_1 ) ) ; VAR_3 . METHOD_5 ( ) ; } catch ( TYPE_3 e ) { } }
+public void METHOD_1 ( ) throws java.lang.Exception { try { TYPE_1 VAR_1 = VAR_2 . METHOD_2 ( ) ; TYPE_2 VAR_3 = VAR_1 . METHOD_3 ( VAR_4 . METHOD_4 ( STRING_1 ) ) ; VAR_3 . METHOD_5 ( ) ; } catch ( TYPE_3 VAR_5 ) { } }
 private void METHOD_1 ( ) { VAR_1 . METHOD_2 ( ) ; try { METHOD_3 ( ) ; METHOD_4 ( ) ; } catch ( java.lang.Exception VAR_2 ) { TYPE_1 . METHOD_5 ( VAR_2 ) ; } finally { VAR_1 . METHOD_6 ( ) ; } }
 public java.util.Set < java.lang.String > METHOD_1 ( ) { VAR_1 . METHOD_2 ( ) . METHOD_3 ( ) ; try { return new TYPE_1 < java.lang.String > ( VAR_2 . METHOD_4 ( ) ) ; } finally { VAR_1 . METHOD_2 ( ) . METHOD_5 ( ) ; } }
 private boolean METHOD_1 ( java.lang.String VAR_1 ) { return ! ( ( TYPE_1 . equals ( VAR_1 ) ) || ( TYPE_2 . equals ( VAR_1 ) ) ) ; }
-public void METHOD_1 ( java.lang.String url , java.lang.String token ) { try { VAR_1 . METHOD_1 ( url , token ) ; VAR_2 . METHOD_2 ( ( ( url + STRING_1 ) + token ) ) ; } catch ( java.io.IOException e ) { e . METHOD_3 ( ) ; } }
-public void METHOD_1 ( ) throws TYPE_1 { VAR_1 . METHOD_2 ( ) ; while ( VAR_2 ) { VAR_3 . METHOD_3 ( STRING_1 ) ; VAR_4 . METHOD_4 ( ) ; } VAR_3 . METHOD_3 ( STRING_2 ) ; VAR_5 = true ; VAR_1 . METHOD_5 ( ) ; }
+public void METHOD_1 ( java.lang.String url , java.lang.String token ) { try { VAR_1 . METHOD_1 ( url , token ) ; java.lang.System.err.println ( ( ( url + STRING_1 ) + token ) ) ; } catch ( java.io.IOException VAR_2 ) { VAR_2 . METHOD_2 ( ) ; } }
+public void METHOD_1 ( ) throws TYPE_1 { VAR_1 . METHOD_2 ( ) ; while ( VAR_2 ) { java.lang.System.out.println ( STRING_1 ) ; VAR_3 . METHOD_3 ( ) ; } java.lang.System.out.println ( STRING_2 ) ; VAR_4 = true ; VAR_1 . METHOD_4 ( ) ; }
 public void METHOD_1 ( java.lang.String VAR_1 ) { if ( ! ( VAR_2 . contains ( VAR_1 ) ) ) { VAR_2 . add ( VAR_1 ) ; METHOD_2 ( VAR_1 , 0 ) ; } }
-public void METHOD_1 ( ) { try { VAR_1 . METHOD_2 ( ) ; ++ ( VAR_2 ) ; -- ( VAR_3 ) ; VAR_4 . METHOD_3 ( ) ; VAR_5 . METHOD_4 ( STRING_1 ) ; } finally { VAR_1 . METHOD_5 ( ) ; } }
+public void METHOD_1 ( ) { try { VAR_1 . METHOD_2 ( ) ; ++ ( VAR_2 ) ; -- ( VAR_3 ) ; VAR_4 . METHOD_3 ( ) ; java.lang.System.out.println ( STRING_1 ) ; } finally { VAR_1 . METHOD_4 ( ) ; } }
 public boolean METHOD_1 ( ) { VAR_1 . METHOD_2 ( ) ; try { return VAR_2 ; } finally { VAR_1 . METHOD_3 ( ) ; } }
-public static void METHOD_1 ( ) { VAR_1 . close ( ) ; VAR_2 . METHOD_2 ( ) ; }
-public void METHOD_1 ( final java.lang.String VAR_1 ) { if ( VAR_1 != null ) { TYPE_1 . METHOD_2 ( ) ; if ( VAR_2 . get ( VAR_1 ) . isEmpty ( ) ) VAR_2 . METHOD_3 ( VAR_1 ) ; TYPE_1 . METHOD_4 ( ) ; } }
-public void METHOD_1 ( int VAR_1 ) { METHOD_2 ( this ) ; java.util.List < TYPE_1 > notes = METHOD_3 ( VAR_1 , false ) ; VAR_2 . METHOD_4 ( notes ) ; METHOD_5 ( this ) ; }
+public static void METHOD_1 ( ) { VAR_1 . METHOD_2 ( ) ; VAR_2 . METHOD_3 ( ) ; }
+public void METHOD_1 ( final java.lang.String VAR_1 ) { if ( VAR_1 != null ) { TYPE_1 . METHOD_2 ( ) ; if ( VAR_2 . get ( VAR_1 ) . isEmpty ( ) ) VAR_2 . remove ( VAR_1 ) ; TYPE_1 . METHOD_3 ( ) ; } }
+public void METHOD_1 ( int VAR_1 ) { METHOD_2 ( this ) ; java.util.List < TYPE_1 > VAR_2 = METHOD_3 ( VAR_1 , false ) ; VAR_3 . METHOD_4 ( VAR_2 ) ; METHOD_5 ( this ) ; }
 private void METHOD_1 ( ) { TYPE_1 . METHOD_2 ( ) . METHOD_3 ( ) ; VAR_1 = false ; }
 public void METHOD_1 ( ) { long VAR_1 = ( this . VAR_2 ) - ( TYPE_1 . METHOD_2 ( ) ) ; this . VAR_3 . METHOD_3 ( ) . METHOD_4 ( ) ; VAR_4 . METHOD_5 ( VAR_1 ) ; }
-public void METHOD_1 ( ) { TYPE_1 . d ( VAR_1 , STRING_1 ) ; super . METHOD_1 ( ) ; METHOD_2 ( ) ; }
-public void METHOD_1 ( TYPE_1 VAR_1 ) { if ( ! ( VAR_2 ) ) { return ; } METHOD_2 ( VAR_1 ) ; VAR_3 = VAR_4 ; }
+public void METHOD_1 ( ) { TYPE_1 . METHOD_2 ( VAR_1 , STRING_1 ) ; super . METHOD_1 ( ) ; METHOD_3 ( ) ; }
+public void METHOD_1 ( TYPE_1 listener ) { if ( ! ( VAR_1 ) ) { return ; } METHOD_2 ( listener ) ; VAR_2 = VAR_3 ; }
