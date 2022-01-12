@@ -21,7 +21,7 @@ using a masked language modeling (MLM) loss.
 
 from __future__ import absolute_import
 import os
-os.environ['CUDA_VISIBLE_DEVICES']='5,6'
+os.environ['CUDA_VISIBLE_DEVICES']='1,2'
 import sys
 import pickle
 import torch
@@ -33,7 +33,7 @@ import numpy as np
 from io import open
 from itertools import cycle
 import torch.nn as nn
-from model import Seq2Seq
+from model import Seq2Seq, create_lora_encoder, trainable_state_dict, count_parameters
 from tqdm import tqdm, trange
 from bleu import _bleu
 from torch.utils.data import DataLoader, Dataset, SequentialSampler, RandomSampler,TensorDataset
@@ -41,6 +41,7 @@ from torch.utils.data.distributed import DistributedSampler
 from transformers import (WEIGHTS_NAME, AdamW, get_linear_schedule_with_warmup,
                           RobertaConfig, RobertaModel, RobertaTokenizer)
 MODEL_CLASSES = {'roberta': (RobertaConfig, RobertaModel, RobertaTokenizer)}
+import loralib as lora
 
 logging.basicConfig(format = '%(asctime)s - %(levelname)s - %(name)s -   %(message)s',
                     datefmt = '%m/%d/%Y %H:%M:%S',
@@ -259,6 +260,15 @@ def main():
                         help="For distributed training: local_rank")   
     parser.add_argument('--seed', type=int, default=42,
                         help="random seed for initialization")
+    
+    # LoRA arguments
+    parser.add_argument("--lora_dim", type=int, default=8,
+                        help="lora dimension")
+    parser.add_argument("--lora_alpha", type=int, default=32,
+                        help="lora dimension times scale")
+    parser.add_argument("--load_lora_path", type=str, default=None,
+                        help="Path to LoRA extra parameters.")
+
     # print arguments
     args = parser.parse_args()
     logger.info(args)
@@ -285,17 +295,24 @@ def main():
     config = config_class.from_pretrained(args.config_name if args.config_name else args.model_name_or_path)
     tokenizer = tokenizer_class.from_pretrained(args.tokenizer_name,do_lower_case=args.do_lower_case)
     
-    #budild model
-    encoder = model_class.from_pretrained(args.model_name_or_path,config=config)    
+    #build model
+    encoder = model_class.from_pretrained(args.model_name_or_path,config=config)
+    encoder = create_lora_encoder(encoder, args.lora_dim, args.lora_alpha)
+    
     decoder_layer = nn.TransformerDecoderLayer(d_model=config.hidden_size, nhead=config.num_attention_heads)
     decoder = nn.TransformerDecoder(decoder_layer, num_layers=6)
     model=Seq2Seq(encoder=encoder,decoder=decoder,config=config,
                   beam_size=args.beam_size,max_length=args.max_target_length,
                   sos_id=tokenizer.cls_token_id,eos_id=tokenizer.sep_token_id)
-    
+    total_params_count, trainable_param_count = count_parameters(model)
+    logger.info("Total parameters: {} | Trainable parameters: {} | ratio: {}".format(
+        total_params_count, trainable_param_count, round(trainable_param_count / total_params_count, 4)))
+    return
+
     if args.load_model_path is not None:
         logger.info("reload model from {}".format(args.load_model_path))
-        model.load_state_dict(torch.load(args.load_model_path))
+        # model.load_state_dict(torch.load(args.load_model_path))
+        model.load_state_dict(torch.load(args.load_model_path), strict=False)
         
     model.to(device)
     if args.local_rank != -1:
@@ -433,7 +450,8 @@ def main():
                     os.makedirs(last_output_dir)
                 model_to_save = model.module if hasattr(model, 'module') else model  # Only save the model it-self
                 output_model_file = os.path.join(last_output_dir, "pytorch_model.bin")
-                torch.save(model_to_save.state_dict(), output_model_file)                    
+                # torch.save(model_to_save.state_dict(), output_model_file)
+                torch.save(trainable_state_dict(model_to_save), output_model_file)   # save fewer parameters        
                 if eval_loss<best_loss:
                     logger.info("  Best ppl:%s",round(np.exp(eval_loss),5))
                     logger.info("  "+"*"*20)
@@ -444,7 +462,8 @@ def main():
                         os.makedirs(output_dir)
                     model_to_save = model.module if hasattr(model, 'module') else model  # Only save the model it-self
                     output_model_file = os.path.join(output_dir, "pytorch_model.bin")
-                    torch.save(model_to_save.state_dict(), output_model_file)  
+                    # torch.save(model_to_save.state_dict(), output_model_file)  
+                    torch.save(trainable_state_dict(model_to_save), output_model_file)   # save fewer parameters        
                             
                             
                 #Calculate bleu  
@@ -502,7 +521,8 @@ def main():
                         os.makedirs(output_dir)
                     model_to_save = model.module if hasattr(model, 'module') else model  # Only save the model it-self
                     output_model_file = os.path.join(output_dir, "pytorch_model.bin")
-                    torch.save(model_to_save.state_dict(), output_model_file)
+                    # torch.save(model_to_save.state_dict(), output_model_file)
+                    torch.save(trainable_state_dict(model_to_save), output_model_file)   # save fewer parameters        
                
     if args.do_test:
         files=[]

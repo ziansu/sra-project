@@ -21,7 +21,7 @@ using a masked language modeling (MLM) loss.
 
 from __future__ import absolute_import
 import os
-os.environ['CUDA_VISIBLE_DEVICES']='5,6'
+os.environ['CUDA_VISIBLE_DEVICES']='1,2'
 import sys
 import pickle
 import torch
@@ -53,26 +53,13 @@ class Example(object):
                  idx,
                  source,
                  target,
+                 floc=None
                  ):
         self.idx = idx
         self.source = source
         self.target = target
+        self.floc = floc
 
-# def read_examples(filename):
-#     """Read examples from filename."""
-#     examples=[]
-#     with open(filename,encoding="utf-8") as f:
-#         for idx,js in enumerate(json.load(f)):
-#             source=' '.join(js['old_comment_tokens'])
-#             target=' '.join(js['new_comment_tokens'])      
-#             examples.append(
-#                 Example(
-#                         idx = idx,
-#                         source=source,
-#                         target=target,
-#                         ) 
-#             )
-#     return examples
 def read_examples(filename):
     """Read examples from filename."""
     examples=[]
@@ -92,6 +79,27 @@ def read_examples(filename):
                 idx+=1
     return examples
 
+def read_train_examples(filename):
+    """Read examples from filename."""
+    examples=[]
+    # assert len(filename.split(','))==2
+    src_filename = filename.split(',')[0]
+    trg_filename = filename.split(',')[1]
+    loc_filename = filename.split(',')[2]
+    idx = 0
+    with open(src_filename) as f1,open(trg_filename) as f2, open(loc_filename) as f3:
+            for line1,line2,line3 in zip(f1,f2,f3):
+                examples.append(
+                Example(
+                        idx = idx,
+                        source=line1.strip(),
+                        target=line2.strip(),
+                        floc=line3.strip()
+                        ) 
+                )
+                idx+=1
+    return examples
+
 class InputFeatures(object):
     """A single training/test features for a example."""
     def __init__(self,
@@ -100,13 +108,15 @@ class InputFeatures(object):
                  target_ids,
                  source_mask,
                  target_mask,
+                 fault_loc=None
 
     ):
         self.example_id = example_id
         self.source_ids = source_ids
         self.target_ids = target_ids
         self.source_mask = source_mask
-        self.target_mask = target_mask       
+        self.target_mask = target_mask  
+        self.fault_loc = fault_loc  
         
 
 
@@ -121,6 +131,61 @@ def convert_examples_to_features(examples, tokenizer, args,stage=None):
         padding_length = args.max_source_length - len(source_ids)
         source_ids+=[tokenizer.pad_token_id]*padding_length
         source_mask+=[0]*padding_length
+
+        #fault location (<CLS> and <SEP> are also unchanged)
+        # The problem is that tokenization breaks original index
+        # if hasattr(example, 'floc'):
+        if example.floc:
+            original_partials = []
+            prev = 0   # previous floc indicator (state machine)
+            for token, b in zip(example.source.split(' '), example.floc):
+                if b == '1':
+                    if prev == 0:
+                        original_partials.append([token])
+                        prev = 1
+                    else:
+                        original_partials[-1].append(token)
+                elif b == '0':
+                    if prev == 1:
+                        prev = 0
+                    else:
+                        pass
+                else:
+                    raise NotImplementedError
+            original_partials = [' ' + ' '.join(op) for op in original_partials]
+            tokenized_partials = [tokenizer.tokenize(op)[:args.max_source_length] for op in original_partials]
+            
+            j, k = 0, 0
+            tokenized_fault_loc = []
+            index_cache = []  # store indexes before we are sure they are right
+            for i, tok in enumerate(source_tokens):
+                if j == len(tokenized_partials):
+                    break
+                if k == len(tokenized_partials[j]):
+                    j += 1  # next tokenized-partial
+                    while len(tokenized_fault_loc) < index_cache[0]:
+                        tokenized_fault_loc.append(0)
+                    for i in range(len(index_cache)):
+                        tokenized_fault_loc.append(1)
+                    k = 0
+                    index_cache = []
+                    continue
+                if tok == tokenized_partials[j][k]:
+                    k += 1
+                    index_cache.append(i)
+                else:
+                    k = 0
+                    index_cache = []
+            fault_loc = tokenized_fault_loc + [0] * (args.max_source_length - len(tokenized_fault_loc))
+            try:
+                assert len(fault_loc) == len(source_ids)
+            except AssertionError:
+                print([(x.replace('\u0120','_'), b) for x, b in zip(source_tokens, fault_loc)])
+                print(len(source_ids), len(fault_loc))
+                assert 0
+        else:
+            fault_loc = None
+
  
         #target
         if stage=="test":
@@ -146,6 +211,10 @@ def convert_examples_to_features(examples, tokenizer, args,stage=None):
                 logger.info("target_tokens: {}".format([x.replace('\u0120','_') for x in target_tokens]))
                 logger.info("target_ids: {}".format(' '.join(map(str, target_ids))))
                 logger.info("target_mask: {}".format(' '.join(map(str, target_mask))))
+
+                # if hasattr(example, 'floc'):
+                if example.floc:
+                    logger.info("Fault_loc: {}".format(' '.join(map(str, fault_loc))))
        
         features.append(
             InputFeatures(
@@ -154,6 +223,7 @@ def convert_examples_to_features(examples, tokenizer, args,stage=None):
                  target_ids,
                  source_mask,
                  target_mask,
+                 fault_loc
             )
         )
     return features
@@ -259,6 +329,9 @@ def main():
                         help="For distributed training: local_rank")   
     parser.add_argument('--seed', type=int, default=42,
                         help="random seed for initialization")
+
+    parser.add_argument("--extra_loss_scale", default=1.0, type=float,
+                        help="the scale of extra loss")
     # print arguments
     args = parser.parse_args()
     logger.info(args)
@@ -291,7 +364,8 @@ def main():
     decoder = nn.TransformerDecoder(decoder_layer, num_layers=6)
     model=Seq2Seq(encoder=encoder,decoder=decoder,config=config,
                   beam_size=args.beam_size,max_length=args.max_target_length,
-                  sos_id=tokenizer.cls_token_id,eos_id=tokenizer.sep_token_id)
+                  sos_id=tokenizer.cls_token_id,eos_id=tokenizer.sep_token_id,
+                  scale=args.extra_loss_scale)
     
     if args.load_model_path is not None:
         logger.info("reload model from {}".format(args.load_model_path))
@@ -315,13 +389,14 @@ def main():
 
     if args.do_train:
         # Prepare training data loader
-        train_examples = read_examples(args.train_filename)
+        train_examples = read_train_examples(args.train_filename)
         train_features = convert_examples_to_features(train_examples, tokenizer,args,stage='train')
         all_source_ids = torch.tensor([f.source_ids for f in train_features], dtype=torch.long)
         all_source_mask = torch.tensor([f.source_mask for f in train_features], dtype=torch.long)
         all_target_ids = torch.tensor([f.target_ids for f in train_features], dtype=torch.long)
-        all_target_mask = torch.tensor([f.target_mask for f in train_features], dtype=torch.long)    
-        train_data = TensorDataset(all_source_ids,all_source_mask,all_target_ids,all_target_mask)
+        all_target_mask = torch.tensor([f.target_mask for f in train_features], dtype=torch.long) 
+        all_fault_loc = torch.tensor([f.fault_loc for f in train_features], dtype=torch.float)
+        train_data = TensorDataset(all_source_ids,all_source_mask,all_target_ids,all_target_mask,all_fault_loc)
         
         if args.local_rank == -1:
             train_sampler = RandomSampler(train_data)
@@ -353,23 +428,29 @@ def main():
         model.train()
         dev_dataset={}
         nb_tr_examples, nb_tr_steps,tr_loss,global_step,best_bleu,best_loss = 0, 0,0,0,0,1e6 
+        tr_fl_loss = 0  # extra
         bar = range(num_train_optimization_steps)
         train_dataloader=cycle(train_dataloader)
         eval_flag = True
         for step in bar:
             batch = next(train_dataloader)
             batch = tuple(t.to(device) for t in batch)
-            source_ids,source_mask,target_ids,target_mask = batch
-            loss,_,_ = model(source_ids=source_ids,source_mask=source_mask,target_ids=target_ids,target_mask=target_mask)
+            source_ids,source_mask,target_ids,target_mask,fault_loc = batch
+            loss,_,_,fl_loss = model(source_ids=source_ids,source_mask=source_mask,fault_loc=fault_loc,
+                             target_ids=target_ids,target_mask=target_mask)
             
             if args.n_gpu > 1:
                 loss = loss.mean() # mean() to average on multi-gpu.
+                fl_loss = fl_loss.mean()    # extra
             if args.gradient_accumulation_steps > 1:
                 loss = loss / args.gradient_accumulation_steps
+                fl_loss = fl_loss / args.gradient_accumulation_steps    # extra
             tr_loss += loss.item()
+            tr_fl_loss += fl_loss.item()    # extra
             train_loss=round(tr_loss*args.gradient_accumulation_steps/(nb_tr_steps+1),4)
+            train_fl_loss=round(tr_fl_loss*args.gradient_accumulation_steps/(nb_tr_steps+1),4)
             if (global_step + 1)%100==0:
-                logger.info("  step {} loss {}".format(global_step + 1,train_loss))
+                logger.info("  step {} loss {}, fl_loss {}".format(global_step + 1,train_loss, train_fl_loss))
             nb_tr_examples += source_ids.size(0)
             nb_tr_steps += 1
             loss.backward()
@@ -390,13 +471,14 @@ def main():
                 if 'dev_loss' in dev_dataset:
                     eval_examples,eval_data=dev_dataset['dev_loss']
                 else:
-                    eval_examples = read_examples(args.dev_filename)
+                    eval_examples = read_train_examples(args.dev_filename)
                     eval_features = convert_examples_to_features(eval_examples, tokenizer, args,stage='dev')
                     all_source_ids = torch.tensor([f.source_ids for f in eval_features], dtype=torch.long)
                     all_source_mask = torch.tensor([f.source_mask for f in eval_features], dtype=torch.long)
                     all_target_ids = torch.tensor([f.target_ids for f in eval_features], dtype=torch.long)
                     all_target_mask = torch.tensor([f.target_mask for f in eval_features], dtype=torch.long)      
-                    eval_data = TensorDataset(all_source_ids,all_source_mask,all_target_ids,all_target_mask)   
+                    all_fault_loc = torch.tensor([f.fault_loc for f in eval_features], dtype=torch.float)
+                    eval_data = TensorDataset(all_source_ids,all_source_mask,all_target_ids,all_target_mask,all_fault_loc)   
                     dev_dataset['dev_loss']=eval_examples,eval_data
                 eval_sampler = SequentialSampler(eval_data)
                 eval_dataloader = DataLoader(eval_data, sampler=eval_sampler, batch_size=args.eval_batch_size)
@@ -410,10 +492,10 @@ def main():
                 eval_loss,tokens_num = 0,0
                 for batch in eval_dataloader:
                     batch = tuple(t.to(device) for t in batch)
-                    source_ids,source_mask,target_ids,target_mask = batch                  
+                    source_ids,source_mask,target_ids,target_mask,fault_loc = batch                  
 
                     with torch.no_grad():
-                        _,loss,num = model(source_ids=source_ids,source_mask=source_mask,
+                        _,loss,num,_ = model(source_ids=source_ids,source_mask=source_mask,fault_loc=fault_loc,
                                            target_ids=target_ids,target_mask=target_mask)     
                     eval_loss += loss.sum().item()
                     tokens_num += num.sum().item()
@@ -451,7 +533,7 @@ def main():
                 if 'dev_bleu' in dev_dataset:
                     eval_examples,eval_data=dev_dataset['dev_bleu']
                 else:
-                    eval_examples = read_examples(args.dev_filename)
+                    eval_examples = read_train_examples(args.dev_filename)
                     eval_examples = random.sample(eval_examples,min(1000,len(eval_examples)))
                     eval_features = convert_examples_to_features(eval_examples, tokenizer, args,stage='test')
                     all_source_ids = torch.tensor([f.source_ids for f in eval_features], dtype=torch.long)
