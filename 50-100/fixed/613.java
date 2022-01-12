@@ -1,0 +1,6 @@
+@org.junit.Test
+public void testMessageExceptionWithoutSolutions() {
+    java.lang.String actual = org.symphonyoss.integration.exception.ExceptionMessageFormatter.format(org.symphonyoss.integration.exception.ExceptionMessageFormatterTest.COMPONENT_NAME, org.symphonyoss.integration.exception.ExceptionMessageFormatterTest.STR_MESSAGE);
+    org.apache.commons.lang3.text.StrBuilder expected = new org.apache.commons.lang3.text.StrBuilder(org.symphonyoss.integration.exception.ExceptionMessageFormatterTest.BREAK_LINE).append(org.symphonyoss.integration.exception.ExceptionMessageFormatterTest.COMPONENT).appendln(org.symphonyoss.integration.exception.ExceptionMessageFormatterTest.COMPONENT_NAME).append(org.symphonyoss.integration.exception.ExceptionMessageFormatterTest.MESSAGE).appendln(org.symphonyoss.integration.exception.ExceptionMessageFormatterTest.STR_MESSAGE).appendln(org.symphonyoss.integration.exception.ExceptionMessageFormatterTest.SOLUTIONS).appendln(org.symphonyoss.integration.exception.ExceptionMessageFormatterTest.NO_SOLUTION_MESSAGE);
+    org.junit.Assert.assertEquals(expected.toString(), actual);
+}

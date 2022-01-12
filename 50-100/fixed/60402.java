@@ -1,0 +1,8 @@
+public org.opensky.libadsb.Position decodePosition(double time, org.opensky.libadsb.Position receiver, org.opensky.libadsb.msgs.SurfacePositionMsg msg) {
+    org.opensky.libadsb.Position ret = decodePosition(time, msg);
+    if (((ret != null) && (receiver != null)) && (!(org.opensky.libadsb.PositionDecoder.withinReasonableRange(receiver, ret)))) {
+        ret.setReasonable(false);
+        num_reasonable = 0;
+    }
+    return ret;
+}

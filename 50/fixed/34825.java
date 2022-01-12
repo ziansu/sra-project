@@ -1,0 +1,4 @@
+@java.lang.Deprecated
+public static org.opendaylight.controller.cluster.datastore.AbstractDataStore createInstance(final org.opendaylight.controller.sal.core.api.model.SchemaService schemaService, final org.opendaylight.controller.cluster.datastore.DatastoreContext initialDatastoreContext, final org.opendaylight.controller.cluster.datastore.DatastoreSnapshotRestore datastoreSnapshotRestore, final org.opendaylight.controller.cluster.ActorSystemProvider actorSystemProvider, final org.osgi.framework.BundleContext bundleContext) {
+    return org.opendaylight.controller.cluster.datastore.DistributedDataStoreFactory.createInstance(schemaService, initialDatastoreContext, datastoreSnapshotRestore, actorSystemProvider, bundleContext, null);
+}

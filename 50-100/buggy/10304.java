@@ -1,0 +1,5 @@
+@com.google.devtools.build.lib.concurrent.ThreadSafety.ThreadSafe
+public static com.google.devtools.build.skyframe.SkyKey key(com.google.devtools.build.lib.analysis.config.BuildOptions buildOptions, java.lang.Class<? extends com.google.devtools.build.lib.analysis.config.BuildConfiguration.Fragment> fragmentType, com.google.devtools.build.lib.packages.RuleClassProvider ruleClassProvider) {
+    com.google.devtools.build.lib.analysis.config.BuildOptions optionsKey = (buildOptions.get(BuildConfiguration.Options.class).useDynamicConfigurations) ? buildOptions.trim(com.google.devtools.build.lib.analysis.config.BuildConfiguration.getOptionsClasses(com.google.common.collect.ImmutableList.<java.lang.Class<? extends com.google.devtools.build.lib.analysis.config.BuildConfiguration.Fragment>>of(fragmentType), ruleClassProvider)) : buildOptions;
+    return new com.google.devtools.build.skyframe.SkyKey(SkyFunctions.CONFIGURATION_FRAGMENT, new com.google.devtools.build.lib.skyframe.ConfigurationFragmentValue.ConfigurationFragmentKey(optionsKey, fragmentType));
+}

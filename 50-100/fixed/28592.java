@@ -1,0 +1,8 @@
+@java.lang.Override
+public void run() {
+    Airport.Runway runway = mFlightPlan.getArrivalAirport().getRunway();
+    Log.Aircraft.info(mName, "Piste d�gag�e");
+    if (!(runway.release(this)))
+        Log.Aircraft.error(mName, "Piste utilis�e avant qu'elle ait �t� d�gag�e");
+    
+}

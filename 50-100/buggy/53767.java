@@ -1,0 +1,5 @@
+@java.lang.Override
+protected void buildVideoRenderers(android.content.Context context, android.os.Handler mainHandler, com.google.android.exoplayer2.drm.DrmSessionManager<com.google.android.exoplayer2.drm.FrameworkMediaCrypto> drmSessionManager, @com.google.android.exoplayer2.playbacktests.util.ExtensionRendererMode
+int extensionRendererMode, com.google.android.exoplayer2.video.VideoRendererEventListener eventListener, long allowedVideoJoiningTimeMs, java.util.ArrayList<com.google.android.exoplayer2.Renderer> out) {
+    out.add(new com.google.android.exoplayer2.playbacktests.util.DebugSimpleExoPlayer.DebugMediaCodecVideoRenderer(context, com.google.android.exoplayer2.mediacodec.MediaCodecSelector.DEFAULT, allowedVideoJoiningTimeMs, mainHandler, eventListener, MAX_DROPPED_VIDEO_FRAME_COUNT_TO_NOTIFY));
+}

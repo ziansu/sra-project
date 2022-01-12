@@ -1,0 +1,3 @@
+private com.google.android.gms.location.Geofence createGeoFence(double latitude, double longitude, int radius, java.lang.String id) {
+    return new com.google.android.gms.location.Geofence.Builder().setCircularRegion(latitude, longitude, radius).setRequestId(id).setExpirationDuration(Geofence.NEVER_EXPIRE).setNotificationResponsiveness((60 * 1000)).setTransitionTypes(((com.google.android.gms.location.Geofence.GEOFENCE_TRANSITION_ENTER) | (com.google.android.gms.location.Geofence.GEOFENCE_TRANSITION_EXIT))).build();
+}

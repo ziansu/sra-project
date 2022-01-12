@@ -1,0 +1,3 @@
+void enterString() {
+    (inString)++;
+}

@@ -1,0 +1,1 @@
+iso.piotrowski.marek.nyndro.statistics.HistoryAnalysis[] doHistoryAnalysis();

@@ -1,0 +1,5 @@
+public static void installAndRunClients(org.terracotta.testing.master.ITestStateManager stateManager, org.terracotta.testing.logging.VerboseManager verboseManager, org.terracotta.testing.master.CommonIdioms.ClientsConfiguration clientsConfiguration, org.terracotta.testing.master.IMultiProcessControl processControl) throws java.io.FileNotFoundException, java.io.IOException, java.lang.InterruptedException {
+    org.terracotta.testing.master.InterruptableClientManager manager = new org.terracotta.testing.master.InterruptableClientManager(stateManager, verboseManager, processControl, clientsConfiguration.testParentDirectory, clientsConfiguration.clientClassPath, clientsConfiguration.setupClientDebugPort, clientsConfiguration.destroyClientDebugPort, clientsConfiguration.testClientDebugPortStart, clientsConfiguration.clientsToCreate, clientsConfiguration.clientArgumentBuilder, clientsConfiguration.connectUri);
+    stateManager.addComponentToShutDown(manager, true);
+    manager.start();
+}

@@ -1,0 +1,3 @@
+private com.epam.sonarqube.spellcheck.plugin.sensor.SpellCheckIssuesWrapper getGrammarIssuesWrapperWhenNull(final org.sonar.api.batch.fs.InputFile resource, final java.lang.String line, final int lineNumber) {
+    return com.epam.sonarqube.spellcheck.plugin.sensor.SpellCheckIssuesWrapper.builder().setInputFile(resource).setLine(line).setLineNumber(lineNumber).setPerspectives(perspectives).setRuleKey(org.sonar.api.rule.RuleKey.of(PluginParameter.REPOSITORY_KEY, PluginParameter.SONAR_SPELL_CHECK_RULE_KEY)).build();
+}

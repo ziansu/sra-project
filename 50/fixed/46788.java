@@ -1,0 +1,1 @@
+void logout() throws com.github.cypher.sdk.api.RestfulHTTPException, java.io.IOException;

@@ -1,0 +1,3 @@
+public int sendInvoice(int chatId, java.lang.String title, java.lang.String description, java.lang.String payload, java.lang.String providerToken, java.lang.String startParameter, java.lang.String currency, se.anyro.tgbotapi.types.payments.LabeledPrice[] prices, java.lang.String photoUrl, boolean needName, boolean needPhoneNumber, boolean needEmail, boolean needShippingAddress, boolean isFlexible) throws java.io.IOException {
+    return sendInvoice(chatId, title, description, payload, providerToken, startParameter, currency, prices, photoUrl, 0, 0, 0, needName, needPhoneNumber, needEmail, needShippingAddress, isFlexible, 0, null);
+}

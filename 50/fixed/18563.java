@@ -1,0 +1,4 @@
+@java.lang.Override
+public void share(java.lang.String cardId, cm.aptoide.pt.v8engine.timeline.view.ShareCardCallback shareCardCallback) {
+    socialRepository.share(cardId, getAppStoreId(), shareCardCallback, getTimelineSocialActionObject(cm.aptoide.pt.v8engine.timeline.view.displayable.AggregatedSocialInstallDisplayable.CARD_TYPE_NAME, cm.aptoide.pt.v8engine.analytics.Analytics.AppsTimeline.BLANK, cm.aptoide.pt.v8engine.timeline.view.displayable.SHARE, getPackageName(), cm.aptoide.pt.v8engine.analytics.Analytics.AppsTimeline.BLANK, cm.aptoide.pt.v8engine.analytics.Analytics.AppsTimeline.BLANK));
+}

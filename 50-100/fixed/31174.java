@@ -1,0 +1,3 @@
+public soot.spl.ifds.EdgeFunction<soot.spl.ifds.Constraint<java.lang.String>> getReturnEdgeFunction(de.fosd.typechef.conditional.Opt<de.fosd.typechef.parser.c.AST> callSite, de.fosd.typechef.conditional.Opt<de.fosd.typechef.parser.c.FunctionDef> calleeMethod, de.fosd.typechef.conditional.Opt<de.fosd.typechef.parser.c.AST> exitStmt, D exitNode, de.fosd.typechef.conditional.Opt<de.fosd.typechef.parser.c.AST> returnSite, D retNode) {
+    return buildFlowFunction(exitStmt, returnSite, exitNode, retNode, zeroedFlowFunctions.getReturnFlowFunction(callSite, calleeMethod, exitStmt, returnSite), false);
+}

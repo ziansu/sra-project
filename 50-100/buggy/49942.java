@@ -1,0 +1,17 @@
+public void createAccount(java.lang.String email, java.lang.String password) {
+    mFirebaseAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new com.google.android.gms.tasks.OnCompleteListener<com.google.firebase.auth.AuthResult>() {
+        @java.lang.Override
+        public void onComplete(@android.support.annotation.NonNull
+        com.google.android.gms.tasks.Task<com.google.firebase.auth.AuthResult> task) {
+            if (task.isSuccessful()) {
+                if ((mAuthResultListener) != null) {
+                    mAuthResultListener.onComplete("Registration successful.");
+                }
+            }else {
+                if ((mAuthResultListener) != null) {
+                    mAuthResultListener.onComplete("Registration failed.");
+                }
+            }
+        }
+    });
+}

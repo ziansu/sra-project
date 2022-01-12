@@ -1,0 +1,9 @@
+public rx.Observable<java.util.List<saulmm.avengers.entities.MarvelCharacter>> executeIncreasingOffset() {
+    currentOffset += saulmm.avengers.GetCharactersUsecase.CHARACTERS_LIMIT;
+    return mRepository.getCharacters(currentOffset).observeOn(mResultsThread).subscribeOn(mExecutorThread).doOnError(new rx.functions.Action1<java.lang.Throwable>() {
+        @java.lang.Override
+        public void call(java.lang.Throwable throwable) {
+            currentOffset -= saulmm.avengers.GetCharactersUsecase.CHARACTERS_LIMIT;
+        }
+    });
+}

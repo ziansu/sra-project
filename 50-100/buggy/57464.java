@@ -1,0 +1,4 @@
+private void disableKeepAliveMechanismConnectionTermination(int holdTimeMin, int holdTimeMinAcc, int holdTimeMax) {
+    disableKeepAliveMechanism((((((("Unacceptable hold time [min=" + holdTimeMin) + " acc=") + holdTimeMinAcc) + " max=") + holdTimeMax) + "] | Connection termination"));
+    org.opendaylight.sxp.core.handler.MessageDecoder.sendErrorMessage(null, new org.opendaylight.sxp.util.exception.message.ErrorMessageException(org.opendaylight.yang.gen.v1.urn.opendaylight.sxp.protocol.rev141002.ErrorCode.OpenMessageError, org.opendaylight.yang.gen.v1.urn.opendaylight.sxp.protocol.rev141002.ErrorSubCode.UnacceptableHoldTime, null), this);
+}

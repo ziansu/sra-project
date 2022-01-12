@@ -1,0 +1,1 @@
+boolean onLongClick(android.view.View view, int position);

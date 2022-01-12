@@ -1,0 +1,9 @@
+@java.lang.Override
+public void onBindViewHolder(com.teambarq.barq.NavAdapter.ViewHolder holder, int position) {
+    if ((holder.Holderid) == 1) {
+        holder.textView.setText(mNavTitles[(position - 1)]);
+        holder.imageView.setImageResource(mIcons[(position - 1)]);
+    }else {
+        holder.profile.setImageResource(profile);
+    }
+}

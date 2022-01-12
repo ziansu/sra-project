@@ -1,0 +1,3 @@
+public static com.sylvainautran.nanodegree.capstoneproject.data.loaders.CallsLoader getAllCallDetails(android.content.Context context, long callId, long classId) {
+    return new com.sylvainautran.nanodegree.capstoneproject.data.loaders.CallsLoader(context, AppelContract.CallStudentLinkEntry.buildCallStudentLinkUriWithCallAndClass(classId, callId), com.sylvainautran.nanodegree.capstoneproject.data.loaders.CallsLoader.Query.PROJECTION_DETAILS, null, null, AppelContract.StudentEntry.DEFAULT_SORT);
+}

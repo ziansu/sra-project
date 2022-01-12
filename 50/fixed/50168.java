@@ -1,0 +1,1 @@
+<T> T get(java.lang.String key, java.lang.Class<T> type);

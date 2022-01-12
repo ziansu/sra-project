@@ -1,0 +1,1 @@
+private native void nativeStopRtcEventLog();

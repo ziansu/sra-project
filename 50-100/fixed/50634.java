@@ -1,0 +1,11 @@
+protected void sort(java.util.List<float[]> list, final int position) {
+    java.util.Collections.sort(list, ( o1, o2) -> {
+        if ((o1[position]) > (o2[position]))
+            return -1;
+        
+        if ((o1[position]) < (o2[position]))
+            return 1;
+        
+        return 0;
+    });
+}

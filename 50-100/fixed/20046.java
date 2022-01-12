@@ -1,0 +1,4 @@
+@org.testng.annotations.DataProvider(name = "loadReadsBAM")
+public java.lang.Object[][] loadReadsBAM() {
+    return new java.lang.Object[][]{ new java.lang.Object[]{ (org.broadinstitute.hellbender.engine.spark.datasources.ReadsSparkSinkUnitTest.testDataDir) + "tools/BQSR/HiSeq.1mb.1RG.2k_lines.bam" , "ReadsSparkSinkUnitTest1" , ".bam" } , new java.lang.Object[]{ (org.broadinstitute.hellbender.engine.spark.datasources.ReadsSparkSinkUnitTest.testDataDir) + "tools/BQSR/expected.HiSeq.1mb.1RG.2k_lines.alternate.recalibrated.DIQ.bam" , "ReadsSparkSinkUnitTest2" , ".bam" } , new java.lang.Object[]{ (org.broadinstitute.hellbender.engine.spark.datasources.ReadsSparkSinkUnitTest.testDataDir) + "tools/BQSR/CEUTrio.HiSeq.WGS.b37.ch20.1m-1m1k.NA12878.bam" , "ReadsSparkSinkUnitTest3" , ".bam" } };
+}

@@ -1,0 +1,9 @@
+private static java.awt.image.BufferedImage getScaledImage(java.awt.image.BufferedImage srcImg, int w, int h) {
+    java.awt.image.BufferedImage resizedImg = srcImg;
+    try {
+        resizedImg = net.coobird.thumbnailator.Thumbnails.of(srcImg).size(w, h).asBufferedImage();
+    } catch (java.io.IOException ex) {
+        ex.printStackTrace();
+    }
+    return resizedImg;
+}

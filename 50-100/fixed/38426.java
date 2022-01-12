@@ -1,0 +1,3 @@
+public static java.util.Set<models.Consent> getAllByAuthorizedAndOwners(org.bson.types.ObjectId member, java.util.Set<org.bson.types.ObjectId> owners) throws utils.exceptions.InternalServerException {
+    return models.Model.getAll(models.Consent.class, models.Consent.collection, utils.collections.CMaps.map("authorized", member).map("owner", owners), utils.collections.Sets.create("name", "order", "owner", "type"));
+}

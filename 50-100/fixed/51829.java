@@ -1,0 +1,5 @@
+public io.crate.planner.projection.builder.GroupProjection groupProjection(java.util.Collection<? extends io.crate.planner.projection.builder.Symbol> inputs, java.util.Collection<? extends io.crate.planner.projection.builder.Symbol> keys, java.util.Collection<io.crate.planner.projection.builder.Function> values, io.crate.planner.projection.builder.AggregateMode mode, io.crate.planner.projection.builder.RowGranularity requiredGranularity) {
+    io.crate.planner.projection.builder.InputColumns.Context context = new io.crate.planner.projection.builder.InputColumns.Context(inputs);
+    java.util.ArrayList<io.crate.planner.projection.builder.Aggregation> aggregations = getAggregations(values, mode, context);
+    return new io.crate.planner.projection.builder.GroupProjection(io.crate.planner.projection.builder.InputColumns.create(keys, context), aggregations, mode, requiredGranularity);
+}

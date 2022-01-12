@@ -1,0 +1,8 @@
+@org.protocoderrunner.apidoc.annotation.ProtoMethod(description = "Creates a new text", example = "")
+@org.protocoderrunner.apidoc.annotation.ProtoMethodParam(params = { "text" })
+public org.protocoderrunner.apprunner.api.widgets.PTextView newText(java.lang.String label) {
+    org.protocoderrunner.apprunner.api.widgets.PTextView tv = new org.protocoderrunner.apprunner.api.widgets.PTextView(getActivity());
+    initializeLayout();
+    tv.setText(label);
+    return tv;
+}

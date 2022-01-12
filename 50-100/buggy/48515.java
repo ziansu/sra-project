@@ -1,0 +1,3 @@
+private static boolean isBoxedPrimitiveInstance(java.lang.Object obj) {
+    return ((((((((obj instanceof java.lang.Boolean) || (obj instanceof java.lang.Byte)) || (obj instanceof java.lang.Character)) || (obj instanceof java.lang.Double)) || (obj instanceof java.lang.Enum)) || (obj instanceof java.lang.Float)) || (obj instanceof java.lang.Integer)) || (obj instanceof java.lang.Long)) || (obj instanceof java.lang.Short) ? true : false;
+}

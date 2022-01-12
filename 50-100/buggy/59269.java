@@ -1,0 +1,14 @@
+public long setLongValue(long value) throws au.edu.jcu.v4l4j.exceptions.ControlException {
+    long v = 0;
+    if ((type) != (V4L4JConstants.CTRL_TYPE_LONG))
+        throw new au.edu.jcu.v4l4j.exceptions.UnsupportedMethod("This control is not a long control");
+    
+    state.get();
+    try {
+        doSetLongValue(this.object, id, value);
+        v = doGetLongValue(this.object, id);
+    } finally {
+        state.put();
+    }
+    return v;
+}

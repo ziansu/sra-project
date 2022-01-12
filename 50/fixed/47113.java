@@ -1,0 +1,1 @@
+public abstract void clear(int target, int internalformat, int format, int type, java.nio.IntBuffer data);

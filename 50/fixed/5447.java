@@ -1,0 +1,3 @@
+public net.dv8tion.jda.core.MessageBuilder stripMentions(net.dv8tion.jda.core.Guild guild) {
+    return this.stripMentions(guild.getJDA(), guild, net.dv8tion.jda.core.MessageBuilder.MentionType.CHANNEL, net.dv8tion.jda.core.MessageBuilder.MentionType.ROLE, net.dv8tion.jda.core.MessageBuilder.MentionType.USER, net.dv8tion.jda.core.MessageBuilder.MentionType.EVERYONE, net.dv8tion.jda.core.MessageBuilder.MentionType.HERE);
+}

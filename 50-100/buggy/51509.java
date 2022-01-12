@@ -1,0 +1,3 @@
+public long kTrussAdj_Fused(java.lang.String Aorig, java.lang.String Rfinal, int k, java.lang.String filterRowCol, boolean forceDelete, org.apache.accumulo.core.security.Authorizations Aauthorizations, java.lang.String RNewVisibility, long upperBoundOnDim, int maxiter) {
+    return kTrussAdj_Fused(Aorig, Rfinal, k, filterRowCol, forceDelete, Aauthorizations, RNewVisibility, (1L << 32), java.lang.Integer.MAX_VALUE, java.util.Collections.<java.lang.Long>emptyList());
+}

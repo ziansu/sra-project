@@ -1,0 +1,3 @@
+private void createPaymentMethodType(android.database.sqlite.SQLiteDatabase db) {
+    db.execSQL((((((((((("CREATE TABLE IF NOT EXISTS " + (com.ab.piggybank.DatabaseHelper.TABLENAME_3)) + " ( ") + (com.ab.piggybank.DatabaseHelper.COLUMN_ID)) + " INTEGER PRIMARY KEY, ") + (com.ab.piggybank.DatabaseHelper.COLUMN_PAYMENT_METHOD_NAME)) + " TEXT, ") + (com.ab.piggybank.DatabaseHelper.COLUMN_METHOD_TYPE_AFTER_SORT)) + " INTEGER, ") + (com.ab.piggybank.DatabaseHelper.COLUMN_METHOD_TYPE)) + " INTEGER)"));
+}

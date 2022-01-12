@@ -1,0 +1,7 @@
+private byte[] asByteArray(java.nio.ByteBuffer buffer) {
+    byte[] data = new byte[(buffer.limit()) - (buffer.position())];
+    for (int i = 0; i < (data.length); i++) {
+        data[i] = buffer.get();
+    }
+    return data;
+}

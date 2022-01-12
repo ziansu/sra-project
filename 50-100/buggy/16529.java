@@ -1,0 +1,3 @@
+public java.lang.Long indexPicture(java.awt.image.BufferedImage image, java.lang.Long id, java.util.Map<java.lang.String, java.lang.String> properties) throws retrieval.storage.AlreadyIndexedException, retrieval.storage.NoValidPictureException, retrieval.storage.PictureTooHomogeneous {
+    return index.addPicture(image, id, properties, config.getNumberOfPatch(), config.getResizeMethod(), config.getSizeOfPatchResizeWidth(), config.getSizeOfPatchResizeHeight(), config.isSyncAfterImage());
+}

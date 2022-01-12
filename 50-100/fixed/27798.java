@@ -1,0 +1,11 @@
+@java.lang.SuppressWarnings(value = "unchecked")
+@java.lang.Override
+public V getSync(final java.lang.String key) {
+    java.lang.System.out.println(("get " + key));
+    final V value = ((V) (getNode(key)));
+    java.lang.System.out.println(("got " + value));
+    if (key.equals("mxrogm/mxrogm/xplr/.n/Manage/.n/Projects/.n/Appjangle_Apps/.n/Maybes/.n/Application_Deployment/Reading_It")) {
+        throw new java.lang.RuntimeException();
+    }
+    return value;
+}

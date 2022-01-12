@@ -1,0 +1,4 @@
+@java.lang.Override
+public org.apache.chemistry.opencmis.commons.data.ObjectInFolderList getChildren(java.lang.String repositoryId, java.lang.String folderId, java.lang.String filter, java.lang.String orderBy, java.lang.Boolean includeAllowableActions, org.apache.chemistry.opencmis.commons.enums.IncludeRelationships includeRelationships, java.lang.String renditionFilter, java.lang.Boolean includePathSegment, java.math.BigInteger maxItems, java.math.BigInteger skipCount, org.apache.chemistry.opencmis.commons.data.ExtensionsData extension) {
+    return this.getRepository().getChildren(this.context, folderId, this.splitFilter(filter), this);
+}

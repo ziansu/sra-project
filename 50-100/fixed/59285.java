@@ -1,0 +1,4 @@
+@java.lang.Override
+protected java.util.List<com.facebook.react.ReactPackage> getPackages() {
+    return java.util.Arrays.<com.facebook.react.ReactPackage>asList(new com.facebook.react.shell.MainReactPackage(), new com.idehub.GoogleAnalyticsBridge.GoogleAnalyticsBridgePackage(), new com.oblador.vectoricons.VectorIconsPackage(), new cl.json.RNSharePackage(), new com.airbnb.android.react.maps.MapsPackage(), new com.i18n.reactnativei18n.ReactNativeI18n(), new org.pgsqlite.SQLitePluginPackage(), new com.mapbox.reactnativemapboxgl.ReactNativeMapboxGLPackage(), new com.dieam.reactnativepushnotification.ReactNativePushNotificationPackage(), new com.avishayil.rnrestart.ReactNativeRestartPackage(), new info.refugee.modules.GooglePlayServicesPackage());
+}

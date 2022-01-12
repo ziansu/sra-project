@@ -1,0 +1,4 @@
+@java.lang.Override
+public final boolean repOK() {
+    return ((((((((SigmaEC.NumStepsWithoutImprovementStoppingCondition.P_FITNESS_COMPARATOR) != null) && (!(SigmaEC.NumStepsWithoutImprovementStoppingCondition.P_FITNESS_COMPARATOR.isEmpty()))) && ((SigmaEC.NumStepsWithoutImprovementStoppingCondition.P_NUM_STEPS_WITHOUT_IMPROVEMENT) != null)) && (!(SigmaEC.NumStepsWithoutImprovementStoppingCondition.P_NUM_STEPS_WITHOUT_IMPROVEMENT.isEmpty()))) && ((numStepsAllowedWithoutImprovement) >= 0)) && ((fitnessComparator) != null)) && ((stepsPassedSinceLastImprovement) >= 0)) && ((stepsPassedSinceLastImprovement) <= (numStepsAllowedWithoutImprovement));
+}

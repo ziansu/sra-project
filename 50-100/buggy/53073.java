@@ -1,0 +1,5 @@
+@org.junit.Test
+public void new_mode_nrtm_test() {
+    net.ripe.db.whois.api.changedphase3.Scenario.Builder.given(net.ripe.db.whois.api.changedphase3.Scenario.Mode.NEW_MODE, net.ripe.db.whois.api.changedphase3.Scenario.ObjectStatus.OBJ_EXISTS_WITH_CHANGED).when(net.ripe.db.whois.api.changedphase3.Scenario.Protocol.NRTM___, net.ripe.db.whois.api.changedphase3.Scenario.Method.EVENT_, net.ripe.db.whois.api.changedphase3.Scenario.Req.NOT_APPLIC__).then(net.ripe.db.whois.api.changedphase3.Scenario.Result.SUCCESS, net.ripe.db.whois.api.changedphase3.Scenario.ObjectStatus.OBJ_EXISTS_NO_CHANGED__).run();
+    net.ripe.db.whois.api.changedphase3.Scenario.Builder.given(net.ripe.db.whois.api.changedphase3.Scenario.Mode.NEW_MODE, net.ripe.db.whois.api.changedphase3.Scenario.ObjectStatus.OBJ_EXISTS_NO_CHANGED__).when(net.ripe.db.whois.api.changedphase3.Scenario.Protocol.TELNET_, net.ripe.db.whois.api.changedphase3.Scenario.Method.EVENT_, net.ripe.db.whois.api.changedphase3.Scenario.Req.NOT_APPLIC__).then(net.ripe.db.whois.api.changedphase3.Scenario.Result.SUCCESS, net.ripe.db.whois.api.changedphase3.Scenario.ObjectStatus.OBJ_EXISTS_NO_CHANGED__).run();
+}

@@ -1,0 +1,7 @@
+private static void createMarker(org.eclipse.jface.text.IDocument document, org.eclipse.core.resources.IResource file, org.sonarlint.eclipse.core.internal.tracking.Trackable trackable, org.sonarlint.eclipse.core.internal.TriggerType triggerType, boolean createExtraLocations) throws org.eclipse.core.runtime.CoreException {
+    org.eclipse.core.resources.IMarker marker = file.createMarker((triggerType == (org.sonarlint.eclipse.core.internal.TriggerType.CHANGESET) ? org.sonarlint.eclipse.core.internal.SonarLintCorePlugin.MARKER_CHANGESET_ID : org.sonarlint.eclipse.core.internal.SonarLintCorePlugin.MARKER_ID));
+    if (triggerType != (org.sonarlint.eclipse.core.internal.TriggerType.CHANGESET)) {
+        trackable.setMarkerId(marker.getId());
+    }
+    org.sonarlint.eclipse.core.internal.jobs.SonarLintMarkerUpdater.updateMarkerAttributes(document, trackable, marker, createExtraLocations);
+}

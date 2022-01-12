@@ -1,0 +1,3 @@
+private void loadFromAngles(double tilt, double azumeth, double elevation) {
+    setStorage(new org.apache.commons.math3.geometry.euclidean.threed.Rotation(com.neuronrobotics.sdk.addons.kinematics.math.RotationNR.getOrder(), com.neuronrobotics.sdk.addons.kinematics.math.RotationNR.getConvention(), java.lang.Math.toRadians(tilt), java.lang.Math.toRadians(elevation), java.lang.Math.toRadians(azumeth)));
+}

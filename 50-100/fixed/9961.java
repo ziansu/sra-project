@@ -1,0 +1,5 @@
+public org.dotwebstack.framework.informationproduct.InformationProduct create(org.eclipse.rdf4j.model.IRI identifier, java.lang.String label, org.dotwebstack.framework.backend.Backend backend, org.eclipse.rdf4j.model.Model statements) {
+    java.lang.String query = org.eclipse.rdf4j.model.util.Models.objectString(statements.filter(identifier, ELMO.QUERY, null)).orElseThrow(() -> new org.dotwebstack.framework.config.ConfigurationException(java.lang.String.format("No <%s> statement has been found for a sparql information product <%s>.", ELMO.QUERY, backend.getIdentifier())));
+    org.dotwebstack.framework.backend.ResultType resultType = getQueryType(query);
+    return new org.dotwebstack.framework.backend.sparql.SparqlBackendInformationProduct.Builder(identifier, ((org.dotwebstack.framework.backend.sparql.SparqlBackend) (backend)), query, resultType, queryEvaluator).label(label).build();
+}

@@ -1,0 +1,6 @@
+public static void checkIfGeneratedTrackedEntityAttributeValuesHasExpired(org.joda.time.DateTime serverDateTime) {
+    java.util.List<org.hisp.dhis.android.sdk.persistence.models.TrackedEntityAttributeGeneratedValue> generatedValuesThatIsExpired = new com.raizlabs.android.dbflow.sql.language.Select().from(org.hisp.dhis.android.sdk.persistence.models.TrackedEntityAttributeGeneratedValue.class).where(com.raizlabs.android.dbflow.sql.builder.Condition.column(TrackedEntityAttributeGeneratedValue.Table.EXPIRYDATE).lessThan(serverDateTime)).queryList();
+    for (org.hisp.dhis.android.sdk.persistence.models.TrackedEntityAttributeGeneratedValue trackedEntityAttributeGeneratedValue : generatedValuesThatIsExpired) {
+        new com.raizlabs.android.dbflow.sql.language.Delete().from(org.hisp.dhis.android.sdk.persistence.models.TrackedEntityAttributeGeneratedValue.class).where(com.raizlabs.android.dbflow.sql.builder.Condition.column(TrackedEntityAttributeGeneratedValue.Table.ID).eq(trackedEntityAttributeGeneratedValue.getId()));
+    }
+}

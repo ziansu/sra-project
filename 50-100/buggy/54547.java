@@ -1,0 +1,4 @@
+@java.lang.Override
+protected java.util.List<com.facebook.react.ReactPackage> getPackages() {
+    return java.util.Arrays.<com.facebook.react.ReactPackage>asList(new com.facebook.react.shell.MainReactPackage(), new com.horcrux.svg.SvgPackage(), new com.inprogress.reactnativeyoutube.ReactNativeYouTube(), new com.BV.LinearGradient.LinearGradientPackage(), new com.airbnb.android.react.lottie.LottiePackage(), new com.facebook.reactnative.androidsdk.FBSDKPackage(com.kitsu_mobile.MainApplication.mCallbackManager), new com.oblador.vectoricons.VectorIconsPackage(), new com.microsoft.codepush.react.CodePush(getResources().getString(R.string.reactNativeCodePush_androidDeploymentKey), getApplicationContext(), BuildConfig.DEBUG));
+}

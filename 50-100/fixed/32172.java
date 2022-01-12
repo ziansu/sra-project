@@ -1,0 +1,4 @@
+public static void initImageLoader(android.content.Context context) {
+    com.nostra13.universalimageloader.core.ImageLoaderConfiguration config = new com.nostra13.universalimageloader.core.ImageLoaderConfiguration.Builder(context).threadPriority(((java.lang.Thread.NORM_PRIORITY) - 2)).diskCacheFileNameGenerator(new com.nostra13.universalimageloader.cache.disc.naming.Md5FileNameGenerator()).diskCacheSize(((50 * 1024) * 1024)).tasksProcessingOrder(QueueProcessingType.LIFO).writeDebugLogs().build();
+    com.nostra13.universalimageloader.core.ImageLoader.getInstance().init(config);
+}

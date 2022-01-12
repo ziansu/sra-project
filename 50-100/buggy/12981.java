@@ -1,0 +1,4 @@
+public org.concordion.api.MultiValueResult handleErrorJsonResponse(final java.lang.String paymentName) throws java.io.IOException, java.util.concurrent.ExecutionException {
+    com.fasterxml.jackson.databind.JsonNode jsonNode = handleJsonResponse(paymentName);
+    return org.concordion.api.MultiValueResult.multiValueResult().with(specs.response.STATUS, jsonNode.get(specs.response.STATUS).textValue()).with(specs.response.ERROR_CODE, jsonNode.get(specs.response.ERROR_CODE).intValue()).with(specs.response.ERROR_MESSAGE, jsonNode.get(specs.response.ERROR_MESSAGE).textValue()).with(specs.response.CUSTOMER_MESSAGE, jsonNode.get(specs.response.CUSTOMER_MESSAGE).textValue());
+}

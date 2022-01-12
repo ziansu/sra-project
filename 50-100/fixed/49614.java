@@ -1,0 +1,4 @@
+public uk.gov.gchq.gaffer.commonutil.iterable.CloseableIterable<uk.gov.gchq.gaffer.data.element.id.EntityId> runNamedOperation() {
+    final uk.gov.gchq.gaffer.named.operation.NamedOperation<uk.gov.gchq.gaffer.data.element.id.EntityId, uk.gov.gchq.gaffer.commonutil.iterable.CloseableIterable<uk.gov.gchq.gaffer.data.element.id.EntityId>> operation = new uk.gov.gchq.gaffer.named.operation.NamedOperation.Builder<uk.gov.gchq.gaffer.data.element.id.EntityId, uk.gov.gchq.gaffer.commonutil.iterable.CloseableIterable<uk.gov.gchq.gaffer.data.element.id.EntityId>>().name("2-hop").input(new uk.gov.gchq.gaffer.operation.data.EntitySeed(1)).build();
+    return runExample(operation, null);
+}

@@ -1,0 +1,3 @@
+private com.squareup.javapoet.TypeSpec createViewHolderFactoryClass() {
+    return com.squareup.javapoet.TypeSpec.classBuilder(com.zuluft.autoAdapterAnnotationsProcessor.Processor.GENERATED_VIEW_HOLDER_FACTORY_CLASS_NAME).addModifiers(javax.lang.model.element.Modifier.PUBLIC, javax.lang.model.element.Modifier.FINAL).superclass(com.zuluft.autoAdapterAnnotationsProcessor.Processor.sViewHolderFactorySuperClassName).addMethod(createGetLayoutIdMethod()).addMethod(createGetViewHolderMethod()).addMethod(createViewHolderFactoryConstructor()).build();
+}

@@ -1,0 +1,3 @@
+protected boolean isClientVersionCompatible(java.lang.String clientVersion) {
+    return (((java.lang.Boolean.parseBoolean(java.lang.System.getProperty("skipJspressoVersionCheck"))) || ((org.jspresso.framework.util.Build.getJspressoVersion()) == null)) || (Build.UNKNOWN.equals(org.jspresso.framework.util.Build.getJspressoVersion()))) || (org.jspresso.framework.util.Build.getJspressoVersion().equals(clientVersion));
+}

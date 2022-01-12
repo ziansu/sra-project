@@ -1,0 +1,4 @@
+private org.openlmis.stockmanagement.dto.PhysicalInventoryDto createInventoryDto(java.util.UUID programId, java.util.UUID facilityId) {
+    org.openlmis.stockmanagement.dto.PhysicalInventoryLineItemDto piLineItemDto = org.openlmis.stockmanagement.dto.PhysicalInventoryLineItemDto.builder().orderable(org.openlmis.stockmanagement.dto.OrderableDto.builder().id(java.util.UUID.randomUUID()).build()).quantity(null).build();
+    return org.openlmis.stockmanagement.dto.PhysicalInventoryDto.builder().programId(programId).facilityId(facilityId).lineItems(java.util.Collections.singletonList(piLineItemDto)).build();
+}

@@ -1,0 +1,10 @@
+@org.junit.Test
+public void DocumentsWithSameContentAreEqual() throws java.lang.Exception {
+    org.jsoup.nodes.Document docA = org.jsoup.Jsoup.parse("<div/>One");
+    org.jsoup.nodes.Document docB = org.jsoup.Jsoup.parse("<div/>One");
+    org.jsoup.nodes.Document docC = org.jsoup.Jsoup.parse("<div/>Two");
+    assertFalse(docA.equals(docB));
+    assertTrue(docA.equals(docA));
+    assertEquals(docA.hashCode(), docA.hashCode());
+    assertFalse(((docA.hashCode()) == (docC.hashCode())));
+}

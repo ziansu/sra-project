@@ -1,0 +1,4 @@
+public org.eclipse.rdf4j.query.parser.sparql.manifest.SPARQLQueryTest createSPARQLQueryTest(java.lang.String testURI, java.lang.String name, java.lang.String queryFileURL, java.lang.String resultFileURL, org.eclipse.rdf4j.query.Dataset dataSet, boolean laxCardinality, boolean checkOrder) {
+    java.lang.String[] ignoredTests = new java.lang.String[]{ "STRDT   TypeErrors" , "STRLANG   TypeErrors" , "sq03 - Subquery within graph pattern, graph variable is not bound" , "sq14 - limit by resource" };
+    return new org.eclipse.rdf4j.sail.federation.FederationSparqlTest(testURI, name, queryFileURL, resultFileURL, dataSet, laxCardinality, checkOrder, ignoredTests);
+}

@@ -1,0 +1,1 @@
+public static final native org.rstudio.studio.client.workbench.prefs.model.SourceControlPrefs create(boolean vcsEnabled, java.lang.String gitExePath, java.lang.String svnExePath, java.lang.String terminalPath);

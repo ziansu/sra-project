@@ -1,0 +1,4 @@
+@java.lang.Deprecated
+public void writeDataPageHeader(int uncompressedSize, int compressedSize, int valueCount, org.apache.parquet.format.Encoding rlEncoding, org.apache.parquet.format.Encoding dlEncoding, org.apache.parquet.format.Encoding valuesEncoding, java.io.OutputStream to) throws java.io.IOException {
+    org.apache.parquet.format.Util.writePageHeader(newDataPageHeader(uncompressedSize, compressedSize, valueCount, new org.apache.parquet.format.converter.BooleanStatistics(), rlEncoding, dlEncoding, valuesEncoding), to);
+}

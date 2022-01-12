@@ -1,0 +1,8 @@
+@java.lang.SuppressWarnings(value = "unchecked")
+@java.lang.Override
+public ca.mcgill.cs.stg.jetuml.graph.ObjectNode clone() {
+    ca.mcgill.cs.stg.jetuml.graph.ObjectNode cloned = ((ca.mcgill.cs.stg.jetuml.graph.ObjectNode) (super.clone()));
+    cloned.aName = ((ca.mcgill.cs.stg.jetuml.framework.MultiLineString) (aName.clone()));
+    cloned.aFields = ((java.util.ArrayList<ca.mcgill.cs.stg.jetuml.graph.ChildNode>) (aFields.clone()));
+    return cloned;
+}

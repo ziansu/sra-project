@@ -1,0 +1,10 @@
+public void mapButtonAction(java.lang.String group, java.lang.String name, int key) {
+    this.bStore = app.getDetectorView().bStore;
+    if (!(bStore.containsKey(group))) {
+        bStore.put(group, name);
+    }else {
+        bStore.replace(group, name);
+    }
+    omap = key;
+    app.getDetectorView().update();
+}

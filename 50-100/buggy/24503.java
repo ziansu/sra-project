@@ -1,0 +1,6 @@
+private void createPlayers() {
+    com.mygdx.game.GameWorld.player1 = new com.mygdx.game.entities.Player(com.mygdx.game.entities.Player.POS_X_MID, com.mygdx.game.entities.Player.POS_Y_BOT, com.mygdx.game.entities.Player.VELOCITY_DELTA_HORIZONTAL, Input.Keys.Q, Input.Keys.E, com.mygdx.game.entities.Player.COLOR_P1);
+    com.mygdx.game.GameWorld.player2 = new com.mygdx.game.entities.Player(com.mygdx.game.entities.Player.POS_X_RIGHT, com.mygdx.game.entities.Player.POS_Y_MID, com.mygdx.game.entities.Player.VELOCITY_DELTA_VERTICAL, Input.Keys.N, Input.Keys.M, com.mygdx.game.entities.Player.COLOR_P2);
+    com.mygdx.game.GameWorld.player4 = new com.mygdx.game.entities.Player(com.mygdx.game.entities.Player.POS_X_MID, com.mygdx.game.entities.Player.POS_Y_TOP, com.mygdx.game.entities.Player.VELOCITY_DELTA_HORIZONTAL, Input.Keys.C, Input.Keys.Z, com.mygdx.game.entities.Player.COLOR_P3);
+    com.mygdx.game.GameWorld.player3 = new com.mygdx.game.entities.Player(com.mygdx.game.entities.Player.POS_X_LEFT, com.mygdx.game.entities.Player.POS_Y_MID, com.mygdx.game.entities.Player.VELOCITY_DELTA_VERTICAL, Input.Keys.I, Input.Keys.P, com.mygdx.game.entities.Player.COLOR_P4);
+}

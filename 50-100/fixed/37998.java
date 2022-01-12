@@ -1,0 +1,8 @@
+@java.lang.Override
+public void onLocationAvailability(com.google.android.gms.location.LocationAvailability locationAvailability) {
+    super.onLocationAvailability(locationAvailability);
+    if (!(locationAvailability.isLocationAvailable())) {
+        android.widget.Toast.makeText(getApplicationContext(), getString(R.string.fail_retrieving_location), Toast.LENGTH_SHORT).show();
+        android.util.Log.d("OnLocationAvailability", "Não foi possível localizar");
+    }
+}

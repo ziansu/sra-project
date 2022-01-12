@@ -1,0 +1,16 @@
+public void inactiveTimerStart() {
+    java.lang.String sDelay = settings.getString("inactiveTimerMins", com.givenhansco.keystonenavigation.Activities.MainMenuActivity.DEFAULT_TIMER_DELAY);
+    long delay;
+    try {
+        delay = java.lang.Long.parseLong(sDelay);
+    } catch (java.lang.Exception e) {
+        delay = 240;
+    }
+    android.util.Log.i(com.givenhansco.keystonenavigation.Activities.MainMenuActivity.TAG, ("timerDelay : " + delay));
+    if (delay != 0) {
+        delay = (1000 * 60) * delay;
+        startInactiveTimer(delay);
+    }else {
+        android.util.Log.i(com.givenhansco.keystonenavigation.Activities.MainMenuActivity.TAG, "Inactive Timer Skipped");
+    }
+}

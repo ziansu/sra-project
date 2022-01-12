@@ -1,0 +1,3 @@
+private boolean isFilteredExperiment(java.lang.String filterName, org.aksw.gerbil.datatypes.ExperimentType eType) {
+    return ((((eType.equalsOrContainsType(ExperimentType.ERec)) || (eType.equalsOrContainsType(ExperimentType.ETyping))) || (eType.equalsOrContainsType(ExperimentType.OKE_Task1))) || (eType.equalsOrContainsType(ExperimentType.OKE_Task2))) || (org.apache.commons.lang.StringUtils.isEmpty(filterName));
+}

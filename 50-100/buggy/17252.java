@@ -1,0 +1,5 @@
+private void expectStepSketchDirectoryCreated() {
+    java.io.File stepSketchDir = sketcherDao.getStepSketchDirectory(org.scenarioo.dao.sketcher.SketcherDaoTest.BRANCH_NAME, org.scenarioo.dao.sketcher.SketcherDaoTest.ISSUE_ID, org.scenarioo.dao.sketcher.SketcherDaoTest.SCENARIO_SKETCH_ID, org.scenarioo.dao.sketcher.SketcherDaoTest.STEP_SKETCH_ID);
+    assertTrue("Expect step sketch directory (and all parent folders) to be created.", stepSketchDir.exists());
+    assertEquals("Expected path for step sketch file", new java.io.File(org.scenarioo.dao.sketcher.SketcherDaoTest.filePath(org.scenarioo.dao.sketcher.SketcherDaoTest.ROOT_DIRECTORY, SketcherDao.SKETCHER_DIRECTORY, "Test+Branch", org.scenarioo.dao.sketcher.SketcherDaoTest.ISSUE_ID, org.scenarioo.dao.sketcher.SketcherDaoTest.SCENARIO_SKETCH_ID, org.scenarioo.dao.sketcher.SketcherDaoTest.STEP_SKETCH_ID)).getAbsolutePath(), stepSketchDir.getPath());
+}

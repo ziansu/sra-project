@@ -1,0 +1,3 @@
+public static edu.umass.cs.gnsserver.gnsapp.packet.InternalCommandPacket fieldRemove(java.lang.String memberGuid, java.lang.String groups, java.lang.String guid, edu.umass.cs.gnsserver.interfaces.InternalRequestHeader header) throws edu.umass.cs.gnscommon.exceptions.server.InternalRequestException, org.json.JSONException {
+    return edu.umass.cs.gnsserver.gnsapp.GNSCommandInternal.getCommand(CommandType.RemoveUnsigned, header, GNSProtocol.GUID.toString(), guid, GNSProtocol.FIELD.toString(), groups, GNSProtocol.VALUE.toString(), guid.toString());
+}

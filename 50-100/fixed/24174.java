@@ -1,0 +1,3 @@
+private android.app.Notification getNotification(int taskCount) {
+    return new android.support.v4.app.NotificationCompat.Builder(this).setContentTitle((taskCount == 0 ? getString(R.string.uploading) : getResources().getQuantityString(R.plurals.uploading_notification, taskCount, taskCount))).setPriority(NotificationCompat.PRIORITY_MIN).setSmallIcon(R.drawable.ic_stat).setProgress(100, 0, true).setColor(-12627531).addAction(R.drawable.ic_stat_cancel, getString(android.R.string.cancel), android.app.PendingIntent.getBroadcast(this, 0, new android.content.Intent(rikka.searchbyimage.service.UploadService.INTENT_ACTION_CANCEL), PendingIntent.FLAG_ONE_SHOT)).build();
+}

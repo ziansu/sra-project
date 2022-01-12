@@ -1,0 +1,8 @@
+@java.lang.Override
+public void onRestoreInstanceState(android.os.Bundle savedInstanceState) {
+    if (savedInstanceState != null) {
+        mRecyclerViewState = savedInstanceState.getParcelable(com.example.android.popularmovies.MainActivity.POSSITION_MOVIE_PREFERENCE);
+    }
+    mSharedPrefs.edit().putInt(com.example.android.popularmovies.MainActivity.SORT_MOVIE_PREFERENCE, savedInstanceState.getInt(com.example.android.popularmovies.MainActivity.SORT_MOVIE_PREFERENCE));
+    super.onRestoreInstanceState(savedInstanceState);
+}

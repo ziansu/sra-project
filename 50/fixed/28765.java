@@ -1,0 +1,1 @@
+com.ga.domain.model.CommentDTO getCommentByCommentID(java.lang.String commentID, java.lang.Integer time) throws com.ga.exception.GAException;

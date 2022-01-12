@@ -1,0 +1,3 @@
+public void bytecodeExceeds64KLimit(org.eclipse.jdt.internal.compiler.lookup.MethodBinding method, int start, int end) {
+    this.handle(org.eclipse.jdt.core.compiler.IProblem.BytecodeExceeds64KLimit, new java.lang.String[]{ new java.lang.String(method.selector) , typesAsString(method, false) }, new java.lang.String[]{ new java.lang.String(method.selector) , typesAsString(method, true) }, (((org.eclipse.jdt.internal.compiler.problem.ProblemSeverities.Error) | (org.eclipse.jdt.internal.compiler.problem.ProblemSeverities.Abort)) | (org.eclipse.jdt.internal.compiler.problem.ProblemSeverities.Fatal)), start, end);
+}

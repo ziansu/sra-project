@@ -1,0 +1,8 @@
+@org.junit.Before
+public void beforeTest() throws java.lang.Exception {
+    validator = createValidator();
+    validator.setGeometryStore(org.mockito.Mockito.mock(nl.ipo.cds.etl.postvalidation.IGeometryStore.class));
+    validator.setManagerDao(org.mockito.Mockito.mock(nl.ipo.cds.dao.ManagerDao.class));
+    validator.setBulkValidator(org.mockito.Mockito.mock(nl.ipo.cds.etl.postvalidation.BulkValidator.class));
+    runner = new nl.ipo.cds.etl.test.ValidationRunner(validator, getDomainClass());
+}

@@ -1,0 +1,14 @@
+public void corrupt(java.util.ArrayList list, int max) {
+    int size = list.size();
+    int howmanydeaths = 0;
+    if (size > max) {
+        howmanydeaths = (size - max) - 1;
+        for (int i = 0; i < howmanydeaths; i++) {
+            list.remove(i);
+        }
+    }else
+        if (size > 2)
+            list.remove(0);
+        
+    
+}

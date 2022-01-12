@@ -1,0 +1,3 @@
+public java.lang.String toCSV() {
+    return com.gmail.haloinverse.DynamicMarket.util.Message.combine(",", type, data, bundleSize, buyable, sellable, basePrice, com.gmail.haloinverse.DynamicMarket.util.Format.parseString(maxPrice), com.gmail.haloinverse.DynamicMarket.util.Format.parseString(minPrice), markup, volatility, stock, com.gmail.haloinverse.DynamicMarket.util.Format.parseString(maxStock), com.gmail.haloinverse.DynamicMarket.util.Format.parseString(minStock));
+}

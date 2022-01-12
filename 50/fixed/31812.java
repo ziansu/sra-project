@@ -1,0 +1,1 @@
+java.util.List<ru.javawebinar.topjava.model.Meal> getFiltered(int userId, java.time.LocalDate dateStart, java.time.LocalDate dateEnd);

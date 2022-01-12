@@ -1,0 +1,6 @@
+public static java.util.List<org.carbondata.core.load.LoadMetadataDetails> identifySegmentsToBeMerged(java.lang.String storeLocation, org.carbondata.spark.load.CarbonLoadModel carbonLoadModel, int partitionCount, long compactionSize, java.util.List<org.carbondata.core.load.LoadMetadataDetails> segments, org.carbondata.integration.spark.merger.CompactionType compactionType) {
+    java.util.List<org.carbondata.core.load.LoadMetadataDetails> listOfSegmentsAfterPreserve = org.carbondata.spark.merger.CarbonDataMergerUtil.checkPreserveSegmentsPropertyReturnRemaining(segments);
+    java.util.List<org.carbondata.core.load.LoadMetadataDetails> listOfSegmentsBelowThresholdSize = org.carbondata.spark.merger.CarbonDataMergerUtil.identifySegmentsToBeMergedBasedOnSize(compactionSize, listOfSegmentsAfterPreserve, carbonLoadModel, partitionCount, storeLocation, compactionType);
+    java.util.List<org.carbondata.core.load.LoadMetadataDetails> listOfSegmentsLoadedInSameDateInterval = org.carbondata.spark.merger.CarbonDataMergerUtil.identifySegmentsToBeMergedBasedOnLoadedDate(listOfSegmentsBelowThresholdSize);
+    return listOfSegmentsLoadedInSameDateInterval;
+}

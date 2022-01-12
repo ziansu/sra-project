@@ -1,0 +1,11 @@
+@org.junit.Test
+public void testSetMarketingYear() {
+    de.parkand.verschlag.schlag.MarketingYear year = new de.parkand.verschlag.schlag.MarketingYear();
+    year.setIdentifier(1);
+    year.setYear(2000);
+    de.parkand.verschlag.schlag.Farm farm = new de.parkand.verschlag.schlag.Farm();
+    java.util.List<de.parkand.verschlag.schlag.MarketingYear> list = new java.util.ArrayList<>();
+    list.add(year);
+    farm.setMarketingYears(list);
+    assertEquals(list, farm.getMarketingYears());
+}

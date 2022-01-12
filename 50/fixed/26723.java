@@ -1,0 +1,1 @@
+public void set(double output, java.lang.String name);

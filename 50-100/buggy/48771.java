@@ -1,0 +1,3 @@
+public com.couchbase.cbforest.QueryIterator query(long skip, long limit, boolean descending, boolean inclusiveStart, boolean inclusiveEnd, java.lang.Object startKey, java.lang.Object endKey, java.lang.String startKeyDocID, java.lang.String endKeyDocID) throws com.couchbase.cbforest.ForestException {
+    return new com.couchbase.cbforest.QueryIterator(com.couchbase.cbforest.View.query(_handle, skip, limit, descending, inclusiveStart, inclusiveEnd, com.couchbase.cbforest.View.objectToKey(startKey), com.couchbase.cbforest.View.objectToKey(endKey), startKeyDocID, endKeyDocID));
+}

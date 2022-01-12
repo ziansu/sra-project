@@ -1,0 +1,3 @@
+public static java.util.List<com.aimluck.eip.cayenne.om.portlet.VEipTScheduleList> getScheduleList(int userId, java.util.Date viewStart, java.util.Date viewEnd, java.util.List<java.lang.Integer> users, java.util.List<java.lang.Integer> facilities, boolean isDetail) {
+    return com.aimluck.eip.schedule.util.ScheduleUtils.getScheduleList(userId, viewStart, viewEnd, users, facilities, null, (-1), (-1), false, isDetail);
+}

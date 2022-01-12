@@ -1,0 +1,10 @@
+@java.lang.Override
+public void setColumns(java.util.List<java.lang.String> columns) {
+    this.columns = columns;
+    writeTo(columns.get(0));
+    for (int i = 1; i < (columns.size()); ++i) {
+        writeTo(("\t" + (columns.get(i))));
+    }
+    writeTo("\n");
+    flushAll();
+}

@@ -1,0 +1,1 @@
+java.io.File queryByJsonLogic(com.happy_query.parser.domain.JsonParseDataParam jsonParseDataParam, java.lang.String tmpDir, java.util.List<com.happy_query.parser.domain.DataDefinition> definitionIds);

@@ -1,0 +1,3 @@
+public static void display(android.content.Context mContext, java.lang.String url, final android.widget.ImageView img, com.bumptech.glide.request.RequestListener listener) {
+    com.bumptech.glide.Glide.with(mContext).load(url).listener(listener).placeholder(com.xinyi.czbasedevtool.base.manager.ui_about.GlideMaster.placeHolderRes).error(com.xinyi.czbasedevtool.base.manager.ui_about.GlideMaster.errorHolderRes).dontAnimate().into(img);
+}

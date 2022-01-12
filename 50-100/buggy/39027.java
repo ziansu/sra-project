@@ -1,0 +1,11 @@
+@java.lang.SuppressWarnings(value = "unchecked")
+public org.json.simple.JSONObject getReturnStructureJSON(fi.bilot.pojo.Flight flight) {
+    fi.bilot.pojo.Flight fl = getFlightDetails(flight);
+    com.sap.conn.jco.JCoStructure returnStructure = fl.getReturnStructure();
+    com.sap.conn.jco.JCoMetaData meta = returnStructure.getMetaData();
+    org.json.simple.JSONObject obj = new org.json.simple.JSONObject();
+    for (int i = 0; i < (returnStructure.getFieldCount()); i++) {
+        obj.put(meta.getName(i), returnStructure.getString(i));
+    }
+    return obj;
+}

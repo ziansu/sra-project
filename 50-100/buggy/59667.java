@@ -1,0 +1,4 @@
+@java.lang.Override
+public boolean trigger(hudson.model.AbstractBuild<?, ?> build, hudson.model.TaskListener listener) {
+    return (((hudson.plugins.emailext.plugins.trigger.UnsuccessfulTrigger.isBuildUnsuccessful(build.getResult())) && (hudson.plugins.emailext.plugins.trigger.FivePlusUnsuccessfulInPast14DaysTrigger.hasFiveUnsuccessfulBuildsInPast14Days(build, 0))) && (!(hudson.plugins.emailext.plugins.trigger.FivePlusUnsuccessfulInPast14DaysTrigger.hasFiveUnsuccessfulBuildsInPast14Days(build.getPreviousBuild(), 0)))) && (!(hudson.plugins.emailext.plugins.trigger.ThreePlusConsecutiveUnsuccessfulTrigger.lastXBuildsUnsuccessful(3, build.getPreviousBuild())));
+}

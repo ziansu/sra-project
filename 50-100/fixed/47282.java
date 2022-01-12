@@ -1,0 +1,3 @@
+C getLatentCommand(com.netflix.hystrix.HystrixCommandProperties.ExecutionIsolationStrategy isolationStrategy, com.netflix.hystrix.AbstractTestHystrixCommand.ExecutionResult executionResult, int executionLatency, com.netflix.hystrix.AbstractTestHystrixCommand.FallbackResult fallbackResult, com.netflix.hystrix.HystrixCircuitBreakerTest.TestCircuitBreaker circuitBreaker, com.netflix.hystrix.HystrixThreadPool threadPool, int timeout) {
+    return getCommand(isolationStrategy, executionResult, executionLatency, fallbackResult, 0, circuitBreaker, threadPool, timeout, CacheEnabled.NO, "foo", 10, 10);
+}

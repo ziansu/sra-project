@@ -1,0 +1,3 @@
+public org.mobicents.servlet.restcomm.entities.Geolocation setLastGeolocationResponse(java.lang.Boolean lastGeolocationResponse) {
+    return new org.mobicents.servlet.restcomm.entities.Geolocation(sid, dateCreated, dateUpdated, dateExecuted, accountSid, source, deviceIdentifier, geolocationType, responseStatus, cellId, locationAreaCode, mobileCountryCode, mobileNetworkCode, networkEntityAddress, ageOfLocationInfo, deviceLatitude, deviceLongitude, accuracy, physicalAddress, internetAddress, formattedAddress, locationTimestamp, eventGeofenceLatitude, eventGeofenceLongitude, radius, geolocationPositioningType, lastGeolocationResponse, cause, apiVersion, uri);
+}

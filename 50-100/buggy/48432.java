@@ -1,0 +1,3 @@
+public java.lang.String SPARQL_DTs() {
+    java.lang.String query = "" + ((((((((("SELECT ?uri ?label" + "WHERE { ") + "  ?subjectUri     vitro:mostSpecificType      ?SDEType .") + "  ?SDEType        rdfs:subClassOf             ?restriction .") + "  ?restriction    owl:onProperty              obo:BFO_0000051 . ") + "  ?restriction    owl:someValuesFrom          ?uri . ") + "  ?uri            rdfs:subClassOf             obo:OBI_0200000 . ") + "  OPTIONAL { ?uri    rdfs:label     ?label . } ") + "  FILTER ( ?subjectUri = <input1> ) ") + "}");
+}

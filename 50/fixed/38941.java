@@ -1,0 +1,1 @@
+public int realReadBytes() throws java.io.IOException;

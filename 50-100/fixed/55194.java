@@ -1,0 +1,11 @@
+@java.lang.Override
+protected void onCreate(android.os.Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    requestWindowFeature(Window.FEATURE_NO_TITLE);
+    setContentView(R.layout.activity_info);
+    this.bind_buttons();
+    text = ((android.widget.TextView) (findViewById(R.id.textView2)));
+    text.setMovementMethod(new android.text.method.ScrollingMovementMethod());
+    qr_result = getIntent().getStringExtra("qr_content");
+    text.setText(qr_result);
+}

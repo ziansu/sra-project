@@ -1,0 +1,3 @@
+private static org.apache.http.config.Lookup<org.apache.http.client.entity.InputStreamFactory> createLookupRegistry() {
+    return org.apache.http.config.RegistryBuilder.<org.apache.http.client.entity.InputStreamFactory>create().register("gzip", org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.GZIP).register("br", org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.BROTLI).register("x-gzip", org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.GZIP).register("deflate", org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.DEFLATE).build();
+}

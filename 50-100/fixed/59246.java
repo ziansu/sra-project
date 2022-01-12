@@ -1,0 +1,3 @@
+public org.opencb.opencga.catalog.managers.QueryResult<org.opencb.opencga.catalog.managers.File> createFolder(long studyId, java.nio.file.Path folderPath, boolean parents, org.opencb.opencga.catalog.managers.QueryOptions options, java.lang.String sessionId) throws org.opencb.opencga.catalog.exceptions.CatalogException {
+    return fileManager.createFolder(studyId, folderPath.toString(), null, parents, null, options, sessionId);
+}

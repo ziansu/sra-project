@@ -1,0 +1,3 @@
+private boolean prepareControllerForAquisition(boolean hardwareTimepoints) {
+    return controller_.prepareControllerForAquisition(hardwareTimepoints, getChannelMode(), isMultichannel(), getNumChannels(), getNumSlices(), getNumTimepoints(), getTimePointInterval(), getNumSides(), getFirstSide(), useTimepointsCB_.isSelected(), getAcquisitionMode(), false, getDelayBeforeSide(), getStepSizeUm(), sliceTiming_);
+}

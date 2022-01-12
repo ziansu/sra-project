@@ -1,0 +1,6 @@
+public static void activeClock(int id) {
+    mine.android.api.modules.ClockEntry clockEntry = mine.android.api.ClockEntryAPI.getById(id);
+    java.util.Calendar nextAlarmTime = mine.android.api.AlarmAPI.getNextAlarmTime(clockEntry);
+    android.util.Log.i(("next alarm time for id: " + id), nextAlarmTime.getTime().toString());
+    mine.android.api.AlarmAPI.setTimer(id, nextAlarmTime);
+}

@@ -1,0 +1,3 @@
+private static java.lang.Object[] unexpectedTypeErrorDescription(java.lang.String expectedTypesDesc, freemarker.core.Expression blamed, java.lang.String blamedAssignmentTargetVarName, freemarker.template.TemplateModel model) {
+    return new java.lang.Object[]{ "Expected " , new freemarker.core._DelayedAOrAn(expectedTypesDesc) , ", but " , blamedAssignmentTargetVarName == null ? ((java.lang.Object) (blamed != null ? "this" : "the expression")) : new java.lang.Object[]{ "assignment target variable " , new freemarker.core._DelayedJQuote(blamedAssignmentTargetVarName) } , " has evaluated to " , new freemarker.core._DelayedAOrAn(new freemarker.core._DelayedFTLTypeDescription(model)) , blamedAssignmentTargetVarName == null ? ":" : "." };
+}

@@ -1,0 +1,3 @@
+public static CompilerError.ParserError TokenMismatchException(CompilerError.GrammarSymbol expectedVal, CompilerError.Token receivedVal, CompilerError.Driver LexDriver) {
+    return new CompilerError.ParserError(Type.TOKEN_MISMATCH, (((((("ERROR: TOKEN MISMATCH FOUND ON LINE " + (LexDriver.lexer.charStream.lineNumber())) + " found.\n") + "Expected \"") + expectedVal) + "\". Instead received \"") + (receivedVal.getVal())));
+}

@@ -1,0 +1,3 @@
+C getCommand(com.netflix.hystrix.HystrixCommandProperties.ExecutionIsolationStrategy isolationStrategy, com.netflix.hystrix.AbstractTestHystrixCommand.ExecutionResult executionResult, int executionLatency, com.netflix.hystrix.AbstractTestHystrixCommand.FallbackResult fallbackResult) {
+    return getCommand(isolationStrategy, executionResult, executionLatency, fallbackResult, new com.netflix.hystrix.HystrixCircuitBreakerTest.TestCircuitBreaker(), null, ((executionLatency * 2) + 100), CacheEnabled.NO, "foo", 10);
+}

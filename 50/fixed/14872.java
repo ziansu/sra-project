@@ -1,0 +1,1 @@
+double log10PriorProbability(final S state);

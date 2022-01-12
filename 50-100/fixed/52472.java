@@ -1,0 +1,10 @@
+public java.lang.String call() throws java.lang.Exception {
+    java.lang.String ctName = java.lang.Thread.currentThread().getName();
+    try {
+        java.lang.Thread.currentThread().setName(((((threadName) + "[") + ctName) + "]"));
+        org.apache.log4j.NDC.push(threadNDC);
+        return sendMessageWithTimeoutGuarded(correlationID, message, prc);
+    } finally {
+        java.lang.Thread.currentThread().setName(ctName);
+    }
+}

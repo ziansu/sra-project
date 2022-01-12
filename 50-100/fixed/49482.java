@@ -1,0 +1,5 @@
+public uk.gov.justice.digital.prisoneraccounts.jpa.entity.Transaction debitAccount(uk.gov.justice.digital.prisoneraccounts.jpa.entity.Account account, java.lang.Long amountPence, java.lang.String description, java.lang.String clientRef) throws uk.gov.justice.digital.prisoneraccounts.service.AccountClosedException, uk.gov.justice.digital.prisoneraccounts.service.DebitNotSupportedException, uk.gov.justice.digital.prisoneraccounts.service.InsufficientFundsException {
+    checkSufficientFunds(account, amountPence);
+    checkNotClosed(account);
+    return transactionRepository.save(uk.gov.justice.digital.prisoneraccounts.jpa.entity.Transaction.builder().account(account).amountPence(amountPence).description(description).clientReference(clientRef).transactionType(Transaction.TransactionTypes.DEBIT).build());
+}

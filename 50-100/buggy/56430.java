@@ -1,0 +1,4 @@
+@java.lang.Override
+protected void configure(org.springframework.security.config.annotation.web.builders.HttpSecurity http) throws java.lang.Exception {
+    http.addFilterAfter(oAuth2ClientContextFilter(), org.springframework.security.web.authentication.preauth.AbstractPreAuthenticatedProcessingFilter.class).addFilterAfter(openIdConnectAuthenticationFilter(), org.springframework.security.oauth2.client.filter.OAuth2ClientContextFilter.class).exceptionHandling().authenticationEntryPoint(authenticationEntryPoint()).and().authorizeRequests().antMatchers(org.springframework.http.HttpMethod.GET, "/").permitAll().antMatchers(org.springframework.http.HttpMethod.GET, "/test").authenticated();
+}

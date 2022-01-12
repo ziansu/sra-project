@@ -1,0 +1,3 @@
+private de.novatec.appdynamics.extensions.gemfire.connection.JMXConnectionAdapter connect(java.util.Map serverInformation) throws java.io.IOException {
+    return new de.novatec.appdynamics.extensions.gemfire.connection.JMXConnectionAdapter.Builder().host(((java.lang.String) (serverInformation.get(de.novatec.appdynamics.extensions.gemfire.CONFIG_SERVER_HOST)))).port(((java.lang.Integer) (serverInformation.get(de.novatec.appdynamics.extensions.gemfire.CONFIG_SERVER_PORT)))).user(((java.lang.String) (serverInformation.get(de.novatec.appdynamics.extensions.gemfire.CONFIG_SERVER_USER)))).password(((java.lang.String) (serverInformation.get(de.novatec.appdynamics.extensions.gemfire.CONFIG_SERVER_PASSWORD)))).build();
+}

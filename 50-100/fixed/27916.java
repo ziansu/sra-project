@@ -1,0 +1,10 @@
+private static boolean isSomeTaxiAvailable() {
+    java.util.Iterator i = Umer.vehicles.entrySet().iterator();
+    while (i.hasNext()) {
+        Vehicle curVehicle = ((Vehicle) (i.next()));
+        if (((curVehicle.getDriver()) != null) && (curVehicle.getDriver().isAvailable())) {
+            return true;
+        }
+    } 
+    return false;
+}

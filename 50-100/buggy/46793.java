@@ -1,0 +1,11 @@
+public void actionPerformed(java.awt.event.ActionEvent e) {
+    if (initial) {
+        musicPlayer.frame.setVisible(true);
+        musicOpen = true;
+        initial = false;
+    }else {
+        frame.setAlwaysOnTop(false);
+        musicPlayer.frame.setVisible(true);
+        musicPlayer.frame.setAlwaysOnTop(true);
+    }
+}

@@ -1,0 +1,7 @@
+ggTillVarorIMetod() {
+    kassa.Kvitto k = skapaTomtK();
+    kassa.Vara[] varor = new kassa.Vara[5];
+    assertTrue((k.getTotalM = (ngdVaror()) == 0));
+    k.l = ggTillVaror(varor);
+    assertTrue((k.getTotalM = (ngdVaror()) == 5));
+}

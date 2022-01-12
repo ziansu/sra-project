@@ -1,0 +1,3 @@
+public <T extends org.roda.core.data.v2.index.IsIndexed> org.roda.core.index.utils.IterableIndexResult<T> findAll(final java.lang.Class<T> returnClass, final org.roda.core.data.v2.index.filter.Filter filter, final boolean justActive, final boolean removeDuplicates, final java.util.List<java.lang.String> fieldsToReturn) {
+    return findAll(returnClass, filter, new org.roda.core.data.v2.index.sort.Sorter(new org.roda.core.data.v2.index.sort.SortParameter(org.roda.core.data.common.RodaConstants.INDEX_UUID, true)), Sublist.ALL, null, justActive, removeDuplicates, fieldsToReturn);
+}

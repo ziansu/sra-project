@@ -1,0 +1,5 @@
+@org.junit.Test
+public void testGetProjectedSchema5() throws java.lang.Exception {
+    org.apache.parquet.schema.MessageType originalMsg = org.apache.parquet.schema.MessageTypeParser.parseMessageType(("message hive_schema {\n" + (((((((("  optional group structCol {\n" + "    optional int32 a;\n") + "    optional group subStructCol {\n") + "      optional int64 b;\n") + "      optional boolean c;\n") + "    }\n") + "  }\n") + "  optional boolean d;\n") + "}\n")));
+    org.apache.hadoop.hive.ql.io.parquet.HiveParquetSchemaTestUtils.testConversion("structCol", "struct<subStructCol:struct<b:bigint,c:boolean>>", org.apache.hadoop.hive.ql.io.parquet.read.DataWritableReadSupport.getProjectedSchema(originalMsg, java.util.Arrays.asList("structCol"), java.util.Arrays.asList(0), new java.util.HashSet<>(java.util.Arrays.asList("structCol.subStructCol", "structCol.subStructCol.b", "structCol.subStructCol.c"))).toString());
+}

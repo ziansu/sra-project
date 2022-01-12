@@ -1,0 +1,3 @@
+protected void addParametersPropertyDescriptor(java.lang.Object object) {
+    itemPropertyDescriptors.add(createItemPropertyDescriptor(((org.eclipse.emf.edit.provider.ComposeableAdapterFactory) (adapterFactory)).getRootAdapterFactory(), getResourceLocator(), getString("_UI_Operation_parameters_feature"), getString("_UI_PropertyDescriptor_description", "_UI_Operation_parameters_feature", "_UI_Operation_type"), ApplicationPackage.Literals.OPERATION__PARAMETERS, true, false, false, null, null, null));
+}

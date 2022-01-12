@@ -1,0 +1,11 @@
+@org.junit.Test
+public void getSubTaskTest() {
+    java.util.ArrayList<net.sf.memoranda.Task> container;
+    container = new java.util.ArrayList<net.sf.memoranda.Task>();
+    net.sf.memoranda.Task child;
+    child = new net.sf.memoranda.TaskImpl(new java.util.ArrayList<net.sf.memoranda.Task>());
+    child.setID("child");
+    container.add(child);
+    task.setSubTasks(container);
+    assertEquals(child, task.getSubTask("child"));
+}

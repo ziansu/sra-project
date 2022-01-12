@@ -1,0 +1,3 @@
+public void run() {
+    it.polimi.modaclouds.scalingsdatests.Main.doTest(fsize, fclients, fservers, fapp, fdata, fuseDatabase, fstartAsOnDemand, freuseInstances, fleaveInstancesOn, fonlyStartMachines, floadModelFile, ffirstInstancesToSkip, fdemandEstimator, fwindow, fuseSDA, fuseCloudML, fhighCpu, flowCpu, fcooldown, floadBalancerIp, fuseAutoscalingReasoner, fpathToModel, fsshHost, fsshUsername, fsshPassword);
+}

@@ -1,0 +1,12 @@
+public static int deleteSession(javax.servlet.http.HttpServletRequest request, java.sql.Connection connection) {
+    java.sql.PreparedStatement ps = eTrams.utilities.databaseUtilities.SQLOperations.deleteSession(connection);
+    try {
+        ps.setInt(1, java.lang.Integer.parseInt(request.getParameter("sessionID")));
+        if ((ps.executeUpdate()) > 1)
+            return 1;
+        
+    } catch (java.sql.SQLException e) {
+        e.printStackTrace();
+    }
+    return 0;
+}

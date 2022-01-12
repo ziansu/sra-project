@@ -1,0 +1,9 @@
+public int paga_reale_mazziere() {
+    fiches = (fiches) - (2 * (puntata));
+    if ((fiches) < 0) {
+        int buf = fiches;
+        fiches = 0;
+        return (puntata) + (buf + (puntata));
+    }
+    return (puntata) * 2;
+}

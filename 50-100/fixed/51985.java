@@ -1,0 +1,7 @@
+public void checkDown(int[][] box, int x, int y) {
+    if ((islandMap[x][(y + 1)]) == 1) {
+        box[x][(y + 1)] = -1;
+        checkoutIsland(box, x, (y + 1));
+    }
+    return ;
+}

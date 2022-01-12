@@ -1,0 +1,3 @@
+private net.es.oscars.helpers.RequestedVlanFlowE buildRequestedFlow(java.util.Set<net.es.oscars.helpers.RequestedVlanJunctionE> junctions, java.util.Set<net.es.oscars.helpers.RequestedVlanPipeE> pipes, java.lang.Integer minPipes, java.lang.Integer maxPipes, java.lang.String connectionId) {
+    return net.es.oscars.helpers.RequestedVlanFlowE.builder().junctions(junctions).pipes(pipes).minPipes(minPipes).maxPipes(maxPipes).containerConnectionId(connectionId).build();
+}

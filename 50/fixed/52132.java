@@ -1,0 +1,1 @@
+java.util.List<com.liferay.blade.api.SearchResult> findImports(java.lang.String[] imports);

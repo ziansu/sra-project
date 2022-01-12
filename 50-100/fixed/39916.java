@@ -1,0 +1,9 @@
+public javafx.scene.paint.Color getColor(int x, int y) {
+    if ((x < 0) || ((width) <= x)) {
+        throw new java.lang.IllegalArgumentException((("x=" + x) + " is illegal"));
+    }
+    if ((y < 0) || ((height) <= y)) {
+        throw new java.lang.IllegalArgumentException((("x=" + x) + " is illegal"));
+    }
+    return image.getPixelReader().getColor(x, y);
+}

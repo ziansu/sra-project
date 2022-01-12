@@ -1,0 +1,8 @@
+public void insertUninitializedMemoryData(org.exbin.deltahex.delta.MemorySegment memorySegment, long position, long length) {
+    org.exbin.deltahex.delta.MemoryDataSource memorySource = memorySegment.getSource();
+    org.exbin.deltahex.delta.SegmentsRepository.DataSegmentsMap segmentsMap = memorySources.get(memorySource);
+    detachMemoryArea(memorySegment, position, 0);
+    shiftSegments(memorySegment, position, length);
+    memorySegment.getSource().insertUninitialized(position, length);
+    segmentsMap.updateSegmentLength(memorySegment, ((memorySegment.getLength()) + length));
+}

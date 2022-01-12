@@ -1,0 +1,1 @@
+void actorDestroyed(actor.AbstractAnimalActor index);

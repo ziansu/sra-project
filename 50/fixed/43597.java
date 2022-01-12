@@ -1,0 +1,3 @@
+private void updateIdentity(java.lang.String fanExternalName, com.bitdubai.fermat_art_api.all_definition.enums.ArtExternalPlatform externalPlatform) throws com.bitdubai.fermat_art_api.layer.identity.fan.exceptions.CantUpdateFanIdentityException {
+    moduleManager.updateFanIdentity(fanExternalName, identitySelected.getPublicKey(), identitySelected.getProfileImage(), identitySelected.getExternalIdentityID());
+}

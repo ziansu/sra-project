@@ -1,0 +1,9 @@
+public org.json.JSONObject getResultJSONObject() throws edu.umass.cs.gnscommon.exceptions.client.ClientException {
+    java.lang.String responseStr = this.getRespStr();
+    try {
+        org.json.JSONObject json = (responseStr != null) ? new org.json.JSONObject(responseStr) : new org.json.JSONObject();
+        return json;
+    } catch (org.json.JSONException e) {
+        throw new edu.umass.cs.gnscommon.exceptions.client.ClientException(edu.umass.cs.gnscommon.ResponseCode.JSON_PARSE_ERROR, (((e.getMessage()) + " while parsing response string ") + responseStr));
+    }
+}

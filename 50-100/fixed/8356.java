@@ -1,0 +1,3 @@
+private com.nike.cerberus.service.StaticAssetManager.AssetResourceFile create(java.lang.String filename, java.lang.String filePath, java.lang.String rootDirectoryPath) {
+    return new com.nike.cerberus.service.StaticAssetManager.AssetResourceFile(filename, com.nike.cerberus.service.StaticAssetManager.getRelativePath(filePath, rootDirectoryPath), com.nike.cerberus.service.StaticAssetManager.getMimeTypeForFileFromName(filename), com.google.common.collect.ImmutableList.<java.lang.Byte>builder().addAll(com.nike.cerberus.service.StaticAssetManager.getFileContents(filePath)).build());
+}

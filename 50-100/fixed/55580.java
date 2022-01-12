@@ -1,0 +1,6 @@
+@java.lang.Override
+public com.theoryinpractise.halbuilder.api.ReadableRepresentation readFrom(java.lang.Class<com.theoryinpractise.halbuilder.api.ReadableRepresentation> type, java.lang.reflect.Type genericType, java.lang.annotation.Annotation[] annotations, javax.ws.rs.core.MediaType mediaType, javax.ws.rs.core.MultivaluedMap<java.lang.String, java.lang.String> httpHeaders, java.io.InputStream entityStream) throws java.io.IOException, javax.ws.rs.WebApplicationException {
+    com.theoryinpractise.halbuilder.api.RepresentationFactory representationFactory = new com.theoryinpractise.halbuilder.DefaultRepresentationFactory().withReader(de.saxsys.campus.rest.hal.HalMediaTypes.HAL_JSON, com.theoryinpractise.halbuilder.json.JsonRepresentationReader.class);
+    com.theoryinpractise.halbuilder.api.ReadableRepresentation representation = representationFactory.readRepresentation(de.saxsys.campus.rest.hal.HalMediaTypes.HAL_JSON, new java.io.InputStreamReader(entityStream, java.nio.charset.Charset.forName("utf-8")));
+    return representation;
+}

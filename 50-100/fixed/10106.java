@@ -1,0 +1,3 @@
+private org.carbondata.processing.store.writer.CarbonFactDataWriter<?> getFactDataWriter(java.lang.String storeLocation, int measureCount, int mdKeyLength, java.lang.String tableName, org.carbondata.processing.mdkeygen.file.IFileManagerComposite fileManager, int[] keyBlockSize) {
+    return new org.carbondata.processing.store.writer.CarbonFactDataWriterImplForIntIndexAndAggBlock(storeLocation, measureCount, mdKeyLength, tableName, fileManager, keyBlockSize, aggKeyBlock, isComplexTypes(), noDictionaryCount, carbonDataFileAttributes, databaseName, wrapperColumnSchemaList, noDictionaryCount, dimensionType, carbonDataDirectoryPath, colCardinality, segmentProperties);
+}

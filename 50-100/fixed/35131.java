@@ -1,0 +1,8 @@
+public void onUpgradeViews(@javax.annotation.Nonnull
+org.dbtools.android.domain.AndroidDatabase androidDatabase, int oldVersion, int newVersion) {
+    if (oldVersion != newVersion) {
+        android.util.Log.i(org.dbtools.android.domain.AndroidDatabaseBaseManager.TAG, ((((("Upgrading database VIEWS [" + (androidDatabase.getName())) + "] from version ") + oldVersion) + " to ") + newVersion));
+        onDropViews(androidDatabase);
+        onCreateViews(androidDatabase);
+    }
+}

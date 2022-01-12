@@ -1,0 +1,1 @@
+public abstract NT convert(OT originalValue);

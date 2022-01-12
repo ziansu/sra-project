@@ -1,0 +1,3 @@
+public static void setContext(android.content.Context context) {
+    se.mah.homebois.ethaplanner.views.ListContent.SpinnerCategories.spinnerItems = new se.mah.homebois.ethaplanner.views.ListContent.SpinnerItem[]{ new se.mah.homebois.ethaplanner.views.ListContent.SpinnerItem(0, context.getResources().getString(R.string.high_alc_per_crown)) , new se.mah.homebois.ethaplanner.views.ListContent.SpinnerItem(1, context.getResources().getString(R.string.low_alc_per_crown)) , new se.mah.homebois.ethaplanner.views.ListContent.SpinnerItem(2, context.getResources().getString(R.string.alcohol_free)) , new se.mah.homebois.ethaplanner.views.ListContent.SpinnerItem(3, context.getResources().getString(R.string.no_sort_by_apk)) };
+}

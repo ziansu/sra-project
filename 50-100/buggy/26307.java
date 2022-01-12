@@ -1,0 +1,5 @@
+@org.junit.Test
+public void parseCommentWithIndentation() {
+    java.lang.String text = "Returns a new Token object, by default.\n" + (((("   * However, if you want, you can create and return subclass objects based on the value of ofKind.\n" + "   *\n") + "   *    case MyParserConstants.ID : return new IDToken(ofKind, image);\n") + "   *\n") + "   * to the following switch statement. Then you can cast matchedToken");
+    org.junit.Assert.assertEquals(new com.github.javaparser.javadoc.Javadoc(com.github.javaparser.javadoc.description.JavadocDescription.parseText(("Returns a new Token object, by default.\n" + (((("However, if you want, you can create and return subclass objects based on the value of ofKind.\n" + "\n") + "   case MyParserConstants.ID : return new IDToken(ofKind, image);\n") + "\n") + "to the following switch statement. Then you can cast matchedToken")))), new com.github.javaparser.JavadocParser().parse(text));
+}

@@ -1,0 +1,3 @@
+public final synchronized jogamp.opengl.GLBufferStorage mapBuffer(final jogamp.opengl.GLBufferStateTracker bufferStateTracker, final jogamp.opengl.GL caller, final int target, final long offset, final long length, final int access, final jogamp.opengl.GLBufferObjectTracker.MapBufferRangeDispatch dispatch, final long glProcAddress) throws jogamp.opengl.GLException {
+    return this.mapBufferImpl(bufferStateTracker, caller, target, true, length, access, access, dispatch, glProcAddress);
+}

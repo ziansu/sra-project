@@ -1,0 +1,3 @@
+private boolean canReplaceBlock(net.minecraft.world.World world, net.minecraft.entity.player.EntityPlayer player, net.minecraft.item.ItemStack stack, fi.dy.masa.enderutilities.util.BlockPosStateDist posIn) {
+    return ((fi.dy.masa.enderutilities.item.ItemBuildersWand.hasEnoughCharge(stack, player)) && (fi.dy.masa.enderutilities.item.ItemBuildersWand.canManipulateBlock(world, posIn.toBlockPos(), player, stack, true))) && ((player.capabilities.isCreativeMode) || ((fi.dy.masa.enderutilities.item.ItemBuildersWand.getAndConsumeBuildItem(stack, world, posIn.toBlockPos(), posIn.blockInfo.blockState, player, true)) != null));
+}

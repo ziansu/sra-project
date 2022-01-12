@@ -1,0 +1,3 @@
+private void setIcon(android.widget.ImageView image, java.lang.String detailID, int value, int indicator, org.ei.opensrp.commonregistry.CommonPersonObjectClient pc) {
+    image.setImageResource(((pc.getDetails().get(detailID)) != null ? (pc.getDetails().get(detailID).length()) == 10 ? R.drawable.ic_yes_large : value > indicator ? R.drawable.ic_no : R.drawable.abc_list_divider_mtrl_alpha : R.drawable.abc_list_divider_mtrl_alpha));
+}

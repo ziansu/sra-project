@@ -1,0 +1,9 @@
+@java.lang.Override
+protected void onCreate(android.os.Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_register);
+    super.onCreateDrawer();
+    if (savedInstanceState == null) {
+        getSupportFragmentManager().beginTransaction().add(R.id.container, new com.gatech.objectsanddesign.shoppingwithfriends.RegisterActivity.PlaceholderFragment()).commit();
+    }
+}

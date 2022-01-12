@@ -1,0 +1,3 @@
+public static java.util.List<org.eyeseetea.malariacare.data.database.model.Tab> getTabsBySession(java.lang.String module) {
+    return new com.raizlabs.android.dbflow.sql.language.Select().from(org.eyeseetea.malariacare.data.database.model.Tab.class).where(Tab_Table.id_program.eq(org.eyeseetea.malariacare.data.database.utils.Session.getSurveyByModule(module).getProgram().getId_program())).orderBy(Tab_Table.order_pos, true).queryList();
+}

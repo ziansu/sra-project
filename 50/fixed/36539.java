@@ -1,0 +1,1 @@
+void input(byte type, byte id, byte[] data);

@@ -1,0 +1,4 @@
+public final hu.akarnokd.rxjava2.basetypes.Solo<T> doOnSubscribe(hu.akarnokd.rxjava2.basetypes.Consumer<? super hu.akarnokd.rxjava2.basetypes.Subscription> onSubscribe) {
+    hu.akarnokd.rxjava2.basetypes.ObjectHelper.requireNonNull(onSubscribe, "onSubscribe is null");
+    return hu.akarnokd.rxjava2.basetypes.Solo.onAssembly(new hu.akarnokd.rxjava2.basetypes.SoloDoOnLifecycle<T>(this, hu.akarnokd.rxjava2.basetypes.Functions.emptyConsumer(), hu.akarnokd.rxjava2.basetypes.Functions.emptyConsumer(), hu.akarnokd.rxjava2.basetypes.Functions.emptyConsumer(), Functions.EMPTY_ACTION, Functions.EMPTY_ACTION, onSubscribe, Functions.EMPTY_LONG_CONSUMER, Functions.EMPTY_ACTION));
+}

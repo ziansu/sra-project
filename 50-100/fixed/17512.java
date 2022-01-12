@@ -1,0 +1,3 @@
+private java.lang.CharSequence generateFixedFlyweightCode(final int size) {
+    return java.lang.String.format(("        private DirectBuffer _buffer;\n" + (((((((("        private int _offset;\n" + "        private int _actingVersion;\n\n") + "        public void Wrap(DirectBuffer buffer, int offset, int actingVersion)\n") + "        {\n") + "            _offset = offset;\n") + "            _actingVersion = actingVersion;\n") + "            _buffer = buffer;\n") + "        }\n\n") + "        public const int Size = %d;\n")), size);
+}

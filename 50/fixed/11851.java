@@ -1,0 +1,5 @@
+@java.lang.Override
+public void start() {
+    super.start();
+    com.github.ybq.android.spinkit.animation.AnimationUtils.start(sprites);
+}

@@ -1,0 +1,5 @@
+public static org.opendaylight.yang.gen.v1.urn.opendaylight.inventory.rev130819.NodeRef createNodeRef(final java.lang.String nodeId) {
+    org.opendaylight.yang.gen.v1.urn.opendaylight.inventory.rev130819.nodes.NodeKey key = new org.opendaylight.yang.gen.v1.urn.opendaylight.inventory.rev130819.nodes.NodeKey(new org.opendaylight.yang.gen.v1.urn.opendaylight.inventory.rev130819.NodeId(nodeId));
+    org.opendaylight.yangtools.yang.binding.InstanceIdentifier<org.opendaylight.yang.gen.v1.urn.opendaylight.inventory.rev130819.nodes.Node> path = org.opendaylight.yangtools.yang.binding.InstanceIdentifier.<org.opendaylight.yang.gen.v1.urn.opendaylight.inventory.rev130819.Nodes>builder(org.opendaylight.yang.gen.v1.urn.opendaylight.inventory.rev130819.Nodes.class).<org.opendaylight.yang.gen.v1.urn.opendaylight.inventory.rev130819.nodes.Node, org.opendaylight.yang.gen.v1.urn.opendaylight.inventory.rev130819.nodes.NodeKey>child(org.opendaylight.yang.gen.v1.urn.opendaylight.inventory.rev130819.nodes.Node.class, key).build();
+    return new org.opendaylight.yang.gen.v1.urn.opendaylight.inventory.rev130819.NodeRef(path);
+}

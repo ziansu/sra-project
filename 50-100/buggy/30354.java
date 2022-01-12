@@ -1,0 +1,5 @@
+private void setUpAuthorizationCodeFlow() throws java.io.IOException {
+    w094j.ctrl8.database.GoogleStorage.logger.info("Setting up authorization code flow...");
+    com.google.api.client.googleapis.auth.oauth2.GoogleAuthorizationCodeFlow flow = new com.google.api.client.googleapis.auth.oauth2.GoogleAuthorizationCodeFlow.Builder(w094j.ctrl8.database.GoogleStorage.httpTransport, w094j.ctrl8.database.GoogleStorage.jsonFactory, this.clientSecrets, java.util.Collections.singleton((((com.google.api.services.calendar.CalendarScopes.CALENDAR) + " ") + (com.google.api.services.tasks.TasksScopes.TASKS)))).setDataStoreFactory(w094j.ctrl8.database.GoogleStorage.dataStoreFactory).build();
+    this.credential = new com.google.api.client.extensions.java6.auth.oauth2.AuthorizationCodeInstalledApp(flow, new com.google.api.client.extensions.jetty.auth.oauth2.LocalServerReceiver()).authorize(this.userId);
+}

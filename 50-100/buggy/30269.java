@@ -1,0 +1,3 @@
+public static CompilerError.ParserError UnexpectedTokenException(CompilerError.Token unexpected, CompilerError.Driver lexDriver) {
+    return new CompilerError.ParserError(Type.UNEXPECTED_TOKEN, (((((((((("ERROR: UNEXPECTED " + (unexpected.getType())) + " with value: \"") + (unexpected.getVal())) + "\"") + " found on line ") + (lexDriver.lexer.charStream.lineNumber())) + ".\n") + ">>> ") + (lexDriver.lexer.charStream.getCurrentLine())) + "\n"));
+}

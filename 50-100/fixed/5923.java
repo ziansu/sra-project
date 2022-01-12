@@ -1,0 +1,6 @@
+public void update() {
+    if (holdingGhost) {
+        org.dyn4j.geometry.Vector2 delta = new org.dyn4j.geometry.Vector2(((pullTowards.x) - (ghost.entity.shape.getX())), ((pullTowards.y) - (ghost.entity.shape.getY())));
+        ghost.setLinearVelocity((10 * (delta.x)), (10 * (delta.y)));
+    }
+}

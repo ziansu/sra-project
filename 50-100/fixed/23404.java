@@ -1,0 +1,12 @@
+@java.lang.Override
+public void onGlobalLayout() {
+    int currentViewportHeight = container.getHeight();
+    if ((viewportHeight) == 0) {
+        viewportHeight = currentViewportHeight;
+    }
+    if (currentViewportHeight < (viewportHeight)) {
+        aitLogo.setVisibility(View.GONE);
+    }else {
+        aitLogo.setVisibility(View.VISIBLE);
+    }
+}

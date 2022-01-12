@@ -1,0 +1,8 @@
+void showAnnotation() {
+    if ((annotation) == null) {
+        annotation = new org.redpin.android.ui.mapview.LocationMarkerAnnotation(this);
+        container.addView(annotation);
+    }
+    annotation.setEnabled(false);
+    annotation.setVisibility(getVisibility());
+}

@@ -1,0 +1,3 @@
+public static <T> io.coodoo.framework.listing.boundary.ListingResult<T> getListingResult(javax.persistence.EntityManager entityManager, java.lang.Class<T> entityClass, io.coodoo.framework.listing.boundary.ListingParameters queryParams) {
+    return new io.coodoo.framework.listing.boundary.ListingResult<T>(io.coodoo.framework.listing.boundary.Listing.getListing(entityManager, entityClass, queryParams), new io.coodoo.framework.listing.boundary.Metadata(io.coodoo.framework.listing.boundary.Listing.countListing(entityManager, entityClass, queryParams), queryParams));
+}

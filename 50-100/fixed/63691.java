@@ -1,0 +1,15 @@
+@java.lang.Override
+public void onDestroy() {
+    if (((mWakeLock) != null) && (mWakeLock.isHeld())) {
+        mWakeLock.release();
+        android.util.Log.d(com.android.camera.CameraActivity.TAG, "wake lock release");
+    }
+    if ((mCursor) != null) {
+        getContentResolver().unregisterContentObserver(mLocalImagesObserver);
+        getContentResolver().unregisterContentObserver(mLocalVideosObserver);
+        unregisterReceiver(mSDcardMountedReceiver);
+        mCursor.close();
+        mCursor = null;
+    }
+    super.onDestroy();
+}

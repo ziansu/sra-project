@@ -1,0 +1,12 @@
+public boolean GetEmail() {
+    android.database.sqlite.SQLiteDatabase reader = dbHelper.getReadableDatabase();
+    android.database.Cursor cursor = reader.query(SQLiteDBHelper.TABLE_RCARD, new java.lang.String[]{ sph.durga.rCard.db.SQLiteDBHelper.SQLiteDBHelper.RCARD_EMAIL }, null, null, null, null, null);
+    cursor.moveToFirst();
+    int cnt = cursor.getCount();
+    cursor.close();
+    if (cnt == 1) {
+        return true;
+    }else {
+        return false;
+    }
+}

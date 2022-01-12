@@ -1,0 +1,1 @@
+public abstract void delete(java.lang.String id);

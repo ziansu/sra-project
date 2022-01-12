@@ -1,0 +1,5 @@
+public static edu.byu.nlp.crowdsourcing.MultiAnnModelBuilders.MultiAnnModelBuilder initModelBuilderWithBaselineInit(edu.byu.nlp.crowdsourcing.MultiAnnModelBuilders.MultiAnnModelBuilder builder, edu.byu.nlp.crowdsourcing.PriorSpecification priors, edu.byu.nlp.data.types.Dataset data, boolean truncateUnlabeledData, org.apache.commons.math3.random.RandomGenerator rnd) {
+    edu.byu.nlp.crowdsourcing.ModelInitialization.AssignmentInitializer initializer = new edu.byu.nlp.crowdsourcing.ModelInitialization.BaselineInitializer(rnd);
+    edu.byu.nlp.crowdsourcing.ModelInitialization.AssignmentInitializer mInitializer = new edu.byu.nlp.crowdsourcing.ModelInitialization.BaselineInitializer(rnd, true);
+    return edu.byu.nlp.crowdsourcing.MultiAnnModelBuilders.initModelBuilder(builder, priors, data, initializer, mInitializer, rnd);
+}

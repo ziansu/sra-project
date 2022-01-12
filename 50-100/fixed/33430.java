@@ -1,0 +1,9 @@
+@java.lang.Override
+public java.util.List<entities.MenuItem> getAllItemsFromKitchen(int id) {
+    java.lang.String query = "SELECT m from MenuItem m where m.kitchen.id = :id";
+    java.util.List<entities.MenuItem> menuItems = em.createQuery(query, entities.MenuItem.class).setParameter("id", id).getResultList();
+    for (entities.MenuItem menuItem : menuItems) {
+        java.lang.System.out.println(menuItem);
+    }
+    return menuItems;
+}

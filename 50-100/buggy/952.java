@@ -1,0 +1,3 @@
+public void init(final java.nio.file.Path workingDirectory) {
+    eval(com.scrivenvar.processors.text.TextReplacementFactory.replace(((((("" + ("assign( 'anchor', as.Date( '$date.anchor$', format='%Y-%m-%d' ), envir = .GlobalEnv );" + "setwd( '")) + (workingDirectory.toString().replace('\\', '/'))) + "' );") + "source( '../bin/pluralize.R' );") + "source( '../bin/common.R' )"), getDefinitions()));
+}

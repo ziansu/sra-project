@@ -1,0 +1,1 @@
+public abstract void step(double time, double acceleration, net.sf.openrocket.models.atmosphere.AtmosphericConditions cond);

@@ -1,0 +1,3 @@
+public net.minecraftforge.common.config.Property getProp(net.minecraftforge.common.config.Configuration cfg, java.lang.String category, java.lang.reflect.Field field, java.lang.Object instance, java.lang.String comment) {
+    return cfg.get(category, field.getName(), com.google.common.primitives.Ints.toArray(java.util.Arrays.asList(((java.lang.Integer[]) (net.minecraftforge.common.config.TypeAdapters.TypeAdapter.getObject(instance, field))))), comment);
+}

@@ -1,0 +1,3 @@
+private edu.umass.cs.gigapaxos.interfaces.ClientRequest makeClientResponse(edu.umass.cs.gigapaxos.interfaces.Request response, long requestID) {
+    return (response == null) || ((response instanceof edu.umass.cs.gigapaxos.interfaces.ClientRequest) && ((((edu.umass.cs.gigapaxos.interfaces.ClientRequest) (response)).getRequestID()) == requestID)) ? ((edu.umass.cs.gigapaxos.interfaces.ClientRequest) (response)) : edu.umass.cs.reconfiguration.reconfigurationpackets.ReplicableClientRequest.wrap(response, requestID);
+}

@@ -1,0 +1,10 @@
+@java.lang.Override
+public com.ullink.slack.simpleslackapi.SlackMessageHandle<com.ullink.slack.simpleslackapi.replies.SlackMessageReply> deleteMessage(java.lang.String timeStamp, com.ullink.slack.simpleslackapi.SlackChannel channel) {
+    com.ullink.slack.simpleslackapi.impl.SlackMessageHandleImpl<com.ullink.slack.simpleslackapi.replies.SlackMessageReply> handle = new com.ullink.slack.simpleslackapi.impl.SlackMessageHandleImpl<com.ullink.slack.simpleslackapi.replies.SlackMessageReply>(getNextMessageId());
+    java.util.Map<java.lang.String, java.lang.String> arguments = new java.util.HashMap<>();
+    arguments.put("token", authToken);
+    arguments.put("channel", channel.getId());
+    arguments.put("ts", timeStamp);
+    postSlackCommand(arguments, com.ullink.slack.simpleslackapi.impl.SlackWebSocketSessionImpl.CHAT_DELETE_COMMAND, handle);
+    return handle;
+}

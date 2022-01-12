@@ -1,0 +1,1 @@
+org.domeos.basemodel.HttpResponseTemp<?> addBaseImageCustom(org.domeos.framework.api.model.image.BaseImageCustom baseImageCustom);

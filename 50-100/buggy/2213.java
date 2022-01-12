@@ -1,0 +1,6 @@
+@org.junit.Test
+@java.lang.SuppressWarnings(value = "unchecked")
+public void whenExtractMultipleParametersThenTheParsedParametersAreReturned() throws java.lang.Exception {
+    org.mockito.Mockito.when(parameterParser.parse(com.thoughtworks.gauge.test.TestValues.ANY_TYPE, com.thoughtworks.gauge.execution.ParameterTestHelpers.aParameter())).thenReturn(com.thoughtworks.gauge.test.TestValues.SPECIFIC_VALUE, com.thoughtworks.gauge.execution.parameters.ParametersExtractorTest.ANOTHER_SPECIFIC_VALUE);
+    org.junit.Assert.assertThat(parametersExtractor.extract(java.util.Arrays.asList(com.thoughtworks.gauge.execution.ParameterTestHelpers.aParameter(), com.thoughtworks.gauge.execution.ParameterTestHelpers.aParameter()), com.thoughtworks.gauge.test.TestHelpers.array(com.thoughtworks.gauge.test.TestValues.ANY_TYPE, com.thoughtworks.gauge.test.TestValues.ANY_TYPE)), com.thoughtworks.gauge.test.Matchers.aslist(com.thoughtworks.gauge.test.Matchers.containsOnly(org.hamcrest.CoreMatchers.sameInstance(com.thoughtworks.gauge.test.TestValues.SPECIFIC_VALUE), org.hamcrest.CoreMatchers.sameInstance(com.thoughtworks.gauge.execution.parameters.ParametersExtractorTest.ANOTHER_SPECIFIC_VALUE))));
+}

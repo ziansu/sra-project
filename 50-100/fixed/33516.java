@@ -1,0 +1,3 @@
+public boolean callback(com.sun.jna.Pointer handle, int time, cz.upol.inf.vanusanik.jwlc.wlc.Modifiers.wlc_modifiers mods, int key, int keyState) {
+    return cb.onKeyboard(cz.upol.inf.vanusanik.jwlc.wlc.View.from(handle), cz.upol.inf.vanusanik.jwlc.Utils.getUnsignedInt(time), cz.upol.inf.vanusanik.jwlc.wlc.Modifiers.from(mods), cz.upol.inf.vanusanik.jwlc.Utils.getUnsignedInt(key), cz.upol.inf.vanusanik.jwlc.wlc.KeyState.from(keyState));
+}

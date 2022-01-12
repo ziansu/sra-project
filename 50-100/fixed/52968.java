@@ -1,0 +1,3 @@
+private static org.kie.workbench.common.stunner.core.graph.content.view.Connection createConnection(final com.ait.lienzo.client.core.shape.wires.WiresConnection wiresConnection, final com.ait.lienzo.client.core.shape.wires.WiresMagnet wiresMagnet) {
+    return null != wiresMagnet ? new org.kie.workbench.common.stunner.core.graph.content.view.MagnetConnection.Builder().atX(wiresMagnet.getX()).atY(wiresMagnet.getY()).auto(wiresConnection.isAutoConnection()).magnet(wiresMagnet.getIndex()).build() : null;
+}

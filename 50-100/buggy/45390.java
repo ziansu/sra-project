@@ -1,0 +1,3 @@
+public java.lang.String toString() {
+    return ((((((((((((("#" + (SoftwareDesign.E.V.Storage.registNumber)) + "\n\u0422\u043e\u0432\u0430\u0440: ") + (name)) + "\n\u041c\u043e\u0434\u0435\u043b\u044c: ") + (model)) + "\n\u041a\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u043e: ") + (quantity)) + "\n\u0424\u0438\u0440\u043c\u0430: ") + (firm)) + "\n\u0426\u0435\u043d\u0430: ") + (price)) + "\n\u0414\u0430\u0442\u0430 \u043f\u0440\u043e\u0438\u0437\u0432\u043e\u0434\u0441\u0442\u0432\u0430: ") + (datePrepared)) + "\n";
+}

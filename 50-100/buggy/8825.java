@@ -1,0 +1,4 @@
+public fr.inria.soctrace.tools.ocelotl.core.queries.IteratorQueries.EventIterator getVariableIterator(java.util.List<fr.inria.soctrace.lib.model.EventProducer> eventProducers, java.util.List<fr.inria.soctrace.lib.search.utils.IntervalDesc> time, org.eclipse.core.runtime.IProgressMonitor monitor) throws fr.inria.soctrace.lib.model.utils.SoCTraceException, fr.inria.soctrace.tools.ocelotl.core.exceptions.OcelotlException {
+    traceSearch = ((fr.inria.soctrace.tools.ocelotl.core.queries.OcelotlTraceSearch) (new fr.inria.soctrace.tools.ocelotl.core.queries.OcelotlTraceSearch(ocelotlParameters).initialize()));
+    return traceSearch.getEventIterator(ocelotlParameters.getTrace(), ocelotlParameters.getTraceTypeConfig().getTypes(), time, null, monitor);
+}

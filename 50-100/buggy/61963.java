@@ -1,0 +1,3 @@
+private static java.lang.String[] constructConfig(java.lang.String mainEntry, java.lang.String className, java.lang.String pathString, java.lang.String methodName, java.lang.String paramString) {
+    return new java.lang.String[]{ "+app=libs/jdart/jpf.properties" , "+site=libs/jpf.properties" , "+jpf-jdart.classpath+=" + pathString , "+target=" + className , "+concolic.method=" + methodName , ((((("+concolic.method." + methodName) + "=") + className) + ".") + methodName) + paramString , ("+concolic.method." + methodName) + ".config=all_fields_symbolic" };
+}

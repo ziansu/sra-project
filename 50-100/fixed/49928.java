@@ -1,0 +1,3 @@
+public com.xing.api.CallSpec<com.xing.api.data.messages.ConversationMessage, com.xing.api.HttpError> sendMessageToConversation(java.lang.String userId, java.lang.String conversationId, java.lang.String messageContent) {
+    return com.xing.api.Resource.<com.xing.api.data.messages.ConversationMessage, com.xing.api.HttpError>newPostSpec(api, "/v1/users/{user_id}/conversations/{conversation_id}/messages", false).pathParam("user_id", userId).pathParam("conversation_id", conversationId).queryParam("content", messageContent).responseAs(single(com.xing.api.data.messages.ConversationMessage.class, "message")).build();
+}

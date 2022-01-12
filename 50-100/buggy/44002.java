@@ -1,0 +1,3 @@
+public void createEmailTemplate(org.xcolab.model.tables.pojos.ContestEmailTemplate contestEmailTemplate) {
+    this.dslContext.insertInto(org.xcolab.model.Tables.CONTEST_EMAIL_TEMPLATE).set(CONTEST_EMAIL_TEMPLATE.TYPE_, contestEmailTemplate.getType_()).set(CONTEST_EMAIL_TEMPLATE.SUBJECT, contestEmailTemplate.getSubject()).set(CONTEST_EMAIL_TEMPLATE.HEADER, contestEmailTemplate.getHeader()).set(CONTEST_EMAIL_TEMPLATE.FOOTER, contestEmailTemplate.getFooter());
+}

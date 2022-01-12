@@ -1,0 +1,6 @@
+public static org.opendaylight.yang.gen.v1.urn.opendaylight.inventory.rev130819.NodeConnectorRef createNodeConnRef(org.opendaylight.yangtools.yang.binding.InstanceIdentifier<org.opendaylight.yang.gen.v1.urn.opendaylight.inventory.rev130819.nodes.Node> nodeInstId, org.opendaylight.yang.gen.v1.urn.opendaylight.inventory.rev130819.nodes.NodeKey nodeKey, java.lang.String port) {
+    java.lang.StringBuilder sBuild = new java.lang.StringBuilder(nodeKey.getId().getValue()).append(":").append(port);
+    org.opendaylight.yang.gen.v1.urn.opendaylight.inventory.rev130819.node.NodeConnectorKey nConKey = new org.opendaylight.yang.gen.v1.urn.opendaylight.inventory.rev130819.node.NodeConnectorKey(new org.opendaylight.yang.gen.v1.urn.opendaylight.inventory.rev130819.NodeConnectorId(sBuild.toString()));
+    org.opendaylight.yangtools.yang.binding.InstanceIdentifier<org.opendaylight.yang.gen.v1.urn.opendaylight.inventory.rev130819.node.NodeConnector> portPath = org.opendaylight.yangtools.yang.binding.InstanceIdentifier.builder(nodeInstId).child(org.opendaylight.yang.gen.v1.urn.opendaylight.inventory.rev130819.node.NodeConnector.class, nConKey).toInstance();
+    return new org.opendaylight.yang.gen.v1.urn.opendaylight.inventory.rev130819.NodeConnectorRef(portPath);
+}

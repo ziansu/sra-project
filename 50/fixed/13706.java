@@ -1,0 +1,5 @@
+public void onClick(com.google.gwt.event.dom.client.ClickEvent ce) {
+    ce.preventDefault();
+    ce.stopPropagation();
+    addNewRow();
+}

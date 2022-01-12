@@ -1,0 +1,1 @@
+java.util.List<java.util.Map<java.lang.String, java.lang.Object>> getGroupsPerSite(java.lang.String site, int start, int end) throws org.craftercms.studio.api.v1.exception.SiteNotFoundException;

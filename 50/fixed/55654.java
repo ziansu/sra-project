@@ -1,0 +1,1 @@
+public abstract int search(int length, int start);

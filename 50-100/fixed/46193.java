@@ -1,0 +1,4 @@
+public java.lang.Long sendRequest(edu.umass.cs.gigapaxos.interfaces.Request request, edu.umass.cs.gigapaxos.interfaces.RequestCallback callback) throws java.io.IOException {
+    assert (!(request instanceof edu.umass.cs.reconfiguration.reconfigurationpackets.ClientReconfigurationPacket)) && (!(request instanceof edu.umass.cs.gigapaxos.interfaces.ClientRequest));
+    return request instanceof edu.umass.cs.gigapaxos.interfaces.ClientRequest ? this.sendRequest(((edu.umass.cs.gigapaxos.interfaces.ClientRequest) (request)), callback) : this.sendRequest(edu.umass.cs.reconfiguration.reconfigurationpackets.ReplicableClientRequest.wrap(request), callback);
+}

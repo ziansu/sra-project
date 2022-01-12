@@ -1,0 +1,3 @@
+public java.util.List<org.xcolab.client.proposals.pojo.evaluation.judges.ProposalRating> getProposalRatingsByProposalUserContestPhase(java.lang.Long proposalId, java.lang.Long contestPhaseId, java.lang.Long userId) {
+    return org.xcolab.util.http.dto.DtoUtil.toPojos(proposalRatingResource.list().optionalQueryParam("proposalId", proposalId).optionalQueryParam("contestPhaseId", contestPhaseId).optionalQueryParam("userId", userId).execute(), proposalService);
+}

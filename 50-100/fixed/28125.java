@@ -1,0 +1,4 @@
+private void processTypedInsertTransaction(org.opendaylight.ovsdb.lib.OvsdbClient client, java.lang.String databaseName, java.lang.String childTable, java.lang.String parentTable, java.lang.String parentUuid, java.lang.String parentColumn, java.lang.String namedUuid, org.opendaylight.ovsdb.lib.notation.Row<org.opendaylight.ovsdb.lib.schema.GenericTableSchema> row, org.opendaylight.ovsdb.lib.operations.TransactionBuilder transactionBuilder) {
+    this.processInsertTransaction(client, databaseName, childTable, parentTable, new org.opendaylight.ovsdb.lib.notation.UUID(parentUuid), parentColumn, namedUuid, row, transactionBuilder);
+    handleSpecialInsertCase(client, databaseName, childTable, row, transactionBuilder);
+}

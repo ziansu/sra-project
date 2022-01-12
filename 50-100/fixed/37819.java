@@ -1,0 +1,4 @@
+@org.springframework.context.annotation.Bean
+public de.zalando.zally.rules.RulesValidator createRulesValidator() {
+    return new de.zalando.zally.rules.RulesValidator(java.util.Arrays.asList(new de.zalando.zally.rules.AvoidTrailingSlashesRule(), new de.zalando.zally.rules.KebabCaseInPathSegmentsRule(), new de.zalando.zally.rules.SecureWithOAuth2Rule(), new de.zalando.zally.rules.SuccessResponseAsJsonObjectRule(), new de.zalando.zally.rules.NoVersionInUriRule(), new de.zalando.zally.rules.SnakeCaseForQueryParamsRule(), new de.zalando.zally.rules.AvoidLinkHeadersRule(), new de.zalando.zally.rules.SnakeCaseInPropNameRule(), new de.zalando.zally.rules.UseProblemJsonRule(), new de.zalando.zally.rules.MediaTypesRule()));
+}

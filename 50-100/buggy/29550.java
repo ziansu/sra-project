@@ -1,0 +1,3 @@
+public static void sendMail(java.lang.String prefix, java.lang.String subject, java.lang.String body, pe.chalk.takoyaki.data.Member[] recipients) {
+    pe.chalk.takoyaki.utils.Mailer.send(java.lang.String.format("[%s] [%s] %s", pe.chalk.takoyaki.Takoyaki.getInstance().getPrefix(), prefix, subject), java.lang.String.format(pe.chalk.takoyaki.utils.Mailer.FORMAT_HTML, body, pe.chalk.takoyaki.utils.Mailer.getFooter()).replaceAll(java.lang.String.format("%n"), "<br>"), recipients);
+}

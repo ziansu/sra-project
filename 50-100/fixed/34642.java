@@ -1,0 +1,3 @@
+public com.taradov.alarmme.Medicine createMedicineItem(android.database.Cursor _cursor) {
+    return new com.taradov.alarmme.Medicine(mContext, _cursor.getInt(com.taradov.alarmme.DBAdapter.MEDICINE_ID_COLUMN), _cursor.getString(com.taradov.alarmme.DBAdapter.MEDICINE_NAME_COLUMN), _cursor.getInt(com.taradov.alarmme.DBAdapter.MEDICINE_COLOR_COLUMN), _cursor.getInt(com.taradov.alarmme.DBAdapter.MEDICINE_AUDIO_COLUMN), _cursor.getString(com.taradov.alarmme.DBAdapter.MEDICINE_QRCODE_COLUMN));
+}

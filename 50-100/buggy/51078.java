@@ -1,0 +1,4 @@
+@java.lang.Override
+public java.lang.Object render(final org.sigmah.client.ui.view.contact.dashboardlist.DashboardContact model, final java.lang.String property, final com.extjs.gxt.ui.client.widget.grid.ColumnData config, final int rowIndex, final int colIndex, final com.extjs.gxt.ui.client.store.ListStore<org.sigmah.client.ui.view.contact.dashboardlist.DashboardContact> store, final com.extjs.gxt.ui.client.widget.grid.Grid<org.sigmah.client.ui.view.contact.dashboardlist.DashboardContact> grid) {
+    return org.sigmah.client.ui.view.contact.dashboardlist.ContactsListView.createContactGridText(org.sigmah.client.ui.view.contact.dashboardlist.ContactsListView.organizationName(((org.sigmah.shared.dto.ContactDTO) (model.get(property)))));
+}

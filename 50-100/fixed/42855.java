@@ -1,0 +1,3 @@
+private boolean checkAllMapsTo(java.util.Set<org.sosy_lab.solver.api.BooleanFormula> from, org.sosy_lab.cpachecker.util.predicates.pathformula.SSAMap startSSA, java.util.Set<org.sosy_lab.solver.api.BooleanFormula> to, org.sosy_lab.cpachecker.util.predicates.pathformula.SSAMap finishSSA, org.sosy_lab.solver.api.BooleanFormula transition) throws java.lang.InterruptedException, org.sosy_lab.solver.SolverException {
+    return solver.isUnsat(bfmgr.and(fmgr.instantiate(bfmgr.and(from), startSSA), transition, fmgr.instantiate(bfmgr.not(bfmgr.and(to)), finishSSA)));
+}

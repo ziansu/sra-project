@@ -1,0 +1,5 @@
+@org.junit.Test(expected = com.sun.jersey.api.client.UniformInterfaceException.class)
+public void should_get_generated_file_for_application_platform_path_module_infos_instance_filename_with_isWorkingcopy_and_template_namespace_params() throws java.lang.Exception {
+    when(com.vsct.dt.hesperides.resources.HesperidesFilesResourceTest.files.getFile("some_app", "some_pltfm", "a_given_path", "module_name", "module_version", true, "the_instance_name", "the_template_namespace", "the_filename", com.vsct.dt.hesperides.resources.HesperidesFilesResourceTest.model)).thenReturn("Ze file content");
+    org.fest.assertions.api.Assertions.assertThat(withoutAuth("/files/applications/some_app/platforms/some_pltfm/a_given_path/module_name/module_version/instances/the_instance_name/the_filename").queryParam("isWorkingCopy", "true").queryParam("template_namespace", "the_template_namespace").get(java.lang.String.class)).isEqualTo("Ze file content");
+}

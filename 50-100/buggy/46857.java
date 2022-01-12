@@ -1,0 +1,5 @@
+public java.util.List<org.oscarehr.common.model.Allergy> getAllergiesByProgramProviderDemographicDate(org.oscarehr.util.LoggedInInfo loggedInInfo, java.lang.Integer programId, java.lang.String providerNo, java.lang.Integer demographicId, java.util.Calendar updatedAfterThisDateInclusive, int itemsToReturn) {
+    java.util.List<org.oscarehr.common.model.Allergy> results = allergyDao.findByProviderDemographicLastUpdateDate(providerNo, demographicId, updatedAfterThisDateInclusive, itemsToReturn);
+    oscar.log.LogAction.addLogSynchronous(loggedInInfo, "AllergyManager.getUpdatedAfterDate", ((((((("programId=" + programId) + ", providerNo=") + providerNo) + ", demographicId=") + demographicId) + ", updatedAfterThisDateInclusive=") + (updatedAfterThisDateInclusive.getTime())));
+    return results;
+}

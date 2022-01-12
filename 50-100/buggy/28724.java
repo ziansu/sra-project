@@ -1,0 +1,9 @@
+@org.junit.Test
+public void testContainsOtherHeaders() throws java.lang.Exception {
+    java.util.Map<java.lang.String, java.util.List<java.lang.String>> headers = new java.util.HashMap<>();
+    headers.put("content-type", java.util.Arrays.asList("application/octetstream"));
+    java.net.HttpURLConnection connection = org.mockito.Mockito.mock(java.net.HttpURLConnection.class);
+    org.mockito.Mockito.when(connection.getHeaderFields()).thenReturn(headers);
+    org.dmfs.httpessentials.headers.Headers testHeaders = new org.dmfs.httpessentials.httpurlconnection.HttpUrlConnectionHeaders(connection);
+    junit.framework.TestCase.assertFalse(testHeaders.contains(HttpHeaders.LINK));
+}

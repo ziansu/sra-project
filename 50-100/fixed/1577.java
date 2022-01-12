@@ -1,0 +1,4 @@
+public org.openhab.binding.zwave.internal.protocol.transaction.ZWaveCommandClassTransactionPayload getUserCode(int id) {
+    org.openhab.binding.zwave.internal.protocol.commandclass.ZWaveUserCodeCommandClass.logger.debug("NODE {}: Creating new message for application command USER_CODE_GET({})", getNode().getNodeId(), id);
+    return new org.openhab.binding.zwave.internal.protocol.transaction.ZWaveCommandClassTransactionPayloadBuilder(getNode().getNodeId(), getCommandClass(), org.openhab.binding.zwave.internal.protocol.commandclass.ZWaveUserCodeCommandClass.USER_CODE_GET).withPayload(id).withPriority(TransactionPriority.Config).withExpectedResponseCommand(org.openhab.binding.zwave.internal.protocol.commandclass.ZWaveUserCodeCommandClass.USER_CODE_REPORT).build();
+}

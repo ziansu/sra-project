@@ -1,0 +1,1 @@
+java.lang.Object getAttribute(java.lang.String name);

@@ -1,0 +1,1 @@
+public abstract java.lang.CharSequence getText(int position);

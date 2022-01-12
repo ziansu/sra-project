@@ -1,0 +1,4 @@
+public final hu.akarnokd.rxjava2.basetypes.Solo<T> doAfterTerminate(hu.akarnokd.rxjava2.basetypes.Action onAfterTerminate) {
+    hu.akarnokd.rxjava2.basetypes.ObjectHelper.requireNonNull(onAfterTerminate, "onAfterTerminate is null");
+    return hu.akarnokd.rxjava2.basetypes.Solo.onAssembly(new hu.akarnokd.rxjava2.basetypes.SoloDoOnLifecycle<T>(this, hu.akarnokd.rxjava2.basetypes.Functions.emptyConsumer(), hu.akarnokd.rxjava2.basetypes.Functions.emptyConsumer(), Functions.ERROR_CONSUMER, Functions.EMPTY_ACTION, onAfterTerminate, hu.akarnokd.rxjava2.basetypes.Functions.emptyConsumer(), Functions.EMPTY_LONG_CONSUMER, Functions.EMPTY_ACTION));
+}

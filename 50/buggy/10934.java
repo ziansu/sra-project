@@ -1,0 +1,1 @@
+public EntityManager.ReturnHelper updateSalesConfirmationOrder(java.lang.Long salesConfirmationOrderID, java.lang.String newSalesConfirmationOrderNumber, java.util.Date newSalesConfirmationOrderDate, java.lang.Long newCustomerID, java.lang.Long newSalesStaffID, java.lang.String status, java.lang.Integer newTerms, java.lang.Boolean adminOverwrite);

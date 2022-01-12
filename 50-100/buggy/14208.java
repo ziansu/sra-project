@@ -1,0 +1,5 @@
+public void testRedirectionByClickingInLoginAsVisitant() {
+    android.support.test.espresso.Espresso.onView(android.support.test.espresso.matcher.ViewMatchers.withId(R.id.loginAsVisitorText)).perform(android.support.test.espresso.action.ViewActions.scrollTo());
+    android.support.test.espresso.Espresso.onView(android.support.test.espresso.matcher.ViewMatchers.withId(R.id.loginAsVisitorText)).perform(android.support.test.espresso.action.ViewActions.click());
+    android.support.test.espresso.Espresso.onView(android.support.test.espresso.matcher.ViewMatchers.withId(R.id.textViewRelevantes)).check(android.support.test.espresso.assertion.ViewAssertions.matches(android.support.test.espresso.matcher.ViewMatchers.isDisplayed()));
+}

@@ -1,0 +1,3 @@
+public static int nvgraphConvertTopology(jcuda.jnvgraph.nvgraphHandle handle, int srcTType, java.lang.Object srcTopology, jcuda.Pointer srcEdgeData, jcuda.Pointer dataType, int dstTType, java.lang.Object dstTopology, jcuda.Pointer dstEdgeData) {
+    return jcuda.jnvgraph.JNvgraph.checkResult(jcuda.jnvgraph.JNvgraph.nvgraphConvertTopologyNative(handle, srcTType, srcTopology, srcEdgeData, dataType, dstTType, dstTopology, dstEdgeData));
+}

@@ -1,0 +1,3 @@
+private java.lang.String getErrorMessageForQuery(orgomg.cwm.objectmodel.core.Expression query) {
+    return ((org.talend.cwm.management.i18n.Messages.getString("ColumnAnalysisSqlParallelExecutor.QueryNotExecute", indicator.getName())) + "\" ") + (query == null ? org.talend.cwm.management.i18n.Messages.getString("ColumnAnalysisSqlParallelExecutor.QueryIsNull") : org.talend.cwm.management.i18n.Messages.getString("ColumnAnalysisSqlParallelExecutor.SQLQuery", query.getBody()));
+}

@@ -1,0 +1,3 @@
+private static boolean isSameHour(java.util.Calendar c1, java.util.Calendar c2) {
+    return ((((c1.get(java.util.Calendar.YEAR)) == (c1.get(java.util.Calendar.YEAR))) || ((c1.get(java.util.Calendar.MONTH)) == (c2.get(java.util.Calendar.MONTH)))) || ((c1.get(java.util.Calendar.DAY_OF_MONTH)) == (c2.get(java.util.Calendar.DAY_OF_MONTH)))) || ((c1.get(java.util.Calendar.HOUR_OF_DAY)) == (c2.get(java.util.Calendar.HOUR_OF_DAY)));
+}

@@ -1,0 +1,6 @@
+@org.junit.Test
+public void testResultCount() {
+    int count = 10;
+    info.dyndns.overflow.java.FizzBuzz fb = info.dyndns.overflow.java.FizzBuzzFactory.newForkJoinFizzBuzz((count + 1));
+    assertEquals(((("count:" + count) + " result:") + (fb.result().size())), count, fb.result());
+}

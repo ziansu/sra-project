@@ -1,0 +1,3 @@
+public java.util.List<com.ch_linghu.fanfoudroid.fanfou.User> getFriendsStatuses(java.lang.String id, com.ch_linghu.fanfoudroid.fanfou.Paging paging) throws com.ch_linghu.fanfoudroid.http.HttpException {
+    return com.ch_linghu.fanfoudroid.fanfou.User.constructUsers(get(((getBaseURL()) + "users/friends.json"), createParams(new org.apache.http.message.BasicNameValuePair("id", id)), paging, false));
+}

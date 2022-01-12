@@ -1,0 +1,1 @@
+public com.friendsSuggestor.model.FriendSuggestor read(java.lang.String name);

@@ -1,0 +1,2 @@
+@org.springframework.data.neo4j.annotation.Query(value = "match (n:Taxon)-[:HAS_PARENT*]->(p:Taxon) where n.taxonid = {taxonid} return p")
+java.util.List<com.github.timtebeek.taxonomy.model.Taxon> getLineage(int taxonid);

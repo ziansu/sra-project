@@ -1,0 +1,1 @@
+public abstract void setMessage(java.lang.String title, java.lang.String message);

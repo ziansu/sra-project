@@ -1,0 +1,3 @@
+private void setMainButtonsTexture() {
+    mainButtonsTexture = new com.gamefactoryx.cheers.view.kongosdrink.Texture[]{ new com.gamefactoryx.cheers.view.kongosdrink.Texture(Gdx.files.internal("common/kongos_drink/other_team.png")) , new com.gamefactoryx.cheers.view.kongosdrink.Texture(Gdx.files.internal("common/kongos_drink/drink.png")) , new com.gamefactoryx.cheers.view.kongosdrink.Texture(Gdx.files.internal("common/kongos_drink/continue.png")) };
+}

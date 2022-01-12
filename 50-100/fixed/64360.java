@@ -1,0 +1,3 @@
+public static boolean isCdma(int radioTechnology) {
+    return ((((((radioTechnology == (android.telephony.ServiceState.RIL_RADIO_TECHNOLOGY_IS95A)) || (radioTechnology == (android.telephony.ServiceState.RIL_RADIO_TECHNOLOGY_IS95B))) || (radioTechnology == (android.telephony.ServiceState.RIL_RADIO_TECHNOLOGY_1xRTT))) || (radioTechnology == (android.telephony.ServiceState.RIL_RADIO_TECHNOLOGY_EVDO_0))) || (radioTechnology == (android.telephony.ServiceState.RIL_RADIO_TECHNOLOGY_EVDO_A))) || (radioTechnology == (android.telephony.ServiceState.RIL_RADIO_TECHNOLOGY_EVDO_B))) || (radioTechnology == (android.telephony.ServiceState.RIL_RADIO_TECHNOLOGY_EHRPD));
+}

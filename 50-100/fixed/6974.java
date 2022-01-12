@@ -1,0 +1,4 @@
+@java.lang.Override
+public <T extends com.vmware.xenon.common.ServiceDocument> com.vmware.xenon.common.ServiceDocumentQueryResult queryDocuments(java.lang.Class<T> documentType, com.google.common.collect.ImmutableMap<java.lang.String, java.lang.String> terms, com.google.common.base.Optional<java.lang.Integer> pageSize, boolean expandContent, boolean broadCast) throws com.vmware.photon.controller.common.xenon.exceptions.BadRequestException, com.vmware.photon.controller.common.xenon.exceptions.DocumentNotFoundException, java.lang.InterruptedException, java.util.concurrent.TimeoutException {
+    return queryDocuments(documentType, terms, null, pageSize, expandContent, broadCast);
+}

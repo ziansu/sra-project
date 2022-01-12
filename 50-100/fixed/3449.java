@@ -1,0 +1,9 @@
+public void addlabelCount(java.lang.String labelName) {
+    label_string = labelName;
+    if (!(learn.FeatureVector.labelMap.containsKey(labelName))) {
+        label = learn.FeatureVector.labelCount;
+        learn.FeatureVector.labelMap.put(labelName, learn.FeatureVector.labelCount);
+        (learn.FeatureVector.labelCount)++;
+    }
+    label = learn.FeatureVector.labelMap.get(labelName);
+}

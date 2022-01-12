@@ -1,0 +1,13 @@
+@java.lang.Override
+public boolean copy(java.lang.String srcAbsPath, java.lang.String destAbsPath) throws org.apache.sling.api.resource.PersistenceException {
+    java.util.List<org.apache.sling.resourceresolver.impl.providers.stateful.StatefulResourceProvider> srcProviders = getMatchingProviders(srcAbsPath);
+    java.util.List<org.apache.sling.resourceresolver.impl.providers.stateful.StatefulResourceProvider> dstProviders = getMatchingModifiableProviders(destAbsPath);
+    @java.lang.SuppressWarnings(value = "unchecked")
+    java.util.List<org.apache.sling.resourceresolver.impl.providers.stateful.StatefulResourceProvider> intersection = org.apache.commons.collections.ListUtils.intersection(srcProviders, dstProviders);
+    for (org.apache.sling.resourceresolver.impl.providers.stateful.StatefulResourceProvider p : intersection) {
+        if (p.copy(srcAbsPath, destAbsPath)) {
+            return true;
+        }
+    }
+    return false;
+}

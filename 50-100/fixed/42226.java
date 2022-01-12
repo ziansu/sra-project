@@ -1,0 +1,4 @@
+private edu.asu.c3simulator.util.Product[] getProducts() {
+    edu.asu.c3simulator.util.Product[] products = new edu.asu.c3simulator.util.Product[]{ new edu.asu.c3simulator.util.Product("T-shirt 1") , new edu.asu.c3simulator.util.Product("T-shirt 2") , new edu.asu.c3simulator.util.Product("Short 1") , new edu.asu.c3simulator.util.Product("Short 2") , new edu.asu.c3simulator.util.Product("Hoodie 1") , new edu.asu.c3simulator.util.Product("Pants 1") , new edu.asu.c3simulator.util.Product("Pants 2") , new edu.asu.c3simulator.util.Product("Pants 3") , new edu.asu.c3simulator.util.Product("Pants 4") };
+    return products;
+}

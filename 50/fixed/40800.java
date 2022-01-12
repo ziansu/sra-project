@@ -1,0 +1,1 @@
+public native int lastIndexOf(java.lang.String str);

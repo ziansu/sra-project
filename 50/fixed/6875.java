@@ -1,0 +1,1 @@
+void onMessage(byte[] data);

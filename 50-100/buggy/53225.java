@@ -1,0 +1,3 @@
+public static <V> de.fhg.iais.roberta.syntax.expr.Binary<V> make(de.fhg.iais.roberta.syntax.expr.Binary.Op op, de.fhg.iais.roberta.syntax.expr.Expr<V> left, de.fhg.iais.roberta.syntax.expr.Expr<V> right, java.lang.String operationRange, de.fhg.iais.roberta.syntax.BlocklyBlockProperties properties, de.fhg.iais.roberta.syntax.BlocklyComment comment) {
+    return new de.fhg.iais.roberta.syntax.expr.Binary<V>(op, left, right, operationRange, properties, comment);
+}

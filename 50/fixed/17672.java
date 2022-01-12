@@ -1,0 +1,1 @@
+com.example.domain.TableOfRestaurant getByNumber(int num, java.lang.Long id);

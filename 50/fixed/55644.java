@@ -1,0 +1,1 @@
+public abstract void bind(android.content.Context context, M item, int position);

@@ -1,0 +1,10 @@
+@java.lang.Override
+public java.util.List<com.dungeoncrawlers.beans.Location> getAllLocationsByChapter(com.dungeoncrawlers.dto.ChapterDTO chapterDTO) {
+    com.dungeoncrawlers.beans.Chapter chapter = new com.dungeoncrawlers.beans.Chapter();
+    chapter.setCampaign(chapterDTO.getCampaign());
+    chapter.setDescription(chapterDTO.getDescription());
+    chapter.setImage(chapterDTO.getImage());
+    chapter.setName(chapterDTO.getName());
+    chapter.setOrder(chapterDTO.getOrder());
+    return daoimpl.getAllLocationsByChapter(chapter);
+}

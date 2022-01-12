@@ -1,0 +1,3 @@
+public boolean isFirstTransaction(java.lang.String genesisTransaction) throws com.bitdubai.fermat_dap_plugin.layer.digital_asset_transaction.asset_distribution.developer.bitdubai.version_1.exceptions.CantCheckAssetDistributionProgressException {
+    return (getValueListFromTableByColumn(genesisTransaction, AssetDistributionDatabaseConstants.ASSET_DISTRIBUTION_DELIVERING_TABLE_NAME, AssetDistributionDatabaseConstants.ASSET_DISTRIBUTION_DELIVERING_GENESIS_TRANSACTION_COLUMN_NAME, AssetDistributionDatabaseConstants.ASSET_DISTRIBUTION_DELIVERING_TRANSACTION_ID_COLUMN_NAME).size()) > 1;
+}

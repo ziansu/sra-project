@@ -1,0 +1,3 @@
+public static org.opendaylight.yang.gen.v1.urn.opendaylight.action.types.rev131112.action.Action pushVlanAction() {
+    return new org.opendaylight.yang.gen.v1.urn.opendaylight.action.types.rev131112.action.action.PushVlanActionCaseBuilder().setPushVlanAction(new org.opendaylight.yang.gen.v1.urn.opendaylight.action.types.rev131112.action.action.push.vlan.action._case.PushVlanActionBuilder().setEthernetType(org.opendaylight.groupbasedpolicy.renderer.ofoverlay.flow.FlowUtils.VLAN).build()).build();
+}

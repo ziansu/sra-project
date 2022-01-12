@@ -1,0 +1,1 @@
+void updateItemVersion(org.amdocs.zusammen.datatypes.SessionContext context, org.amdocs.zusammen.datatypes.Space space, org.amdocs.zusammen.datatypes.Id itemId, org.amdocs.zusammen.datatypes.Id versionId, org.amdocs.zusammen.datatypes.item.ItemVersionData data);

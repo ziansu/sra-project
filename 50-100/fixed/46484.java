@@ -1,0 +1,3 @@
+private org.springframework.security.core.userdetails.User buildUserForAuthentication(org.springframework.security.core.userdetails.User user, java.util.List<org.springframework.security.core.GrantedAuthority> authorities) {
+    return new org.springframework.security.core.userdetails.User(user.getId(), ((user.getPass()) != null ? user.getPass() : com.codegroup.challengecloud.utils.Generator.generateHashedPass(com.codegroup.challengecloud.utils.Generator.generateId())), true, true, true, true, authorities);
+}

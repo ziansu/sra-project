@@ -1,0 +1,1 @@
+public <T> T newImplementorInstance(java.lang.Class<T> iface);

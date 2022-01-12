@@ -1,0 +1,3 @@
+private boolean ruleMatches(org.hl7.fhir.r4.model.ElementDefinition.SlicingRules diff, org.hl7.fhir.r4.model.ElementDefinition.SlicingRules base) {
+    return ((((diff == null) || (base == null)) || (diff == base)) || (diff == (org.hl7.fhir.r4.model.ElementDefinition.SlicingRules.OPEN))) || ((diff == (org.hl7.fhir.r4.model.ElementDefinition.SlicingRules.OPENATEND)) && (base == (org.hl7.fhir.r4.model.ElementDefinition.SlicingRules.CLOSED)));
+}

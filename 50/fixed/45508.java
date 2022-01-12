@@ -1,0 +1,3 @@
+public void testBowserUMDWrapper() {
+    testModules("test.js", com.google.javascript.jscomp.LINE_JOINER.join("!function (root, name, definition) {", "  if (typeof module != 'undefined' && module.exports) module.exports = definition()", "  else if (typeof define == 'function' && define.amd) define(name, definition)", "  else root[name] = definition()", "}(this, 'foobar', function () {", "  return {foo: 'bar'};", "});"), com.google.javascript.jscomp.LINE_JOINER.join("/** @const */ var module$test={};", "module$test.foo = 'bar';"));
+}

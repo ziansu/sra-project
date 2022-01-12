@@ -1,0 +1,1 @@
+java.lang.String processDynamicQuery(java.lang.String queryCode, java.lang.String text, java.util.Map<java.lang.String, java.lang.Object> params);

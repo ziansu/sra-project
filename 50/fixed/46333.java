@@ -1,0 +1,1 @@
+public abstract java.lang.String getTitle(android.content.Context context);

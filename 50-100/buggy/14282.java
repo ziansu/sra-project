@@ -1,0 +1,10 @@
+public boolean isExactMatch(java.lang.String url) {
+    if (!("/".equals(url))) {
+        url = org.apache.synapse.rest.RESTUtils.trimTrailingSlashes(url);
+    }
+    int index = url.indexOf('?');
+    if (index != (-1)) {
+        url = url.substring(0, index);
+    }
+    return ((exactMatch) != null) && (exactMatch.equals(url));
+}

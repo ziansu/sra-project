@@ -1,0 +1,4 @@
+@java.lang.SuppressWarnings(value = "unchecked")
+protected org.hamcrest.Matcher<? extends org.apache.maven.artifact.Artifact> initGlobalMatcher() {
+    return org.hamcrest.CoreMatchers.anyOf(org.hamcrest.CoreMatchers.allOf(groupId(net.flexmojos.oss.plugin.AbstractMavenMojo.AIR_GROUP_ID), artifactId(net.flexmojos.oss.plugin.AbstractMavenMojo.AIR_GLOBAL), type(net.flexmojos.oss.plugin.SWC)), org.hamcrest.CoreMatchers.allOf(groupId(net.flexmojos.oss.plugin.AbstractMavenMojo.FLASH_GROUP_ID), artifactId(net.flexmojos.oss.plugin.AbstractMavenMojo.PLAYER_GLOBAL), type(net.flexmojos.oss.plugin.SWC)));
+}

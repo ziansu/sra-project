@@ -1,0 +1,4 @@
+public static android.database.Cursor fetchAlerts(android.database.sqlite.SQLiteDatabase db, ul.fcul.lasige.findvictim.data.Alert.STATUS status) {
+    java.lang.String[] columns = new java.lang.String[]{ _ID , ul.fcul.lasige.findvictim.data.Alert.Store.COLUMN_NAME , ul.fcul.lasige.findvictim.data.Alert.Store.COLUMN_DATE , ul.fcul.lasige.findvictim.data.Alert.Store.COLUMN_DURATION , ul.fcul.lasige.findvictim.data.Alert.Store.COLUMN_LAT_START , ul.fcul.lasige.findvictim.data.Alert.Store.COLUMN_LON_START , ul.fcul.lasige.findvictim.data.Alert.Store.COLUMN_LAT_END , ul.fcul.lasige.findvictim.data.Alert.Store.COLUMN_LON_END , ul.fcul.lasige.findvictim.data.Alert.Store.COLUMN_STATUS };
+    return db.query(ul.fcul.lasige.findvictim.data.Alert.Store.TABLE_NAME, columns, ((ul.fcul.lasige.findvictim.data.Alert.Store.COLUMN_STATUS) + " = ?"), new java.lang.String[]{ status.name() }, null, null, ul.fcul.lasige.findvictim.data.Alert.Store.COLUMN_DATE);
+}

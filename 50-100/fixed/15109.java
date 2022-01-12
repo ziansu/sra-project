@@ -1,0 +1,3 @@
+private static org.ops4j.pax.exam.Option karafContainerConfigOptions(java.lang.String version) {
+    return org.ops4j.pax.exam.CoreOptions.composite(karafDistributionConfiguration().frameworkUrl(org.ops4j.pax.exam.CoreOptions.maven().groupId(com.github.dozermapper.osgitests.karaf.KarafOptions.FRAMEWORK_GROUP_ID).artifactId(com.github.dozermapper.osgitests.karaf.KarafOptions.FRAMEWORK_ARTIFACT_ID).version(version).type("zip")).karafVersion(version).name(("Apache Karaf " + version)).unpackDirectory(new java.io.File("target/paxexam/unpack")), doNotModifyLogConfiguration());
+}

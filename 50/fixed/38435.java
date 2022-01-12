@@ -1,0 +1,1 @@
+public boolean hasSomeContent(com.jivesoftware.base.User author, com.jivesoftware.community.JiveContentObject content);

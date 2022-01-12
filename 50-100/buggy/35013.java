@@ -1,0 +1,3 @@
+public static org.wordpress.android.ui.accounts.SignInDialogFragment newInstance(java.lang.String title, java.lang.String message, int imageSource, int numberOfButtons, java.lang.String firstButtonLabel, java.lang.String secondButtonLabel, java.lang.String thirdButtonLabel, int secondButtonAction, int thirdButtonAction) {
+    return org.wordpress.android.ui.accounts.SignInDialogFragment.newInstance(title, message, imageSource, numberOfButtons, firstButtonLabel, secondButtonLabel, thirdButtonLabel, 0, secondButtonAction, thirdButtonAction, "", "");
+}

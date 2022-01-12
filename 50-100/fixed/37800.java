@@ -1,0 +1,3 @@
+private static boolean checkLuckyPatcher(android.content.Context context) {
+    return (((((ru.dante.scpfoundation.util.SecureUtils.packageExists(context, "com.dimonvideo.luckypatcher")) || (ru.dante.scpfoundation.util.SecureUtils.packageExists(context, "com.android.protips"))) || (ru.dante.scpfoundation.util.SecureUtils.packageExists(context, "com.chelpus.lackypatch"))) || (ru.dante.scpfoundation.util.SecureUtils.packageExists(context, "com.android.vending.billing.InAppBillingService.LACK"))) || (ru.dante.scpfoundation.util.SecureUtils.packageExists(context, "cc.madkite.freedom"))) || (ru.dante.scpfoundation.util.SecureUtils.packageExists(context, "madkite.freedom"));
+}

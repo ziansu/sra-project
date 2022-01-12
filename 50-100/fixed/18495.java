@@ -1,0 +1,8 @@
+@java.lang.Override
+public void setImageResource(int resId) {
+    if ((resId != 0) && (getContext().getResources().getResourceTypeName(resId).equals("raw"))) {
+        setImageDrawable(new carbon.drawable.VectorDrawable(getResources(), resId));
+    }else {
+        super.setImageResource(resId);
+    }
+}

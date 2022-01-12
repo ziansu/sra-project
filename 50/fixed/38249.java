@@ -1,0 +1,1 @@
+public org.geekhub.hibernate.entity.Question create(java.lang.String questionText, java.lang.Byte questionWeight, int courseId);

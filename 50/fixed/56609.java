@@ -1,0 +1,1 @@
+public static native void logExternalMessage(java.lang.String eventName, java.lang.String eventDetails);

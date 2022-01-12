@@ -1,0 +1,3 @@
+public static com.yarolegovich.wellsql.SelectQuery<org.wordpress.android.fluxc.model.MediaModel> getMediaExcludingQuery(org.wordpress.android.fluxc.model.SiteModel site, java.lang.String column, java.lang.Object value) {
+    return com.yarolegovich.wellsql.WellSql.select(org.wordpress.android.fluxc.model.MediaModel.class).where().beginGroup().equals(MediaModelTable.SITE_ID, site.getSiteId()).not().equals(column, value).endGroup().endWhere().orderBy(MediaModelTable.UPLOAD_DATE, SelectQuery.ORDER_DESCENDING);
+}

@@ -1,0 +1,3 @@
+static com.github.rinde.rinsim.ui.SimulationViewer create(org.eclipse.swt.widgets.Shell shell, final com.github.rinde.rinsim.core.Simulator sim, int pSpeedUp, boolean pAutoPlay, java.util.List<java.lang.Object> pRenderers, java.util.Map<com.github.rinde.rinsim.ui.MenuItems, java.lang.Integer> acc) {
+    return new com.github.rinde.rinsim.ui.SimulationViewer(shell, sim, pSpeedUp, pAutoPlay, pRenderers, acc);
+}

@@ -1,0 +1,3 @@
+private void backupPointToStart() {
+    settingsAPI.edit(globalPreferences).putFloat(net.osmand.plus.OsmandSettings.START_POINT_LAT_BACKUP, settingsAPI.getFloat(globalPreferences, net.osmand.plus.OsmandSettings.START_POINT_LAT, 0)).putFloat(net.osmand.plus.OsmandSettings.START_POINT_LON_BACKUP, settingsAPI.getFloat(globalPreferences, net.osmand.plus.OsmandSettings.START_POINT_LON, 0)).putString(net.osmand.plus.OsmandSettings.START_POINT_DESCRIPTION_BACKUP, settingsAPI.getString(globalPreferences, net.osmand.plus.OsmandSettings.START_POINT_DESCRIPTION, "")).commit();
+}

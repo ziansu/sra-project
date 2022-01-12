@@ -1,0 +1,4 @@
+public void index(java.lang.String data) throws java.lang.ClassNotFoundException, java.lang.IllegalAccessException, java.lang.InstantiationException, java.lang.NoSuchMethodException, java.lang.reflect.InvocationTargetException, org.opencb.cellbase.core.loader.LoaderException {
+    org.opencb.cellbase.core.loader.CellBaseLoader cellBaseLoader = ((org.opencb.cellbase.core.loader.CellBaseLoader) (java.lang.Class.forName(loader).getConstructor(java.util.concurrent.BlockingQueue.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, org.opencb.cellbase.core.CellBaseConfiguration.class).newInstance(blockingQueue, data, database, "", cellBaseConfiguration)));
+    cellBaseLoader.createIndex(data);
+}

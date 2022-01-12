@@ -1,0 +1,3 @@
+private void init() {
+    mStrategies = new com.xhg.test.image.strategies.ColorStrategy[]{ new com.xhg.test.image.strategies.Mandelbrot1() , new com.xhg.test.image.strategies.Mandelbrot2() , new com.xhg.test.image.strategies.Mandelbrot3() , new com.xhg.test.image.strategies.TableCloths() , new com.xhg.test.image.strategies.RandomPainter() , new com.xhg.test.image.strategies.Mandelbrot3() , new com.xhg.test.image.strategies.Mandelbrot1() , new com.xhg.test.image.strategies.Mandelbrot2() , new com.xhg.test.image.strategies.Mandelbrot3() , new com.xhg.test.image.strategies.Mandelbrot1() , new com.xhg.test.image.strategies.Mandelbrot2() , new com.xhg.test.image.strategies.Mandelbrot3() };
+}

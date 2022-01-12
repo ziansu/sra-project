@@ -1,0 +1,3 @@
+protected void generateDetailedCDR(org.mobicents.smsc.library.Sms sms, org.mobicents.smsc.library.EventType eventType, org.mobicents.smsc.library.ErrorCode errorCode, java.lang.String messageType, int statusCode, java.lang.String destAddrAndPort, int seqNumber) {
+    org.mobicents.smsc.library.CdrDetailedGenerator.generateDetailedCdr(sms, eventType, errorCode, messageType, statusCode, (-1), null, destAddrAndPort, seqNumber, org.mobicents.smsc.slee.services.deliverysbb.DeliveryCommonSbb.smscPropertiesManagement.getGenerateReceiptCdr(), org.mobicents.smsc.slee.services.deliverysbb.DeliveryCommonSbb.smscPropertiesManagement.getGenerateDetailedCdr());
+}

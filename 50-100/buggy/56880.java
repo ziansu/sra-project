@@ -1,0 +1,13 @@
+@java.lang.Override
+protected void onCreate(@android.support.annotation.Nullable
+android.os.Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+    lvItems = findViewById(R.id.lvItems);
+    readItems();
+    itemsAdapter = new android.widget.ArrayAdapter(this, android.R.layout.simple_list_item_1, items);
+    lvItems.setAdapter(itemsAdapter);
+    items.add("First item");
+    items.add("Second item");
+    setupListViewListener();
+}

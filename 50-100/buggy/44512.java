@@ -1,0 +1,9 @@
+@org.junit.Test
+public void testCallExtensionPoint() throws java.lang.Exception {
+    org.pentaho.metaverse.analyzer.kettle.extensionpoints.job.JobLineageHolderMap originalHolderMap = mockBuilder();
+    jobExtensionPoint.callExtensionPoint(null, job);
+    java.util.List<org.pentaho.di.job.JobListener> listeners = job.getJobListeners();
+    org.junit.Assert.assertNotNull(listeners);
+    org.junit.Assert.assertTrue(listeners.contains(jobExtensionPoint));
+    org.pentaho.metaverse.analyzer.kettle.extensionpoints.job.JobLineageHolderMap.setInstance(originalHolderMap);
+}

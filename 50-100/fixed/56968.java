@@ -1,0 +1,3 @@
+public static java.lang.String get() {
+    return (((((((((((((((((Protocol.Server.SERVERCAPABILITIES) + " ") + (supportclasses.Capabilities.Server.AMOUNTOFPLAYERS)) + " ") + (supportclasses.Capabilities.Server.ROOMSUPPORT)) + " ") + (supportclasses.Capabilities.Server.MAXDIMENSIONS)) + " ") + (supportclasses.Capabilities.Server.MAXDIMENSIONX)) + " ") + (supportclasses.Capabilities.Server.MAXDIMENSIONY)) + " ") + (supportclasses.Capabilities.Server.MAXDIMENSIONZ)) + " ") + (supportclasses.Capabilities.Server.LENGTHTOWIN)) + " ") + (supportclasses.Capabilities.Server.CHATSUPPORT)) + "\n";
+}

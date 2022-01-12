@@ -1,0 +1,11 @@
+public java.util.List<org.shanerx.projectbudder.perms.api.PermissionGroup> getGroupsByPrefixIgnoreCase(java.lang.String prefix) {
+    fc = plugin.getConfig();
+    java.util.List<org.shanerx.projectbudder.perms.api.PermissionGroup> groups = new java.util.ArrayList<>();
+    for (java.lang.String configKey : fc.getConfigurationSection("groups").getKeys(false)) {
+        if (fc.getString((configKey + ".prefix")).equalsIgnoreCase(prefix)) {
+            groups.add(new org.shanerx.projectbudder.perms.api.PermissionGroup(configKey.split(".")[1], plugin));
+        }
+    }
+    fc = null;
+    return groups;
+}

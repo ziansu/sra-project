@@ -1,0 +1,13 @@
+public static java.lang.String sendCommand(java.lang.String cmd) {
+    com.gara.voicy.Network net = new com.gara.voicy.Network();
+    java.lang.String ret = "";
+    try {
+        net.execute(Settings.SERVER_ADDRESS, cmd);
+        ret = net.get();
+    } catch (java.lang.InterruptedException e) {
+        e.printStackTrace();
+    } catch (java.util.concurrent.ExecutionException e) {
+        e.printStackTrace();
+    }
+    return ret;
+}

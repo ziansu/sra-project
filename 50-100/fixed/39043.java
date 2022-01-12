@@ -1,0 +1,3 @@
+private boolean isSimpleType(io.swagger.models.properties.Property p) {
+    return (((((((p instanceof io.swagger.models.properties.BooleanProperty) || (p instanceof io.swagger.models.properties.IntegerProperty)) || (p instanceof io.swagger.models.properties.LongProperty)) || (p instanceof io.swagger.models.properties.FloatProperty)) || (p instanceof io.swagger.models.properties.DoubleProperty)) || (p instanceof io.swagger.models.properties.StringProperty)) || (p instanceof io.swagger.models.properties.ObjectProperty)) || (p instanceof io.swagger.models.properties.RefProperty);
+}

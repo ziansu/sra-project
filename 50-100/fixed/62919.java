@@ -1,0 +1,3 @@
+public java.util.List<com.invisibleteam.goinvisible.model.Tag> getTags() {
+    return java.util.Arrays.asList(new com.invisibleteam.goinvisible.model.Tag("key1", "value1"), new com.invisibleteam.goinvisible.model.Tag("key2", "value2"), new com.invisibleteam.goinvisible.model.Tag("key3", "value3"), new com.invisibleteam.goinvisible.model.Tag("key4", "value4"), new com.invisibleteam.goinvisible.model.Tag("key5", "value5"), new com.invisibleteam.goinvisible.model.Tag("key6", "value6"));
+}

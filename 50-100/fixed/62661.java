@@ -1,0 +1,3 @@
+private void injectBridgeScript(android.webkit.WebView root) {
+    root.evaluateJavascript(("" + (((((((((("(function() {" + "if (window.WebViewBridge) return;") + "var customEvent = document.createEvent('Event');") + "var WebViewBridge = {") + "send: function(message) { WebViewBridgeAndroid.send(message); },") + "onMessage: function() {}") + "};") + "window.WebViewBridge = WebViewBridge;") + "customEvent.initEvent('WebViewBridge', true, true);") + "document.dispatchEvent(customEvent);") + "}());")), null);
+}

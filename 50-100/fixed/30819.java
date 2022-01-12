@@ -1,0 +1,3 @@
+public static void createCasDump(java.lang.String inputResource, java.lang.String outputResource) throws java.io.IOException, org.apache.uima.UIMAException {
+    org.apache.uima.fit.pipeline.SimplePipeline.runPipeline(org.apache.uima.fit.factory.CollectionReaderFactory.createReaderDescription(eu.openminted.uc_tdm_socialsciences.io.pdfx.PdfxXmlReader.class, PdfxXmlReader.PARAM_LANGUAGE, "en", PdfxXmlReader.PARAM_SOURCE_LOCATION, inputResource), org.apache.uima.fit.factory.AnalysisEngineFactory.createEngineDescription(de.tudarmstadt.ukp.dkpro.core.testing.dumper.CasDumpWriter.class, CasDumpWriter.PARAM_TARGET_LOCATION, outputResource));
+}

@@ -1,0 +1,4 @@
+private com.amazonaws.services.kinesis.scaling.ScalingOperationReport scaleStream(java.lang.String streamName, int originalShardCount, int targetShards, double targetPct, int operationsMade, int shardsCompleted, long startTime, java.lang.Integer minShards, java.lang.Integer maxShards) throws java.lang.Exception {
+    com.amazonaws.services.kinesis.scaling.StreamScaler.LOG.info(java.lang.String.format("Scaling Stream %s from %s Shards to %s", streamName, originalShardCount, targetShards));
+    return scaleStream(streamName, originalShardCount, targetShards, targetPct, operationsMade, shardsCompleted, startTime, getOpenShardStack(streamName), minShards, maxShards);
+}

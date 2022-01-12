@@ -1,0 +1,1 @@
+model.societies.Society getSociety(java.lang.String id);

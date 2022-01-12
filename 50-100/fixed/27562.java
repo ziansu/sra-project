@@ -1,0 +1,3 @@
+private static java.lang.Class<? extends java.lang.Enum> getEnumClassByEnumDescriptor(com.google.protobuf.Descriptors.EnumDescriptor descriptor) {
+    return ((java.lang.Class<? extends java.lang.Enum>) (org.dozer.util.MappingUtils.loadClass(org.apache.commons.lang3.StringUtils.join(new java.lang.String[]{ descriptor.getFile().getOptions().getJavaPackage() , descriptor.getFile().getOptions().getJavaOuterClassname() , descriptor.getName() }, '.'))));
+}

@@ -1,0 +1,3 @@
+public <T extends com.mgs.pims.types.entity.PimsMapEntity> T proxy(boolean mutable, java.lang.Class actualType, java.util.Map<java.lang.String, java.lang.Object> valueMap, java.util.Map<java.lang.String, java.lang.Object> domainMap) {
+    return ((T) (java.lang.reflect.Proxy.newProxyInstance(com.mgs.pims.proxy.PimsEntityProxyFactory.class.getClassLoader(), new java.lang.Class[]{ actualType }, new com.mgs.pims.proxy.PimsEntityProxy(pimsMethodCaller, actualType, valueMap, domainMap, pimsLinker.link(actualType), mutable, pimsParameters))));
+}

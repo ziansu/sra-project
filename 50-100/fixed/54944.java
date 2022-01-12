@@ -1,0 +1,3 @@
+private static javax.json.JsonObject createPostLocation(java.lang.String movie, java.lang.String concept) {
+    return javax.json.Json.createObjectBuilder().add("add", javax.json.Json.createObjectBuilder().add("relationships", javax.json.Json.createObjectBuilder().add("has-location", javax.json.Json.createArrayBuilder().add(javax.json.Json.createObjectBuilder().add("roles", javax.json.Json.createObjectBuilder().add("location-of-subject", concept).add("subject-with-location", movie)))))).build();
+}

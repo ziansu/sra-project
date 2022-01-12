@@ -1,0 +1,10 @@
+@java.lang.Override
+protected void onActivityResult(int requestCode, int resultCode, android.content.Intent data) {
+    if (resultCode != (RESULT_CANCELED)) {
+        switch (requestCode) {
+            default :
+                android.os.Bundle bundle = data.getExtras();
+                hero = bundler.unbundleHero(bundle);
+        }
+    }
+}

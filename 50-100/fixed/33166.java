@@ -1,0 +1,4 @@
+@java.lang.Override
+public int[] getTableItems() {
+    return new int[]{ R.string._id , R.string.column_wpid , R.string.column_partnername , R.string.column_wpkenn , R.string.column_accountID , R.string.column_btag , R.string.column_btagkurs , R.string.column_bestand , R.string.column_bestand_stfr , R.string.column_einstand , R.string.column_einstand_stfr , R.string.column_lastKurs , R.string.column_marktwert , R.string.column_marktwert_stfr , R.string.column_gewinn , R.string.column_gewinn_stfr , R.string.column_gewinn_perc , R.string.column_gewinn_perc_stfr };
+}

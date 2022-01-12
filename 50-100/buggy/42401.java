@@ -1,0 +1,3 @@
+public static org.sosy_lab.cpachecker.cpa.formulaslicing.SlicingAbstractedState empty(org.sosy_lab.cpachecker.util.predicates.smt.FormulaManagerView pFmgr, org.sosy_lab.cpachecker.cfa.model.CFANode startingNode) {
+    return org.sosy_lab.cpachecker.cpa.formulaslicing.SlicingAbstractedState.of(com.google.common.collect.ImmutableSet.<org.sosy_lab.solver.api.BooleanFormula>of(), org.sosy_lab.cpachecker.util.predicates.pathformula.SSAMap.emptySSAMap(), org.sosy_lab.cpachecker.util.predicates.pathformula.pointeraliasing.PointerTargetSet.emptyPointerTargetSet(), pFmgr, startingNode, com.google.common.base.Optional.<org.sosy_lab.cpachecker.cpa.formulaslicing.SlicingIntermediateState>absent(), false);
+}

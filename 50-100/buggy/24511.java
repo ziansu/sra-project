@@ -1,0 +1,13 @@
+@java.lang.Override
+public final synchronized void removeAnySubscription(final com.connectsdk.device.ConnectableDevice device) {
+    if ((subscriptions) != null) {
+        com.connectsdk.service.command.ServiceSubscription<T> l = subscriptions.remove(device.getIpAddress());
+        if (l != null) {
+            l.unsubscribe();
+            if (l instanceof com.connectsdk.service.command.URLServiceSubscription) {
+                ((com.connectsdk.service.command.URLServiceSubscription<?>) (l)).removeListeners();
+            }
+            org.openhab.binding.connectsdk.internal.bridges.AbstractOpenhabConnectSDKPropertyBridge.logger.debug("Unsubscribed {}:{} listener on IP: {}", getItemClass(), getItemProperty(), device.getIpAddress());
+        }
+    }
+}

@@ -1,0 +1,1 @@
+javax.ws.rs.core.Response redirectRequest(org.dcm4che3.net.ApplicationEntity redirectAE, java.lang.String queryString);

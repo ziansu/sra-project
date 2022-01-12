@@ -1,0 +1,7 @@
+@java.lang.Override
+public void onBindViewHolder(com.nest.calamitycontrol.TimelineActivity.RVAdapter.Holder holder, int position) {
+    holder.name.setText(dataModelArrayList.get(position).getName());
+    holder.place.setText(dataModelArrayList.get(position).getPlace());
+    holder.time.setText(dataModelArrayList.get(position).getTime());
+    holder.desc.setText(dataModelArrayList.get(position).getDesc());
+}

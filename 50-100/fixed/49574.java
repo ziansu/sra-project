@@ -1,0 +1,4 @@
+public java.util.Set<java.lang.String> createInstancesWithPublicKeyNameAndInitScript(java.lang.String infrastructureId, java.lang.String instanceTag, java.lang.String image, int numberOfInstances, int hardwareType, java.lang.String publicKeyName, java.util.List<java.lang.String> scripts) {
+    java.lang.String instanceJson = org.ow2.proactive.resourcemanager.nodesource.infrastructure.ConnectorIaasJSONTransformer.getInstanceJSONWithPublicKeyAndScripts(instanceTag, image, java.lang.String.valueOf(numberOfInstances), publicKeyName, java.lang.String.valueOf(hardwareType), scripts);
+    return createInstance(infrastructureId, instanceJson);
+}

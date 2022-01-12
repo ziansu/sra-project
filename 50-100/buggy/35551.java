@@ -1,0 +1,3 @@
+public static nl.safenote.model.Quadruple<javax.crypto.spec.SecretKeySpec, javax.crypto.spec.SecretKeySpec, java.security.PrivateKey, java.security.PublicKey> keyStoreFromByteArray(byte[] total) {
+    return new nl.safenote.model.Quadruple(new javax.crypto.spec.SecretKeySpec(java.util.Arrays.copyOfRange(total, 0, 32), "AES"), new javax.crypto.spec.SecretKeySpec(java.util.Arrays.copyOfRange(total, 32, 64), "HmacSHA512"), nl.safenote.utils.KeyUtils.decodePrivateKey(java.util.Arrays.copyOfRange(total, 390, total.length)), nl.safenote.utils.KeyUtils.decodePublicKey(java.util.Arrays.copyOfRange(total, 96, 390)));
+}

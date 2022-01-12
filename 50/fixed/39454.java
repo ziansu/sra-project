@@ -1,0 +1,1 @@
+int posix_spawnp(java.lang.String path, java.util.Collection<? extends jnr.posix.SpawnFileAction> fileActions, java.util.Collection<? extends java.lang.CharSequence> argv, java.util.Collection<? extends java.lang.CharSequence> envp);

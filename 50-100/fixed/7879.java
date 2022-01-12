@@ -1,0 +1,3 @@
+public static java.lang.String getParam(final org.jooq.lambda.tuple.Tuple2<java.lang.String, java.lang.String> valueNameCouple) {
+    return ((it.unibo.alchemist.boundary.gui.view.SingleRunApp.Parameter.PARAMETER_NAME_START) + (valueNameCouple.v1())) + (valueNameCouple.v2().equals("") ? "" : (it.unibo.alchemist.boundary.gui.view.SingleRunApp.Parameter.PARAMETER_NAME_END) + (valueNameCouple.v2()));
+}

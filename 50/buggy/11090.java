@@ -1,0 +1,1 @@
+private static native void _imaqFindTransformRects2(long image, long primaryROI, long secondaryROI, int mode, long baseSystem, long newSystem, long findTransformOptions, long primaryStraightEdgeOptions, long secondaryStraightEdgeOptions, long axisReport);

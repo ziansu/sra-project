@@ -1,0 +1,14 @@
+public com.blackbirdai.client.model.UploadRequest addDocStrings(java.util.List<java.lang.String> docStrings) throws com.blackbirdai.client.InvalidRequestException {
+    if ((this.docs) == null) {
+        this.docs = com.google.common.collect.Lists.newArrayListWithCapacity(docs.size());
+    }
+    for (java.lang.String s : docStrings) {
+        try {
+            com.fasterxml.jackson.databind.JsonNode json = Document.Reader.readValue(s);
+            this.docs.add(json);
+        } catch (java.lang.Exception e) {
+            throw new com.blackbirdai.client.InvalidRequestException("Document is in invalid JSON format", e);
+        }
+    }
+    return this;
+}

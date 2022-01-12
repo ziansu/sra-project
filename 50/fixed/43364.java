@@ -1,0 +1,2 @@
+public static void registerModItems() {
+}

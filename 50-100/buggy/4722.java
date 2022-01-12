@@ -1,0 +1,4 @@
+private void loadJSON() {
+    redditreader.app.RedditInterface redditInterface = new retrofit2.Retrofit.Builder().baseUrl(redditreader.app.MainActivity.BASE_URL).addCallAdapterFactory(com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory.create()).addConverterFactory(retrofit2.converter.gson.GsonConverterFactory.create()).build().create(redditreader.app.RedditInterface.class);
+    mCompositeDisposable.add(redditInterface.register().observeOn(io.reactivex.android.schedulers.AndroidSchedulers.mainThread().subscribeOn(io.reactivex.schedulers.Schedulers.io())).subscribe(this::handleResponse, this::handleError));
+}

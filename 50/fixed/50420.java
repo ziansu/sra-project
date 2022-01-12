@@ -1,0 +1,1 @@
+java.util.List<cn.cloudself.model.AppJiyoujiaEntity> getData(int startFrom, int size);

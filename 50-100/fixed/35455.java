@@ -1,0 +1,6 @@
+public org.gearvrf.GVRTexture loadCubemapTexture(org.gearvrf.GVRAndroidResource resource, org.gearvrf.GVRAndroidResource.TextureCallback callback) {
+    org.gearvrf.GVRTexture texture = new org.gearvrf.GVRTexture(mContext, org.gearvrf.GVRAssetLoader.DEFAULT_TEXTURE_PARAMETERS);
+    org.gearvrf.GVRAssetLoader.TextureRequest request = new org.gearvrf.GVRAssetLoader.TextureRequest(resource, texture, callback);
+    org.gearvrf.asynchronous.GVRAsynchronousResourceLoader.loadCubemapTexture(mContext, org.gearvrf.GVRAssetLoader.mTextureCache, request, resource, org.gearvrf.GVRAssetLoader.DEFAULT_PRIORITY, GVRCubemapTexture.faceIndexMap);
+    return texture;
+}

@@ -1,0 +1,3 @@
+private java.lang.CharSequence generateFixedFlyweightCode(final java.lang.String className, final int size) {
+    return java.lang.String.format(("    private %3$s buffer;\n" + (((((((((((("    private int offset;\n" + "    private int actingVersion;\n\n") + "    public %1$s wrap(final %3$s buffer, final int offset, final int actingVersion)\n") + "    {\n") + "        this.buffer = buffer;\n") + "        this.offset = offset;\n") + "        this.actingVersion = actingVersion;\n") + "        return this;\n") + "    }\n\n") + "    public int size()\n") + "    {\n") + "        return %2$d;\n") + "    }\n")), className, size, bufferImplementation);
+}

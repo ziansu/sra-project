@@ -1,0 +1,1 @@
+public com.hp.hpl.jena.rdf.model.Statement extractFirstPlaintext(com.hp.hpl.jena.rdf.model.Model model) throws java.lang.Exception;

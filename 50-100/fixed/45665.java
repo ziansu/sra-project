@@ -1,0 +1,10 @@
+private javax.net.ssl.TrustManagerFactory loadTrustManagerFactory(java.security.KeyStore ts, java.lang.String trustStore, java.lang.String trustStorePassword, java.lang.String trustManagerAlgorithm) throws java.io.IOException, java.security.KeyStoreException, java.security.NoSuchAlgorithmException, java.security.cert.CertificateException {
+    if (trustStore == null) {
+        return null;
+    }
+    javax.net.ssl.TrustManagerFactory tmf = javax.net.ssl.TrustManagerFactory.getInstance(trustManagerAlgorithm);
+    char[] passPhrase = (trustStorePassword == null) ? null : trustStorePassword.toCharArray();
+    loadKeyStore(ts, passPhrase, trustStore);
+    tmf.init(ts);
+    return tmf;
+}

@@ -1,0 +1,7 @@
+@java.lang.Override
+public void onSuccess() {
+    adapter.removeMember(member);
+    trip.removeMember(member);
+    updateLabelsVisibilityIfNecessary();
+    android.support.design.widget.Snackbar.make(mActivity.findViewById(android.R.id.content), (member.pendingRequest ? R.string.snackbar_invitee_removed : R.string.snackbar_member_removed), Snackbar.LENGTH_SHORT).show();
+}

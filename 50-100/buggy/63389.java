@@ -1,0 +1,7 @@
+public void updatePane() {
+    int index = gui.GUIPane.tabbedPane.getSelectedIndex();
+    gui.GraphTab graphTab = graphTabs.get(index);
+    graphTab.updateImage();
+    gui.GUIPane.tabbedPane.setComponentAt(index, graphTab.getpanel());
+    gui.GUIPane.tabbedPane.repaint();
+}

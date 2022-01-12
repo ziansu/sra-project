@@ -1,0 +1,3 @@
+static boolean compileFromSqlTextAndUpdateCatalog(org.voltdb.compiler.VoltCompiler compiler, org.hsqldb_voltpatches.HSQLInterface hsql, org.voltdb.catalog.Catalog catalog, org.voltdb.catalog.Database db, org.voltdb.compiler.DatabaseEstimates estimates, org.voltdb.catalog.Statement catalogStmt, java.lang.String sqlText, java.lang.String joinOrder, org.voltdb.compiler.DeterminismMode detMode, org.voltdb.planner.StatementPartitioning partitioning) throws org.voltdb.compiler.VoltCompiler.VoltCompilerException {
+    return org.voltdb.compiler.StatementCompiler.compileStatementAndUpdateCatalog(compiler, hsql, catalog, db, estimates, catalogStmt, null, sqlText, joinOrder, detMode, partitioning);
+}

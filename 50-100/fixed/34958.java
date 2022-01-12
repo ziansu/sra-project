@@ -1,0 +1,4 @@
+@cucumber.api.java.en.When(value = "^I change \"([^\"]*)\" into string \"([^\"]*)\"$")
+public void I_change_settingName_into_string_value(java.lang.String settingName, java.lang.String value) throws java.lang.Throwable {
+    android.support.test.espresso.Espresso.onView(android.support.test.espresso.matcher.ViewMatchers.withTagValue(com.crescentflare.appconfigexample.test.page.Edit.withStringMatching(settingName))).perform(android.support.test.espresso.action.ViewActions.clearText()).perform(android.support.test.espresso.action.ViewActions.click()).perform(android.support.test.espresso.action.ViewActions.typeText(value));
+}

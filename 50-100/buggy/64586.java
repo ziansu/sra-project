@@ -1,0 +1,4 @@
+@org.springframework.context.annotation.Bean
+public springfox.documentation.spring.web.plugins.Docket api() {
+    return new springfox.documentation.spring.web.plugins.Docket(springfox.documentation.spi.DocumentationType.SWAGGER_2).select().apis(springfox.documentation.builders.RequestHandlerSelectors.basePackage("com.hackhofer.uniqa.poc.json")).paths(springfox.documentation.builders.PathSelectors.any()).build().apiInfo(new springfox.documentation.service.ApiInfo("Uniqa POC API documentation", "", "v0.1", "", new springfox.documentation.service.Contact("", "", ""), "", "")).tags(new springfox.documentation.service.Tag("Uniqa Integration POC", "REST api for testing integration."));
+}

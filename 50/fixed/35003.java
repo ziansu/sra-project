@@ -1,0 +1,3 @@
+public static java.lang.Class<?>[] getList() {
+    return new java.lang.Class[]{ seedu.address.logic.parser.AddCommandParser.class , seedu.address.logic.parser.DeleteCommandParser.class , seedu.address.logic.parser.FindCommandParser.class , seedu.address.logic.parser.FavoriteCommandParser.class , seedu.address.logic.parser.UnfavoriteCommandParser.class , seedu.address.logic.parser.ListCommandParser.class , seedu.address.logic.parser.AddAliasCommandParser.class , seedu.address.logic.parser.DeleteAliasCommandParser.class };
+}

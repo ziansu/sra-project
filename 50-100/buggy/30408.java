@@ -1,0 +1,4 @@
+@org.junit.Test
+public void hasASetOfGauges() throws java.lang.Exception {
+    org.assertj.core.api.Assertions.assertThat(gauges.getMetrics().keySet()).containsOnly("heap.init", "heap.committed", "heap.used", "heap.usage", "heap.max", "non-heap.init", "non-heap.committed", "non-heap.used", "non-heap.usage", "non-heap.max", "total.init", "total.committed", "total.used", "total.max", "pools.Big-Pool.init", "pools.Big-Pool.committed", "pools.Big-Pool.used", "pools.Big-Pool.usage", "pools.Big-Pool.max", "pools.Big-Pool.used-after-gc", "pools.Weird-Pool.init", "pools.Weird-Pool.committed", "pools.Weird-Pool.used", "pools.Weird-Pool.used-after-gc", "pools.Weird-Pool.usage", "pools.Weird-Pool.max");
+}

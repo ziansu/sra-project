@@ -1,0 +1,4 @@
+public static eu.modernmt.processing.ProcessingPipeline<eu.modernmt.model.Translation, java.lang.Void> getPipeline(java.util.Locale language, boolean detokenize, int threads) {
+    eu.modernmt.processing.detokenizer.Detokenizer detokenizer = (detokenize) ? eu.modernmt.processing.detokenizer.Detokenizers.forLanguage(language) : null;
+    return new eu.modernmt.processing.ProcessingPipeline.Builder<eu.modernmt.model.Translation, eu.modernmt.model.Translation>().setThreads(threads).add(detokenizer).add(eu.modernmt.processing.Postprocessor.WordTransformationFactory).add(eu.modernmt.processing.Postprocessor.WordTransformer).add(eu.modernmt.processing.Postprocessor.Recaser).add(eu.modernmt.processing.Postprocessor.XMLTagMapper).create();
+}
